@@ -11,4 +11,29 @@ router.get('/', async (req, res) => {
     });
 });
 
+router.get('/contact', async (req, res) => {
+    res.render('contact', {
+        // loggedIn: req.session.loggedIn,
+        // name: req.session.name
+    });
+});
+
+router.get('/menu', async (req, res) => {
+    res.render('menu', {
+
+    })
+})
+
+router.get('/yelp', async (req, res) => {
+    res.render('yelp', {
+        
+    })
+})
+
+router.get('/about', async (req, res) => {
+    res.render('about', {
+        
+    })
+})
+
 module.exports = router;

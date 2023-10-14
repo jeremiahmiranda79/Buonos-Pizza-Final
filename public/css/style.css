@@ -1,0 +1,113 @@
+body, html {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  padding-bottom: 60px;
+}
+
+.header-logo {
+  height: 45px;
+}
+
+.navbar {
+  background-color: green;
+  background-size: 100%;
+}
+
+.top-stuff {
+  padding-top: 100px;
+}
+
+.contact {
+  height: 710px;
+  padding-top: 160px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 160px;
+}
+
+.container-fluid {
+  padding-bottom: 10px;
+}
+
+.carousel {
+  box-shadow: 6px 6px 8px rgb(63, 61, 61);
+}
+
+.carousel-caption h3 {
+  color: rgb(238, 41, 41);
+  font-size: 55px;
+  margin-bottom: 70%;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#buonos {
+  filter: grayscale(20%) blur(2px) brightness(60%);
+}
+
+.about {
+  filter: grayscale(20%) blur(2px) brightness(60%);
+}
+
+.favorites {
+  color: aliceblue;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.view-menu-button {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  font-size: 25px;
+  box-shadow: 2px 2px 4px rgb(63, 61, 61);
+  font-family: 'Permanent Marker', cursive;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.about {
+  padding-top: 71px;
+}
+
+.social {
+  justify-content: center;
+  /* margin-bottom: 10px; */
+  padding-bottom: 10px;
+}
+
+.copy-right {
+  padding-bottom: 20px;
+}
+
+.bg {
+  background-color:darkgray;
+}
+
+.main-footer {
+  background-color: rgb(65, 51, 51);
+  padding-top: 10px;
+}
+
+.icon {
+  font-size: 25px;
+  color: rgb(238, 41, 41);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.icon:hover {
+  color: gray;
+}
+
+.nav-icon {
+  font-size: px;
+  width: 100%;
+  text-align: center;
+}
+
+.bottom-stuff {
+  padding-bottom: 60px;
+}
