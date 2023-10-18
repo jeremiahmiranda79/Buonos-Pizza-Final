@@ -1,80 +1,48 @@
-<div class="menu">
-  <nav aria-label="Page navigation example">
-    <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li class="page-item"><a class="page-link" href="#">Pizza</a></li>
-      <li class="page-item"><a class="page-link" href="#">App</a></li>
-      <li class="page-item"><a class="page-link" href="#">Salad</a></li>
-      <li class="page-item"><a class="page-link" href="#">Subs</a></li>
-      <li class="page-item"><a class="page-link" href="#">Pasta</a></li>
-      {{!-- <li class="page-item"><a class="page-link" href="#">Dinner</a></li> --}}
-      {{!-- <li class="page-item"><a class="page-link" href="#">Sides</a></li> --}}
-      {{!-- <li class="page-item"><a class="page-link" href="#">Dessert</a></li> --}}
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
+<h1>uuu</h1>
+<h1>uuu</h1>
 
-<div>
-  <h1>Menu item</h1>
-</div>
+{{!-- <div class="scrollmenu">
+  {{#each items as |c|}}
+  <a href="#{{c.id}}">
+    <button>
 
-<div >
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Neopolitan Pizza</h5>
-      </div>
-      <p class="mb-1">Neopolitan cheese pizza.</p>
-      <small class="text-body-secondary">Round and thin.</small>
-    </a>
+      {{ c.name }}
+    </button>
+  </a>
+{{/each}}
+</div> --}}
+
+<div class="scrollable-tabs-container">
+  <div class="left-arrow" >
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
+  </svg>
   </div>
+  <ul>
+    <li><a href="#" class="active">All</a></li>
+    {{#each items as |c|}}
+    <li><a href="#{{c.id}}">{{ c.name }}</a></li>{{/each}}
+  </ul>
+  <div class="right-arrow active">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+    </svg>
 
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Neopolitan Pizza</h5>
-      </div>
-      <p class="mb-1">Neopolitan cheese pizza.</p>
-      <small class="text-body-secondary">Round and thin.</small>
-    </a>
-  </div>
-
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Neopolitan Pizza</h5>
-      </div>
-      <p class="mb-1">Neopolitan cheese pizza.</p>
-      <small class="text-body-secondary">Round and thin.</small>
-    </a>
-  </div>
-
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Neopolitan Pizza</h5>
-      </div>
-      <p class="mb-1">Neopolitan cheese pizza.</p>
-      <small class="text-body-secondary">Round and thin.</small>
-    </a>
-  </div>
-
-  <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1">Neopolitan Pizza</h5>
-      </div>
-      <p class="mb-1">Neopolitan cheese pizza.</p>
-      <small class="text-body-secondary">Round and thin.</small>
-    </a>
   </div>
 </div>
+
+{{#each items as |c|}}
+  <br><br>
+  <h1 id="{{c.id}}"><strong>{{c.name}}</strong></h1>
+  {{#each c.items_models as |i|}}
+    <div class="list-group">
+      <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{i.name}}</h5>
+        </div>
+        <p class="mb-1">{{i.description}}</p>
+        <small class="text-body-secondary">Round and thin.</small>
+      </a>
+    </div>
+  {{/each}}
+{{/each}}

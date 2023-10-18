@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../../config/connection');
-const { Categories } = require('../../models');
+const { Categories, Items } = require('../../models');
 
 // Homepage
 router.get('/', async (req, res) => {
@@ -18,9 +18,24 @@ router.get('/contact', async (req, res) => {
 });
 
 router.get('/menu', async (req, res) => {
-	res.render('menu', {
-
-	});
+	try {
+		const items = await Categories.findAll({
+			include: [
+				{
+					model: Items
+				}
+			]
+		});	
+			
+		const serializedItems = items.map((item) => item.get({ plain: true }));
+		res.status(200).render('menu', {
+			items: serializedItems
+		});
+	}
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);
+	}
 });
 
 router.get('/yelp', async (req, res) => {

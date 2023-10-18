@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Neapolitan Cheese Pizza", 
+    "description": "Pizza with cheese, 18 inches", 
+    "categoryId": 1
+  },
+
+  {
+    "name": "Wingza", 
+    "description": "Pizza with wings on it", 
+    "categoryId": 1
+  },
+
+  {
+    "name": "Neapolitan Cheese Slice", 
+    "description": "thin, Toppings on slices .75 each", 
+    "categoryId": 1
+  },
+
+  {
+    "name": "Sicilian Cheese Slice", 
+    "description": "Toppings on slices .75 each", 
+    "categoryId": 1
+  },
+
+  {
+    "name": "Small Calzone", 
+    "description": "serves one", 
+    "categoryId": 2 
+  },
+
+  {
+    "name": "Large Calzone", 
+    "description": "serves 2-3", 
+    "categoryId": 2
+  },
+
+  {
+    "name": "Sausage, Peppers, Onions and Mozzarella Stromboli",
+    "description": "rolled calzone", 
+    "categoryId": 3
+  },
+
+  {
+    "name": "Meatballs, Marinara and Mozzarella Stromboli", 
+    "description": "rolled calzone", 
+    "categoryId": 3
+  },
+
+  {
+    "name": "Sausage Roll", 
+    "description": "(New Yorks Famous) A Tasty Blend of Sausage , Peppers, Onions and Cheese “rolled” & baked in our own Pizza Dough", 
+    "categoryId": 3
+  },
+
+  {
+    "name": "French Fries", 
+    "description": "fries",
+    "categoryId": 4
+  },
+  {
+    "name": "Garlic Bread", 
+    "description": "garlic bread", 
+    "categoryId": 4
+  },
+  {
+    "name": "Wings", 
+    "description": "Hot, Medium, Mild, Honey Hot, Honey, BBQ or BBQ; Side of Ranch or Blue Cheese; $.75 for each additional dressing; 6 for $7.25 or 10 for $13.99",
+    "categoryId": 4
+  },
+
+  {
+    "name": "Small Caesar Salad", 
+    "description": "Romaine Lettuce, Croutons, Shredded Parmesan & Caesar Dressing", 
+    "categoryId": 5
+  },
+  {
+    "name": "Caprese Salad", 
+    "description": " Fresh Mozzarella, Tomatoes, Basil,Olive Oil &  Balsamic Glaze", 
+    "categoryId": 5
+  }
+]
