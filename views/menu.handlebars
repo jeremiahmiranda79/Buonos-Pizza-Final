@@ -1,33 +1,35 @@
 <h1>uuu</h1>
 <h1>uuu</h1>
 
-{{!-- <div class="scrollmenu">
-  {{#each items as |c|}}
-  <a href="#{{c.id}}">
-    <button>
-
-      {{ c.name }}
-    </button>
-  </a>
-{{/each}}
-</div> --}}
-
 <div class="scrollable-tabs-container">
-  <div class="left-arrow" >
+  {{!-- <div class="left-arrow" >
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
+  </svg>
+  </div> --}}
+  <ul>
+    <div class="left-arrow" >
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
   </svg>
   </div>
-  <ul>
     <li><a href="#" class="active">All</a></li>
-    {{#each items as |c|}}
-    <li><a href="#{{c.id}}">{{ c.name }}</a></li>{{/each}}
+    <li><a href="#" >TEST !@#</a></li>
+    <li><a href="#" >TEST !@#</a></li>
+    <li><a href="#" >TEST !@#</a></li>
+    <li><a href="#" >TEST !@#</a></li>
+    <li><a href="#" >TEST !@#</a></li>
+    <li><a href="#" >TEST !@#</a></li>
+    <li><a href="#" >TEST !@#</a></li>
+    <li><a href="#" >TEST !@#</a></li>
+    <li><a href="#" >TEST !@#</a></li>
+    {{!-- {{#each items as |c|}}
+    <li><a href="#{{c.id}}">{{ c.name }}</a></li>{{/each}} --}}
   </ul>
   <div class="right-arrow active">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
     </svg>
-
   </div>
 </div>
 
@@ -46,3 +48,18 @@
     </div>
   {{/each}}
 {{/each}}
+
+<script src="/js/menuScrollbar.js"></script>
+
+
+
+{{!-- <div class="scrollmenu">
+  {{#each items as |c|}}
+  <a href="#{{c.id}}">
+    <button>
+
+      {{ c.name }}
+    </button>
+  </a>
+{{/each}}
+</div> --}}

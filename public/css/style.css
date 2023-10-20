@@ -142,6 +142,7 @@ main {
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 .scrollable-tabs-container a {
   color: #fff;
@@ -185,7 +186,6 @@ main {
 .scrollable-tabs-container svg:hover {
   background: #333;
 }
-
 
 .social {
   justify-content: center;
