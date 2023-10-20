@@ -51,9 +51,24 @@ router.get('/about', async (req, res) => {
 });
 
 router.get('/team', async (req, res) => {
-	res.render('team', {
-
-	});
+	try {
+		const items = await Categories.findAll({
+			include: [
+				{
+					model: Items
+				}
+			]
+		});	
+			
+		const serializedItems = items.map((item) => item.get({ plain: true }));
+		res.status(200).render('team', {
+			items: serializedItems
+		});
+	}
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);
+	}
 });
 
 router.get('/score', async (req, res) => {
