@@ -55,3 +55,14 @@ leftArrow.addEventListener('click', () => {
 });
 
 tabList.addEventListener('scroll', manageIcons);
+
+
+
+// $('.scrollable-tabs-container a').click(function(e) {
+//   e.preventDefault();
+//   console.log("scrolling")
+//   var $scrooll_to_id = $(this.getAttribute('href'));
+//   $('html').stop(true).animate({
+//     scrollTop: ($scrooll_to_id.position().top - $('.scrollable-tabs-container').height())
+//   });
+// });

@@ -21,10 +21,11 @@
   </div>
 </div>
 <br><br>
-<div class="container-menu">
+<div class="container-fluid">
 {{#each items as |c|}}
   <center>
-    <h1 id="{{c.id}}"><strong>{{c.name}}</strong></h1>
+    <a class="anchor" id="{{c.id}}"></a>
+    <h1><strong>{{c.name}}</strong></h1>
   </center>
   {{#each c.items_models as |i|}}
     <div class="list-group">

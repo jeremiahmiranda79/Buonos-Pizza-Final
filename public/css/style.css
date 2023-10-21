@@ -127,7 +127,7 @@ main {
   overflow: hidden;
   position: fixed;
   /* padding-top: 71px; */
-  z-index: 1;
+  z-index: 5;
   /* margin-bottom: 166px; */
   /* margin-bottom: 66px; */
 }
@@ -191,6 +191,13 @@ main {
 }
 .scrollable-tabs-container svg:hover {
   background: #333;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -104px;
+  visibility: hidden;
 }
 
 .container-menu h1 {
