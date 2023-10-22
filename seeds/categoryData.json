@@ -1,41 +1,54 @@
 [
   {
-    "name": "Pizzas"
+    "name": "Pizzas",
+    "image": "/images/s1.jpg"
   },
   {
-    "name": "Calzones"
+    "name": "Calzones",
+    "image": "/images/s2.jpg"
   },
   {
-    "name": "Strombolis"
+    "name": "Strombolis",
+    "image": "/images/s1.jpg"
   },
   {
-    "name": "Appetizers"
+    "name": "Appetizers",
+    "image": "/images/s2.jpg"
   },
   {
-    "name": "Salads"
+    "name": "Salads",
+    "image": "/images/s1.jpg"
   },
   {
-    "name": "Entrees"
+    "name": "Entrees",
+    "image": "/images/s2.jpg"
   },
   {
-    "name": "Pastas"
+    "name": "Pastas",
+    "image": "/images/s1.jpg"
   },
   {
-    "name": "HotSubs"
+    "name": "HotSubs",
+    "image": "/images/s2.jpg"
   },
   {
-    "name": "ColdSubs"
+    "name": "ColdSubs",
+    "image": "/images/s1.jpg"
   },
   {
-    "name": "SidesOrders"
+    "name": "SidesOrders",
+    "image": "/images/s2.jpg"
   },
   {
-    "name": "Desserts"
+    "name": "Desserts",
+    "image": "/images/s1.jpg"
   },
   {
-    "name": "Beverages"
+    "name": "Beverages",
+    "image": "/images/s2.jpg"
   },
   {
-    "name": "NY_Specialties"
+    "name": "NY_Specialties",
+    "image": "/images/s1.jpg"
   }
 ]

@@ -38,6 +38,42 @@ router.get('/menu', async (req, res) => {
 	}
 });
 
+router.get('/menu/:itemId', async (req, res) => {
+	try {
+		const item = await Items.findByPk(req.params.itemId, {
+			include: [
+				{ model: Categories}
+			]
+		});
+
+		const serializedItem = item.get({ plain: true});
+
+		function removeNull(_serializedItem) {
+			return Object.fromEntries(
+				Object.entries(_serializedItem)
+					.filter(([_, value]) => value != null)
+					.map(([key, value]) => [
+						key,
+						value === Object(value) ? removeNull(value) : value,
+					]),
+			)
+		}
+
+		const result = removeNull(serializedItem);
+		console.log(result);
+
+		res.status(200).render('item-details', {
+				item: result,
+				// loggedIn: req.session.loggedIn,
+				// name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+        res.status(500).json(error);
+	}
+});
+
 router.get('/yelp', async (req, res) => {
 	res.render('yelp', {
 			

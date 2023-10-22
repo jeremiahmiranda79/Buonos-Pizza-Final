@@ -20,4 +20,20 @@ router.get('/items', async (req, res) => {
   }
 });
 
+router.get('/:itemId', async (req, res) => {
+  try {
+    const item = await Items.findByPk(req.params.itemId, {
+      include: [
+        { model: Categories }
+      ]
+    });
+    
+    res.status(200).json(item);
+  } 
+  catch (error) {
+    console.log(error);
+    res.status(500).json(error);
+  }
+})
+
 module.exports = router;

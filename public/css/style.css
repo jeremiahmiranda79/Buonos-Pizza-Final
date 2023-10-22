@@ -115,7 +115,7 @@ main {
   color: gray;
 }
 
-/* menu */
+/* menu page*/
 .scrollable-tabs-container {
   /* margin-top: 71px; */
   font-family: 'Times New Roman', Times, serif;
@@ -205,6 +205,14 @@ main {
   color: var(--buonos-red);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+.category-image {
+  height: 115px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 6px 6px 8px var(--shadow);
+}
+
 .container-menu .list-group {
   margin-bottom: 10px;
   margin-left: 10px;
