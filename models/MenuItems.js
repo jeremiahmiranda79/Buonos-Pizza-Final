@@ -1,13 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
 
-class Items extends Model {};
+class MenuItems extends Model {};
 
-const categories_model = 'categories_model';
-const id = 'id'; 
-const items_model = 'items_model';
-
-Items.init(
+MenuItems.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -26,8 +22,8 @@ Items.init(
     categoryId: {
       type: DataTypes.INTEGER,
       references: {
-        model: categories_model,
-        key: id
+        model: 'categories_model',
+        key: 'id'
       }
     }
   },
@@ -35,8 +31,8 @@ Items.init(
     sequelize: connection,
     timestamps: true,
     freezeTableName: true,
-    modelName: items_model
+    modelName: 'menuitems_model'
   }
 );
 
-module.exports = Items;
+module.exports = MenuItems;

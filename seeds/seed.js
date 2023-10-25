@@ -1,15 +1,17 @@
 const sequelize = require('../config/connection');
 
-const { Categories, Items } = require('../models');
+const { Categories, MenuItems, Toppings } = require('../models');
 
 const categoryData = require('./categoryData.json');
-const itemData = require('./itemData.json');
+const menuItemData = require('./menuItemData.json');
+const toppingData = require('./toppingData.json');
 
 const seedData = async () => {
     await sequelize.sync({ force:true });
 
     await Categories.bulkCreate(categoryData);
-    await Items.bulkCreate(itemData);
+    await MenuItems.bulkCreate(menuItemData);
+    await Toppings.bulkCreate(toppingData);
 
     console.log('All seeded!')
     process.exit(0);

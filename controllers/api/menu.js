@@ -2,17 +2,18 @@ const router = require('express').Router();
 
 const sequelize = require('../../config/connection');
 
-const { Categories, Items } = require('../../models');
+const { Categories, MenuItems } = require('../../models');
 
-router.get('/items', async (req, res) => {
+// TODO
+router.get('/', async (req, res) => {
   try {
-    const items = await Categories.findAll({
-      include: [{
-        model: Items
-      }]
+    const menu = await Categories.findAll({
+      include: [
+        { model: MenuItems }
+      ]
     });
 
-    res.status(200).json(items);
+    res.status(200).json(menu);
   }
   catch (error) {
     console.log(error);
@@ -20,15 +21,15 @@ router.get('/items', async (req, res) => {
   }
 });
 
-router.get('/:itemId', async (req, res) => {
+router.get('/:menuitemsId', async (req, res) => {
   try {
-    const item = await Items.findByPk(req.params.itemId, {
+    const menuItem = await MenuItems.findByPk(req.params.menuitemsId, {
       include: [
-        { model: Categories }
+        { model: Categories },
       ]
     });
     
-    res.status(200).json(item);
+    res.status(200).json(menuItem);
   } 
   catch (error) {
     console.log(error);

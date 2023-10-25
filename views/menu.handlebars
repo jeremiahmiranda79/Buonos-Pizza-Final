@@ -28,7 +28,7 @@
     <h1><strong>{{c.name}}</strong></h1>
     <img src="{{c.image}}" alt="food-image" class="category-image">
   </center>
-  {{#each c.items_models as |i|}}
+  {{#each c.menuitems_models as |i|}}
     <div class="list-group">
       <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
       {{!-- <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">button</button> --}}

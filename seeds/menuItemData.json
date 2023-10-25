@@ -5,6 +5,12 @@
     "categoryId": 1
   },
 
+  { "name": "Neapolitan Pizza",
+      "description": "Naples-style pizza, thin crust made with tomato sauce and mozzarella cheese",
+      "categoryId": 1
+      
+    },
+
   {
     "name": "Wingza", 
     "description": "Pizza with wings on it", 

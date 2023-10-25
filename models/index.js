@@ -1,15 +1,14 @@
 const Categories = require('./Categories');
-const Items = require('./Items');
+const MenuItems = require('./MenuItems');
+const Toppings = require('./Toppings');
 
-// Items to Categories
-const categoryId = 'categoryId';
-
-Categories.hasMany(Items, {
-  foreignKey: categoryId
+// MenuItems to Categories
+Categories.hasMany(MenuItems, {
+  foreignKey: 'categoryId'
 })
 
-Items.belongsTo(Categories, {
-  foreignKey: categoryId
+MenuItems.belongsTo(Categories, {
+  foreignKey: 'categoryId'
 })
 
-module.exports = { Categories, Items };
+module.exports = { Categories, MenuItems, Toppings };

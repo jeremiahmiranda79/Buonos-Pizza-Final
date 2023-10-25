@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
 
-class Categories extends Model {};
+class Toppings extends Model {};
 
-Categories.init(
+Toppings.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -14,18 +14,14 @@ Categories.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false
-    },
-    image: {
-      type: DataTypes.STRING,
-      allowNull: false
     }
   },
   {
     sequelize: connection,
     timestamps: true,
     freezeTableName: true,
-    modelName: 'categories_model'
+    modelName: 'toppings_model'
   }
 );
 
-module.exports = Categories;
+module.exports = Toppings;
