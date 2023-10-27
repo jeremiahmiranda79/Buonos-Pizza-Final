@@ -1,9 +1,75 @@
-<h1>Hello World!!</h1>
-<h1>Hello World!!</h1>
-<h1>Hello World!!</h1>
-<h1>Hello World!!</h1>
-<h1>Hello World!!</h1>
-<h1>Hello World!!</h1>
-<h1>Hello World!!</h1>
-<h1>Hello World!!</h1>
-<h1>Hello World!!</h1>
+<div class="contact-background">
+  <div class="container-login-header">
+    <center>
+      <h1>Location</h1>
+    </center>
+  </div>
+
+  <div class="container-contact">
+    <h5>🍕Buono's Pizza LLC</h5>
+    <h5>👉1464 E Williams Field Rd Gilbert AZ 85295</h5>
+    <h5>📞480 899 1200</h5> 
+    <h5>✉️buonosgilbert@yahoo.com</h5> 
+  </div>
+
+  <div class="container-login-header">
+    <center>
+      <h1>Maps</h1>
+    </center>
+  </div>
+
+  <div class="container-contact">
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+  </div>
+
+  <div class="container-login-header">
+    <center>
+      <h1>Hours of operation</h1>
+    </center>
+  </div>
+
+  <div class="container-contact">
+    <ul>
+      <li>Sunday 12 Noon - 8 PM</li>
+      <li>Monday 11 AM - 8 PM</li>
+      <li>Tuesday 11 AM - 8 PM</li>
+      <li>Wednesday 11 AM - 9 PM</li>
+      <li>Thusrday 11 AM - 9 PM</li>
+      <li>Friday 11 AM - 10 PM</li>
+      <li>Saturday 11 AM - 10 PM</li>
+    </ul>
+  </div>
+
+  <div class="container-login-header">
+    <center>
+      <h1>Thank you!</h1>
+    </center>
+  </div>
+
+  <div class="container-contact">
+    <h3>We thank you for supporting our locally owned and operated pizzeria</h3>
+  </div>
+
+  <center>
+    <ul class="nav flex-row social">
+      <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
+      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="btn"><i class=" icon fa fa-yelp"></i></a>
+    </ul>
+    <h3 class="copy-right">	&copy; 2023 buonos pizza</h3>
+  </center>
+
+</div>
+
+<script>
+  function myMap() {
+    var mapProp= {
+      center: new google.maps.LatLng(33.30722 ,-111.75850),
+      zoom: 20,
+    };
+
+    var map = new google.maps.Map(document.getElementById("googleMap"),   mapProp);
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu0jYubSfxYv4YY6qS07FaDdR1mBRpoZ0&callback=myMap"></script>

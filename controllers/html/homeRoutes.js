@@ -9,18 +9,6 @@ router.get('/', async (req, res) => {
 	});
 });
 
-router.get('/location', async (req, res) => {
-	res.render('location', {
-
-	});
-});
-
-router.get('/contact', async (req, res) => {
-	res.render('contact', {
-
-	});
-});
-
 router.get('/menu', async (req, res) => {
 	try {
 		const items = await Categories.findAll({
@@ -61,6 +49,26 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 		res.status(500).json(error);
 	}
 });
+
+
+router.get('/location', async (req, res) => {
+	res.render('location', {
+
+	});
+});
+
+router.get('/hours', async (req, res) => {
+	res.render('hours', {
+
+	});
+});
+
+router.get('/contact', async (req, res) => {
+	res.render('contact', {
+
+	});
+});
+
 
 router.get('/about', async (req, res) => {
 	res.render('about', {

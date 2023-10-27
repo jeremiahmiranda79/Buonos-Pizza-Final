@@ -57,7 +57,6 @@ leftArrow.addEventListener('click', () => {
 tabList.addEventListener('scroll', manageIcons);
 
 
-
 // $('.scrollable-tabs-container a').click(function(e) {
 //   e.preventDefault();
 //   console.log("scrolling")

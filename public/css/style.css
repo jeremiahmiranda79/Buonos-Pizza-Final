@@ -40,7 +40,7 @@ main {
   margin-top: 60px;
   margin-bottom: 82px;
   background-color: var(--background-1);
-}
+} 
 
 /* FOOTER */
 .nav-icon {
@@ -269,3 +269,37 @@ main {
   box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 4px;
 }
+
+/* .contact-background {
+  height: 800px;
+  padding-top: 30px;
+} */
+
+/* Login */
+.container-login-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container-login-header h1 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 40px;
+}
+
+.container-login {
+  background: var(--buonos-white);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 15px;
+  box-shadow: 2px 2px 4px var(--shadow);
+  border-radius: 4px;
+}
+
+/* .login-background {
+  height: 800px;
+  padding-top: 20px;
+} */
