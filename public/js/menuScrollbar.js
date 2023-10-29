@@ -27,7 +27,8 @@ const manageIcons = () => {
   if (tabList.scrollLeft >= 20) {
     leftArrowContainer.classList.add('active');
   }
-  else {
+  else 
+  {
     leftArrowContainer.classList.remove('active');
   }
 
@@ -36,7 +37,8 @@ const manageIcons = () => {
   if (tabList.scrollLeft >= maxScrollValue) {
     rightArrowContainer.classList.remove('active');
   }
-  else {
+  else 
+  {
     rightArrowContainer.classList.add('active');
   }
 

@@ -25,7 +25,7 @@ MenuItems.init(
         model: 'categories_model',
         key: 'id'
       }
-    }
+    },
   },
   {
     sequelize: connection,

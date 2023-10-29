@@ -1,40 +1,28 @@
-<div class="login-background">
-  <div class="container-login-header">
-    <center>
-      <h1>Login</h1>
-    </center>
-  </div>
-
-
-  <div class="container-login">
-    <div class="container-fluid contact">
-      <form>
-        <div class="mb-3">
-          <label for="inputName" class="form-label">Name</label>
-          <input type="text" class="form-control" id="inputName">
-        </div>
-        <div class="mb-3">
-          <label for="inputEmail" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="inputEmail">
-        </div>
-        <div class="mb-3">
-          <label for="inputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+<form id="employeelogin">
+  <form action="#" method="post">
+    <div>
+    <label for="email" class="">Email address</label>
+    <div class="">
+      <input id="email" name="email" type="email" autocomplete="email" required class="">
     </div>
-  </div>
+    </div>
 
-  <center>
-    <ul class="nav flex-row social">
-      <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
+    <div>
+    <div class="">
+      <label for="password" class="">Password</label>
+    </div>
+    
+    <div class="">
+      <input id="password" name="password" type="password" autocomplete="current-password" required class="">
+    </div>
+    </div>
 
-      <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
+    <div>
+      <button type="submit" class="">Sign in</button>
+    </div>
 
-      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="btn"><i class=" icon fa fa-yelp"></i></a>
-    </ul>
+  </form>
+</form>
+  
 
-    <h3 class="copy-right">	&copy; 2023 buonos pizza</h3>
-  </center>
-</div>
+<script src="/js/login.js"></script>
