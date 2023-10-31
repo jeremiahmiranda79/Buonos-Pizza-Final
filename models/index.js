@@ -7,6 +7,7 @@ const Employees = require('./Employees');
 Categories.hasMany(MenuItems, {
   foreignKey: 'categoryId'
 });
+
 MenuItems.belongsTo(Categories, {
   foreignKey: 'categoryId'
 });

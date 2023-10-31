@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const sequelize = require('../../config/connection');
+// const sequelize = require('../../config/connection');
 const { Categories, MenuItems, Toppings, Employees } = require('../../models');
 const withAuth = require('../../utils/auth');
 const isAdmin = require('../../utils/admin');
@@ -27,7 +27,6 @@ router.get('/menu', async (req, res) => {
 		res.status(200).render('menu', {
 			loggedIn: req.session.loggedIn, 
 			name: req.session.name,
-
 			items: serializedItems
 		});
 	}
@@ -50,7 +49,6 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 		res.status(200).render('item-details', {
 			loggedIn: req.session.loggedIn, 
 			name: req.session.name,
-
 			item: serializedItem
 		});
 	} 
@@ -60,6 +58,46 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 	}
 });
 
+// Route to add a menu item
+router.get('/menuitems/create', withAuth, isAdmin, async (req, res) => {
+  try {
+    const categories = await Categories.findAll();
+    const menuitems = await MenuItems.findAll();
+    const cats = categories.map((cat) => cat.get({ plain: true }));
+    const items = menuitems.map((item) => item.get({ plain: true }));
+
+    res.status(200).render('create-menu-item', {
+      items, cats, loggedIn: req.session.loggedIn, name: req.session.name
+    });
+  } 
+  catch (error) {
+    console.log(error);
+    res.status(500).json(error); // 500 - internal server error
+  };
+});
+
+// Route to update a menu item
+router.get('/menuitems/update/:menuitemId', withAuth, isAdmin, async (req, res) => {
+	try {
+		const categories = await Categories.findAll();
+		const menuitem = await MenuItems.findOne({
+			where: {
+				id: req.params.menuitemId,
+			}
+		});
+
+		const cats = categories.map((cat) => cat.get({ plain: true }));
+		const item = menuitem.get({ plain: true });
+
+		res.status(200).render('update-menu-item', {
+			item, cats, loggedIn: req.session.loggedIn, name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error); // 500 - internal server error
+	};
+});
 
 router.get('/location', async (req, res) => {
 	res.status(200).render('location', {
@@ -98,6 +136,47 @@ router.get('/employee/login', async (req, res) => {
 		loggedIn: req.session.loggedIn, 
 		name: req.session.name
 	});
+});
+
+// Route to add a category
+router.get('/categories/create', withAuth, async (req, res) => {
+	try {
+		const categories = await Categories.findAll();
+		const cats = categories.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-category', {
+			cats,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error); // 500 - internal server error
+	};
+});
+
+// Route to update a category
+router.get('/categories/update/:catId', withAuth, async (req, res) => {
+	try {
+		const category = await Categories.findOne({
+			where: {
+				id: req.params.catId,
+			}
+		});
+
+		const cat = category.get({ plain: true });
+
+		res.status(200).render('update-category', {
+			cat,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error); // 500 - internal server error
+	};
 });
 
 module.exports = router;

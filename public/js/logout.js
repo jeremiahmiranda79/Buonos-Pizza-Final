@@ -8,8 +8,7 @@ const employeelogout = async() => {
     alert('User Logged Out');
     document.location.replace('/');
   } 
-  else 
-  {
+  else {
     alert(response.statusText);
   };
 };

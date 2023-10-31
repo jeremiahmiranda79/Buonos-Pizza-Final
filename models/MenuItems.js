@@ -22,7 +22,7 @@ MenuItems.init(
     categoryId: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'categories_model',
+        model: 'categories',
         key: 'id'
       }
     },
@@ -31,7 +31,7 @@ MenuItems.init(
     sequelize: connection,
     timestamps: true,
     freezeTableName: true,
-    modelName: 'menuitems_model'
+    modelName: 'menuitems'
   }
 );
 

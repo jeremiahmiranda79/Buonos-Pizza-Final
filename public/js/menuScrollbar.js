@@ -1,13 +1,8 @@
 const tabs = document.querySelectorAll('.scrollable-tabs-container a');
-
 const rightArrow = document.querySelector('.scrollable-tabs-container .right-arrow svg');
-
 const leftArrow = document.querySelector('.scrollable-tabs-container .left-arrow svg');
-
 const tabList = document.querySelector('.scrollable-tabs-container ul');
-
 const leftArrowContainer = document.querySelector('.scrollable-tabs-container .left-arrow');
-
 const rightArrowContainer = document.querySelector('.scrollable-tabs-container .right-arrow');
 
 const removeAllActiveClasses = () => {
@@ -27,8 +22,7 @@ const manageIcons = () => {
   if (tabList.scrollLeft >= 20) {
     leftArrowContainer.classList.add('active');
   }
-  else 
-  {
+  else {
     leftArrowContainer.classList.remove('active');
   }
 
@@ -37,8 +31,7 @@ const manageIcons = () => {
   if (tabList.scrollLeft >= maxScrollValue) {
     rightArrowContainer.classList.remove('active');
   }
-  else 
-  {
+  else {
     rightArrowContainer.classList.add('active');
   }
 

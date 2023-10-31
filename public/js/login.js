@@ -15,11 +15,10 @@ const employeeloginFormHandler = async(event) => {
 
     if (response.ok) {
       alert(email + ' Logged In');
-      // If successful, redirect the browser to the home page
-      document.location.replace('/employee/login');
+      // If successful, redirect the browser to the admin page
+      document.location.replace('/menu');
     } 
-    else 
-    {
+    else {
       console.log(response);
       alert(response.statusText);
     };

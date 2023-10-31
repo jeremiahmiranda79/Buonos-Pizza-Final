@@ -17,14 +17,14 @@ Categories.init(
     },
     image: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     }
   },
   {
     sequelize: connection,
     timestamps: true,
     freezeTableName: true,
-    modelName: 'categories_model'
+    modelName: 'categories'
   }
 );
 

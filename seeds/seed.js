@@ -13,7 +13,7 @@ const seedData = async () => {
     await Categories.bulkCreate(categoryData);
     await MenuItems.bulkCreate(menuItemData);
     await Toppings.bulkCreate(toppingData);
-    await Employees.bulkCreate(employeeData);
+    await Employees.bulkCreate(employeeData, { individualHooks:true });
 
     console.log('All seeded!')
     process.exit(0);

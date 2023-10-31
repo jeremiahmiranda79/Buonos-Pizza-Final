@@ -12,7 +12,8 @@
   </div>
     <li><a href="#" class="active">All</a></li>
     {{#each items as |c|}}
-    <li><a href="#{{c.id}}">{{ c.name }}</a></li>{{/each}}
+      <li><a href="#{{c.id}}">{{ c.name }}</a></li>
+    {{/each}}
   </ul>
   <div class="right-arrow active">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -21,60 +22,62 @@
   </div>
 </div>
 <br><br>
-<div class="container-menu">
-{{#each items as |c|}}
+{{#if loggedIn}}
   <center>
-    <a class="anchor" id="{{c.id}}"></a>
-    <h1><strong>{{c.name}}</strong></h1>
-    <img src="{{c.image}}" alt="food-image" class="category-image">
+    <h5>Create a category</h5>
+    <a href="/categories/create" class="active">Create new category</a>
   </center>
-  {{#each c.menuitems_models as |i|}}
-    <div class="list-group">
-      <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
-      {{!-- <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">button</button> --}}
-        <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">{{i.name}}</h5>
+{{/if}}
+{{#if loggedIn}}
+  <div class="container-menu">
+    {{#each items as |c|}}
+      <center>
+        <a class="anchor" id="{{c.id}}"></a>
+        <h1><strong>{{c.name}}</strong></h1>
+        <img src="{{c.image}}" alt="food-image" class="category-image">
+        <br>
+        <h5>Update category</h5>
+        <a href="/categories/update/{{c.id}}">Update Catagory {{ c.name }}</a>
+        <br>
+        <h5>Create menu item</h5>
+        <a href="/menuitems/create" class="active">Create new menu item</a>
+      </center>
+      <br>
+      {{#each c.menuitems as |i|}}
+        <div class="list-group">
+          <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">{{i.name}}</h5>
+            </div>
+            <p class="mb-1">{{i.description}}</p>
+            <center>
+              <a href="/menuitems/update/{{i.id}}" class="active">Update menu item</a>
+            </center>
+          </a>
         </div>
-        <p class="mb-1">{{i.description}}</p>
-        <small class="text-body-secondary">Round and thin.</small>
-      </a>
-    </div>
-  {{/each}}
-{{/each}}
-</div>
-
-{{!-- modal --}}
-{{!-- <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modal-title">My title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quia, minus totam debitis suscipit iure et repellendus repudiandae voluptatibus, aliquam beatae facilis incidunt deleniti voluptas, dignissimos fuga repellat velit consequatur.</p>
-        <label for="modal-email" class="form-label">Your email address:</label>
-        <input type="email" class="form-control" id="modal-email" placeholder="e.g.mario@example.com">
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary">Submit</button>
-      </div>
-
-    </div>
+      {{/each}}
+    {{/each}}
   </div>
-</div> --}}
+{{else}}
+  <div class="container-menu">
+    {{#each items as |c|}}
+      <center>
+        <a class="anchor" id="{{c.id}}"></a>
+        <h1><strong>{{c.name}}</strong></h1>
+        <img src="{{c.image}}" alt="food-image" class="category-image">
+      </center>
+      {{#each c.menuitems as |i|}}
+        <div class="list-group">
+          <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">{{i.name}}</h5>
+            </div>
+            <p class="mb-1">{{i.description}}</p>
+          </a>
+        </div>
+      {{/each}}
+    {{/each}}
+    </div>
+{{/if}}
 
 <script src="/js/menuScrollbar.js"></script>
-
-
-
-{{!-- <div class="scrollmenu">
-  {{#each items as |c|}}
-  <a href="#{{c.id}}">
-    <button>
-
-      {{ c.name }}
-    </button>
-  </a>
-{{/each}}
-</div> --}}

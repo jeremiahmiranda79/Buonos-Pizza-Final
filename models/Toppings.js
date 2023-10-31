@@ -20,7 +20,7 @@ Toppings.init(
     sequelize: connection,
     timestamps: true,
     freezeTableName: true,
-    modelName: 'toppings_model'
+    modelName: 'toppings'
   }
 );
 
