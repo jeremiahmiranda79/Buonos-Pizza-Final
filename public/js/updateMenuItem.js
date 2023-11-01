@@ -4,7 +4,8 @@ const updateMenuItem = async(event) => {
   const itemId = document.querySelector('input[name="item-id"]').value;
   const name = document.querySelector('#name').value.trim();
   const description = document.querySelector('#description').value.trim();
-  const categoryId = document.querySelector('#categoryId').value.trim();
+  const categoryId = document.querySelector('#categories').value;
+
   const response = await fetch(`../../api/menu/updateMenuItem/${itemId}`, {
     method: 'PUT',
     body: JSON.stringify({ name, description, categoryId }),
