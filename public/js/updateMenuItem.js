@@ -13,7 +13,6 @@ const updateMenuItem = async(event) => {
   });
 
   if (response.ok) {
-
     document.location.replace('/menu');
   } 
   else {

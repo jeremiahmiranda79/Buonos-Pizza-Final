@@ -2,15 +2,17 @@
   <div class="">
     <h2 class="">Update {{cat.name}} Category</h2>
   </div>
-  <div class="">
+
+  <div>
     <form class="" id="updateCategory">
-      <div>
+      <div class="mb-3">
         <label for="category-name" class="">Category Name</label>
         <div class="">
           <input id="name" type="text" value="{{cat.name}}" class="">
           <input type="hidden" name="cat-id" value="{{cat.id}}"/>
         </div>
       </div>
+      
       <div>
         <button type="submit" class="">Update</button>
       </div>
@@ -23,5 +25,23 @@
     </form>
   </div>
 </div>
+{{!-- <form class="" id="updateCategory">
+  <div class="container py-3">
+    <h2 class="py-3">Update {{cat.name}} Category</h2>
+    <div class="mb-3 py-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  </div>
+</form> --}}
+
+
+
 
 <script src="/js/updateCategory.js"></script>

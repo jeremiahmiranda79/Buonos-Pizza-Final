@@ -15,11 +15,16 @@
 					id="description"
 					placeholder="Menu Item Description"/>
 				</input>
-				<select class="" name="categories" 	id="categories">
-					{{#each cats as |cat|}}
-						<option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
-					{{/each}}
-				</select>
+
+				<div class="">
+					<label for="item-category" class="">Item category</label>
+					<select class="" name="categories" 	id="categories">
+						{{#each cats as |cat|}}
+							<option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
+						{{/each}}
+					</select>
+				</div>
+				
 				<button
 					type="submit"
 					class="">

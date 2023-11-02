@@ -1,29 +1,27 @@
 <form id="addCat">
   <div class="">
-    <div class="">
-      <div class="">
-        <table class="">
-          <h1 class="">Menu Categories</h1>
-            {{#each cats as |cat|}}    
-              <p>{{cat.name}}</p>           
-            {{/each}}
-        </table>       
-        <input 
-          type="text"
-          class=""
-          id="name"
-          placeholder="Add New Category"/>
-        </input>
-        <button
-          type="submit"
-          class=""
-          id="addCatButton">
-          Submit
-        </button>
-        <div>
-          <a href="/menu" id="cancelButton" class="">Cancel</a>
-        </div>
-      </div>
+    
+    <h1 class="">Menu Categories</h1>
+    <ul>
+      {{#each cats as |cat|}}  
+        <li>{{cat.name}}</li>           
+      {{/each}}
+    </ul>
+       
+    <input 
+      type="text"
+      class=""
+      id="name"
+      placeholder="Add New Category"/>
+    </input>
+    <button
+      type="submit"
+      class=""
+      id="addCatButton">
+      Submit
+    </button>
+    <div>
+      <a href="/menu" id="cancelButton" class="">Cancel</a>
     </div>
   </div>
 </form>

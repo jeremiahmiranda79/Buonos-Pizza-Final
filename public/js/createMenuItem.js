@@ -4,7 +4,7 @@ const addMenuItem = async(event) => {
   
   const name = document.querySelector('#name').value.trim();
   const description = document.querySelector('#description').value.trim();
-  const categoryId = document.querySelector('#categoryId').value.trim();
+  const categoryId = document.querySelector('#categories').value.trim();
   const response = await fetch('/api/menu/newitem', {
     method: 'POST',
     body: JSON.stringify({ name, description, categoryId }),

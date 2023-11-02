@@ -1,5 +1,4 @@
 const Sequelize = require('sequelize');
-
 // importing our hidden variables
 require('dotenv').config();
 
