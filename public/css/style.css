@@ -386,3 +386,51 @@ main {
 .create-item-background {
   height: 750px;
 }
+
+.category-dropdown-main {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.category-dropdown {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.category-dropdown select {
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  border-radius: 5px;
+}
+
+
+
+/* Update Item */
+.container-update-item-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container-update-item-header h1 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 40px;
+}
+
+.container-update-item {
+  background: var(--buonos-white);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+  /* margin-bottom: 50px; */
+  padding: 15px;
+  box-shadow: 2px 2px 4px var(--shadow);
+  border-radius: 4px;
+}
+
+.update-item-background {
+  height: 750px;
+}

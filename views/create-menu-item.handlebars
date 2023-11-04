@@ -28,9 +28,9 @@
 					<input id="description" type="text" value="{{cat.description}}" class="form-control" placeholder="Menu Item Description">
 				</div>
 
-				<div>
-					<div class="">
-						<label for="item-category" class="">Item category</label>
+				<div class="category-dropdown-main">
+					<h6>Item category *required</h6>
+					<div class="category-dropdown">
 						<select class="" name="categories" 	id="categories">
 							{{#each cats as |cat|}}
 								<option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
@@ -52,87 +52,10 @@
 						</a>
 					</div>
 				</div>
-				{{!-- <div class=""> --}}
-					{{!-- <div class=""> --}}
-						
-						{{!-- <input 
-							type="text"
-							class=""
-							id="name"
-							placeholder="Menu Item Name"/>
-						</input>
-						<input 
-							type="text"
-							class=""
-							id="description"
-							placeholder="Menu Item Description"/>
-						</input> --}}
-
-						{{!-- <div class="">
-							<label for="item-category" class="">Item category</label>
-							<select class="" name="categories" 	id="categories">
-								{{#each cats as |cat|}}
-									<option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
-								{{/each}}
-							</select>
-						</div> --}}
-						
-						{{!-- <button
-							type="submit"
-							class="btn btn-primary">
-								Create
-						</button> --}}
-					
-					{{!-- </div> --}}
-
-					{{!-- <div>
-						<a href="/menu" id="cancelButton" class="btn btn-primary">Cancel</a>
-					</div> --}}
-				{{!-- </div> --}}
 			</div>
 		</form>
 	</div>
 
 </div>
-
-{{!-- <form id="addMenuItem">
-	<div class="">
-		<div class="">
-			<div class="">
-				<h1 class="">Create a new menu item</h1>
-				<input 
-					type="text"
-					class=""
-					id="name"
-					placeholder="Menu Item Name"/>
-				</input>
-				<input 
-					type="text"
-					class=""
-					id="description"
-					placeholder="Menu Item Description"/>
-				</input>
-
-				<div class="">
-					<label for="item-category" class="">Item category</label>
-					<select class="" name="categories" 	id="categories">
-						{{#each cats as |cat|}}
-							<option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
-						{{/each}}
-					</select>
-				</div>
-				
-				<button
-					type="submit"
-					class="">
-						Create
-				</button>
-			</div>
-			<div>
-        <a href="/menu" id="cancelButton" class="">Cancel</a>
-      </div>
-		</div>
-	</div>
-</form> --}}
 
 <script src="/js/createMenuItem.js"></script>

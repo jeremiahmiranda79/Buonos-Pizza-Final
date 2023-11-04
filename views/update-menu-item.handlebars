@@ -1,4 +1,44 @@
-<div class="">
+<div class="update-item-background">
+  <div class="container-update-item-header">
+    <center>
+      <h1>Update item</h1>
+      <h4>For admin only</h4>
+    </center>
+  </div>
+
+  <div class="container-update-item">
+    <form id="updateMenuItem">
+      <div class="">
+        <label for="item-name" class="">Item name</label>
+        <input type="text" id="name" class="" value="{{item.name}}" placeholder="{{item.name}}" required>
+      </div>
+
+      <div class="">
+        <label for="item-description" class="">Item description</label>
+        <input type="text" id="description" class="" value="{{item.description}}" placeholder="{{item.description}}" required>
+      </div>
+
+      <div class="">
+        <label for="item-category" class="">Item category</label>
+        <select class="" name="categories" 	id="categories">
+          {{#each cats as |cat|}}
+            <option value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
+          {{/each}}
+        </select>
+      </div>
+
+      <input type="hidden" name="item-id" value="{{item.id}}"/>
+      <button type="submit" class="">Update</button>
+      <button id="deleteButton" data-id="{{item.id}}">Delete</button>
+
+      <div>
+        <a href="/menu" id="cancelButton" class="">Cancel</a>
+      </div>
+    </form>
+  </div>
+
+</div>
+{{!-- <div class="">
   <h2 class="">Update {{item.name}}</h2>
 </div>
 
@@ -8,10 +48,12 @@
       <label for="item-name" class="">Item name</label>
       <input type="text" id="name" class="" value="{{item.name}}" placeholder="{{item.name}}" required>
     </div>
+
     <div class="">
       <label for="item-description" class="">Item description</label>
       <input type="text" id="description" class="" value="{{item.description}}" placeholder="{{item.description}}" required>
     </div>
+
     <div class="">
       <label for="item-category" class="">Item category</label>
       <select class="" name="categories" 	id="categories">
@@ -20,13 +62,18 @@
         {{/each}}
       </select>
     </div>
+
     <input type="hidden" name="item-id" value="{{item.id}}"/>
     <button type="submit" class="">Update</button>
     <button id="deleteButton" data-id="{{item.id}}">Delete</button>
     <div>
       <a href="/menu" id="cancelButton" class="">Cancel</a>
     </div>
+
   </form>
 </div>
+</div> --}}
+
+
 
 <script src="/js/updateMenuItem.js"></script>
