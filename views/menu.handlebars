@@ -24,8 +24,9 @@
 <br><br>
 {{#if loggedIn}}
   <center>
-    <h5>Create a category</h5>
-    <a href="/categories/create" class="active">Create new category</a>
+    {{!-- <h5>Create a category</h5> --}}
+    <a href="/categories/create" class="active btn btn-primary">Create new category</a>
+    <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a>
   </center>
 {{/if}}
 {{#if loggedIn}}
@@ -36,11 +37,11 @@
         <h1><strong>{{c.name}}</strong></h1>
         <img src="{{c.image}}" alt="food-image" class="category-image">
         <br>
-        <h5>Update category</h5>
-        <a href="/categories/update/{{c.id}}">Update Catagory {{ c.name }}</a>
-        <br>
-        <h5>Create menu item</h5>
-        <a href="/menuitems/create" class="active">Create new menu item</a>
+        {{!-- <h5>Update category</h5> --}}
+        <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Update Catagory {{ c.name }}</a>
+        {{!-- <br> --}}
+        {{!-- <h5>Create menu item</h5> --}}
+        {{!-- <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a> --}}
       </center>
       <br>
       {{#each c.menuitems as |i|}}
@@ -51,7 +52,7 @@
             </div>
             <p class="mb-1">{{i.description}}</p>
             <center>
-              <a href="/menuitems/update/{{i.id}}" class="active">Update menu item</a>
+              <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item</a>
             </center>
           </a>
         </div>

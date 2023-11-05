@@ -35,6 +35,12 @@ body, html {
   padding: 3px;
 }
 
+.btn {
+  box-shadow: 2px 2px 4px var(--shadow);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /* MAIN */
 main {
   margin-top: 60px;
@@ -270,11 +276,6 @@ main {
   border-radius: 4px;
 }
 
-/* .contact-background {
-  height: 800px;
-  padding-top: 30px;
-} */
-
 /* Login */
 .container-login-header {
   padding-top: 25px;
@@ -293,7 +294,6 @@ main {
   margin-right: 15px;
   margin-left: 15px;
   margin-top: 50px;
-  /* margin-bottom: 50px; */
   padding: 15px;
   box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 4px;
@@ -321,14 +321,13 @@ main {
   margin-right: 15px;
   margin-left: 15px;
   margin-top: 50px;
-  /* margin-bottom: 50px; */
   padding: 15px;
   box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 4px;
 }
 
 .update-category-background {
-  height: 665px;
+  height: 750px;
 }
 
 /* Create Category */
@@ -349,7 +348,6 @@ main {
   margin-right: 15px;
   margin-left: 15px;
   margin-top: 5px;
-  /* margin-bottom: 50px; */
   padding: 15px;
   box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 4px;
@@ -377,7 +375,6 @@ main {
   margin-right: 15px;
   margin-left: 15px;
   margin-top: 5px;
-  /* margin-bottom: 50px; */
   padding: 15px;
   box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 4px;
@@ -425,7 +422,6 @@ main {
   margin-right: 15px;
   margin-left: 15px;
   margin-top: 5px;
-  /* margin-bottom: 50px; */
   padding: 15px;
   box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 4px;

@@ -9,14 +9,15 @@
 	<div class="container-create-item">
 		<form id="addMenuItem">
 			<div class="container py-3">
+
 				<h1 class="">Create a new menu item</h1>
 
 				<div class="mb-3 py-3">
           <label for="menu-item-name" class="form-label">
-						Menu item Name
+						Menu item name
 					</label>
 
-          <input id="name" type="text" value="{{cat.name}}" class="form-control" placeholder="Menu Item Description">
+          <input id="name" type="text" value="{{cat.name}}" class="form-control" placeholder="Menu Item Name...">
           <input type="hidden" name="cat-id" value="{{cat.id}}"/>
         </div>
 
@@ -25,7 +26,7 @@
 						Menu item description
 					</label>
 
-					<input id="description" type="text" value="{{cat.description}}" class="form-control" placeholder="Menu Item Description">
+					<input id="description" type="text" value="{{cat.description}}" class="form-control" placeholder="Menu Item Description...">
 				</div>
 
 				<div class="category-dropdown-main">
@@ -52,6 +53,7 @@
 						</a>
 					</div>
 				</div>
+
 			</div>
 		</form>
 	</div>

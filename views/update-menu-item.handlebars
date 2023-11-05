@@ -6,74 +6,58 @@
     </center>
   </div>
 
+  <div class="">
+    
+  </div>
+
   <div class="container-update-item">
     <form id="updateMenuItem">
-      <div class="">
-        <label for="item-name" class="">Item name</label>
-        <input type="text" id="name" class="" value="{{item.name}}" placeholder="{{item.name}}" required>
-      </div>
+      <div class="container py-3">
 
-      <div class="">
-        <label for="item-description" class="">Item description</label>
-        <input type="text" id="description" class="" value="{{item.description}}" placeholder="{{item.description}}" required>
-      </div>
+        <h1 class="">Update ({{item.name}})</h1>
 
-      <div class="">
-        <label for="item-category" class="">Item category</label>
-        <select class="" name="categories" 	id="categories">
-          {{#each cats as |cat|}}
-            <option value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
-          {{/each}}
-        </select>
-      </div>
+        <div class="mb-3 py-3">
+          <label for="menu-item-name" class="form-label">
+						Item name
+					</label>
 
-      <input type="hidden" name="item-id" value="{{item.id}}"/>
-      <button type="submit" class="">Update</button>
-      <button id="deleteButton" data-id="{{item.id}}">Delete</button>
+          <input id="name" type="text" value="{{item.name}}" class="form-control" placeholder="{{item.name}}" required>
+        </div>
 
-      <div>
-        <a href="/menu" id="cancelButton" class="">Cancel</a>
+        <div class="mb-3 py-3">
+          <label for="item-description" class="form-label">
+            Item description
+          </label>
+
+          <input type="text" id="description" class="form-control" value="{{item.description}}" placeholder="{{item.description}}" required>
+        </div>
+
+        <div class="category-dropdown-main">
+					<h6>Item category *required</h6>
+					<div class="category-dropdown">
+						<select class="" name="categories" 	id="categories">
+							{{#each cats as |cat|}}
+								<option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
+							{{/each}}
+						</select>
+					</div>
+				</div>
+
+        <div class="d-flex justify-content-evenly">
+          <input type="hidden" name="item-id" value="{{item.id}}"/>
+          <button type="submit" class="btn btn-primary">Update</button>
+          <button class="btn btn-primary" id="deleteButton" data-id="{{item.id}}">Delete</button>
+					<div>
+						<a href="/menu" id="cancelButton" class="btn btn-primary">
+							Cancel
+						</a>
+					</div>
+			  </div>
+			</div>
       </div>
     </form>
   </div>
 
 </div>
-{{!-- <div class="">
-  <h2 class="">Update {{item.name}}</h2>
-</div>
-
-<div class="">
-  <form id="updateMenuItem">
-    <div class="">
-      <label for="item-name" class="">Item name</label>
-      <input type="text" id="name" class="" value="{{item.name}}" placeholder="{{item.name}}" required>
-    </div>
-
-    <div class="">
-      <label for="item-description" class="">Item description</label>
-      <input type="text" id="description" class="" value="{{item.description}}" placeholder="{{item.description}}" required>
-    </div>
-
-    <div class="">
-      <label for="item-category" class="">Item category</label>
-      <select class="" name="categories" 	id="categories">
-        {{#each cats as |cat|}}
-          <option value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
-        {{/each}}
-      </select>
-    </div>
-
-    <input type="hidden" name="item-id" value="{{item.id}}"/>
-    <button type="submit" class="">Update</button>
-    <button id="deleteButton" data-id="{{item.id}}">Delete</button>
-    <div>
-      <a href="/menu" id="cancelButton" class="">Cancel</a>
-    </div>
-
-  </form>
-</div>
-</div> --}}
-
-
 
 <script src="/js/updateMenuItem.js"></script>
