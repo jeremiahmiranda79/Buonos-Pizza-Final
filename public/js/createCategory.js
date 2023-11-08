@@ -2,9 +2,12 @@
 const addCat = async(event) => {
 	event.preventDefault();
 	const name = document.querySelector('#name').value.trim();
+	// const image = document.querySelector('#image').value.true();
+	const image = document.querySelector('#image').value;
+
 	const response = await fetch('/api/menu/newcategory', {
 		method: 'POST',
-		body: JSON.stringify({ name }),
+		body: JSON.stringify({ name, image }),
 		headers: { 'Content-Type': 'application/json' },
 	});
 

@@ -4,9 +4,11 @@ const updateCategory = async(event) => {
   const catId = document.querySelector('input[name="cat-id"]').value;
   const name = document.querySelector('#name').value.trim();
 
+  const image = document.querySelector('#image').value;
+
   const response = await fetch(`../../api/menu/updateCategory/${catId}`, {
     method: 'PUT',
-    body: JSON.stringify({ name }),
+    body: JSON.stringify({ name, image }),
     headers: { 'Content-Type': 'application/json' },
   });
 
@@ -37,4 +39,5 @@ const deleteCategory = async(event) => {
 };
 
 document.querySelector('#updateCategory').addEventListener('submit', updateCategory);
+
 document.querySelector('#deleteButton').addEventListener('click', deleteCategory);

@@ -33,6 +33,14 @@
               id="name"
               placeholder="Add New Category"/>
             </input>
+
+            <label for="image" class="form-label">Choose an image:</label>
+          <select id="image" name="image" class="form-select">
+            {{#each imgs as |img|}}
+              <option value="{{img.url}}">{{img.name}}</option>
+              {{!-- <option value="/images/s1.jpg" selected>Image 1</option> --}}
+            {{/each}}
+          </select>
           </div>
            
           <div class="d-flex justify-content-evenly">
@@ -43,7 +51,7 @@
               Submit
             </button>
             <div>
-              <a href="/menu" id="cancelButton" class="btn btn-primary">Cancel</a>
+              <a href="/menu" id="cancelButton" class="btn btn-warning">Cancel</a>
             </div>
           </div>  
         </div>
@@ -51,36 +59,5 @@
     </div>
   </div>
 </div>
-
-
-
-
-{{!-- <form id="addCat">
-  <div class="">
-    
-    <h1 class="">Menu Categories</h1>
-    <ul>
-      {{#each cats as |cat|}}  
-        <li>{{cat.name}}</li>           
-      {{/each}}
-    </ul>
-       
-    <input 
-      type="text"
-      class=""
-      id="name"
-      placeholder="Add New Category"/>
-    </input>
-    <button
-      type="submit"
-      class=""
-      id="addCatButton">
-      Submit
-    </button>
-    <div>
-      <a href="/menu" id="cancelButton" class="">Cancel</a>
-    </div>
-  </div>
-</form> --}}
 
 <script src="/js/createCategory.js"></script>

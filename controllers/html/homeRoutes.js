@@ -1,6 +1,6 @@
 const router = require('express').Router();
 // const sequelize = require('../../config/connection');
-const { Categories, MenuItems, Toppings, Employees } = require('../../models');
+const { Categories, MenuItems, Toppings, Employees, Images } = require('../../models');
 const withAuth = require('../../utils/auth');
 const isAdmin = require('../../utils/admin');
 
@@ -144,8 +144,12 @@ router.get('/categories/create', withAuth, async (req, res) => {
 		const categories = await Categories.findAll();
 		const cats = categories.map((x) => x.get({ plain: true }));
 
+		const images = await Images.findAll();
+		const imgs = images.map((img) => img.get({ plain: true }));
+
 		res.status(200).render('create-category', {
 			cats,
+			imgs,
 			loggedIn: req.session.loggedIn,
 			name: req.session.name
 		});
@@ -167,10 +171,14 @@ router.get('/categories/update/:catId', withAuth, async (req, res) => {
 
 		const cat = category.get({ plain: true });
 
+		const images = await Images.findAll();
+		const imgs = images.map((img) => img.get({ plain: true }));
+
 		res.status(200).render('update-category', {
 			cat,
+			imgs,
 			loggedIn: req.session.loggedIn,
-			name: req.session.name
+			name: req.session.name,
 		});
 	} 
 	catch (error) {

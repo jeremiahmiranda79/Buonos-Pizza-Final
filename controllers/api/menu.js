@@ -39,7 +39,8 @@ router.get('/:menuitemsId', async (req, res) => {
 router.post('/newcategory', async (req, res) => {
   try {
     const newCategory = await Categories.create({
-      name: req.body.name
+      name: req.body.name,
+      image: req.body.image
     });
 
     res.status(201).json(newCategory);
