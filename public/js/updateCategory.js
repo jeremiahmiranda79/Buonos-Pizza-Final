@@ -22,20 +22,25 @@ const updateCategory = async(event) => {
 
 // Functionality for Delete button as well
 const deleteCategory = async(event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
-    const response = await fetch(`/api/menu/deleteCategory/${id}`, {
-      method: 'DELETE',
-    });
-    
-    if (response.ok) {
-      alert('Are you sure you want to delete this category and all things related to it? This action cannot be undone.');
-      document.location.replace('/menu');
-    } 
-    else {
-      alert(response.statusText);
+  // confirm("confirm!");
+  if (confirm("Are you sure you want to delete this category and all things related to it? This action cannot be undone!!") == true) {
+    if (event.target.hasAttribute('data-id')) {
+      const id = event.target.getAttribute('data-id');
+      const response = await fetch(`/api/menu/deleteCategory/${id}`, {
+        method: 'DELETE',
+      });
+  
+      if (response.ok) {
+        document.location.replace('/menu');
+      } 
+      else {
+        alert(response.statusText);
+      };
     };
-  };
+  } 
+  else {
+    document.location.replace('/menu');
+  }
 };
 
 document.querySelector('#updateCategory').addEventListener('submit', updateCategory);
