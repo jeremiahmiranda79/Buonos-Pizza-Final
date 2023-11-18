@@ -28,6 +28,9 @@
     <a href="/categories/create" class="active btn btn-primary">Create new category</a>
     {{!-- <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a> --}}
   </center>
+  <center>
+    <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a>
+  </center>
 {{/if}}
 {{#if loggedIn}}
   <div class="container-menu">
@@ -38,7 +41,7 @@
         <img src="{{c.image}}" alt="food-image" class="category-image">
         <br>
         <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Update catagory ({{c.name}})</a>
-        <a href="/menuitems/create" class="active btn btn-primary">Create new menu item in category ({{c.name}})</a>
+        {{!-- <a href="/menuitems/create" class="active btn btn-primary">Create new menu item in category ({{c.name}})</a> --}}
         {{!-- <button id="deleteButton" data-id="{{cat.id}}" class="btn btn-danger">Delete ({{c.name}})</button> --}}
       </center>
       <br>

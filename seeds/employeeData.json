@@ -9,28 +9,28 @@
   {
     "first_name":"Jimmy",
     "last_name":"Pante",
-    "admin":false,
+    "admin":true,
     "email":"jimmy@pante.com",
     "password":"password"
   },
   {
     "first_name":"James",
     "last_name":"Pante",
-    "admin":false,
+    "admin":true,
     "email":"james@pante.com",
     "password":"password"
   },
   {
     "first_name":"Shelly",
     "last_name":"Pante",
-    "admin":false,
+    "admin":true,
     "email":"shelly@pante.com",
     "password":"password"
   },
   {
     "first_name":"Dave",
     "last_name":"Goode",
-    "admin":false,
+    "admin":true,
     "email":"dave@goode.com",
     "password":"password"
   }

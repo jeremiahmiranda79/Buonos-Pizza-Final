@@ -1,82 +1,487 @@
 [
   {
-    "name": "Neapolitan Cheese Pizza", 
-    "description": "Pizza with cheese, 18 inches",
+    "name": "Napolitana", 
+    "description": "Neapolitan-style; a thin, round crust, topped with fresh San Marzano tomato sauce, mozzarella cheese, & oregano. Then fire stone baked.",
+    "categoryId": 1
+  },
+  {
+    "name": "Siciliana",
+    "description": "Sicilian-style; a thick, rectangular Focaccia(flat leavened oven baked Italian bread) crust. Topped with fresh San Marzano tomato sauce, mozzarella cheese, & oregano.",
+    "categoryId": 1
+  },
+  {
+    "name": "Bianca",
+    "description": "Neapolitan-style; a thin, round crust, topped with a blend of garlic butter, fresh ricotta, mozzarella cheese. Then fire stone baked.",
     "categoryId": 1
   },
 
   {
-    "name": "Wingza", 
-    "description": "Pizza with wings on it", 
-    "categoryId": 1
+    "name": "Neapolitan Slice",
+    "description": "Single slice of a 20 inch Neapolitan-style; a thin, round crust, topped with fresh San Marzano tomato sauce, mozzarella cheese, oregano. Then fire stone baked.",
+    "categoryId": 2
   },
-
   {
-    "name": "Neapolitan Cheese Slice", 
-    "description": "thin, Toppings on slices .75 each", 
-    "categoryId": 1
+    "name": "Sicilian Slice",
+    "description": "Single slice of a 20 inch Sicilian-style; a thick, rectangular Focaccia(flat leavened oven baked Italian bread) crust. Topped with fresh San Marzano tomato sauce, mozzarella cheese, & oregano.",
+    "categoryId": 2
   },
-
   {
-    "name": "Sicilian Cheese Slice", 
-    "description": "Toppings on slices .75 each", 
-    "categoryId": 1
-  },
-
-  {
-    "name": "Small Calzone", 
-    "description": "serves one", 
-    "categoryId": 2 
-  },
-
-  {
-    "name": "Large Calzone", 
-    "description": "serves 2-3", 
+    "name": "Bianca Slice",
+    "description": "Single slice of a 20 inch Neapolitan-style; a thin, round crust, topped with a blend of garlic butter, fresh ricotta, mozzarella cheese. Then fire stone baked.",
     "categoryId": 2
   },
 
   {
-    "name": "Sausage, Peppers, Onions and Mozzarella Stromboli",
-    "description": "rolled calzone", 
+    "name": "Grandma Pie",
+    "description": "Long Island(NY)-style; a rustic rectangular pan pizza crust, topped with a blend of mozzarella fresca, mozzarella, & garlic. Then fire stone baked. Finaly, finished with San Marzano tomato & basil purees, plus grated Parmesan cheese.",
+    "categoryId": 3
+  },
+  {
+    "name": "Margherita Buono",
+    "description": "Neapolitan-style; a thin, round crust, topped with mozzarella fresca & olive oil. Then fire stone baked. Finaly, finished with San Marzano tomato & basil purees.",
+    "categoryId": 3
+  },
+  {
+    "name": "Meat Lover",
+    "description": "Neapolitan-style; a thin, round crust, topped with fresh San Marzano tomato sauce, pepperoni, sausage, meatball, bacon, mozzarella cheese, & oregano. Then fire stone baked.",
+    "categoryId": 3
+  },
+  {
+    "name": "Vegetarian",
+    "description": "Neapolitan-style; a thin, round crust, topped with fresh San Marzano tomato sauce, mushrooms, green bell peppers, onions, mozzarella cheese, & oregano. Then fire stone baked.",
+    "categoryId": 3
+  },
+  {
+    "name": "Works",
+    "description": "Neapolitan-style; a thin, round crust, topped with fresh San Marzano tomato sauce, pepperoni, sausage, mushroom, green bell peppers, onions, mozzarella cheese, & oregano. Then fire stone baked.",
+    "categoryId": 3
+  },
+  {
+    "name": "Baked Ziti",
+    "description": "Neapolitan-style; a thin, round crust, topped with fresh San Marzano tomato sauce, ricotta, ziti pasta, mozzarella cheese, & oregano. Then fire stone baked.",
     "categoryId": 3
   },
 
   {
-    "name": "Meatballs, Marinara and Mozzarella Stromboli", 
-    "description": "rolled calzone", 
-    "categoryId": 3
-  },
-
-  {
-    "name": "Sausage Roll", 
-    "description": "(New Yorks Famous) A Tasty Blend of Sausage , Peppers, Onions and Cheese “rolled” & baked in our own Pizza Dough", 
-    "categoryId": 3
-  },
-
-  {
-    "name": "French Fries", 
-    "description": "fries",
+    "name": "Gluten Free",
+    "description": "Gluten free-style; a thin, round 12 inch pizza crust that is a combination of gluten free flours and starches like rice flour, almond flour, potato starch, and tapioca starch.",
     "categoryId": 4
   },
   {
-    "name": "Garlic Bread", 
-    "description": "garlic bread", 
-    "categoryId": 4
-  },
-  {
-    "name": "Wings", 
-    "description": "Hot, Medium, Mild, Honey Hot, Honey, BBQ or BBQ; Side of Ranch or Blue Cheese; $.75 for each additional dressing; 6 for $7.25 or 10 for $13.99",
+    "name": "Cauliflower",
+    "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, low-carb and keto pizza recipe. It's a simple blend of cauliflower, eggs, cheese, and a few spices that's flattened and baked into a golden crust.",
     "categoryId": 4
   },
 
   {
-    "name": "Small Caesar Salad", 
-    "description": "Romaine Lettuce, Croutons, Shredded Parmesan & Caesar Dressing", 
-    "categoryId": 5
+    "name": "Calzone",
+    "description": "Neapolitan-style; an Italian turnover, made with leavened dough and folded. Stuffed with mozzarella and ricotta cheeses. Then fire stone baked.",
+    "categoryId": 5 
+  },
+
+  {
+    "name": "Italian",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with(Boar's Head) salami, capocollo, soppressata, & provolone cheese. Then fire stone baked.",
+    "categoryId": 6
   },
   {
-    "name": "Caprese Salad", 
-    "description": " Fresh Mozzarella, Tomatoes, Basil,Olive Oil &  Balsamic Glaze", 
-    "categoryId": 5
+    "name": "Sausage, Onion, & Pepper",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with sausage, onions, peppers, and mozzarella cheese. Then fire stone baked.",
+    "categoryId": 6
+  },
+
+  {
+    "name": "Meatball Parmesan",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with meatballs, marinara, and mozzarella cheese. Then fire stone baked.",
+    "categoryId": 6
+  },
+  {
+    "name": "Eggplant Parmesan",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with breaded eggplant, marinara, and mozzarella cheese. Then fire stone baked.",
+    "categoryId": 6
+  },
+  {
+    "name": "Chicken Parmesan",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with breaded chicken, marinara, and mozzarella cheese. Then fire stone baked.",
+    "categoryId": 6
+  },
+  {
+    "name": "Meat Lover Parmesan",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with meatballs, sausage, pepperoni, marinara, and mozzarella cheese. Then fire stone baked.",
+    "categoryId": 6
+  },
+
+  {
+    "name": "Sausage Roll",
+    "description": "NYC-style; a blend of sausage, onions, peppers, and mozzarella cheese.  Rolled in a light pizza dough. Brushed with garlic herb butter. Then fire stone baked.",
+    "categoryId": 7
+  },
+
+  {
+    "name": "Garlic Bread",
+    "description": "An Italian baguette brushed with garlic herb butter and lightly toasted.",
+    "categoryId": 8
+  },
+  {
+    "name": "Sicilian Garlic Bread",
+    "description": "An Italian baguette brushed with garlic herb butter, then topped with mozzarella cheese. Then lightly toasted.",
+    "categoryId": 8
+  },
+  {
+    "name": "Meatballs & Ricotta(2)",
+    "description": "Twin Italian style 2oz meatballs accompanied by marinara sauce, ricotta & parmesan cheese.",
+    "categoryId": 8
+  },
+  {
+    "name": "Meatball Sliders(5)",
+    "description": "Five crostini's topped with our meatballs, marinara sauce, oregenao, & mozzarella cheese.",
+    "categoryId": 8
+  },
+  {
+    "name": "Fries",
+    "description": "Tossed with salt, black pepper, garlic seasoning, oregano, and parsley.",
+    "categoryId": 8
+  },
+  {
+    "name": "Pepperoni Pizza Fries",
+    "description": "Our seasoned French fries baked with pepperoni, mozzarella cheese, & oregano. Then finished with marinara sauce.",
+    "categoryId": 8
+  },
+  {
+    "name": "NJ Style Disco Fries",
+    "description": "NJ Diner-style; Our seasoned French fries baked with mozzarella cheese. Then topped with a classic brown chicken gravy & parsley.",
+    "categoryId": 8
+  },
+  {
+    "name": "Fried Mushrooms",
+    "description": "Fresh mushrooms, coated in a light and crispy seasoned batter, then deep fried to golden brown perfection. Served with buttermilk ranch.",
+    "categoryId": 8
+  },
+  {
+    "name": "Fried Zucchini",
+    "description": "Fresh zucchini sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with buttermilk ranch.",
+    "categoryId": 8
+  },
+  {
+    "name": "Fried Mozzarella Sticks(6)",
+    "description": "Whole milk mozzarella sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce.",
+    "categoryId": 8
+  },
+  {
+    "name": "Fried Ravioli(6)",
+    "description": "Half a dozen riccota stuffed ravioli's, lightly Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinar sauce.",
+    "categoryId": 8
+  },
+  {
+    "name": "Traditional Chicken Wings",
+    "description": "Bone-in fried chicken wings tossed in your choice of sauce. Served with celery sticks, and choice of dressing.",
+    "categoryId": 8
+  },
+  {
+    "name": "Boneless Chicken Wings",
+    "description": "Boneless fried chicken pieces tossed in your choice of sauce. Served with celery sticks, and choice of dressing.",
+    "categoryId": 8
+  },
+
+  {
+    "name": "Caesar Salad",
+    "description": "Romaine lettuce, Italian style croutons, Romaine style Caesar dressing, & parmesan cheese.",
+    "categoryId": 9
+  },
+  {
+    "name": "House Salad",
+    "description": "Romaine lettuce, tomato, onion, black olive, oregano, & parmesan cheese. Choice of dressing.",
+    "categoryId": 9
+  },
+  {
+    "name": "Chef Salad",
+    "description": "Romaine lettuce, tomato, onion, black olive, banana peppers, provolone/ham pinwheel's, oregano, & parmesan cheese. Choice of dressing.",
+    "categoryId": 9
+  },
+  {
+    "name": "Chicken Cutlet Salad",
+    "description": "Romaine lettuce, tomato, onion, black olive, banana peppers, deep fried chicken cutlets, oregano, & parmesan cheese. Choice of dressing.",
+    "categoryId": 9
+  },
+  
+  {
+    "name": "Antipasto",
+    "description": "",
+    "categoryId": 9
+  },
+
+  {
+    "name": "Caprese",
+    "description": "",
+    "categoryId": 9
+  },
+
+  {
+    "name": "Chicken Parmesan",
+    "description": "",
+    "categoryId": 10
+  },
+  {
+    "name": "Eggplant Parmesan",
+    "description": "",
+    "categoryId": 10
+  },
+  {
+    "name": "Buono's Lasagna",
+    "description": "",
+    "categoryId": 10
+  },
+  {
+    "name": "Jumbo Ravioli(6)",
+    "description": "",
+    "categoryId": 10
+  },
+
+  {
+    "name": "Pasta and Tomato Sauce",
+    "description": "",
+    "categoryId": 10
+  },
+  {
+    "name": "Pasta and Meat Sauce",
+    "description": "",
+    "categoryId": 10
+  },
+
+  {
+    "name": "Pasta and Meatballs(2)",
+    "description": "",
+    "categoryId": 10
+  },
+  {
+    "name": "Pasta and Saugage(2)",
+    "description": "",
+    "categoryId": 10
+  },
+
+  {
+    "name": "Meatball Parmesan",
+    "description": "",
+    "categoryId": 11
+  },
+  {
+    "name": "Sausage Parmesan",
+    "description": "",
+    "categoryId": 11
+  },
+  {
+    "name": "Chicken Parmesan",
+    "description": "",
+    "categoryId": 11
+  },
+  {
+    "name": "Eggplant Parmesan",
+    "description": "",
+    "categoryId": 11
+  },
+
+  {
+    "name": "Sausage, Onions, Peppers",
+    "description": "",
+    "categoryId": 11
+  },
+
+  {
+    "name": "Philly Steak",
+    "description": "",
+    "categoryId": 11
+  },
+
+  {
+    "name": "Philly Chicken",
+    "description": "",
+    "categoryId": 11
+  },
+
+  {
+    "name": "Pepperoni Melt",
+    "description": "",
+    "categoryId": 11
+  },
+
+  {
+    "name": "Italian Mix",
+    "description": "",
+    "categoryId": 12
+  },
+
+  {
+    "name": "Ham & Provolone",
+    "description": "",
+    "categoryId": 12
+  },
+  {
+    "name": "Salami & Provolone",
+    "description": "",
+    "categoryId": 12
+  },
+  {
+    "name": "Capocollo & Provolone",
+    "description": "",
+    "categoryId": 12
+  },
+  {
+    "name": "Pepperoni & Provolone",
+    "description": "",
+    "categoryId": 12
+  },
+  {
+    "name": "Soppressata & Provolone",
+    "description": "",
+    "categoryId": 12
+  },
+  {
+    "name": "Mortadella & Provolone",
+    "description": "",
+    "categoryId": 12
+  },
+
+
+  {
+    "name": "Pasta",
+    "description": "",
+    "categoryId": 13
+  },
+  {
+    "name": "Pasta & Meatball(1)",
+    "description": "",
+    "categoryId": 13
+  },
+  {
+    "name": "Pasta & Sausage(1)",
+    "description": "",
+    "categoryId": 13
+  },
+  {
+    "name": "Meatball(2)",
+    "description": "",
+    "categoryId": 13
+  },
+  {
+    "name": "Sausage(2)",
+    "description": "",
+    "categoryId": 13
+  },
+  {
+    "name": "Garlic Bread",
+    "description": "",
+    "categoryId": 13
+  },
+  {
+    "name": "Fries",
+    "description": "",
+    "categoryId": 13
+  },
+
+  {
+    "name": "Italian Ice",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Black & White Cookie",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Crumb Cake",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Black & White Cookie",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Cannoli",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Tiramisu",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Cheese Cake",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Limoncello",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Chocolate Mousse",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Zeppolis",
+    "description": "",
+    "categoryId": 14
+  },
+  {
+    "name": "Drakes Cakes",
+    "description": "",
+    "categoryId": 14
+  },
+
+  {
+    "name": "Fountain Drink",
+    "description": "",
+    "categoryId": 15
+  },
+  {
+    "name": "San Pellegrino",
+    "description": "",
+    "categoryId": 15
+  },
+  {
+    "name": "Dr. Browns Soda",
+    "description": "",
+    "categoryId": 15
+  },
+  {
+    "name": "Bottled Soda",
+    "description": "",
+    "categoryId": 15
+  },
+  {
+    "name": "Domestic Beer",
+    "description": "",
+    "categoryId": 15
+  },
+  {
+    "name": "Imported Beer",
+    "description": "",
+    "categoryId": 15
+  },
+  {
+    "name": "House Red Wine",
+    "description": "",
+    "categoryId": 15
+  },
+  {
+    "name": "Premium Red Wine",
+    "description": "",
+    "categoryId": 15
+  },
+  {
+    "name": "House White Wine",
+    "description": "",
+    "categoryId": 15
+  },
+  {
+    "name": "Premium White Wine",
+    "description": "",
+    "categoryId": 15
   }
 ]

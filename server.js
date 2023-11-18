@@ -5,15 +5,9 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers/');
 const helpers = require('./utils/helpers');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
 const sequelize = require('./config/connection');
-
 const app = express();
 const PORT = process.env.PORT || 3001;
-
-// Set up Handlebars.js engine with custom helpers
-const hbs = exphbs.create({ helpers });
-
 const sess = {
   secret: process.env.DB_SECRET,
   cookie: {
@@ -33,8 +27,29 @@ const sess = {
 // Create a session
 app.use(session(sess));
 
+// Set up Handlebars.js engine with custom helpers
+const hbs = exphbs.create({ 
+  defaultLayout: 'main',
+  helpers: {
+      compare: function(operand_1, operator, operand_2, options) {
+        var operators = {
+         'eq': function(l,r) { if (l == r) return true },
+         'noteq': function(l,r) { if (l != r) return true },
+         'gt': function(l,r) { return Number(l) > Number(r); },
+         'or': function(l,r) { return l || r; },
+         'and': function(l,r) { return l && r; },
+         '%': function(l,r) { return (l % r) === 0; }
+        }
+        , result = operators[operator](operand_1,operand_2);
+      
+        if (result) return options.fn(this);
+        else  return options.inverse(this);
+      }
+  } 
+});
+
 // Inform Express.js on which template engine to use
-app.engine('handlebars', exphbs ({defaultLayout: 'main'}))
+app.engine('handlebars', hbs.engine)
 app.set('view engine', 'handlebars');
 
 // For path finding set up this middleware for express

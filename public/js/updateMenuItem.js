@@ -34,9 +34,9 @@ const deleteMenuItem = async(event) => {
         // alert('Are you sure you want to delete this menu item and all things related to it? This action cannot be undone.');
         document.location.replace('/menu');
       } 
-      else {
-        alert(response.statusText);
-      };
+      // else {
+      //   alert(response.statusText);
+      // };
     };
   }
   else 

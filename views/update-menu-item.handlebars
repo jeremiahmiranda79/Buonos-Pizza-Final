@@ -6,56 +6,69 @@
     </center>
   </div>
 
-  <div class="">
-    
-  </div>
-
   <div class="container-update-item">
-    <form id="updateMenuItem">
-      <div class="container py-3">
+    <div class="container-fluid item">
+      <form class="" id="updateMenuItem">
+        <div class="container py-3">
 
-        <h1 class="">Update ({{item.name}})</h1>
+          <h2 class="py-3">Update ({{item.name}}) item</h2>
 
-        <div class="mb-3 py-3">
-          <label for="menu-item-name" class="form-label">
-						Item name
-					</label>
+          <div class="">
 
-          <input id="name" type="text" value="{{item.name}}" class="form-control" placeholder="{{item.name}}" required>
+            <label for="menu-item-name" class="form-label">Item name</label>
+
+            <input id="name" type="text" value="{{item.name}}" class="form-control" placeholder="{{item.name}}" required>
+
+            <label for="item-description" class="form-label">
+              Item description
+            </label>
+
+            <input type="text" id="description" class="form-control" value="{{item.description}}" placeholder="{{item.description}}" required>
+          </div>
+
+          {{!-- <div class="mb-3 py-3">
+            <label for="item-description" class="form-label">
+              Item description
+            </label>
+
+            <input type="text" id="description" class="form-control" value="{{item.description}}" placeholder="{{item.description}}" required>
+          </div> --}}
+
+          <div class="">
+            <label for="category" class="form-label">Choose a category</label>
+            <select id="categories" name="categories" class="form-select">
+              <option value="{{cat.id}}" selected>Current ({{item.categoryId}})</option>
+              {{#each cats as |cat|}}
+                <option value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
+              {{/each}}
+            </select>
+          </div>
+
+          {{!-- <div class="category-dropdown-main">
+            <h6>Item category *required</h6>
+            <div class="category-dropdown">
+              <select class="" name="categories" 	id="categories">
+                {{#each cats as |cat|}}
+                  <option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div> --}}
+
+          <div class="d-flex justify-content-evenly">
+            <input type="hidden" name="item-id" value="{{item.id}}"/>
+            <button type="submit" class="btn btn-primary">Update</button>
+            <div>
+              <a href="/menu" id="cancelButton" class="btn btn-warning">
+                Cancel
+              </a>
+            </div>
+            <button class="btn btn-danger" id="deleteButton" data-id="{{item.id}}">Delete</button>
+          </div>
         </div>
-
-        <div class="mb-3 py-3">
-          <label for="item-description" class="form-label">
-            Item description
-          </label>
-
-          <input type="text" id="description" class="form-control" value="{{item.description}}" placeholder="{{item.description}}" required>
-        </div>
-
-        <div class="category-dropdown-main">
-					<h6>Item category *required</h6>
-					<div class="category-dropdown">
-						<select class="" name="categories" 	id="categories">
-							{{#each cats as |cat|}}
-								<option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
-							{{/each}}
-						</select>
-					</div>
-				</div>
-
-        <div class="d-flex justify-content-evenly">
-          <input type="hidden" name="item-id" value="{{item.id}}"/>
-          <button type="submit" class="btn btn-primary">Update</button>
-					<div>
-						<a href="/menu" id="cancelButton" class="btn btn-warning">
-							Cancel
-						</a>
-					</div>
-          <button class="btn btn-danger" id="deleteButton" data-id="{{item.id}}">Delete</button>
-			  </div>
-			</div>
-      </div>
-    </form>
+      </form> 
+    </div>
+ 
   </div>
 
 </div>

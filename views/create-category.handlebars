@@ -10,8 +10,7 @@
     <div class="container-fluid contact">
       <form id="addCat">
         <div class="">
-          
-          <h1 class="">Menu Categories</h1>
+          <h2 class="">Menu Categories</h2>
           <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-catgeory-list" aria-expanded="false" aria-controls="collapsable-catgeory-list">
             See all active categories
           </button>
@@ -35,12 +34,11 @@
             </input>
 
             <label for="image" class="form-label">Choose an image:</label>
-          <select id="image" name="image" class="form-select">
-            {{#each imgs as |img|}}
-              <option value="{{img.url}}">{{img.name}}</option>
-              {{!-- <option value="/images/s1.jpg" selected>Image 1</option> --}}
-            {{/each}}
-          </select>
+            <select id="image" name="image" class="form-select">
+              {{#each imgs as |img|}}
+                <option value="{{img.url}}">{{img.name}}</option>
+              {{/each}}
+            </select>
           </div>
            
           <div class="d-flex justify-content-evenly">

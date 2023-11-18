@@ -1,54 +1,69 @@
 [
   {
-    "name": "Pizzas",
+    "name": "Pizza",
     "image": "/images/s1.jpg"
   },
   {
-    "name": "Calzones",
-    "image": "/images/s2.jpg"
-  },
-  {
-    "name": "Strombolis",
+    "name": "Pizza Slice",
     "image": "/images/s1.jpg"
   },
   {
-    "name": "Appetizers",
-    "image": "/images/s2.jpg"
-  },
-  {
-    "name": "Salads",
+    "name": "Specialty Pizza",
     "image": "/images/s1.jpg"
   },
   {
-    "name": "Entrees",
+    "name": "Gluten Free",
+    "image": "/images/s2.jpg"
+  },
+  
+  {
+    "name": "Calzone",
     "image": "/images/s2.jpg"
   },
   {
-    "name": "Pastas",
+    "name": "Stromboli",
     "image": "/images/s1.jpg"
   },
   {
-    "name": "HotSubs",
+    "name": "Sausage Roll",
+    "image": "/images/s1.jpg"
+  },
+
+  {
+    "name": "Appetizer",
     "image": "/images/s2.jpg"
   },
   {
-    "name": "ColdSubs",
+    "name": "Salad",
     "image": "/images/s1.jpg"
   },
   {
-    "name": "SidesOrders",
+    "name": "Entree",
+    "image": "/images/s2.jpg"
+  },
+
+  {
+    "name": "Hot Sub",
     "image": "/images/s2.jpg"
   },
   {
-    "name": "Desserts",
+    "name": "Cold Sub",
     "image": "/images/s1.jpg"
   },
   {
-    "name": "Beverages",
+    "name": "Sides Order",
     "image": "/images/s2.jpg"
   },
   {
-    "name": "NY_Specialties",
+    "name": "Dessert",
+    "image": "/images/s1.jpg"
+  },
+  {
+    "name": "Beverage",
+    "image": "/images/s2.jpg"
+  },
+  {
+    "name": "NY Specialty",
     "image": "/images/s1.jpg"
   }
 ]

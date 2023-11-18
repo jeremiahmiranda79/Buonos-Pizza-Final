@@ -5,37 +5,50 @@
       <h4>For admin only</h4>
     </center>
   </div>
+
   <div class="container-update-category">
-    <form class="" id="updateCategory">
-      <div class="container py-3">
-        <h2 class="py-3">Update ({{cat.name}}) Category</h2>
-        <div class="mb-3 py-3">
-          <label for="category-name" class="form-label">Category name</label>
-          <input id="name" type="text" value="{{cat.name}}" class="form-control">
-          <input type="hidden" name="cat-id" value="{{cat.id}}"/>
+    <div class="container-fluid contact">
+      <form class="" id="updateCategory">   
+        <div class="container py-3">
 
-          <label for="image" class="form-label">Choose an image:</label>
-          <select id="image" name="image" class="form-select">
-            {{#each imgs as |img|}}
-              <option value="{{img.url}}">{{img.name}}</option>
-              {{!-- <option value="/images/s1.jpg" selected>Image 1</option> --}}
-            {{/each}}
-          </select>
-        </div>
+          <h2 class="py-3">Update ({{cat.name}}) category</h2>
 
-        <div class="d-flex justify-content-evenly">
           <div class="">
-            <button type="submit" class="btn btn-primary">Update</button>
+            
+            <label for="category-name" class="form-label">Category name</label>
+
+            <input id="name" type="text" value="{{cat.name}}" class="form-control" placeholder="{{cat.name}}" required>
+
+            {{!-- <input type="hidden" name="cat-id" value="{{cat.id}}"/> --}}
+
           </div>
-          <div>
-            <a href="/menu" id="cancelButton" class="btn btn-warning">Cancel</a>
+          
+          <div class="">
+            <label for="image" class="form-label">Choose an image:</label>
+            <select id="image" name="image" class="form-select">
+              <option value="{{cat.image}}" selected>Current ({{cat.image}})</option>
+              {{#each imgs as |img|}}
+                <option value="{{img.url}}">{{img.url}}</option>
+              {{/each}}
+            </select>
           </div>
-          <div>
-            <button class="btn btn-danger" id="deleteButton" data-id="{{cat.id}}">Delete</button>
+
+          <div class="d-flex justify-content-evenly">
+            <div class="">
+              <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+
+            <div>
+              <a href="/menu" id="cancelButton" class="btn btn-warning">Cancel</a>
+            </div>
+
+            <div>
+              <button class="btn btn-danger" id="deleteButton" data-id="{{cat.id}}">Delete</button>
+            </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </div>
 
