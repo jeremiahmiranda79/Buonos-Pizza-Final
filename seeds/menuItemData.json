@@ -33,7 +33,7 @@
 
   {
     "name": "Grandma Pie",
-    "description": "Long Island(NY)-style; a rustic rectangular pan pizza crust, topped with a blend of mozzarella fresca, mozzarella, & garlic. Then fire stone baked. Finaly, finished with San Marzano tomato & basil purees, plus grated Parmesan cheese.",
+    "description": "Long Isl&(NY)-style; a rustic rectangular pan pizza crust, topped with a blend of mozzarella fresca, mozzarella, & garlic. Then fire stone baked. Finaly, finished with San Marzano tomato & basil purees, plus grated Parmesan cheese.",
     "categoryId": 3
   },
   {
@@ -64,62 +64,62 @@
 
   {
     "name": "Gluten Free",
-    "description": "Gluten free-style; a thin, round 12 inch pizza crust that is a combination of gluten free flours and starches like rice flour, almond flour, potato starch, and tapioca starch.",
+    "description": "Gluten free-style; a thin, round 12 inch pizza crust that is a combination of gluten free flours & starches like rice flour, almond flour, potato starch, & tapioca starch.",
     "categoryId": 4
   },
   {
     "name": "Cauliflower",
-    "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, low-carb and keto pizza recipe. It's a simple blend of cauliflower, eggs, cheese, and a few spices that's flattened and baked into a golden crust.",
+    "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, low-carb & keto pizza recipe. It's a simple blend of cauliflower, eggs, cheese, & a few spices that's flattened & baked into a golden crust.",
     "categoryId": 4
   },
 
   {
     "name": "Calzone",
-    "description": "Neapolitan-style; an Italian turnover, made with leavened dough and folded. Stuffed with mozzarella and ricotta cheeses. Then fire stone baked.",
+    "description": "Neapolitan-style; an Italian turnover, made with leavened dough & folded. Stuffed with mozzarella & ricotta cheeses. Then fire stone baked.",
     "categoryId": 5 
   },
 
   {
     "name": "Italian",
-    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with(Boar's Head) salami, capocollo, soppressata, & provolone cheese. Then fire stone baked.",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough & rolled. Rolled with(Boar's Head) salami, capocollo, soppressata, & provolone cheese. Then fire stone baked.",
     "categoryId": 6
   },
   {
     "name": "Sausage, Onion, & Pepper",
-    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with sausage, onions, peppers, and mozzarella cheese. Then fire stone baked.",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough & rolled. Rolled with sausage, onions, peppers, & mozzarella cheese. Then fire stone baked.",
     "categoryId": 6
   },
 
   {
     "name": "Meatball Parmesan",
-    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with meatballs, marinara, and mozzarella cheese. Then fire stone baked.",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough & rolled. Rolled with meatballs, marinara, & mozzarella cheese. Then fire stone baked.",
     "categoryId": 6
   },
   {
     "name": "Eggplant Parmesan",
-    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with breaded eggplant, marinara, and mozzarella cheese. Then fire stone baked.",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough & rolled. Rolled with breaded eggplant cutlets, marinara, & mozzarella cheese. Then fire stone baked.",
     "categoryId": 6
   },
   {
     "name": "Chicken Parmesan",
-    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with breaded chicken, marinara, and mozzarella cheese. Then fire stone baked.",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough & rolled. Rolled with breaded chicken cutlets, marinara, & mozzarella cheese. Then fire stone baked.",
     "categoryId": 6
   },
   {
     "name": "Meat Lover Parmesan",
-    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough and rolled. Rolled with meatballs, sausage, pepperoni, marinara, and mozzarella cheese. Then fire stone baked.",
+    "description": "Philadelphia(PA)-style; an Italian turnover, made with leavened dough & rolled. Rolled with meatballs, sausage, pepperoni, marinara, & mozzarella cheese. Then fire stone baked.",
     "categoryId": 6
   },
 
   {
     "name": "Sausage Roll",
-    "description": "NYC-style; a blend of sausage, onions, peppers, and mozzarella cheese.  Rolled in a light pizza dough. Brushed with garlic herb butter. Then fire stone baked.",
+    "description": "NYC-style; a blend of sausage, onions, peppers, & mozzarella cheese.  Rolled in a light pizza dough. Brushed with garlic herb butter. Then fire stone baked.",
     "categoryId": 7
   },
 
   {
     "name": "Garlic Bread",
-    "description": "An Italian baguette brushed with garlic herb butter and lightly toasted.",
+    "description": "An Italian baguette brushed with garlic herb butter & lightly toasted.",
     "categoryId": 8
   },
   {
@@ -128,33 +128,33 @@
     "categoryId": 8
   },
   {
-    "name": "Meatballs & Ricotta(2)",
+    "name": "Meatballs & Ricotta",
     "description": "Twin Italian style 2oz meatballs accompanied by marinara sauce, ricotta & parmesan cheese.",
     "categoryId": 8
   },
   {
-    "name": "Meatball Sliders(5)",
+    "name": "Meatball Sliders",
     "description": "Five crostini's topped with our meatballs, marinara sauce, oregenao, & mozzarella cheese.",
     "categoryId": 8
   },
   {
     "name": "Fries",
-    "description": "Tossed with salt, black pepper, garlic seasoning, oregano, and parsley.",
+    "description": "Tossed with salt, black pepper, garlic seasoning, oregano, & parsley.",
     "categoryId": 8
   },
   {
     "name": "Pepperoni Pizza Fries",
-    "description": "Our seasoned French fries baked with pepperoni, mozzarella cheese, & oregano. Then finished with marinara sauce.",
+    "description": "Bounos Gilbert-style; Our seasoned french fries baked with pepperoni, mozzarella cheese, & oregano. Then finished with marinara sauce.",
     "categoryId": 8
   },
   {
     "name": "NJ Style Disco Fries",
-    "description": "NJ Diner-style; Our seasoned French fries baked with mozzarella cheese. Then topped with a classic brown chicken gravy & parsley.",
+    "description": "New Jersey diner-style; Our seasoned french fries baked with mozzarella cheese. Then topped with a classic brown chicken gravy & parsley.",
     "categoryId": 8
   },
   {
     "name": "Fried Mushrooms",
-    "description": "Fresh mushrooms, coated in a light and crispy seasoned batter, then deep fried to golden brown perfection. Served with buttermilk ranch.",
+    "description": "Cremini mushrooms, coated in a light & crispy seasoned batter, then deep fried to golden brown perfection. Served with buttermilk ranch.",
     "categoryId": 8
   },
   {
@@ -163,144 +163,140 @@
     "categoryId": 8
   },
   {
-    "name": "Fried Mozzarella Sticks(6)",
-    "description": "Whole milk mozzarella sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce.",
+    "name": "Fried Mozzarella Sticks",
+    "description": "Six whole milk mozzarella sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce.",
     "categoryId": 8
   },
   {
-    "name": "Fried Ravioli(6)",
-    "description": "Half a dozen riccota stuffed ravioli's, lightly Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinar sauce.",
+    "name": "Fried Ravioli",
+    "description": "Six ricotta stuffed ravioli, lightly Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce.",
     "categoryId": 8
   },
   {
     "name": "Traditional Chicken Wings",
-    "description": "Bone-in fried chicken wings tossed in your choice of sauce. Served with celery sticks, and choice of dressing.",
+    "description": "Bone-in fried chicken wings tossed in your choice of sauce. Served with celery sticks, & choice of dressing.",
     "categoryId": 8
   },
   {
     "name": "Boneless Chicken Wings",
-    "description": "Boneless fried chicken pieces tossed in your choice of sauce. Served with celery sticks, and choice of dressing.",
+    "description": "Boneless fried chicken pieces tossed in your choice of sauce. Served with celery sticks, & choice of dressing.",
     "categoryId": 8
   },
 
   {
     "name": "Caesar Salad",
-    "description": "Romaine lettuce, Italian style croutons, Romaine style Caesar dressing, & parmesan cheese.",
+    "description": "Romaine lettuce, Italian style croutons, caesar dressing, & parmesan cheese.",
     "categoryId": 9
   },
   {
     "name": "House Salad",
-    "description": "Romaine lettuce, tomato, onion, black olive, oregano, & parmesan cheese. Choice of dressing.",
+    "description": "Romaine lettuce, tomato, onion, black olive, oregano, parmesan cheese, & choice of dressing.",
     "categoryId": 9
   },
   {
     "name": "Chef Salad",
-    "description": "Romaine lettuce, tomato, onion, black olive, banana peppers, provolone/ham pinwheel's, oregano, & parmesan cheese. Choice of dressing.",
+    "description": "Romaine lettuce, tomato, onion, black olive, banana peppers, provolone cheese, deli ham, oregano, parmesan cheese, & choice of dressing.",
     "categoryId": 9
   },
   {
     "name": "Chicken Cutlet Salad",
-    "description": "Romaine lettuce, tomato, onion, black olive, banana peppers, deep fried chicken cutlets, oregano, & parmesan cheese. Choice of dressing.",
+    "description": "Romaine lettuce, tomato, onion, black olive, banana peppers, breaded chicken cutlets, oregano, parmesan cheese, & choice of dressing.",
     "categoryId": 9
   },
-  
   {
     "name": "Antipasto",
-    "description": "",
+    "description": "Romaine lettuce, tomato, onion, black olive, mild giardiniera, provolone cheese, salami, cappocolo, oregano, parmesan cheese, & choice of dressing.",
     "categoryId": 9
   },
-
   {
     "name": "Caprese",
-    "description": "",
+    "description": "Mozzarella fresca, vine-ripened tomatoes, olive oil, balsamic fig reduction, basil puree, salt, & pepper.",
     "categoryId": 9
   },
 
   {
     "name": "Chicken Parmesan",
-    "description": "",
+    "description": "Breaded chicken cutlets covered with marinara sauce & mozzarella cheese. Served with a side of pasta, small house salad, & small Italian baguette.",
     "categoryId": 10
   },
   {
     "name": "Eggplant Parmesan",
-    "description": "",
+    "description": "Breaded eggplant cutlets covered with marinara sauce & mozzarella cheese. Served with a side of pasta, small house salad, & small Italian baguette.",
     "categoryId": 10
   },
   {
-    "name": "Buono's Lasagna",
-    "description": "",
+    "name": "Lasagna Bolognese",
+    "description": "A baked six layer Neapolitan style lasagna stacked with bechamel, ground beef, marinara, ricotta, mozzarella, & parmesan cheeses. Served with a small house salad, & small Italian baguette.",
     "categoryId": 10
   },
   {
-    "name": "Jumbo Ravioli(6)",
-    "description": "",
-    "categoryId": 10
-  },
-
-  {
-    "name": "Pasta and Tomato Sauce",
-    "description": "",
+    "name": "Ravioli Gigante",
+    "description": "Six jumbo ricotta stuffed ravioli topped with marinara sauce, parmesan cheese, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
     "categoryId": 10
   },
   {
-    "name": "Pasta and Meat Sauce",
-    "description": "",
-    "categoryId": 10
-  },
-
-  {
-    "name": "Pasta and Meatballs(2)",
-    "description": "",
+    "name": "Pasta & Marinara Sauce",
+    "description": "Choice of pasta topped with marinara sauce, parmesan cheese, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
     "categoryId": 10
   },
   {
-    "name": "Pasta and Saugage(2)",
-    "description": "",
+    "name": "Pasta & Meat Sauce",
+    "description": "Choice of pasta topped with meat sauce, parmesan cheese, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
+    "categoryId": 10
+  },
+  {
+    "name": "Pasta & Meatballs ",
+    "description": "Choice of pasta topped with marinara sauce, two jumbo meatballs, parmesan cheese, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
+    "categoryId": 10
+  },
+  {
+    "name": "Pasta & Saugage",
+    "description": "Choice of pasta topped with marinara sauce, two sausage links,parmesan cheese, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
     "categoryId": 10
   },
 
   {
     "name": "Meatball Parmesan",
-    "description": "",
+    "description": "Foot long Italian baguette stuffed with meatballs, marinara sauce, mozzarella cheese, & oregano. Then fire stone toasted.",
     "categoryId": 11
   },
   {
     "name": "Sausage Parmesan",
-    "description": "",
+    "description": "Foot long Italian baguette stuffed with suasage links, marinara sauce, mozzarella cheese, & oregano. Then fire stone toasted.",
     "categoryId": 11
   },
   {
     "name": "Chicken Parmesan",
-    "description": "",
+    "description": "Foot long Italian baguette stuffed with breaded chicken cutlets, marinara sauce, mozzarella cheese, & oregano. Then fire stone toasted.",
     "categoryId": 11
   },
   {
     "name": "Eggplant Parmesan",
-    "description": "",
+    "description": "Foot long Italian baguette stuffed with breaded eggplant cutlets, marinara sauce, mozzarella cheese, & oregano. Then fire stone toasted.",
     "categoryId": 11
   },
 
   {
     "name": "Sausage, Onions, Peppers",
-    "description": "",
+    "description": "Foot long Italian baguette stuffed with sauteed sausage, onions, peppers, & oregano. Then fire stone toasted.",
     "categoryId": 11
   },
 
   {
     "name": "Philly Steak",
-    "description": "",
+    "description": "Foot long Italian baguette stuffed with sauteed shaved steak, onions, & white wine. Topped with choice of melted cheese. Then fire stone toasted.",
     "categoryId": 11
   },
 
   {
     "name": "Philly Chicken",
-    "description": "",
+    "description": "Foot long Italian baguette stuffed with sauteed shaved chicken breast, onions, & white wine. Topped with choice of melted cheese. Then fire stone toasted.",
     "categoryId": 11
   },
 
   {
     "name": "Pepperoni Melt",
-    "description": "",
+    "description": "Foot long Italian baguette stuffed with pepperoni, marinara, mozzarella cheese, & oregano. Then fire stone toasted.",
     "categoryId": 11
   },
 
@@ -394,7 +390,7 @@
     "categoryId": 14
   },
   {
-    "name": "Black & White Cookie",
+    "name": "",
     "description": "",
     "categoryId": 14
   },
