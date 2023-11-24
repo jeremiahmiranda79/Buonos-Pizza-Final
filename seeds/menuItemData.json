@@ -1,71 +1,68 @@
 [
   {
     "name": "Napolitana", 
-    "description": "Neapolitan-style; a thin round crust topped with sugo di pomodoro(tomato sauce), mozzarella, oregano, & stone deck oven baked.",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked.",
     "categoryId": 1
   },
   {
     "name": "Bianca",
-    "description": "Neapolitan-style; a thin round crust topped with burro all'aglio(garlic butter), ricotta, mozzarella, & stone deck oven baked.",
+    "description": "Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked.",
     "categoryId": 1
   },
   {
     "name": "Siciliana",
-    "description": "Sicilian-style; a thick rectangular deep dish crust topped with sugo di pomodoro(tomato sauce), mozzarella, oregano, & stone deck oven baked.",
+    "description": "Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked.",
     "categoryId": 1
   },
 
 
-
   {
     "name": "Napolitana Slice",
-    "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with sugo di pomodoro(tomato sauce), mozzarella, oregano, & stone deck oven baked.",
+    "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked.",
     "categoryId": 2
   },
   {
     "name": "Bianca Slice",
-    "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with burro all'aglio(garlic butter), ricotta, mozzarella, & stone deck oven baked.",
+    "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked.",
     "categoryId": 2
   },
   {
     "name": "Siciliana Slice",
-    "description": "Single slice of a 20 inch Sicilian-style; a thick rectangular deep dish crust topped with sugo di pomodoro(tomato sauce), mozzarella, oregano, & stone deck oven baked.",
+    "description": "Single slice of a 20 inch Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked.",
     "categoryId": 2
   },
 
 
-
   {
     "name": "Grandma Pie",
-    "description": "Long Island-style; a rustic rectangular pan pizza crust, topped with mozzarella fresca, mozzarella, garlic, & stone deck oven baked. Finished with sugo di pomodoro(tomato sauce), basil puree, & parmesan.",
+    "description": "Long Island-style; a rustic rectangular pan pizza crust, topped with mozzarella fresca, mozzarella, garlic, & stone deck oven baked. Finished with a fresh pomodoro(tomato) sauce, basil puree, & parmesan.",
     "categoryId": 3
   },
   {
     "name": "Margherita Buono",
-    "description": "Neapolitan-style; a thin, round crust, topped with mozzarella fresca, olive oil, & stone deck oven baked. Finished with sugo di pomodoro(tomato sauce), & basil puree.",
+    "description": "Neapolitan-style; a thin, round crust, topped with mozzarella fresca, olive oil, & stone deck oven baked. Finished with a fresh pomodoro(tomato) sauce, & basil puree.",
     "categoryId": 3
   },
-
 
 
   {
     "name": "Meat Lover",
-    "description": "Neapolitan-style; a thin round crust topped with sugo di pomodoro(tomato sauce), pepperoni, sausage, meatballs, bacon, mozzarella, oregano, & stone deck oven baked.",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, pepperoni, sausage, meatballs, bacon, mozzarella, oregano, & stone deck oven baked.",
     "categoryId": 3
   },
   {
     "name": "Vegetarian",
-    "description": "Neapolitan-style; a thin round crust topped with sugo di pomodoro(tomato sauce), mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked.",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked.",
     "categoryId": 3
   },
   {
     "name": "Works",
-    "description": "Neapolitan-style; a thin round crust topped with sugo di pomodoro(tomato sauce), pepperoni, sausage, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked.",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, pepperoni, sausage, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked.",
     "categoryId": 3
   },
   {
     "name": "Baked Ziti",
-    "description": "Neapolitan-style; a thin round crust topped with sugo di pomodoro(tomato sauce), ricotta, ziti pasta, mozzarella, oregano, & stone deck oven baked.",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, ricotta, ziti pasta, mozzarella, oregano, & stone deck oven baked.",
     "categoryId": 3
   },
 
@@ -104,7 +101,7 @@
 
 
   {
-    "name": "Italian",
+    "name": "Italian Deli Mix",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with salami, capocollo, soppressata, provolone. & stone deck oven baked.",
     "categoryId": 6
   },
@@ -152,7 +149,7 @@
   },
   {
     "name": "Meatballs & Ricotta",
-    "description": "Twin Italian style 2oz meatballs accompanied by marinara sauce, ricotta & parmesan.",
+    "description": "Twin jumbo meatballs accompanied by marinara sauce, ricotta & parmesan.",
     "categoryId": 8
   },
   {
@@ -223,7 +220,7 @@
   },
   {
     "name": "Chicken Cutlet Salad",
-    "description": "Romaine lettuce, tomatoes, onions, black olives, mild giardiniera, provolone, salami, cappocolo, oregano, parmesan, & choice of dressing.",
+    "description": "Romaine lettuce, tomatoes, onions, black olives, bananas peppers, sliced chicken cutlets, oregano, parmesan, & choice of dressing.",
     "categoryId": 9
   },
   {
@@ -259,7 +256,7 @@
   },
   {
     "name": "Pasta & Marinara Sauce",
-    "description": "Choice of pasta topped with marinara sauce, parmesane, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
+    "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
     "categoryId": 10
   },
   {
@@ -277,8 +274,6 @@
     "description": "Choice of pasta topped with marinara sauce, two sausage links,parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
     "categoryId": 10
   },
-
-
 
 
   {
@@ -302,6 +297,11 @@
     "categoryId": 11
   },
   {
+    "name": "Pepperoni Melt",
+    "description": "Foot long Italian baguette stuffed with pepperoni, marinara, mozzarella, oregano, & lightly toasted.",
+    "categoryId": 11
+  },
+  {
     "name": "Sausage, Onions, Peppers",
     "description": "Foot long Italian baguette stuffed with sauteed sausage, onions, peppers, oregano, & lightly toasted.",
     "categoryId": 11
@@ -316,89 +316,78 @@
     "description": "Foot long Italian baguette stuffed with sauteed shaved chicken breast, onions, & white wine. Topped with choice of melted cheese, & lightly toasted.",
     "categoryId": 11
   },
-  {
-    "name": "Pepperoni Melt",
-    "description": "Foot long Italian baguette stuffed with pepperoni, marinara, mozzarella, oregano, & lightly toasted.",
-    "categoryId": 11
-  },
+  
 
 
 
 
 
   {
-    "name": "Italian Mix",
-    "description": "",
+    "name": "Italian Deli Mix",
+    "description": "Foot long Italian baguette layered with salami, capocollo, soppressata, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
     "categoryId": 12
   },
 
   {
     "name": "Ham & Provolone",
-    "description": "",
+    "description": "Foot long Italian baguette layered with deli ham, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
     "categoryId": 12
   },
   {
     "name": "Salami & Provolone",
-    "description": "",
+    "description": "Foot long Italian baguette layered with salami, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
     "categoryId": 12
   },
   {
     "name": "Capocollo & Provolone",
-    "description": "",
+    "description": "Foot long Italian baguette layered with capocollo, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
     "categoryId": 12
   },
   {
     "name": "Pepperoni & Provolone",
-    "description": "",
-    "categoryId": 12
-  },
-  {
-    "name": "Soppressata & Provolone",
-    "description": "",
-    "categoryId": 12
-  },
-  {
-    "name": "Mortadella & Provolone",
-    "description": "",
+    "description": "Foot long Italian baguette layered with pepperoni, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
     "categoryId": 12
   },
 
 
   {
-    "name": "Pasta",
-    "description": "",
+    "name": "Side of Pasta",
+    "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs.",
     "categoryId": 13
   },
   {
-    "name": "Pasta & Meatball(1)",
-    "description": "",
+    "name": "Side of Pasta & Meatball",
+    "description": "Choice of pasta topped with marinara sauce, one jumbo meatball, parmesan, & Italian herbs.",
     "categoryId": 13
   },
   {
-    "name": "Pasta & Sausage(1)",
-    "description": "",
+    "name": "Side of Pasta & Sausage",
+    "description": "Choice of pasta topped with marinara sauce, one sausage link, parmesan, & Italian herbs.",
     "categoryId": 13
   },
   {
-    "name": "Meatball(2)",
-    "description": "",
+    "name": "Side of Meatballs",
+    "description": "Twin jumbo meatballs topped with marinara sauce, parmesan, & Italian herbs.",
     "categoryId": 13
   },
   {
-    "name": "Sausage(2)",
-    "description": "",
+    "name": "Side of Sausage",
+    "description": "Twin sausage links topped with marinara sauce, parmesan, & Italian herbs.",
     "categoryId": 13
   },
   {
     "name": "Garlic Bread",
-    "description": "",
+    "description": "An Italian baguette brushed with garlic herb butter & lightly toasted.",
     "categoryId": 13
   },
   {
     "name": "Fries",
-    "description": "",
+    "description": "Tossed with salt, black pepper, garlic seasoning, oregano, & parsley.",
     "categoryId": 13
   },
+
+
+
 
   {
     "name": "Italian Ice",
@@ -455,6 +444,8 @@
     "description": "",
     "categoryId": 14
   },
+
+  
 
   {
     "name": "Fountain Drink",

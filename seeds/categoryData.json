@@ -1,69 +1,68 @@
 [
   {
     "name": "Pizza",
-    "image": "/images/s1.jpg"
+    "image": "/images/menu-pizza.jpg"
   },
   {
     "name": "Pizza Slice",
-    "image": "/images/s1.jpg"
+    "image": "/images/menu-pizza-slice.jpg"
   },
   {
     "name": "Specialty Pizza",
-    "image": "/images/s1.jpg"
+    "image": "/images/menu-specialty.jpg"
   },
   {
     "name": "Gluten Free",
-    "image": "/images/s2.jpg"
+    "image": "/images/menu-gluten-free.jpg"
   },
   
   {
     "name": "Calzone",
-    "image": "/images/s2.jpg"
+    "image": "/images/menu-calzone.jpg"
   },
   {
     "name": "Stromboli",
-    "image": "/images/s1.jpg"
+    "image": "/images/menu-stromboli.jpg"
   },
   {
     "name": "Sausage Roll",
-    "image": "/images/s1.jpg"
+    "image": "/images/menu-sausage-roll.jpg"
   },
 
   {
     "name": "Appetizer",
-    "image": "/images/s2.jpg"
+    "image": "/images/menu-appetizer.jpg"
   },
   {
     "name": "Salad",
-    "image": "/images/s1.jpg"
+    "image": "/images/menu-salad.jpg"
   },
   {
     "name": "Entree",
-    "image": "/images/s2.jpg"
+    "image": "/images/menu-entree.jpg"
   },
-
   {
     "name": "Hot Sub",
-    "image": "/images/s2.jpg"
+    "image": "/images/menu-hot-sub.jpg"
   },
   {
     "name": "Cold Sub",
-    "image": "/images/s1.jpg"
+    "image": "/images/menu-cold-sub.jpg"
   },
   {
     "name": "Side Order",
-    "image": "/images/s2.jpg"
+    "image": "/images/menu-side.jpg"
   },
   {
     "name": "Dessert",
-    "image": "/images/s1.jpg"
+    "image": "/images/menu-dessert.jpg"
   },
   {
     "name": "Beverage",
-    "image": "/images/s2.jpg"
+    "image": "/images/menu-beverage.jpg"
   },
   {
     "name": "NY Specialty",
-    "image": "/images/s1.jpg"
+    "image": "/images/menu-drakes-cakes.jpg"
   }
 ]
