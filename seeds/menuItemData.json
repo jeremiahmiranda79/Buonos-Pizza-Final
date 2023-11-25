@@ -391,61 +391,50 @@
 
   {
     "name": "Italian Ice",
-    "description": "",
+    "description": "Refreshing icy textured treat that is dairy-free, gluten-free, cholesterol-free, and fat-free.",
     "categoryId": 14
   },
   {
     "name": "Black & White Cookie",
-    "description": "",
+    "description": "Queens NYC-style; a round cookies frosted in two colors, with one half vanilla & the other chocolate.",
     "categoryId": 14
   },
   {
     "name": "Crumb Cake",
-    "description": "",
+    "description": "Queens NYC-style; a cake made of yeast dough covered with a sweet crumb topping referred to as streusel.",
     "categoryId": 14
   },
   {
-    "name": "",
-    "description": "",
-    "categoryId": 14
-  },
-  {
-    "name": "Cannoli",
-    "description": "",
+    "name": "Cannoli Grande",
+    "description": "Sicilian-style; a tube-shaped shell of fried pastry dough, filled with a sweet, creamy filling containing ricotta, mini chocolate chips, & topped with crushed pistachios.",
     "categoryId": 14
   },
   {
     "name": "Tiramisu",
-    "description": "",
+    "description": "A coffee-flavoured Italian dessert made of ladyfingers (savoiardi) dipped in coffee, layered with a whipped mascarpone, & flavoured with cocoa.",
     "categoryId": 14
   },
   {
     "name": "Cheese Cake",
-    "description": "",
+    "description": "NYC-style; a dense and rich cheese cake baked in a graham cracker crust with sweet cream cheese vanilla filling.",
     "categoryId": 14
   },
   {
-    "name": "Limoncello",
-    "description": "",
+    "name": "Limoncello Cake",
+    "description": "Fluffy sponge cake layers, brushed with a limoncello syrup, filled with a thin layer of lemon curd and frosted with a decadent mascarpone and cream cheese frosting.",
     "categoryId": 14
   },
   {
-    "name": "Chocolate Mousse",
-    "description": "",
+    "name": "Chocolate Mousse Cake",
+    "description": "Rich layers of dark, milk and white chocolate come together perfectly in this no-bake cake. A chocolate cookie-crumb crust adds a satisfying crunch to the silky, smooth mousse.",
     "categoryId": 14
   },
   {
     "name": "Zeppolis",
-    "description": "",
-    "categoryId": 14
-  },
-  {
-    "name": "Drakes Cakes",
-    "description": "",
+    "description": "Italian-style; deep-fried dough fritters & topped with powdered sugar.",
     "categoryId": 14
   },
 
-  
 
   {
     "name": "Fountain Drink",
@@ -458,7 +447,7 @@
     "categoryId": 15
   },
   {
-    "name": "Dr. Browns Soda",
+    "name": "Dr Browns Soda",
     "description": "",
     "categoryId": 15
   },

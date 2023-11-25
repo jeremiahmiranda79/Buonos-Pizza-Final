@@ -207,8 +207,12 @@ main {
 
 .category-image {
   height: 115px;
+  width: 95%;
+  margin-left: 10px;
+  margin-right: 10px;
+
   margin-bottom: 10px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   box-shadow: 6px 6px 8px var(--shadow);
 }
 
