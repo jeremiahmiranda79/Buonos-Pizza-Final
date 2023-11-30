@@ -5,7 +5,7 @@
   },
   {
     "name": "Pizza Slice",
-    "image": "/images/menu-pizza-slice.jpg"
+    "image": "/images/menu-pizza-slice-2.jpg"
   },
   {
     "name": "Specialty Pizza",
@@ -18,11 +18,11 @@
   
   {
     "name": "Calzone",
-    "image": "/images/menu-calzone.jpg"
+    "image": "/images/menu-calzone-4.jpg"
   },
   {
     "name": "Stromboli",
-    "image": "/images/menu-stromboli.jpg"
+    "image": "/images/menu-stromboli-4.jpg"
   },
   {
     "name": "Sausage Roll",
@@ -59,7 +59,7 @@
   },
   {
     "name": "Beverage",
-    "image": "/images/menu-beverage.jpg"
+    "image": "/images/menu-soda-fountain-2.jpg"
   },
   {
     "name": "NY Specialty",
