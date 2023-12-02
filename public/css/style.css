@@ -41,6 +41,17 @@ body, html {
   margin-bottom: 10px;
 }
 
+.btn-delivery{
+  box-shadow: 4px 4px 8px var(--shadow);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+
 /* MAIN */
 main {
   margin-top: 60px;
@@ -99,6 +110,12 @@ main {
 .social {
   justify-content: center;
   padding-bottom: 10px;
+}
+
+.delivery {
+  justify-content: center;
+  padding-bottom: 10px;
+  /* margin-right: 10px; */
 }
 
 .copy-right {
