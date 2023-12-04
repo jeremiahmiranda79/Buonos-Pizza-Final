@@ -41,9 +41,20 @@ body, html {
   margin-bottom: 10px;
 }
 
-.btn-delivery{
+.btn-delivery-main {
   box-shadow: 4px 4px 8px var(--shadow);
   margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  width: 197px;
+  height: 65px;
+  border-radius: 4px;
+}
+
+.btn-delivery{
+  box-shadow: 4px 4px 8px var(--shadow);
+  /* margin-top: 10px; */
   margin-bottom: 10px;
   margin-left: 2.5px;
   margin-right: 2.5px;
@@ -74,7 +85,7 @@ main {
 .carousel-caption h3 {
   color: var(--buonos-red);
   font-size: 55px;
-  margin-bottom: 70%;
+  margin-bottom: 60%;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   font-family: var(--buonos-font);
 }
@@ -114,6 +125,20 @@ main {
   padding-bottom: 10px;
   /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
   /* font-family: var(--buonos-font); */
+}
+
+.specialties {
+  /* color: var(--buonos-red); */
+  padding-top: 15px;
+  padding-bottom: 10px;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  /* font-family: var(--buonos-font); */
+}
+
+.specialties h1 {
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+  font-family: var(--buonos-font);
 }
 
 .loyalty h1 {
