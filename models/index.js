@@ -4,6 +4,8 @@ const Toppings = require('./Toppings');
 const Employees = require('./Employees');
 const Images = require('./Images');
 
+const SizePizzaNeapolitan = require('./SizePizzaNeapolitan');
+
 // MenuItems to Categories
 Categories.hasMany(MenuItems, {
   foreignKey: 'categoryId'
@@ -13,4 +15,6 @@ MenuItems.belongsTo(Categories, {
   foreignKey: 'categoryId'
 });
 
-module.exports = { Categories, MenuItems, Toppings, Employees, Images };
+
+
+module.exports = { Categories, MenuItems, Toppings, Employees, Images, SizePizzaNeapolitan };

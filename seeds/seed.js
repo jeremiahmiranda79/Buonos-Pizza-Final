@@ -8,12 +8,14 @@ const toppingData = require('./toppingData.json');
 const employeeData = require('./employeeData.json');
 const imageData = require('./imageData.json');
 
+
 const seedData = async () => {
     await sequelize.sync({ force: true });
 
     await Categories.bulkCreate(categoryData);
     await MenuItems.bulkCreate(menuItemData);
     await Toppings.bulkCreate(toppingData);
+
     await Employees.bulkCreate(employeeData, { individualHooks:true });
 
     await Images.bulkCreate(imageData);

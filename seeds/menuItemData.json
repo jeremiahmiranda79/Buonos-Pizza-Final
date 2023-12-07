@@ -1,135 +1,353 @@
 [
   {
     "name": "Napolitana", 
+
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked.",
-    "categoryId": 1
-  },
-  {
-    "name": "Bianca",
-    "description": "Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked.",
-    "categoryId": 1
-  },
-  {
-    "name": "Siciliana",
-    "description": "Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked.",
+
+    "size1": "Small 14 inch, 6 cut.",
+    "price1": "$15.49",
+
+    "size2": "Large 16 inch, 8 cut.",
+    "price2": "$17.49",
+
+    "size3": "Extra Large 18 inch, 8 cut.",
+    "price3": "$19.49",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$2.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$5.25",
+
     "categoryId": 1
   },
 
+  {
+    "name": "Bianca",
+
+    "description": "Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked.",
+
+    "size1": "Small 14 inch, 6 cut.",
+    "price1": "$16.99",
+
+    "size2": "Large 16 inch, 8 cut.",
+    "price2": "$18.99",
+
+    "size3": "Extra Large 18 inch, 8 cut.",
+    "price3": "$20.99",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$2.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$5.25",
+
+    "categoryId": 1
+  }, 
+
+  {
+    "name": "Siciliana",
+
+    "description": "Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked.",
+
+    "size1": "Small, 8 cut.",
+    "price1": "$16.99",
+
+    "size2": "Large, 12 cut.",
+    "price2": "$20.99",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$2.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$5.25",
+
+    "categoryId": 1
+  },
 
   {
     "name": "Napolitana Slice",
+
     "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked.",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": ".75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$1.50",
+
     "categoryId": 2
   },
   {
     "name": "Bianca Slice",
+
     "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked.",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$1.50",
+
     "categoryId": 2
   },
   {
     "name": "Siciliana Slice",
+
     "description": "Single slice of a 20 inch Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked.",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$1.50",
+
     "categoryId": 2
   },
 
-
   {
     "name": "Grandma Pie",
+
     "description": "Long Island-style; a rustic rectangular pan pizza crust, topped with mozzarella fresca, mozzarella, garlic, & stone deck oven baked. Finished with a fresh pomodoro(tomato) sauce, basil puree, & parmesan.",
+
+    "size1": "Small, 8 cut.",
+    "price1": "$18.99",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$2.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$5.25",
+
     "categoryId": 3
   },
   {
     "name": "Margherita Buono",
+
     "description": "Neapolitan-style; a thin, round crust, topped with mozzarella fresca, olive oil, & stone deck oven baked. Finished with a fresh pomodoro(tomato) sauce, & basil puree.",
+
+    "size1": "Small 14 inch, 6 cut.",
+    "price1": "$16.49",
+
+    "size2": "Large 16 inch, 8 cut.",
+    "price2": "$??.??",
+
+    "size3": "Extra Large 18 inch, 8 cut.",
+    "price3": "$19.99",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$2.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$5.25",
+
     "categoryId": 3
   },
 
-
   {
     "name": "Meat Lover",
+
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, pepperoni, sausage, meatballs, bacon, mozzarella, oregano, & stone deck oven baked.",
+
+    "size1": "Small 14 inch, 6 cut.",
+    "price1": "$23.99",
+
+    "size2": "Large 16 inch, 8 cut.",
+    "price2": "$25.99",
+
+    "size3": "Extra Large 18 inch, 8 cut.",
+    "price3": "$27.99",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$2.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$5.25",
+
     "categoryId": 3
   },
   {
     "name": "Vegetarian",
+
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked.",
+
+    "size1": "Small 14 inch, 6 cut.",
+    "price1": "$23.99",
+
+    "size2": "Large 16 inch, 8 cut.",
+    "price2": "$25.99",
+
+    "size3": "Extra Large 18 inch, 8 cut.",
+    "price3": "$27.99",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$2.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$5.25",
+
     "categoryId": 3
   },
   {
     "name": "Works",
+
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, pepperoni, sausage, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked.",
+
+    "size1": "Small 14 inch, 6 cut.",
+    "price1": "$26.99",
+
+    "size2": "Large 16 inch, 8 cut.",
+    "price2": "$28.99",
+
+    "size3": "Extra Large 18 inch, 8 cut.",
+    "price3": "$30.99",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$2.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$5.25",
+
     "categoryId": 3
   },
   {
     "name": "Baked Ziti",
+
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, ricotta, ziti pasta, mozzarella, oregano, & stone deck oven baked.",
+
+    "size2": "Large 16 inch, 8 cut.",
+    "price2": "$25.99",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$2.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$5.25",
+
     "categoryId": 3
   },
 
-
-
-
-
-
-
-
   {
     "name": "Gluten Free",
+
     "description": "Gluten free-style; a thin, round 12 inch pizza crust that is a combination of gluten free flours & starches like rice flour, almond flour, potato starch, & tapioca starch.",
+
+    "size1": "Small 12 inch, 6 cut.",
+    "price1": "$13.49",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$1.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$3.50",
+
     "categoryId": 4
   },
   {
     "name": "Cauliflower",
+
     "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, low-carb & keto pizza recipe. It's a simple blend of cauliflower, eggs, cheese, & a few spices that's flattened & baked into a golden crust.",
+
+    "size1": "Small 10 inch, 4 cut.",
+    "price1": "$13.49",
+
+    "addonsDescription1": "Regular Toppings",
+    "addonsPrice1": "$1.75",
+
+    "addonsDescription2": "Premium Toppings",
+    "addonsPrice2": "$3.50",
+
     "categoryId": 4
   },
 
-
-
-
-
-
-
   {
     "name": "Calzone",
+
     "description": "Neapolitan-style; an Italian turnover made with leavened dough & folded. Stuffed with mozzarella, ricotta, & stone deck oven baked.",
+
+    "size1": "Small, serves one.",
+    "price1": "$9.99",
+
+    "size2": "Large, serves two-three.",
+    "price2": "$13.99",
+
+    "addonsDescription1": "Regular Fillings",
+    "addonsPrice1": "$1.49",
+
+    "addonsDescription2": "Premium Fillings",
+    "addonsPrice2": "$2.99",
+
     "categoryId": 5 
   },
 
-
-
-
-
   {
-    "name": "Italian Deli Mix",
+    "name": "Salami, Capocollo, Soppressata, & Provolone",
+
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with salami, capocollo, soppressata, provolone. & stone deck oven baked.",
+
+    "size1": "Large, serves one-two.",
+    "price1": "$14.99",
+
     "categoryId": 6
   },
+
   {
     "name": "Sausage, Onion, & Pepper",
+
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with sausage, onions, green bell peppers, mozzarella, & stone deck oven baked.",
+
+    "size1": "Large, serves one-two.",
+    "price1": "$14.99",
+
     "categoryId": 6
   },
+
   {
-    "name": "Meatball",
+    "name": "Meatball & Mozzarella",
+
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, marinara, mozzarella, & stone deck oven baked.",
+
+    "size1": "Large, serves one-two.",
+    "price1": "$13.99",
+
     "categoryId": 6
   },
+
   {
-    "name": "Eggplant",
+    "name": "Eggplant & Mozzarella",
+
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded eggplant cutlets, marinara, mozzarella, & stone deck oven baked.",
+
+    "size1": "Large, serves one-two.",
+    "price1": "$14.99",
+
     "categoryId": 6
   },
+
   {
-    "name": "Chicken",
+    "name": "Chicken & Mozzarella",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded chicken cutlets, marinara, mozzarella, & stone deck oven baked.",
+
+    "size1": "Large, serves one-two.",
+    "price1": "$14.99",
+
     "categoryId": 6
   },
+
   {
-    "name": "Meat Lover",
+    "name": "Meatballs, Sausage, Pepperoni, & Mozzarella",
+
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, sausage, pepperoni, marinara, mozzarella, & stone deck oven baked.",
+
+    "size1": "Large, serves one-two.",
+    "price1": "$14.99",
+
     "categoryId": 6
   },
+
+
+
+
 
   {
     "name": "Sausage Roll",

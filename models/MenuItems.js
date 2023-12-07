@@ -19,6 +19,49 @@ MenuItems.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+    size1: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    price1: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    size2: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    price2: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    size3: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    price3: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+
+    addonsDescription1: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    addonsPrice1: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+
+    addonsDescription2: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    addonsPrice2: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    
     categoryId: {
       type: DataTypes.INTEGER,
       references: {
