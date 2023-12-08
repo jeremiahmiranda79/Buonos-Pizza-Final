@@ -61,6 +61,8 @@ MenuItems.init(
       type: DataTypes.STRING,
       allowNull: true
     },
+
+    
     
     categoryId: {
       type: DataTypes.INTEGER,

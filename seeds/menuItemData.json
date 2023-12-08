@@ -78,6 +78,7 @@
 
     "categoryId": 2
   },
+
   {
     "name": "Bianca Slice",
 
@@ -91,6 +92,7 @@
 
     "categoryId": 2
   },
+
   {
     "name": "Siciliana Slice",
 
@@ -121,6 +123,7 @@
 
     "categoryId": 3
   },
+
   {
     "name": "Margherita Buono",
 
@@ -166,6 +169,7 @@
 
     "categoryId": 3
   },
+
   {
     "name": "Vegetarian",
 
@@ -188,6 +192,7 @@
 
     "categoryId": 3
   },
+
   {
     "name": "Works",
 
@@ -210,6 +215,7 @@
 
     "categoryId": 3
   },
+
   {
     "name": "Baked Ziti",
 
@@ -243,6 +249,7 @@
 
     "categoryId": 4
   },
+
   {
     "name": "Cauliflower",
 
@@ -345,79 +352,161 @@
     "categoryId": 6
   },
 
-
-
-
-
   {
     "name": "Sausage Roll",
+
     "description": "NYC-style; a blend of sausage, onions, green bell peppers, & mozzarella. Rolled in a light pizza dough. Brushed with garlic herb butter & stone deck oven baked.",
+
+    "price1": "$8.99",
+
     "categoryId": 7
   },
 
   {
     "name": "Garlic Bread",
+
     "description": "An Italian baguette brushed with garlic herb butter & lightly toasted.",
+
+    "price1": "$3.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Sicilian Garlic Bread",
+
     "description": "An Italian baguette brushed with garlic herb butter, topped with mozzarella, & lightly toasted.",
+
+    "price1": "$4.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Meatballs & Ricotta",
+
     "description": "Twin jumbo meatballs accompanied by marinara sauce, ricotta & parmesan.",
+
+    "size1": "Two piece.",
+    "price1": "$6.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Meatball Sliders",
+
     "description": "Five crostini's topped with our meatballs, marinara sauce, oregenao, & mozzarella.",
+
+    "size1": "Five piece.",
+    "price1": "$6.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Fries",
+
     "description": "Tossed with salt, black pepper, garlic seasoning, oregano, & parsley.",
+
+    "price1": "$3.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Pepperoni Pizza Fries",
+
     "description": "Bounos-style; seasoned french fries baked with pepperoni, mozzarella, oregano, & finished with marinara sauce.",
+
+    "price1": "$8.99",
+
     "categoryId": 8
   },
+
   {
     "name": "NJ Style Disco Fries",
+
     "description": "New Jersey diner-style; seasoned french fries baked with mozzarella, topped with a classic brown chicken gravy, & parsley.",
+
+    "price1": "$8.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Fried Mushrooms",
+
     "description": "Cremini mushrooms, coated in a light & crispy seasoned batter, then deep fried to golden brown perfection. Served with buttermilk ranch.",
+
+    "price1": "$8.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Fried Zucchini",
+
     "description": "Fresh zucchini sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with buttermilk ranch.",
+
+    "price1": "$8.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Fried Mozzarella Sticks",
+
     "description": "Six mozzarella sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce.",
+
+    "size1": "Six piece.",
+    "price1": "$8.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Fried Ravioli",
+
     "description": "Six ricotta stuffed ravioli, lightly Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce.",
+
+    "size1": "Six piece.",
+    "price1": "$8.99",
+
     "categoryId": 8
   },
+
   {
     "name": "Traditional Chicken Wings",
-    "description": "Bone-in fried chicken wings tossed in your choice of sauce. Served with celery sticks, & choice of dressing.",
+
+    "description": "Bone-in fried chicken wings tossed in your choice of hot, medium, mild, honey hot, bbq, or honey bbq sauce. Served with celery sticks, & choice of ranch or blue cheese dressing.",
+
+    "size1": "Six piece.",
+    "price1": "$7.75",
+
+    "size2": "Ten piece.",
+    "price2": "$13.99",
+
+    "addonsDescription1": "Extra dressing or sauce.",
+    "addonsPrice1": "$.75",
+
     "categoryId": 8
   },
+
   {
     "name": "Boneless Chicken Wings",
-    "description": "Boneless fried chicken pieces tossed in your choice of sauce. Served with celery sticks, & choice of dressing.",
+
+    "description": "Boneless fried chicken pieces tossed in your choice of hot, medium, mild, honey hot, bbq, or honey bbq sauce. Served with celery sticks, & choice of ranch or blue cheese dressing.",
+
+    "size1": "Six piece.",
+    "price1": "$7.25",
+
+    "size2": "Ten piece.",
+    "price2": "$10.25",
+
+    "addonsDescription1": "Extra dressing or sauce.",
+    "addonsPrice1": "$.75",
+
     "categoryId": 8
   },
 
