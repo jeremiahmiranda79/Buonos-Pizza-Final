@@ -19,7 +19,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$5.25",
 
-    "categoryId": 1
+    "categoryId": 1,
+
+    "pizza": true
   },
 
   {
@@ -42,7 +44,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$5.25",
 
-    "categoryId": 1
+    "categoryId": 1,
+
+    "pizza": true
   }, 
 
   {
@@ -62,7 +66,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$5.25",
 
-    "categoryId": 1
+    "categoryId": 1,
+
+    "pizza": true
   },
 
   {
@@ -76,7 +82,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$1.50",
 
-    "categoryId": 2
+    "categoryId": 2,
+
+    "pizza": true
   },
 
   {
@@ -90,7 +98,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$1.50",
 
-    "categoryId": 2
+    "categoryId": 2,
+
+    "pizza": true
   },
 
   {
@@ -104,7 +114,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$1.50",
 
-    "categoryId": 2
+    "categoryId": 2,
+
+    "pizza": true
   },
 
   {
@@ -121,7 +133,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$5.25",
 
-    "categoryId": 3
+    "categoryId": 3,
+
+    "pizza": true
   },
 
   {
@@ -132,9 +146,6 @@
     "size1": "Small 14 inch, 6 cut.",
     "price1": "$16.49",
 
-    "size2": "Large 16 inch, 8 cut.",
-    "price2": "$??.??",
-
     "size3": "Extra Large 18 inch, 8 cut.",
     "price3": "$19.99",
 
@@ -144,7 +155,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$5.25",
 
-    "categoryId": 3
+    "categoryId": 3,
+
+    "pizza": true
   },
 
   {
@@ -167,7 +180,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$5.25",
 
-    "categoryId": 3
+    "categoryId": 3,
+
+    "pizza": true
   },
 
   {
@@ -190,7 +205,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$5.25",
 
-    "categoryId": 3
+    "categoryId": 3,
+
+    "pizza": true
   },
 
   {
@@ -213,7 +230,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$5.25",
 
-    "categoryId": 3
+    "categoryId": 3,
+
+    "pizza": true
   },
 
   {
@@ -230,7 +249,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$5.25",
 
-    "categoryId": 3
+    "categoryId": 3,
+
+    "pizza": true
   },
 
   {
@@ -247,7 +268,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$3.50",
 
-    "categoryId": 4
+    "categoryId": 4,
+
+    "pizza": true
   },
 
   {
@@ -264,7 +287,9 @@
     "addonsDescription2": "Premium Toppings",
     "addonsPrice2": "$3.50",
 
-    "categoryId": 4
+    "categoryId": 4,
+
+    "pizza": true
   },
 
   {
@@ -284,7 +309,9 @@
     "addonsDescription2": "Premium Fillings",
     "addonsPrice2": "$2.99",
 
-    "categoryId": 5 
+    "categoryId": 5,
+
+    "pizza": true 
   },
 
   {
@@ -295,7 +322,9 @@
     "size1": "Large, serves one-two.",
     "price1": "$14.99",
 
-    "categoryId": 6
+    "categoryId": 6,
+
+    "pizza": true
   },
 
   {
@@ -306,7 +335,9 @@
     "size1": "Large, serves one-two.",
     "price1": "$14.99",
 
-    "categoryId": 6
+    "categoryId": 6,
+
+    "pizza": true
   },
 
   {
@@ -317,7 +348,9 @@
     "size1": "Large, serves one-two.",
     "price1": "$13.99",
 
-    "categoryId": 6
+    "categoryId": 6,
+
+    "pizza": true
   },
 
   {
@@ -328,7 +361,9 @@
     "size1": "Large, serves one-two.",
     "price1": "$14.99",
 
-    "categoryId": 6
+    "categoryId": 6,
+
+    "pizza": true
   },
 
   {
@@ -338,7 +373,9 @@
     "size1": "Large, serves one-two.",
     "price1": "$14.99",
 
-    "categoryId": 6
+    "categoryId": 6,
+
+    "pizza": true
   },
 
   {
@@ -349,7 +386,9 @@
     "size1": "Large, serves one-two.",
     "price1": "$14.99",
 
-    "categoryId": 6
+    "categoryId": 6,
+
+    "pizza": true
   },
 
   {
@@ -357,6 +396,7 @@
 
     "description": "NYC-style; a blend of sausage, onions, green bell peppers, & mozzarella. Rolled in a light pizza dough. Brushed with garlic herb butter & stone deck oven baked.",
 
+    "size1": "Small, serves one.",
     "price1": "$8.99",
 
     "categoryId": 7
@@ -512,40 +552,96 @@
 
   {
     "name": "Caesar Salad",
+
     "description": "Romaine lettuce, Italian style croutons, caesar dressing, & parmesan.",
-    "categoryId": 9
+
+    "size1": "Small, serves one-two.",
+    "price1": "$5.25",
+
+    "size2": "Large, serves two-three.",
+    "price2": "$7.99",
+
+    "categoryId": 9,
+
+    "salad": true
   },
+
   {
     "name": "House Salad",
+
     "description": "Romaine lettuce, tomatoes, onions, black olives, oregano, parmesan, & choice of dressing.",
-    "categoryId": 9
+
+    "size1": "Small, serves one-two.",
+    "price1": "$5.25",
+
+    "size2": "Large, serves two-three.",
+    "price2": "$7.99",
+
+    "categoryId": 9,
+
+    "salad": true
   },
+
   {
     "name": "Chef Salad",
+
     "description": "Romaine lettuce, tomatoes, onions, black olives, banana peppers, provolone, deli ham, oregano, parmesan, & choice of dressing.",
-    "categoryId": 9
+
+    "size2": "Large, serves two-three.",
+    "price2": "$11.99",
+
+    "categoryId": 9,
+
+    "salad": true
   },
+
   {
     "name": "Chicken Cutlet Salad",
+
     "description": "Romaine lettuce, tomatoes, onions, black olives, bananas peppers, sliced chicken cutlets, oregano, parmesan, & choice of dressing.",
-    "categoryId": 9
+
+    "size2": "Large, serves two-three.",
+    "price2": "$11.99",
+
+    "categoryId": 9,
+
+    "salad": true
   },
+
   {
     "name": "Antipasto",
+
     "description": "Romaine lettuce, tomatoes, onions, black olives, mild giardiniera, provolone, salami, cappocolo, oregano, parmesan, & choice of dressing.",
-    "categoryId": 9
+
+    "size2": "Large, serves two-three.",
+    "price2": "$11.99",
+
+    "categoryId": 9,
+
+    "salad": true
   },
+
   {
     "name": "Caprese",
+
     "description": "Mozzarella fresca, vine-ripened tomatoes, olive oil, balsamic fig glaze, basil puree, salt, & pepper.",
+
+    "size2": "Large, serves two-three.",
+    "price2": "$8.49",
+
     "categoryId": 9
   },
 
   {
     "name": "Chicken Parmesan",
+
     "description": "Breaded chicken cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette.",
+
+    
+
     "categoryId": 10
   },
+
   {
     "name": "Eggplant Parmesan",
     "description": "Breaded eggplant cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette.",

@@ -1,6 +1,6 @@
 const router = require('express').Router();
 // const sequelize = require('../../config/connection');
-const { Categories, MenuItems, SizePizzaNeapolitan } = require('../../models');
+const { Categories, MenuItems, ToppingsPremium, ToppingsRegular, SizePizzaNeapolitan } = require('../../models');
 
 router.get('/', async (req, res) => {
   try {
@@ -23,7 +23,9 @@ router.get('/:menuitemsId', async (req, res) => {
     const menuItem = await MenuItems.findByPk(req.params.menuitemsId, {
       include: [
         { model: Categories },
-        { model: SizePizzaNeapolitan }
+        { model: SizePizzaNeapolitan },
+        { model: ToppingsPremium },
+        { model: ToppingsRegular }
       ]
     });
     

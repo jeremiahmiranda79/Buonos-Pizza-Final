@@ -1,6 +1,9 @@
 const Categories = require('./Categories');
 const MenuItems = require('./MenuItems');
-const Toppings = require('./Toppings');
+
+const ToppingsRegular = require('./ToppingsRegular');
+const ToppingsPremium = require('./ToppingsPremium');
+
 const Employees = require('./Employees');
 const Images = require('./Images');
 
@@ -17,4 +20,4 @@ MenuItems.belongsTo(Categories, {
 
 
 
-module.exports = { Categories, MenuItems, Toppings, Employees, Images, SizePizzaNeapolitan };
+module.exports = { Categories, MenuItems, ToppingsRegular, ToppingsPremium, Employees, Images, SizePizzaNeapolitan };

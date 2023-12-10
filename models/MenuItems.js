@@ -62,8 +62,6 @@ MenuItems.init(
       allowNull: true
     },
 
-    
-    
     categoryId: {
       type: DataTypes.INTEGER,
       references: {
@@ -71,7 +69,17 @@ MenuItems.init(
         key: 'id'
       }
     },
+
+    pizza: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+    salad: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    }
   },
+  
   {
     sequelize: connection,
     timestamps: true,
