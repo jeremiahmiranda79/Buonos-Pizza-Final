@@ -1,6 +1,6 @@
 const router = require('express').Router();
 // const sequelize = require('../../config/connection');
-const { Categories, MenuItems, ToppingsPremium, ToppingsRegular, Employees, Images } = require('../../models');
+const { Categories, MenuItems, ToppingsPremium, ToppingsRegular, Employees, Images, Dressings, Sauces } = require('../../models');
 const withAuth = require('../../utils/auth');
 const isAdmin = require('../../utils/admin');
 
@@ -43,23 +43,28 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 				{ model: Categories},
 			]
 		});
-
 		const serializedItem = item.get({ plain: true });
 
-		const toppingsRegular = await ToppingsRegular.findAll({});		
+		const toppingsRegular = await ToppingsRegular.findAll({});	
 		const serializedtoppingsRegular = toppingsRegular.map((item) => item.get({ plain: true }));
 
-		const toppingsPremium = await ToppingsPremium.findAll({});		
+		const toppingsPremium = await ToppingsPremium.findAll({});	
 		const serializedtoppingsPremium = toppingsPremium.map((item) => item.get({ plain: true }));
 
-		
+		const dressings = await Dressings.findAll({});
+		const serializedDressings = dressings.map((item) => item.get({ plain: true }));
+
+		const sauces = await Sauces.findAll({});
+		const serializedSauces = sauces.map((item) => item.get({ plain: true})); 
 		
 		res.status(200).render('item-details', {
 			loggedIn: req.session.loggedIn, 
 			name: req.session.name,
 			item: serializedItem,
 			toppingsRegular: serializedtoppingsRegular,
-			toppingsPremium: serializedtoppingsPremium
+			toppingsPremium: serializedtoppingsPremium,
+			dressing: serializedDressings,
+			sauce: serializedSauces
 		});
 	} 
 	catch (error) {

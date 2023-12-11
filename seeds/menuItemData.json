@@ -519,7 +519,7 @@
   {
     "name": "Traditional Chicken Wings",
 
-    "description": "Bone-in fried chicken wings tossed in your choice of hot, medium, mild, honey hot, bbq, or honey bbq sauce. Served with celery sticks, & choice of ranch or blue cheese dressing.",
+    "description": "Bone-in fried chicken wings tossed in your choice of sauce. Served with celery sticks, & choice of dressing.",
 
     "size1": "Six piece.",
     "price1": "$7.75",
@@ -530,13 +530,16 @@
     "addonsDescription1": "Extra dressing or sauce.",
     "addonsPrice1": "$.75",
 
-    "categoryId": 8
+    "categoryId": 8,
+
+    "salad": true,
+    "wing": true
   },
 
   {
     "name": "Boneless Chicken Wings",
 
-    "description": "Boneless fried chicken pieces tossed in your choice of hot, medium, mild, honey hot, bbq, or honey bbq sauce. Served with celery sticks, & choice of ranch or blue cheese dressing.",
+    "description": "Boneless fried chicken pieces tossed in your choice of sauce. Served with celery sticks, & choice of dressing.",
 
     "size1": "Six piece.",
     "price1": "$7.25",
@@ -547,7 +550,10 @@
     "addonsDescription1": "Extra dressing or sauce.",
     "addonsPrice1": "$.75",
 
-    "categoryId": 8
+    "categoryId": 8,
+
+    "salad": true,
+    "wing": true
   },
 
   {
@@ -561,9 +567,7 @@
     "size2": "Large, serves two-three.",
     "price2": "$7.99",
 
-    "categoryId": 9,
-
-    "salad": true
+    "categoryId": 9
   },
 
   {
@@ -636,9 +640,6 @@
     "name": "Chicken Parmesan",
 
     "description": "Breaded chicken cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette.",
-
-    
-
     "categoryId": 10
   },
 

@@ -54,9 +54,29 @@
             <tr>
               <th>Additional dresings are $.75 each.</th>
             </tr>
-            {{#each toppingsRegular as |tr|}}
+            {{#each dressing as |d|}}
             <tr>
-              <td>{{tr.name}}</td>
+              <td>{{d.name}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+    </center>
+  {{/if}}
+
+  {{#if item.wing}}
+      <h4>{{item.addonsDescription1}} {{item.addonsPrice1}}</h4>
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all sauce options.</button>
+        <div class="content">
+          <table>
+            <tr>
+              <th>Additional sauces are $.75 each.</th>
+            </tr>
+            {{#each sauce as |s|}}
+            <tr>
+              <td>{{s.name}}</td>
             </tr>
             {{/each}}
           </table>

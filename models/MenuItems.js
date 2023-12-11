@@ -77,9 +77,13 @@ MenuItems.init(
     salad: {
       type: DataTypes.BOOLEAN,
       allowNull: true
+    },
+    wing: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
     }
   },
-  
+
   {
     sequelize: connection,
     timestamps: true,
