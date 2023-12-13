@@ -640,45 +640,96 @@
     "name": "Chicken Parmesan",
 
     "description": "Breaded chicken cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette.",
-    "categoryId": 10
+
+    "size2": "Dinner portion for one.",
+    "price2": "$18.99",
+
+    "categoryId": 10,
+
+    "pasta": true,
+    "salad": true
   },
 
   {
     "name": "Eggplant Parmesan",
+
     "description": "Breaded eggplant cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette.",
-    "categoryId": 10
-  },
-  {
-    "name": "Lasagna Bolognese",
-    "description": "A baked six layer Neapolitan style lasagna stacked with bechamel, ground beef, marinara, ricotta, mozzarella, & parmesan. Served with a small house salad, & small Italian baguette.",
-    "categoryId": 10
-  },
-  {
-    "name": "Ravioli Grande",
-    "description": "Six jumbo ricotta stuffed ravioli topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
-    "categoryId": 10
-  },
-  {
-    "name": "Pasta & Marinara Sauce",
-    "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
-    "categoryId": 10
-  },
-  {
-    "name": "Pasta & Meat Sauce",
-    "description": "Choice of pasta topped with meat sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
-    "categoryId": 10
-  },
-  {
-    "name": "Pasta & Meatballs ",
-    "description": "Choice of pasta topped with marinara sauce, two jumbo meatballs, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
-    "categoryId": 10
-  },
-  {
-    "name": "Pasta & Saugage",
-    "description": "Choice of pasta topped with marinara sauce, two sausage links,parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
-    "categoryId": 10
+
+    "categoryId": 10,
+
+    "pasta": true,
+    "salad": true
   },
 
+  {
+    "name": "Lasagna Bolognese",
+
+    "description": "A baked six layer Neapolitan style lasagna stacked with bechamel, ground beef, marinara, ricotta, mozzarella, & parmesan. Served with a small house salad, & small Italian baguette.",
+
+    "categoryId": 10,
+
+    "salad": true
+  },
+
+  {
+    "name": "Ravioli Grande",
+
+    "description": "Six jumbo ricotta stuffed ravioli topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
+
+    "categoryId": 10,
+
+    "salad": true
+  },
+
+  {
+    "name": "Pasta & Marinara Sauce",
+
+    "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
+
+    "categoryId": 10,
+
+    "pasta": true,
+    "salad": true
+  },
+
+  {
+    "name": "Pasta & Meat Sauce",
+
+    "description": "Choice of pasta topped with meat sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
+
+    "categoryId": 10,
+
+    "pasta": true,
+    "salad": true
+  },
+
+  {
+    "name": "Pasta & Meatballs ",
+
+    "description": "Choice of pasta topped with marinara sauce, two jumbo meatballs, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
+
+    "categoryId": 10,
+
+    "pasta": true,
+    "salad": true
+  },
+
+  {
+    "name": "Pasta & Saugage",
+
+    "description": "Choice of pasta topped with marinara sauce, two sausage links,parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
+
+    "categoryId": 10,
+
+    "pasta": true,
+    "salad": true
+  },
+
+
+
+
+
+  
 
   {
     "name": "Meatball Parmesan",

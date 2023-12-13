@@ -81,6 +81,10 @@ MenuItems.init(
     wing: {
       type: DataTypes.BOOLEAN,
       allowNull: true
+    },
+    pasta: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
     }
   },
 

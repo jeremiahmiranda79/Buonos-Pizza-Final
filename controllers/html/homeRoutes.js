@@ -1,6 +1,6 @@
 const router = require('express').Router();
 // const sequelize = require('../../config/connection');
-const { Categories, MenuItems, ToppingsPremium, ToppingsRegular, Employees, Images, Dressings, Sauces } = require('../../models');
+const { Categories, MenuItems, ToppingsPremium, ToppingsRegular, Employees, Images, Dressings, Sauces, Pastas } = require('../../models');
 const withAuth = require('../../utils/auth');
 const isAdmin = require('../../utils/admin');
 
@@ -56,6 +56,9 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 
 		const sauces = await Sauces.findAll({});
 		const serializedSauces = sauces.map((item) => item.get({ plain: true})); 
+
+		const pastas = await Pastas.findAll({});
+		const serializedPastas = pastas.map((item) => item.get({ plain: true}));
 		
 		res.status(200).render('item-details', {
 			loggedIn: req.session.loggedIn, 
@@ -64,7 +67,8 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 			toppingsRegular: serializedtoppingsRegular,
 			toppingsPremium: serializedtoppingsPremium,
 			dressing: serializedDressings,
-			sauce: serializedSauces
+			sauce: serializedSauces,
+			pasta: serializedPastas
 		});
 	} 
 	catch (error) {

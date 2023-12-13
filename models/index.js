@@ -13,6 +13,8 @@ const Dressings = require('./Dressings');
 
 const Sauces = require('./Sauces');
 
+const Pastas = require('./Pastas');
+
 // MenuItems to Categories
 Categories.hasMany(MenuItems, {
   foreignKey: 'categoryId'
@@ -22,4 +24,4 @@ MenuItems.belongsTo(Categories, {
   foreignKey: 'categoryId'
 });
 
-module.exports = { Categories, MenuItems, ToppingsRegular, ToppingsPremium, Employees, Images, SizePizzaNeapolitan, Dressings, Sauces };
+module.exports = { Categories, MenuItems, ToppingsRegular, ToppingsPremium, Employees, Images, SizePizzaNeapolitan, Dressings, Sauces, Pastas };

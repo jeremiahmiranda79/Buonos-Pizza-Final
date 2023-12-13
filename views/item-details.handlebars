@@ -85,6 +85,26 @@
     </center>
   {{/if}}
 
+  {{#if item.pasta}}
+      <h4>{{item.addonsDescription1}} {{item.addonsPrice1}}</h4>
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all pasta options.</button>
+        <div class="content">
+          <table>
+            {{!-- <tr>
+              <th>Additional sauces are $.75 each.</th>
+            </tr> --}}
+            {{#each pasta as |p|}}
+            <tr>
+              <td>{{p.name}}</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+    </center>
+  {{/if}}
+
   <br>
   <center>
     <a href="/menu" type="button" class="btn btn-success view-menu-button">back to menu</a>

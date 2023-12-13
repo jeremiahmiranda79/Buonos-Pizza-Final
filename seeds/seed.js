@@ -8,7 +8,8 @@ const {
   Employees, 
   Images, 
   Dressings,
-  Sauces 
+  Sauces, 
+  Pastas
 } = require('../models');
 
 const categoryData = require('./categoryData.json');
@@ -19,6 +20,7 @@ const employeeData = require('./employeeData.json');
 const imageData = require('./imageData.json');
 const dressingData = require('./dressingData.json');
 const sauceData = require('./sauceData.json');
+const pastaData = require('./pastaData.json');
 
 const seedData = async () => {
   await sequelize.sync({ force: true });
@@ -37,6 +39,8 @@ const seedData = async () => {
   await Dressings.bulkCreate(dressingData);
 
   await Sauces.bulkCreate(sauceData);
+
+  await Pastas.bulkCreate(pastaData);
 
   console.log('All seeded!')
   process.exit(0);
