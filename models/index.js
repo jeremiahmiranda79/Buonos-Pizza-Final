@@ -4,6 +4,9 @@ const MenuItems = require('./MenuItems');
 const ToppingsRegular = require('./ToppingsRegular');
 const ToppingsPremium = require('./ToppingsPremium');
 
+const ToppingsHotSub = require('./ToppingsHotSub');
+const ToppingsColdSub = require('./ToppingsColdSub');
+
 const Employees = require('./Employees');
 const Images = require('./Images');
 
@@ -15,6 +18,8 @@ const Sauces = require('./Sauces');
 
 const Pastas = require('./Pastas');
 
+const Marinaras = require('./Marinaras');
+
 // MenuItems to Categories
 Categories.hasMany(MenuItems, {
   foreignKey: 'categoryId'
@@ -24,4 +29,18 @@ MenuItems.belongsTo(Categories, {
   foreignKey: 'categoryId'
 });
 
-module.exports = { Categories, MenuItems, ToppingsRegular, ToppingsPremium, Employees, Images, SizePizzaNeapolitan, Dressings, Sauces, Pastas };
+module.exports = { 
+  Categories, 
+  MenuItems, 
+  ToppingsRegular, 
+  ToppingsPremium, 
+  ToppingsHotSub, 
+  ToppingsColdSub, 
+  Employees, 
+  Images, 
+  SizePizzaNeapolitan, 
+  Dressings, 
+  Sauces, 
+  Pastas, 
+  Marinaras 
+};

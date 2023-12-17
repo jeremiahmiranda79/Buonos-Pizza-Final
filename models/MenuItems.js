@@ -70,19 +70,37 @@ MenuItems.init(
       }
     },
 
-    pizza: {
+    topping: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
-    salad: {
+
+    topping_hot_sub: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
-    wing: {
+
+    topping_cold_sub: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
+
+    dressing: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+
+    wing_sauce: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+
     pasta: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+
+    marinara: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     }

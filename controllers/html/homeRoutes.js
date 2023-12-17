@@ -1,6 +1,20 @@
 const router = require('express').Router();
 // const sequelize = require('../../config/connection');
-const { Categories, MenuItems, ToppingsPremium, ToppingsRegular, Employees, Images, Dressings, Sauces, Pastas } = require('../../models');
+const { 
+	Categories, 
+	MenuItems, 
+	ToppingsPremium, 
+	ToppingsRegular, 
+	ToppingsHotSub, 
+	ToppingsColdSub, 
+	Employees, 
+	Images, 
+	Dressings, 
+	Sauces, 
+	Pastas, 
+	Marinaras 
+} = require('../../models');
+
 const withAuth = require('../../utils/auth');
 const isAdmin = require('../../utils/admin');
 
@@ -43,6 +57,7 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 				{ model: Categories},
 			]
 		});
+
 		const serializedItem = item.get({ plain: true });
 
 		const toppingsRegular = await ToppingsRegular.findAll({});	
@@ -59,6 +74,15 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 
 		const pastas = await Pastas.findAll({});
 		const serializedPastas = pastas.map((item) => item.get({ plain: true}));
+
+		const marinaras = await Marinaras.findAll({});
+		const serializedMarinaras = marinaras.map((item) => item.get({plain: true}));
+
+		const toppingsHotSub = await ToppingsHotSub.findAll({});
+		const serializedToppingsHotSub = toppingsHotSub.map((item) => item.get({plain: true}));
+
+		const toppingsColdSub = await ToppingsColdSub.findAll({});
+		const serializedToppingsColdSub = toppingsColdSub.map((item) => item.get({plain: true}));
 		
 		res.status(200).render('item-details', {
 			loggedIn: req.session.loggedIn, 
@@ -66,9 +90,14 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 			item: serializedItem,
 			toppingsRegular: serializedtoppingsRegular,
 			toppingsPremium: serializedtoppingsPremium,
+
+			toppingsHotSub: serializedToppingsHotSub,
+			toppingsColdSub: serializedToppingsColdSub,
+
 			dressing: serializedDressings,
 			sauce: serializedSauces,
-			pasta: serializedPastas
+			pasta: serializedPastas,
+			marinara: serializedMarinaras
 		});
 	} 
 	catch (error) {

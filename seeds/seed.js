@@ -9,7 +9,9 @@ const {
   Images, 
   Dressings,
   Sauces, 
-  Pastas
+  Pastas,
+  ToppingsHotSub, 
+  ToppingsColdSub
 } = require('../models');
 
 const categoryData = require('./categoryData.json');
@@ -22,6 +24,10 @@ const dressingData = require('./dressingData.json');
 const sauceData = require('./sauceData.json');
 const pastaData = require('./pastaData.json');
 
+const toppingsHotSubData = require('./toppingsHotSubData.json');
+
+const toppingsColdSubData = require('./toppingsColdSubData.json');
+
 const seedData = async () => {
   await sequelize.sync({ force: true });
 
@@ -31,6 +37,9 @@ const seedData = async () => {
   
   await ToppingsPremium.bulkCreate(toppingPremiumData);
   await ToppingsRegular.bulkCreate(toppingRegularData);
+
+  await ToppingsHotSub.bulkCreate(toppingsHotSubData);
+  await ToppingsColdSub.bulkCreate(toppingsColdSubData);
 
   await Employees.bulkCreate(employeeData, { individualHooks:true });
 

@@ -1,6 +1,17 @@
 const router = require('express').Router();
-// const sequelize = require('../../config/connection');
-const { Categories, MenuItems, ToppingsPremium, ToppingsRegular, SizePizzaNeapolitan, Dressings, Sauces, Pastas } = require('../../models');
+const { 
+  Categories, 
+  MenuItems, 
+  ToppingsPremium, 
+  ToppingsRegular, 
+  ToppingsHotSub, 
+  ToppingsColdSub, 
+  SizePizzaNeapolitan, 
+  Dressings, 
+  Sauces, 
+  Pastas, 
+  Marinaras 
+} = require('../../models');
 
 router.get('/', async (req, res) => {
   try {
@@ -28,7 +39,10 @@ router.get('/:menuitemsId', async (req, res) => {
         { model: ToppingsRegular },
         { model: Dressings },
         { model: Sauces }, 
-        { model: Pastas }
+        { model: Pastas },
+        { model: Marinaras },
+        { model: ToppingsHotSub },
+        { model: ToppingsColdSub }  
       ]
     });
     

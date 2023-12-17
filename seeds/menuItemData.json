@@ -21,9 +21,14 @@
 
     "categoryId": 1,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Bianca",
 
@@ -46,9 +51,14 @@
 
     "categoryId": 1,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   }, 
-
   {
     "name": "Siciliana",
 
@@ -68,9 +78,14 @@
 
     "categoryId": 1,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Napolitana Slice",
 
@@ -84,9 +99,14 @@
 
     "categoryId": 2,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Bianca Slice",
 
@@ -100,9 +120,14 @@
 
     "categoryId": 2,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Siciliana Slice",
 
@@ -116,9 +141,14 @@
 
     "categoryId": 2,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Grandma Pie",
 
@@ -135,9 +165,14 @@
 
     "categoryId": 3,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Margherita Buono",
 
@@ -157,9 +192,14 @@
 
     "categoryId": 3,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Meat Lover",
 
@@ -182,9 +222,14 @@
 
     "categoryId": 3,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Vegetarian",
 
@@ -207,9 +252,14 @@
 
     "categoryId": 3,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Works",
 
@@ -232,9 +282,14 @@
 
     "categoryId": 3,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Baked Ziti",
 
@@ -251,9 +306,14 @@
 
     "categoryId": 3,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Gluten Free",
 
@@ -270,9 +330,14 @@
 
     "categoryId": 4,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Cauliflower",
 
@@ -289,8 +354,15 @@
 
     "categoryId": 4,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
 
   {
     "name": "Calzone",
@@ -311,9 +383,14 @@
 
     "categoryId": 5,
 
-    "pizza": true 
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Salami, Capocollo, Soppressata, & Provolone",
 
@@ -324,9 +401,14 @@
 
     "categoryId": 6,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Sausage, Onion, & Pepper",
 
@@ -337,9 +419,14 @@
 
     "categoryId": 6,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Meatball & Mozzarella",
 
@@ -350,9 +437,14 @@
 
     "categoryId": 6,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Eggplant & Mozzarella",
 
@@ -363,9 +455,14 @@
 
     "categoryId": 6,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Chicken & Mozzarella",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded chicken cutlets, marinara, mozzarella, & stone deck oven baked.",
@@ -375,9 +472,14 @@
 
     "categoryId": 6,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Meatballs, Sausage, Pepperoni, & Mozzarella",
 
@@ -388,9 +490,14 @@
 
     "categoryId": 6,
 
-    "pizza": true
+    "topping": true,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
-
   {
     "name": "Sausage Roll",
 
@@ -399,8 +506,17 @@
     "size1": "Small, serves one.",
     "price1": "$8.99",
 
-    "categoryId": 7
+    "categoryId": 7,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
 
   {
     "name": "Garlic Bread",
@@ -409,7 +525,15 @@
 
     "price1": "$3.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -419,7 +543,15 @@
 
     "price1": "$4.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -430,7 +562,15 @@
     "size1": "Two piece.",
     "price1": "$6.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+    
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -441,7 +581,15 @@
     "size1": "Five piece.",
     "price1": "$6.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+    
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -451,7 +599,15 @@
 
     "price1": "$3.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+    
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": true,
+    "pasta": false,
+    "marinara": false
   },
 
   {
@@ -461,7 +617,15 @@
 
     "price1": "$8.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+    
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -471,7 +635,15 @@
 
     "price1": "$8.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+    
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -481,7 +653,15 @@
 
     "price1": "$8.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+    
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -491,7 +671,15 @@
 
     "price1": "$8.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+    
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -502,7 +690,15 @@
     "size1": "Six piece.",
     "price1": "$8.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+    
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -513,7 +709,15 @@
     "size1": "Six piece.",
     "price1": "$8.99",
 
-    "categoryId": 8
+    "categoryId": 8,
+    
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -531,9 +735,14 @@
     "addonsPrice1": "$.75",
 
     "categoryId": 8,
-
-    "salad": true,
-    "wing": true
+ 
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": true,
+    "pasta": false,
+    "marinara": false
   },
 
   {
@@ -552,9 +761,16 @@
 
     "categoryId": 8,
 
-    "salad": true,
-    "wing": true
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": true,
+    "pasta": false,
+    "marinara": false
   },
+
+
 
   {
     "name": "Caesar Salad",
@@ -567,7 +783,15 @@
     "size2": "Large, serves two-three.",
     "price2": "$7.99",
 
-    "categoryId": 9
+    "categoryId": 9,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
 
   {
@@ -583,7 +807,13 @@
 
     "categoryId": 9,
 
-    "salad": true
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
 
   {
@@ -596,7 +826,13 @@
 
     "categoryId": 9,
 
-    "salad": true
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
 
   {
@@ -609,7 +845,13 @@
 
     "categoryId": 9,
 
-    "salad": true
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
 
   {
@@ -622,7 +864,13 @@
 
     "categoryId": 9,
 
-    "salad": true
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
 
   {
@@ -633,8 +881,18 @@
     "size2": "Large, serves two-three.",
     "price2": "$8.49",
 
-    "categoryId": 9
+    "categoryId": 9,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
+
+
 
   {
     "name": "Chicken Parmesan",
@@ -646,8 +904,13 @@
 
     "categoryId": 10,
 
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
     "pasta": true,
-    "salad": true
+    "marinara": true
   },
 
   {
@@ -655,10 +918,18 @@
 
     "description": "Breaded eggplant cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette.",
 
+    "size2": "Dinner portion for one.",
+    "price2": "$18.99",
+
     "categoryId": 10,
 
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
     "pasta": true,
-    "salad": true
+    "marinara": true
   },
 
   {
@@ -666,9 +937,18 @@
 
     "description": "A baked six layer Neapolitan style lasagna stacked with bechamel, ground beef, marinara, ricotta, mozzarella, & parmesan. Served with a small house salad, & small Italian baguette.",
 
+    "size2": "Dinner portion for one.",
+    "price2": "$16.99",
+
     "categoryId": 10,
 
-    "salad": true
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -676,9 +956,18 @@
 
     "description": "Six jumbo ricotta stuffed ravioli topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
 
+    "size2": "Dinner portion for one.",
+    "price2": "$16.99",
+
     "categoryId": 10,
 
-    "salad": true
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
 
   {
@@ -686,10 +975,18 @@
 
     "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
 
+    "size2": "Dinner portion for one.",
+    "price2": "$9.49",
+
     "categoryId": 10,
 
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
     "pasta": true,
-    "salad": true
+    "marinara": true
   },
 
   {
@@ -697,10 +994,18 @@
 
     "description": "Choice of pasta topped with meat sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
 
+    "size2": "Dinner portion for one.",
+    "price2": "$14.99",
+
     "categoryId": 10,
 
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
     "pasta": true,
-    "salad": true
+    "marinara": true
   },
 
   {
@@ -708,10 +1013,18 @@
 
     "description": "Choice of pasta topped with marinara sauce, two jumbo meatballs, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
 
+    "size2": "Dinner portion for one.",
+    "price2": "$14.99",
+
     "categoryId": 10,
 
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
     "pasta": true,
-    "salad": true
+    "marinara": true
   },
 
   {
@@ -719,126 +1032,353 @@
 
     "description": "Choice of pasta topped with marinara sauce, two sausage links,parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette.",
 
+    "size2": "Dinner portion for one.",
+    "price2": "$14.99",
+
     "categoryId": 10,
 
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": false,
+    "dressing": true,
+    "wing_sauce": false,
     "pasta": true,
-    "salad": true
+    "marinara": true
   },
 
 
-
-
-
-  
 
   {
     "name": "Meatball Parmesan",
+
     "description": "Foot long Italian baguette stuffed with meatballs, marinara sauce, mozzarella, oregano, & lightly toasted.",
-    "categoryId": 11
+
+    "size2": "Twelve inches, serves one-two.",
+    "price2": "$9.99",
+
+    "categoryId": 11,
+
+    "topping": false,
+    "topping_hot_sub": true,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Sausage Parmesan",
+
     "description": "Foot long Italian baguette stuffed with suasage links, marinara sauce, mozzarella, oregano, & lightly toasted.",
-    "categoryId": 11
+
+    "size2": "Twelve inches, serves one-two.",
+    "price2": "$9.99",
+
+    "categoryId": 11,
+
+    "topping": false,
+    "topping_hot_sub": true,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Chicken Parmesan",
+
     "description": "Foot long Italian baguette stuffed with breaded chicken cutlets, marinara sauce, mozzarella, oregano, & lightly toasted.",
-    "categoryId": 11
+
+    "size2": "Twelve inches, serves one-two.",
+    "price2": "$10.99",
+
+    "categoryId": 11,
+
+    "topping": false,
+    "topping_hot_sub": true,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Eggplant Parmesan",
+
     "description": "Foot long Italian baguette stuffed with breaded eggplant cutlets, marinara sauce, mozzarella, oregano, & lightly toasted.",
-    "categoryId": 11
+
+    "size2": "Twelve inches, serves one-two.",
+    "price2": "$10.99",
+
+    "categoryId": 11,
+
+    "topping": false,
+    "topping_hot_sub": true,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Pepperoni Melt",
+
     "description": "Foot long Italian baguette stuffed with pepperoni, marinara, mozzarella, oregano, & lightly toasted.",
-    "categoryId": 11
+
+    "size2": "Twelve inches, serves one-two.",
+    "price2": "$9.99",
+
+    "categoryId": 11,
+
+    "topping": false,
+    "topping_hot_sub": true,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Sausage, Onions, Peppers",
+
     "description": "Foot long Italian baguette stuffed with sauteed sausage, onions, peppers, oregano, & lightly toasted.",
-    "categoryId": 11
+
+    "size2": "Twelve inches, serves one-two.",
+    "price2": "$9.99",
+
+    "categoryId": 11,
+
+    "topping": false,
+    "topping_hot_sub": true,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Philly Steak",
+
     "description": "Foot long Italian baguette stuffed with sauteed shaved steak, onions, & white wine. Topped with choice of melted cheese, & lightly toasted.",
-    "categoryId": 11
+
+    "size2": "Twelve inches, serves one-two.",
+    "price2": "$10.99",
+
+    "categoryId": 11,
+
+    "topping": false,
+    "topping_hot_sub": true,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Philly Chicken",
+
     "description": "Foot long Italian baguette stuffed with sauteed shaved chicken breast, onions, & white wine. Topped with choice of melted cheese, & lightly toasted.",
-    "categoryId": 11
+
+    "size2": "Twelve inches, serves one-two.",
+    "price2": "$10.99",
+
+    "categoryId": 11,
+
+    "topping": false,
+    "topping_hot_sub": true,
+    "topping_cold_sub": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
   
 
-
-
-
-
   {
     "name": "Italian Deli Mix",
+
     "description": "Foot long Italian baguette layered with salami, capocollo, soppressata, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
-    "categoryId": 12
+
+    "categoryId": 12,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": true,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
 
   {
     "name": "Ham & Provolone",
+
     "description": "Foot long Italian baguette layered with deli ham, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
-    "categoryId": 12
+
+    "categoryId": 12,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": true,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false, 
+    "marinara": false
   },
+
   {
     "name": "Salami & Provolone",
+
     "description": "Foot long Italian baguette layered with salami, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
-    "categoryId": 12
+
+    "categoryId": 12,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": true,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
+
   {
     "name": "Capocollo & Provolone",
+
     "description": "Foot long Italian baguette layered with capocollo, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
-    "categoryId": 12
+
+    "categoryId": 12,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": true,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
+
   {
     "name": "Pepperoni & Provolone",
+
     "description": "Foot long Italian baguette layered with pepperoni, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard.",
-    "categoryId": 12
+
+    "categoryId": 12,
+
+    "topping": false,
+    "topping_hot_sub": false,
+    "topping_cold_sub": true,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
+
 
 
   {
     "name": "Side of Pasta",
+
     "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs.",
-    "categoryId": 13
+
+    "categoryId": 13,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": true,
+    "marinara": true
   },
+
   {
     "name": "Side of Pasta & Meatball",
+
     "description": "Choice of pasta topped with marinara sauce, one jumbo meatball, parmesan, & Italian herbs.",
-    "categoryId": 13
+
+    "categoryId": 13,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": true, 
+    "marinara": true
   },
+
   {
     "name": "Side of Pasta & Sausage",
+
     "description": "Choice of pasta topped with marinara sauce, one sausage link, parmesan, & Italian herbs.",
-    "categoryId": 13
+
+    "categoryId": 13,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": true,
+    "marinara": true
   },
+
   {
     "name": "Side of Meatballs",
+
     "description": "Twin jumbo meatballs topped with marinara sauce, parmesan, & Italian herbs.",
-    "categoryId": 13
+
+    "categoryId": 13,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Side of Sausage",
+
     "description": "Twin sausage links topped with marinara sauce, parmesan, & Italian herbs.",
-    "categoryId": 13
+
+    "categoryId": 13,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Garlic Bread",
+
     "description": "An Italian baguette brushed with garlic herb butter & lightly toasted.",
-    "categoryId": 13
+
+    "categoryId": 13,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": true
   },
+
   {
     "name": "Fries",
+
     "description": "Tossed with salt, black pepper, garlic seasoning, oregano, & parsley.",
-    "categoryId": 13
+
+    "categoryId": 13,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false,
+    "marinara": false
   },
 
 
@@ -846,48 +1386,119 @@
 
   {
     "name": "Italian Ice",
+
     "description": "Refreshing icy textured treat that is dairy-free, gluten-free, cholesterol-free, and fat-free.",
-    "categoryId": 14
+
+    "categoryId": 14,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false
   },
+
   {
     "name": "Black & White Cookie",
+
     "description": "Queens NYC-style; a round cookies frosted in two colors, with one half vanilla & the other chocolate.",
-    "categoryId": 14
+
+    "categoryId": 14,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false
   },
+
   {
     "name": "Crumb Cake",
+
     "description": "Queens NYC-style; a cake made of yeast dough covered with a sweet crumb topping referred to as streusel.",
-    "categoryId": 14
+
+    "categoryId": 14,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false
   },
+
   {
     "name": "Cannoli Grande",
+
     "description": "Sicilian-style; a tube-shaped shell of fried pastry dough, filled with a sweet, creamy filling containing ricotta, mini chocolate chips, & topped with crushed pistachios.",
-    "categoryId": 14
+
+    "categoryId": 14,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false
   },
+
   {
     "name": "Tiramisu",
+
     "description": "A coffee-flavoured Italian dessert made of ladyfingers (savoiardi) dipped in coffee, layered with a whipped mascarpone, & flavoured with cocoa.",
-    "categoryId": 14
+
+    "categoryId": 14,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false
   },
+
   {
     "name": "Cheese Cake",
+
     "description": "NYC-style; a dense and rich cheese cake baked in a graham cracker crust with sweet cream cheese vanilla filling.",
-    "categoryId": 14
+
+    "categoryId": 14,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false
   },
+
   {
     "name": "Limoncello Cake",
+
     "description": "Fluffy sponge cake layers, brushed with a limoncello syrup, filled with a thin layer of lemon curd and frosted with a decadent mascarpone and cream cheese frosting.",
-    "categoryId": 14
+
+    "categoryId": 14,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false
   },
+
   {
     "name": "Chocolate Mousse Cake",
+
     "description": "Rich layers of dark, milk and white chocolate come together perfectly in this no-bake cake. A chocolate cookie-crumb crust adds a satisfying crunch to the silky, smooth mousse.",
-    "categoryId": 14
+
+    "categoryId": 14,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false
   },
+
   {
     "name": "Zeppolis",
+
     "description": "Italian-style; deep-fried dough fritters & topped with powdered sugar.",
-    "categoryId": 14
+
+    "categoryId": 14,
+
+    "topping": false,
+    "dressing": false,
+    "wing_sauce": false,
+    "pasta": false
   },
 
 
