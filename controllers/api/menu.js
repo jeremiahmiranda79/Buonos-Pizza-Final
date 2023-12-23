@@ -1,16 +1,18 @@
 const router = require('express').Router();
 const { 
   Categories, 
-  MenuItems, 
-  ToppingsPremium, 
-  ToppingsRegular, 
-  ToppingsHotSub, 
-  ToppingsColdSub, 
-  SizePizzaNeapolitan, 
   Dressings, 
-  Sauces, 
+  Marinaras, 
+  MenuItems, 
   Pastas, 
-  Marinaras 
+  Sauces,
+  SaucesDesert, 
+  SizePizzaNeapolitan, 
+  ToppingsColdSub, 
+  ToppingsDesert,
+  ToppingsHotSub, 
+  ToppingsPremium, 
+  ToppingsRegular
 } = require('../../models');
 
 router.get('/', async (req, res) => {
@@ -34,15 +36,17 @@ router.get('/:menuitemsId', async (req, res) => {
     const menuItem = await MenuItems.findByPk(req.params.menuitemsId, {
       include: [
         { model: Categories },
-        { model: SizePizzaNeapolitan },
-        { model: ToppingsPremium },
-        { model: ToppingsRegular },
         { model: Dressings },
-        { model: Sauces }, 
-        { model: Pastas },
         { model: Marinaras },
+        { model: Pastas },
+        { model: Sauces }, 
+        { model: SaucesDesert },
+        { model: SizePizzaNeapolitan },
+        { model: ToppingsColdSub },
+        { model: ToppingsDesert },  
         { model: ToppingsHotSub },
-        { model: ToppingsColdSub }  
+        { model: ToppingsPremium },
+        { model: ToppingsRegular }
       ]
     });
     

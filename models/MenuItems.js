@@ -11,14 +11,25 @@ MenuItems.init(
       primaryKey: true,
       autoIncrement: true
     },
+
+    categoryId: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'categories',
+        key: 'id'
+      }
+    },
+
     name: {
       type: DataTypes.STRING,
       allowNull: false
     },
+
     description: {
       type: DataTypes.STRING,
       allowNull: false
     },
+
     size1: {
       type: DataTypes.STRING,
       allowNull: true
@@ -27,6 +38,7 @@ MenuItems.init(
       type: DataTypes.STRING,
       allowNull: true
     },
+
     size2: {
       type: DataTypes.STRING,
       allowNull: true
@@ -35,6 +47,7 @@ MenuItems.init(
       type: DataTypes.STRING,
       allowNull: true
     },
+
     size3: {
       type: DataTypes.STRING,
       allowNull: true
@@ -62,45 +75,71 @@ MenuItems.init(
       allowNull: true
     },
 
-    categoryId: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'categories',
-        key: 'id'
-      }
+    addonsDescription3: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    addonsPrice3: {
+      type: DataTypes.STRING,
+      allowNull: true
     },
 
-    topping: {
+    toppingPizzaFull: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
 
-    topping_hot_sub: {
+    toppingPizzaSlice: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
 
-    topping_cold_sub: {
+    toppingPizzaGlutenFree: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
 
-    dressing: {
+    toppingHotSub: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
 
-    wing_sauce: {
+    toppingColdSub: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
 
-    pasta: {
+    toppingDesert: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
 
-    marinara: {
+    saladDressing: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+
+    wingSauce: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+
+    pastaType: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+
+    marinaraSauce: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+
+    desertSauce: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
+    },
+
+    desertType: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     }

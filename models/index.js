@@ -1,23 +1,16 @@
 const Categories = require('./Categories');
 const MenuItems = require('./MenuItems');
-
 const ToppingsRegular = require('./ToppingsRegular');
 const ToppingsPremium = require('./ToppingsPremium');
-
 const ToppingsHotSub = require('./ToppingsHotSub');
 const ToppingsColdSub = require('./ToppingsColdSub');
-
+const ToppingsDesert = require('./ToppingsDesert');
 const Employees = require('./Employees');
 const Images = require('./Images');
-
-const SizePizzaNeapolitan = require('./SizePizzaNeapolitan');
-
 const Dressings = require('./Dressings');
-
 const Sauces = require('./Sauces');
-
+const SaucesDesert = require('./SaucesDesert');
 const Pastas = require('./Pastas');
-
 const Marinaras = require('./Marinaras');
 
 // MenuItems to Categories
@@ -36,11 +29,12 @@ module.exports = {
   ToppingsPremium, 
   ToppingsHotSub, 
   ToppingsColdSub, 
+  ToppingsDesert,
   Employees, 
   Images, 
-  SizePizzaNeapolitan, 
   Dressings, 
   Sauces, 
+  SaucesDesert,
   Pastas, 
   Marinaras 
 };

@@ -1,18 +1,20 @@
 const router = require('express').Router();
-// const sequelize = require('../../config/connection');
+
 const { 
 	Categories, 
-	MenuItems, 
-	ToppingsPremium, 
-	ToppingsRegular, 
-	ToppingsHotSub, 
-	ToppingsColdSub, 
+	Dressings, 
 	Employees, 
 	Images, 
-	Dressings, 
-	Sauces, 
+	Marinaras, 
+	MenuItems, 
 	Pastas, 
-	Marinaras 
+	Sauces, 
+	SaucesDesert,
+	ToppingsColdSub, 
+	ToppingsDesert,
+	ToppingsHotSub, 
+	ToppingsPremium, 
+	ToppingsRegular 
 } = require('../../models');
 
 const withAuth = require('../../utils/auth');
@@ -54,50 +56,55 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 	try {
 		const item = await MenuItems.findByPk(req.params.menuitemsId, {
 			include: [
-				{ model: Categories},
-			]
+				{ model: Categories }]
 		});
-
 		const serializedItem = item.get({ plain: true });
-
-		const toppingsRegular = await ToppingsRegular.findAll({});	
-		const serializedtoppingsRegular = toppingsRegular.map((item) => item.get({ plain: true }));
-
-		const toppingsPremium = await ToppingsPremium.findAll({});	
-		const serializedtoppingsPremium = toppingsPremium.map((item) => item.get({ plain: true }));
 
 		const dressings = await Dressings.findAll({});
 		const serializedDressings = dressings.map((item) => item.get({ plain: true }));
 
-		const sauces = await Sauces.findAll({});
-		const serializedSauces = sauces.map((item) => item.get({ plain: true})); 
+		const marinaras = await Marinaras.findAll({});
+		const serializedMarinaras = marinaras.map((item) => item.get({plain: true}));
 
 		const pastas = await Pastas.findAll({});
 		const serializedPastas = pastas.map((item) => item.get({ plain: true}));
 
-		const marinaras = await Marinaras.findAll({});
-		const serializedMarinaras = marinaras.map((item) => item.get({plain: true}));
+		const sauces = await Sauces.findAll({});
+		const serializedSauces = sauces.map((item) => item.get({ plain: true})); 
 
-		const toppingsHotSub = await ToppingsHotSub.findAll({});
-		const serializedToppingsHotSub = toppingsHotSub.map((item) => item.get({plain: true}));
+		const saucesDesert = await SaucesDesert.findAll({});
+		const serializedSaucesDesert = saucesDesert.map((item) => item.get({ plain: true})); 
 
 		const toppingsColdSub = await ToppingsColdSub.findAll({});
 		const serializedToppingsColdSub = toppingsColdSub.map((item) => item.get({plain: true}));
+		
+		const toppingsDesert = await ToppingsDesert.findAll({});
+		const serializedToppingsDesert = toppingsDesert.map((item) => item.get({plain: true}));
+		
+		const toppingsHotSub = await ToppingsHotSub.findAll({});
+		const serializedToppingsHotSub = toppingsHotSub.map((item) => item.get({plain: true}));
+
+		const toppingsPremium = await ToppingsPremium.findAll({});	
+		const serializedtoppingsPremium = toppingsPremium.map((item) => item.get({ plain: true }));
+
+		const toppingsRegular = await ToppingsRegular.findAll({});	
+		const serializedtoppingsRegular = toppingsRegular.map((item) => item.get({ plain: true }));
 		
 		res.status(200).render('item-details', {
 			loggedIn: req.session.loggedIn, 
 			name: req.session.name,
 			item: serializedItem,
-			toppingsRegular: serializedtoppingsRegular,
-			toppingsPremium: serializedtoppingsPremium,
-
-			toppingsHotSub: serializedToppingsHotSub,
-			toppingsColdSub: serializedToppingsColdSub,
-
+			
 			dressing: serializedDressings,
-			sauce: serializedSauces,
+			marinara: serializedMarinaras,
 			pasta: serializedPastas,
-			marinara: serializedMarinaras
+			sauce: serializedSauces,
+			sauceDesert: serializedSaucesDesert,
+			toppingsColdSub: serializedToppingsColdSub,
+			toppingsDesert: serializedToppingsDesert,
+			toppingsHotSub: serializedToppingsHotSub,
+			toppingsPremium: serializedtoppingsPremium,
+			toppingsRegular: serializedtoppingsRegular,
 		});
 	} 
 	catch (error) {

@@ -9,9 +9,13 @@ const {
   Images, 
   Dressings,
   Sauces, 
+  SaucesDesert,
   Pastas,
   ToppingsHotSub, 
-  ToppingsColdSub
+  ToppingsColdSub,
+  ToppingsDesert,
+
+  Marinaras
 } = require('../models');
 
 const categoryData = require('./categoryData.json');
@@ -21,12 +25,17 @@ const toppingPremiumData = require('./toppingPremiumData.json');
 const employeeData = require('./employeeData.json');
 const imageData = require('./imageData.json');
 const dressingData = require('./dressingData.json');
-const sauceData = require('./sauceData.json');
+
+const sauceData = require('./sauceData.json'); 
+const sauceDesertData = require('./sauceDesertData.json');
+
 const pastaData = require('./pastaData.json');
 
 const toppingsHotSubData = require('./toppingsHotSubData.json');
-
 const toppingsColdSubData = require('./toppingsColdSubData.json');
+const toppingsDesertData = require('./toppingDesertData.json');
+
+const marinarasData = require('./marinaraData.json');
 
 const seedData = async () => {
   await sequelize.sync({ force: true });
@@ -41,6 +50,8 @@ const seedData = async () => {
   await ToppingsHotSub.bulkCreate(toppingsHotSubData);
   await ToppingsColdSub.bulkCreate(toppingsColdSubData);
 
+  await ToppingsDesert.bulkCreate(toppingsDesertData);
+
   await Employees.bulkCreate(employeeData, { individualHooks:true });
 
   await Images.bulkCreate(imageData);
@@ -48,8 +59,11 @@ const seedData = async () => {
   await Dressings.bulkCreate(dressingData);
 
   await Sauces.bulkCreate(sauceData);
+  await SaucesDesert.bulkCreate(sauceDesertData);
 
   await Pastas.bulkCreate(pastaData);
+
+  await Marinaras.bulkCreate(marinarasData)
 
   console.log('All seeded!')
   process.exit(0);
