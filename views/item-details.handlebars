@@ -265,11 +265,11 @@
 
   {{#if item.desertTopping}}
     <section class="card" id="html-section-tags">
-      <button class="collapsible">See all desert sauces options.</button>
+      <button class="collapsible">See all desert sauces</button>
       <div class="content">
         <table>
           <tr>
-            <th>Additional sauces are $.75 each.</th>
+            <th>Additional sauces are $.75 each</th>
           </tr>
           {{#each sauceDesert as |sd|}}
           <tr>
@@ -284,7 +284,8 @@
 </center>
 
 <center>
-  <a href="/menu" type="button" class="btn btn-success view-menu-button">back to menu</a>
+  {{!-- <a href="/menu" type="button" class="btn btn-success view-menu-button">back to menu</a> --}}
+  <button class="btn btn-success view-menu-button" onclick="history.back()">Go Back</button>
 </center>
 
 <script src="/js/collapsable.js"></script>
