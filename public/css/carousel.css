@@ -1,0 +1,59 @@
+.carousel {
+  /* box-shadow: 6px 6px 8px var(--shadow); */
+}
+
+.carousel-caption h3 {
+  color: var(--buonos-red);
+  font-size: 55px;
+  margin-bottom: 25%;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  font-family: var(--buonos-font);
+}
+
+.carousel-caption p {
+  font-family: var(--buonos-font);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: var(--buonos-red);
+  font-size: larger;
+}
+
+.carousel img {
+  /* width: 770px;
+  height: 700px; */
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+@media (min-width: 768px) {
+  .carousel .promise{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/images/brick-texture.jpg);
+    background-clip: content-box;
+  }
+
+  .carousel .specialty{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/images/bleached-wood-texture.jpg);
+    background-clip: content-box;
+  }
+
+  .carousel .loyalty{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/images/gray-texture.jpg);
+    background-clip: content-box;
+  }
+
+  .carousel-item img{
+    width: 50%;
+    /* height: 500px; */
+    /* padding-left: 10px;
+    padding-right: 10px; */
+
+  }
+}

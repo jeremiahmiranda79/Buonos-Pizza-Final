@@ -1,0 +1,76 @@
+.scrollable-tabs-container {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #000;
+  max-width: 425px;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5;
+}
+.scrollable-tabs-container svg {
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+}
+.scrollable-tabs-container ul {
+  display: flex;
+  gap: 8px;
+  padding: 8px 10px;
+  margin: 0;
+  list-style: none;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.scrollable-tabs-container a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  padding: 2px 10px;
+  display: inline-block;
+  border-radius: 4px;
+  user-select: none;
+  white-space: nowrap;
+}
+.scrollable-tabs-container a.active {
+  color: #000;
+  background-color: #fff;
+}
+.scrollable-tabs-container ul::-webkit-scrollbar {
+  display: none;
+}
+.scrollable-tabs-container .right-arrow, 
+.scrollable-tabs-container .left-arrow {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  top: 0;
+  display: none;
+  align-items: center;
+  padding: 0 2px;
+}
+.scrollable-tabs-container .right-arrow.active,
+.scrollable-tabs-container .left-arrow.active {
+  display: flex;
+}
+.scrollable-tabs-container .right-arrow {
+  right: 0;
+  background: linear-gradient(to left, #000 25%, transparent);
+  justify-content: flex-end;
+}
+.scrollable-tabs-container .left-arrow {
+  background: linear-gradient(to right, #000 25%, transparent);
+}
+.scrollable-tabs-container svg:hover {
+  background: #333;
+}
+
+/* .anchor {
+  display: block;
+  position: relative;
+  top: -104px;
+  visibility: hidden;
+} */

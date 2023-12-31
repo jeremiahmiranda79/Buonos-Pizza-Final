@@ -1,0 +1,45 @@
+/* ABOUT */
+.container-about {
+  position: relative;
+  text-align: center;
+  color: var(--buonos-red);
+  margin-bottom: 25px;
+  box-shadow: 2px 2px 4px var(--shadow);
+}
+
+.container-about img {
+  filter: grayscale(20%) blur(2px) brightness(60%);
+  width: 100%;
+}
+
+.container-about h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--buonos-font);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.container-story {
+  background: var(--buonos-white);
+  margin: 15px;
+  padding: 15px;
+  box-shadow: 2px 2px 4px var(--shadow);
+  border-radius: 4px;
+}
+
+.container-story h1 {
+  font-family: var(--buonos-font);
+}
+
+.container-story center {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-hero {
+  width: 100%;
+  box-shadow: 2px 2px 4px var(--shadow);
+  border-radius: 4px;
+}
