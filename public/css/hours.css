@@ -1,4 +1,4 @@
-.container-contact {
+/* .container-hours {
   background: var(--buonos-white);
   margin-right: 15px;
   margin-left: 15px;
@@ -6,7 +6,7 @@
   padding: 15px;
   box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 4px;
-}
+} */
 
 li {
   list-style-type: none;
@@ -14,12 +14,12 @@ li {
   font-weight: bold;
 }
 
-.container-contact-header {
+.container-hours-header {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.container-contact-header h1 {
+.container-hours-header h1 {
   font-family: var(--buonos-font);
   color: var(--buonos-red);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -27,25 +27,25 @@ li {
 }
 
 @media (min-width: 768px) {
-  .contact-background {
+  .hours-background {
     padding-top: 55px;
   }
 
-  .container-contact {
+  .container-hours {
     margin-right: 25%;
     margin-left: 25%;
   }
 }
 
 @media (min-width: 1024px) {
-  .container-contact {
+  .container-hours {
     /* margin-right: 30%;
     margin-left: 30%; */
   }
 }
 
 @media (min-width: 1440px) {
-  .container-contact {
+  .container-hours {
     /* margin-right: 35%;
     margin-left: 35%; */
   }

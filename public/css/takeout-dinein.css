@@ -1,0 +1,25 @@
+.takeout-dinein {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.takeout-dinein h1 {
+  color: var(--buonos-red);
+  
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+  font-family: var(--buonos-font);
+}
+
+@media (min-width: 768px) {
+  .takeout-dinein p{
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+
+  .takeout-dinein h5{
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}

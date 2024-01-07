@@ -8,17 +8,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">    
   </head>
-
   <body>
     <header>
       <div class="navbar-top">
@@ -27,86 +24,69 @@
         <center>
       </div>
     </header>
-
     <main>
       {{{ body }}}
     </main>
-
     <footer>
-      {{!-- <center> --}}
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
-          <div class="container-fluid">
-            {{!-- <center> --}}
-              <div class="icons">
-              <a class="nav-icon navbar-brand fa fa-phone-square" href="tel:+14808991200"></a>
-              <p style="color: aliceblue;">Phone</p>
-            </div>
-
-            <div class="icons">
-              <a class="nav-icon navbar-brand fa fa-book" href="/menu"></a>
-              <p style="color: aliceblue;">Menu</p>
-            </div>
-
-            <div class="icons">
-              <a class="nav-icon navbar-brand fa fa-map-marker" href="/location"></a>
-              <p style="color: aliceblue;">Location</p>
-            </div>
-
-            <div class="icons">
-              <a class="nav-icon navbar-brand fa fa-yelp" href="/contact"></a>
-              <p style="color: aliceblue;">Contact</p> 
-            </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse bottom-navbar" id="mynavbar">
-              <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/menu">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/location">Location</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/hours">Hours</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contact">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/about">About Us</a>
-                </li>
-
-                {{!-- <li>
-                  {{#if loggedIn}}
-                    <a id="employeelogout">Logout | {{name}}</a>
-                  {{else}}
-                    <a href="/employee/login" class="">Login</a>
-                  {{/if}}
-                </li> --}}
-              </ul>
-              {{#if loggedIn}}
-                <button id="employeelogout">
-                  Logout | {{name}}
-                </button>
-              {{else}}
-                <a href="/employee/login" class="">Login</a>
-              {{/if}}
-            </div>
-            {{!-- </center> --}}
-            
-
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
+        <div class="container-fluid">
+          <div class="icons">
+            <a class="nav-icon navbar-brand fa fa-phone-square" href="tel:+14808991200"></a>
+            <p style="color: aliceblue;">Phone</p>
           </div>
-        </nav>
-      {{!-- </center> --}}
-      
-    </footer>
 
+          <div class="icons">
+            <a class="nav-icon navbar-brand fa fa-book" href="/menu"></a>
+            <p style="color: aliceblue;">Menu</p>
+          </div>
+
+          <div class="icons">
+            <a class="nav-icon navbar-brand fa fa-map-marker" href="/location"></a>
+            <p style="color: aliceblue;">Location</p>
+          </div>
+
+          <div class="icons">
+            <a class="nav-icon navbar-brand fa fa-yelp" href="/contact"></a>
+            <p style="color: aliceblue;">Contact</p> 
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse bottom-navbar" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/hours">Hours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About Us</a>
+              </li>
+            </ul>
+            {{#if loggedIn}}
+              <button id="employeelogout">
+                Logout | {{name}}
+              </button>
+            {{else}}
+              <a href="/employee/login" class="">Login</a>
+            {{/if}}
+          </div>
+  
+        </div>
+      </nav>
+    </footer>
     <script src="/js/logout.js"></script>
     <script src="/js/login.js"></script>
   </body>

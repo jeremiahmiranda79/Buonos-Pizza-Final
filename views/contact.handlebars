@@ -3,9 +3,8 @@
   <link rel="stylesheet" href="/css/social.css">
 </head>
 
-
 <div class="contact-background">
-  <div class="container-login-header">
+  <div class="container-contact-header">
     <center>
       <h1>Contact Us</h1>
     </center>
@@ -18,18 +17,21 @@
         <input type="text" class="form-control" id="name_id" placeholder="sample name">
       </div>
     </div>
+
     <div class="row mb-3">
       <label for="email" class="col-sm-2 col-form-label">Email</label>
       <div class="col-sm-10">
         <input type="email" class="form-control" id="email_id" placeholder="sample@email.com">
       </div>
     </div>
+
     <div class="row mb-3">
       <label for="phone" class="col-sm-2 col-form-label">Phone</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" id="phone_id" placeholder="111-111-1111">
+        <input type="text" class="form-control" id="phone_id" placeholder="(###)-###-####">
       </div>
     </div>
+
     <div class="row mb-3">
       <label for="message" class="col-sm-2 col-form-label">Message</label>
       <div class="col-sm-10">
@@ -37,48 +39,57 @@
         </textarea>
       </div>
     </div>
-    <button onclick="sendEmail()" class="btn btn-primary">Send Message</button>
+
+    <center>
+      <button onclick="sendEmail()" class="btn btn-primary">Send Message</button>
+    </center>
   </div>
 
-  <div class="container-login-header">
+  <div class="container-contact-header">
     <center>
       <h1>Information</h1>
     </center>
   </div>
 
-  <div class="container-contact">
-    <h5>🍕Buono's Pizza LLC</h5>
-    <a href="tel:+14808991200" style="text-decoration:none;"><h4>📞480-899-1200</h4></a>
-      <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;"><h5>🍕1464 East Williams Field Road, Gilbert, Arizona 85295</h5></a>
-    <h5>✉️buonosgilbert@yahoo.com</h5> 
+  <div class="">
+    <center>
+      <h5>🍕Buono's Pizza LLC</h5>
+      <a href="tel:+14808991200" style="text-decoration:none;"><h4>📞480-899-1200</h4></a>
+        <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;"><h5>👉1464 East Williams Field Road, Gilbert, Arizona 85295</h5></a>
+      <h5>✉️buonosgilbert@yahoo.com</h5> 
+    </center>
   </div>
 
-  <div class="container-login-header">
+  <div class="container-contact-header">
     <center>
       <h1>Hours of operation</h1>
     </center>
   </div>
 
-  <div class="container-contact">
-    <ul>
-      <li>Sunday 12 Noon - 8 PM</li>
-      <li>Monday 11 AM - 8 PM</li>
-      <li>Tuesday 11 AM - 8 PM</li>
-      <li>Wednesday 11 AM - 9 PM</li>
-      <li>Thusrday 11 AM - 9 PM</li>
-      <li>Friday 11 AM - 10 PM</li>
-      <li>Saturday 11 AM - 10 PM</li>
-    </ul>
+  <div class="">
+    <center>
+      <ul>
+        <li>Sunday 12 Noon - 8 PM</li>
+        <li>Monday 11 AM - 8 PM</li>
+        <li>Tuesday 11 AM - 8 PM</li>
+        <li>Wednesday 11 AM - 9 PM</li>
+        <li>Thusrday 11 AM - 9 PM</li>
+        <li>Friday 11 AM - 10 PM</li>
+        <li>Saturday 11 AM - 10 PM</li>
+      </ul>
+    </center>  
   </div>
 
-  <div class="container-login-header">
+  <div class="container-contact-header">
     <center>
       <h1>Thank you!</h1>
     </center>
   </div>
 
-  <div class="container-contact">
-    <h3>We thank you for supporting our locally owned and operated pizzeria</h3>
+  <div class="">
+    <center>
+      <h3>We thank you for supporting our locally owned and operated pizzeria</h3>
+    </center>
   </div>
 
   <center>
@@ -93,9 +104,11 @@
 </div>
 
 <script src="/js/contact.js"></script>
+
 <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
+
 <script type="text/javascript">
   (function(){
     emailjs.init("L7u_gwzunO_hCkE1K");//public key

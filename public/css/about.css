@@ -1,5 +1,71 @@
-/* ABOUT */
 .container-about {
+  /* background: var(--buonos-white); */
+  /* margin-right: 15px; */
+  /* margin-left: 15px; */
+  /* margin-bottom: 15px; */
+  /* padding: 15px; */
+  /* box-shadow: 2px 2px 4px var(--shadow); */
+  /* border-radius: 4px; */
+
+  /* position: relative; */
+  /* text-align: center; */
+  /* color: var(--buonos-red); */
+  /* margin-bottom: 25px; */
+  /* box-shadow: 2px 2px 4px var(--shadow); */
+}
+
+li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container-about-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container-about-header h1 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 40px;
+}
+
+.container-about h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--buonos-font);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.container-image img {
+  filter: grayscale(20%) blur(2px) brightness(60%);
+  width: 50%;
+}
+
+.container-image h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--buonos-font);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: var(--buonos-red);
+}
+
+.container-about h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--buonos-font);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* .container-about {
   position: relative;
   text-align: center;
   color: var(--buonos-red);
@@ -42,4 +108,21 @@
   width: 100%;
   box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 4px;
+} */
+
+@media (min-width: 768px) {
+  .about-background {
+    padding-top: 55px;
+  }
+
+  .container-about {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+
+  .container-about img {
+    filter: grayscale(20%) blur(2px) brightness(60%);
+    width: 50%;
+    /* height: 50%; */
+  }
 }
