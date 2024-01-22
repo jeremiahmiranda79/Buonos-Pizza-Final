@@ -13,6 +13,10 @@ const SaucesDesert = require('./SaucesDesert');
 const Pastas = require('./Pastas');
 const Marinaras = require('./Marinaras');
 
+const Information = require('./Information');
+const HomePage = require('./HomePage');
+const Hours = require('./Hours');
+
 // MenuItems to Categories
 Categories.hasMany(MenuItems, {
   foreignKey: 'categoryId'
@@ -36,5 +40,9 @@ module.exports = {
   Sauces, 
   SaucesDesert,
   Pastas, 
-  Marinaras 
+  Marinaras,
+  
+  Information,
+  HomePage,
+  Hours
 };

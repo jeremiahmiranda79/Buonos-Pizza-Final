@@ -7,20 +7,19 @@ const {
   Pastas, 
   Sauces,
   SaucesDesert, 
-  SizePizzaNeapolitan, 
   ToppingsColdSub, 
   ToppingsDesert,
   ToppingsHotSub, 
   ToppingsPremium, 
-  ToppingsRegular
+  ToppingsRegular, 
+
+  Hours
 } = require('../../models');
 
 router.get('/', async (req, res) => {
   try {
     const menu = await Categories.findAll({
-      include: [
-        { model: MenuItems }
-      ]
+      include: [{ model: MenuItems }]
     });
 
     res.status(200).json(menu);
@@ -41,7 +40,6 @@ router.get('/:menuitemsId', async (req, res) => {
         { model: Pastas },
         { model: Sauces }, 
         { model: SaucesDesert },
-        { model: SizePizzaNeapolitan },
         { model: ToppingsColdSub },
         { model: ToppingsDesert },  
         { model: ToppingsHotSub },
@@ -180,6 +178,20 @@ router.delete('/deleteMenuItem/:menuItemId', async (req, res) => {
     console.log(error);
     res.status(500).json(error); // 500 - internal server error
   };
+});
+
+router.get('/hours', async (req, res) => {
+  try {
+    const menu = await Hours.findAll({
+      include: [{ model: Hours }]
+    });
+
+    res.status(200).json(menu);
+  }
+  catch (error) {
+    console.log(error);
+    res.status(500).json(error);
+  }
 });
 
 module.exports = router;

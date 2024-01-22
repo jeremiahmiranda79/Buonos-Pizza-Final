@@ -1,15 +1,20 @@
 <head>
   <link rel="stylesheet" href="/css/collapsible.css">
+  <link rel="stylesheet" href="/css/item-details.css">
 </head>
 
+<div class="item-background">
+  <center>
+  <div class="container-item">
+    <img src="/images/buonos-logo.jpg" alt="buonos-logo" class="d-block" >
 
-<center>
-  <img src="/images/buonos-logo.jpg" alt="s2" class="d-block" style="width:100%">
-  <h1>{{item.name}}</h1>
-  <h5>{{item.description}}</h5>
-  <h4>{{item.size1}} {{item.price1}}</h4>
-  <h4>{{item.size2}} {{item.price2}}</h4>
-  <h4>{{item.size3}} {{item.price3}}</h4>
+    <h1>{{item.name}}</h1>
+    <h5>{{item.description}}</h5>
+    <h4>{{item.size1}} {{item.price1}}</h4>
+    <h4>{{item.size2}} {{item.price2}}</h4>
+    <h4>{{item.size3}} {{item.price3}}</h4>
+  </div>
+  
 
   {{#if item.toppingPizzaFull}}
     <section class="card" id="html-section-tags">
@@ -27,7 +32,9 @@
         </table>
       </div>
     </section>
+
     <br>
+
     <section class="card" id="html-section-tags">
       <button class="collapsible">See all premium full size pizza toppings</button>
       <div class="content">
@@ -43,7 +50,9 @@
         </table>
       </div>
     </section>
+
     <br>
+
   {{/if}}
 
   {{#if item.toppingPizzaSlice}}
@@ -62,7 +71,9 @@
         </table>
       </div>
     </section>
+
     <br>
+
     <section class="card" id="html-section-tags">
       <button class="collapsible">See all premium single pizza slice toppings</button>
       <div class="content">
@@ -78,7 +89,9 @@
         </table>
       </div>
     </section>
+
     <br>
+
   {{/if}}
 
   {{#if item.toppingPizzaGlutenFree}}
@@ -97,7 +110,9 @@
         </table>
       </div>
     </section>
+
     <br>
+
     <section class="card" id="html-section-tags">
       <button class="collapsible">See all premium gluten free pizza toppings</button>
       <div class="content">
@@ -113,7 +128,9 @@
         </table>
       </div>
     </section>
+
     <br>
+    
   {{/if}}
 
   {{#if item.toppingHotSub}}
@@ -292,5 +309,7 @@
   {{!-- <a href="/menu" type="button" class="btn btn-success view-menu-button">back to menu</a> --}}
   <button class="btn btn-success view-menu-button" onclick="history.back()">Go Back</button>
 </center>
+</div>
+
 
 <script src="/js/collapsable.js"></script>

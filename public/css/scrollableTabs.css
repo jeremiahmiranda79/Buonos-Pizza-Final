@@ -5,6 +5,8 @@
   overflow: hidden;
   position: fixed;
   z-index: 5;
+
+  
 }
 
 .scrollable-tabs-container svg {
@@ -84,3 +86,12 @@
   top: -104px;
   visibility: hidden;
 } */
+
+@media (min-width: 768px) {
+  .scrollable-tabs-container {
+    margin-top: 40px;
+    max-width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

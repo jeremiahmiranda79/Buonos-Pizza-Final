@@ -1,7 +1,7 @@
 <head>
   <link rel="stylesheet" href="/css/scrollableTabs.css">
+  <link rel="stylesheet" href="/css/menu.css">
 </head>
-
 
 <div class="scrollable-tabs-container">
   <div class="left-arrow" >
@@ -26,8 +26,12 @@
     </svg>
   </div>
 </div>
+
 <br>
+
+
 {{#if loggedIn}}
+<br><br>
   <center>
     {{!-- <h5>Create a category</h5> --}}
     <a href="/categories/create" class="active btn btn-primary">Create new category</a>
@@ -60,34 +64,62 @@
             <p class="mb-1">{{i.description}}</p>
             <center>
               <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item</a>
-              {{!-- <button class="btn btn-danger" id="deleteButton" data-id="{{item.id}}">Delete</button> --}}
             </center>
           </a>
         </div>
       {{/each}}
     {{/each}}
   </div>
+
 {{else}}
   <div class="container-menu">
     <br>
-    {{#each items as |c|}}
+    <div class="grid-container-2">
+      {{#each items as |c|}}
       <center>
         <a class="anchor" id="{{c.id}}"></a>
         <h1><strong>{{c.name}}</strong></h1>
         <img src="{{c.image}}" alt="food-image" class="category-image">
       </center>
-      {{#each c.menuitems as |i|}}
-        <div class="list-group">
+      {{!-- {{#each c.menuitems as |i|}} --}}
+        {{!-- <div class="list-group">
           <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
             <div class="d-flex w-100 justify-content-between">
               <h5 class="mb-1">{{i.name}}</h5>
             </div>
             <p class="mb-1">{{i.description}}</p>
           </a>
+        </div> --}}
+
+        <div class="grid-container">
+          {{#each c.menuitems as |i|}}
+            <div class="grid-item"><a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">{{i.name}}</h5>
+              </div>
+              <p class="mb-1">{{i.description}}</p>
+            </a>
+            </div>
+          {{/each}}
+
         </div>
-      {{/each}}
+       
+      {{!-- {{/each}} --}}
     {{/each}}
+    </div>
+    
   </div>
 {{/if}}
+
+{{!-- <div class="container main-footer">
+    <center>
+      <ul class="nav flex-row social">
+        <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
+        <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="btn"><i class=" icon fa fa-yelp"></i></a>
+      </ul>
+      <h3 class="copy-right">	&copy; 2023 buonos pizza</h3>
+    </center>
+  </div> --}}
 
 <script src="/js/menuScrollbar.js"></script>

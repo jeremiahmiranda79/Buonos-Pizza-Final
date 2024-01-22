@@ -69,6 +69,11 @@
   <div class="">
     <center>
       <ul>
+        {{#each hours as |h|}}
+        <li>{{h.date}}</li>
+        {{/each}}
+      </ul>
+      {{!-- <ul>
         <li>Sunday 12 Noon - 8 PM</li>
         <li>Monday 11 AM - 8 PM</li>
         <li>Tuesday 11 AM - 8 PM</li>
@@ -76,7 +81,7 @@
         <li>Thusrday 11 AM - 9 PM</li>
         <li>Friday 11 AM - 10 PM</li>
         <li>Saturday 11 AM - 10 PM</li>
-      </ul>
+      </ul> --}}
     </center>  
   </div>
 

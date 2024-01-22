@@ -18,17 +18,117 @@
   </head>
   <body>
     <header>
-      <div class="navbar-top">
+      
+      <div class="navbar-top hidden-top">
         <center>
           <a href="/"><img src="/images/buonos-logo1.jpg" class="logo" alt="buonos-logo"></a>
         <center>
+
+        <ul class="navbar-nav me-auto">
+          <li>
+            <a href="/"><img src="/images/buonos-logo1.jpg" class="logo2" alt="buonos-logo"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/menu">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/location">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/hours">Hours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          {{#if loggedIn}}
+            <button id="employeelogout">
+              Logout | {{name}}
+            </button>
+          {{else}}
+            <li class="nav-item">
+              <a href="/employee/login" class="nav-link">Login</a>
+            </li>
+          {{/if}}
+        </ul>  
       </div>
     </header>
+
     <main>
       {{{ body }}}
     </main>
+
     <footer>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom">
+      {{!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+
+          <section class="hidden">
+            <div class="icons">
+            <a class="nav-icon navbar-brand fa fa-phone-square" href="tel:+14808991200"></a>
+            <p style="color: aliceblue;">Phone</p>
+          </div>
+
+          <div class="icons">
+            <a class="nav-icon navbar-brand fa fa-book" href="/menu"></a>
+            <p style="color: aliceblue;">Menu</p>
+          </div>
+
+          <div class="icons">
+            <a class="nav-icon navbar-brand fa fa-map-marker" href="/location"></a>
+            <p style="color: aliceblue;">Location</p>
+          </div>
+
+          <div class="icons">
+            <a class="nav-icon navbar-brand fa fa-yelp" href="/contact"></a>
+            <p style="color: aliceblue;">Contact</p> 
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </section>
+          
+
+          <div class="collapse navbar-collapse bottom-navbar" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/hours">Hours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About Us</a>
+              </li>
+            </ul>
+
+            {{#if loggedIn}}
+              <button id="employeelogout">
+                Logout | {{name}}
+              </button>
+            {{else}}
+              <a href="/employee/login" class="">Login</a>
+            {{/if}}
+          </div>
+  
+        </div>
+      </nav> --}}
+
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom hidden">
         <div class="container-fluid">
           <div class="icons">
             <a class="nav-icon navbar-brand fa fa-phone-square" href="tel:+14808991200"></a>
@@ -87,6 +187,7 @@
         </div>
       </nav>
     </footer>
+
     <script src="/js/logout.js"></script>
     <script src="/js/login.js"></script>
   </body>

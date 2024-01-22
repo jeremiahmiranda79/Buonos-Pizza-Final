@@ -14,7 +14,11 @@ const {
 	ToppingsDesert,
 	ToppingsHotSub, 
 	ToppingsPremium, 
-	ToppingsRegular 
+	ToppingsRegular,
+
+	Hours,
+	Information,
+	HomePage
 } = require('../../models');
 
 const withAuth = require('../../utils/auth');
@@ -22,10 +26,24 @@ const isAdmin = require('../../utils/admin');
 
 // Homepage
 router.get('/', async (req, res) => {
-	res.status(200).render('home', {
-		loggedIn: req.session.loggedIn, 
-		name: req.session.name
-	});
+	try {
+		const hp = await HomePage.findAll();
+		const serializedHomePage = hp.map((x) => x.get({plain: true}));
+
+		const i = await Information.findAll();
+		const serializedInfo = i.map((x) => x.get({plain: true}));
+
+		res.status(200).render('home', {
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+			homePage: serializedHomePage,
+			information: serializedInfo
+		});
+	}	
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);
+	}
 });
 
 router.get('/menu', async (req, res) => {
@@ -43,6 +61,7 @@ router.get('/menu', async (req, res) => {
 		res.status(200).render('menu', {
 			loggedIn: req.session.loggedIn, 
 			name: req.session.name,
+
 			items: serializedItems
 		});
 	}
@@ -155,31 +174,88 @@ router.get('/menuitems/update/:menuitemId', withAuth, isAdmin, async (req, res) 
 });
 
 router.get('/location', async (req, res) => {
-	res.status(200).render('location', {
-		loggedIn: req.session.loggedIn, 
-		name: req.session.name
-	});
+	try {
+		const x = await Hours.findAll();
+
+		const serializedHours = x.map((hour) => hour.get({plain: true}));
+
+		console.log(serializedHours);
+
+		res.status(200).render('location', {
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+
+			hours: serializedHours
+		});
+	}
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);
+	}
 });
 
 router.get('/hours', async (req, res) => {
-	res.status(200).render('hours', {
-		loggedIn: req.session.loggedIn, 
-		name: req.session.name
-	});
+	try {
+		const x = await Hours.findAll();
+
+		const serializedHours = x.map((hour) => hour.get({plain: true}));
+
+		console.log(serializedHours);
+
+		res.status(200).render('hours', {
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+
+			hours: serializedHours
+		});
+	}
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);
+	}
 });
 
 router.get('/contact', async (req, res) => {
-	res.status(200).render('contact', {
-		loggedIn: req.session.loggedIn, 
-		name: req.session.name
-	});
+	try {
+		const x = await Hours.findAll();
+
+		const serializedHours = x.map((hour) => hour.get({plain: true}));
+
+		console.log(serializedHours);
+
+		res.status(200).render('contact', {
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+
+			hours: serializedHours
+		});
+	}
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);
+	}
 });
 
 router.get('/about', async (req, res) => {
-	res.status(200).render('about', {
-		loggedIn: req.session.loggedIn, 
-		name: req.session.name
-	});
+	try {
+		const x = await Hours.findAll();
+		const serializedHours = x.map((hour) => hour.get({plain: true}));
+
+		const info = await Information.findAll();
+		const serializedInfo = info.map((info) => info.get({plain: true}));
+
+		res.status(200).render('about', {
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+
+			hours: serializedHours,
+			information: serializedInfo
+		});
+	}
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);
+	}
 });
 
 router.get('/employee/login', async (req, res) => {

@@ -15,7 +15,11 @@ const {
   ToppingsColdSub,
   ToppingsDesert,
 
-  Marinaras
+  Marinaras,
+
+  HomePage,
+  Information,
+  Hours
 } = require('../models');
 
 const categoryData = require('./categoryData.json');
@@ -36,6 +40,10 @@ const toppingsColdSubData = require('./toppingsColdSubData.json');
 const toppingsDesertData = require('./toppingDesertData.json');
 
 const marinarasData = require('./marinaraData.json');
+
+const homePageData = require('./homePageData.json');
+const informationData = require('./informationData.json');
+const hoursData = require('./hoursData.json');
 
 const seedData = async () => {
   await sequelize.sync({ force: true });
@@ -64,6 +72,10 @@ const seedData = async () => {
   await Pastas.bulkCreate(pastaData);
 
   await Marinaras.bulkCreate(marinarasData)
+
+  await HomePage.bulkCreate(homePageData);
+  await Information.bulkCreate(informationData);
+  await Hours.bulkCreate(hoursData);
 
   console.log('All seeded!')
   process.exit(0);

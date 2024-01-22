@@ -14,13 +14,9 @@
   <div class="container-hours">
     <center>
       <ul>
-        <li>Sunday 12 Noon - 8 PM</li>
-        <li>Monday 11 AM - 8 PM</li>
-        <li>Tuesday 11 AM - 8 PM</li>
-        <li>Wednesday 11 AM - 9 PM</li>
-        <li>Thusrday 11 AM - 9 PM</li>
-        <li>Friday 11 AM - 10 PM</li>
-        <li>Saturday 11 AM - 10 PM</li>
+        {{#each hours as |h|}}
+        <li>{{h.date}}</li>
+        {{/each}}
       </ul>
     </center>
   </div>
