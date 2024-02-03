@@ -21,8 +21,8 @@
     <center>
       {{#each homePage as |hp|}}
         {{#if hp.name1Switch}}
-        <h1>{{hp.name1}}</h1>
-        <h5>{{hp.description1}}</h5>
+          <h1>{{hp.name1}}</h1>
+          <h5>{{hp.description1}}</h5>
         {{/if}}
       {{/each}}
 
@@ -39,56 +39,57 @@
       {{/if}}
 
       {{#each information as |i|}}
-        <a href={{i.telNumber}} style="text-decoration:none;">
-          <h5>{{i.phoneNumber}}</h5>
-        </a>
-        <a href={{i.map}} style="text-decoration:none;">
-          <h5>{{i.address}}</h5>
-        </a>
+        {{#each homePage as |hp|}}
+          {{#if hp.name1Switch}}
+            <a href={{i.telNumber}} style="text-decoration:none;">
+              <h5>{{i.phoneNumber}}</h5>
+            </a>
+            <a href={{i.map}} style="text-decoration:none;">
+              <h5>{{i.address}}</h5>
+            </a>
+          {{/if}}
+        {{/each}}
       {{/each}} 
     </center>
   </div>
 
-  <center>
-    <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner promise">
-        <div class="carousel-item active">
-          <img src="/images/home-buonos-place.jpg" alt="" class="d-block" id="buonos">
-          <div class="carousel-caption">
-            <h3>Buonos Pizza</h3>
-          </div>
+  {{#each homePage as |hp|}}
+    {{#if hp.name1Switch}}
+      <center>
+        <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner promise">
+            <div class="carousel-item active">
+              <img src="/images/home-buonos-place.jpg" alt="" class="d-block" id="buonos">
+              <div class="carousel-caption">
+                <h3>Buonos Pizza</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/images/home-pizza-dough.jpg" alt="" class="d-block"  id="buonos">
+              <div class="carousel-caption">
+                <h3>Taste the myth</h3>
+              </div> 
+            </div>
+            <div class="carousel-item">
+              <img src="/images/home-legend-2.jpg" alt="" class="d-block"  id="buonos">
+              <div class="carousel-caption">
+                <h3>Become a legend</h3>
+              </div>
+            </div>
+          </div>  
         </div>
-        <div class="carousel-item">
-          <img src="/images/home-pizza-dough.jpg" alt="" class="d-block"  id="buonos">
-          <div class="carousel-caption">
-            <h3>Taste the myth</h3>
-          </div> 
-        </div>
-        <div class="carousel-item">
-          <img src="/images/home-legend-2.jpg" alt="" class="d-block"  id="buonos">
-          <div class="carousel-caption">
-            <h3>Become a legend</h3>
-          </div>
-        </div>
-      </div>  
-    </div>
-  </center>
+      </center>
 
-  <div class="flex-box">
-    <center>
-      <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
-    </center>
-  </div>
+      <div class="flex-box">
+        <center>
+          <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
+        </center>
+      </div>
+    {{/if}}
+  {{/each}}
 
   <div class="container-fluid specialties">
-    <center>
-      {{!-- {{#if loggedIn}}
-        <center>
-          <a href="#" class="active btn btn-primary">Update Specialties</a>
-        </center>
-      {{/if}} --}}
-
-      
+    <center>      
       {{#each homePage as |hp|}}
         {{#if hp.name2Switch}}
           <h1>{{hp.name2}}</h1>
@@ -175,61 +176,67 @@
   </div>
 
   <div class="container-fluid loyalty">
-    {{!-- {{#if loggedIn}}
-      <center>
-        <a href="#" class="active btn btn-primary">Update Loyalty</a>
-      </center>
-    {{/if}} --}}
-
     <center>
       {{#each homePage as |hp|}}
-        <h1>{{hp.name3_1}}</h1>
-        <h5>{{hp.description3_1}}</h5>
-        <h6>*Avaliable only through Dine in or in person Take out orders.*</h6>
+        {{#if hp.name3_1Switch}}
+          <h1>{{hp.name3_1}}</h1>
+          <h5>{{hp.description3_1}}</h5>
+        {{/if}}
+        {{#if hp.name3_2Switch}}
+          <h6>*Avaliable only through Dine in or in person Take out orders.*</h6>
+        {{/if}}
       {{/each}}
     </center>
   </div>
 
   <center>
-    <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner loyalty">
-        <div class="carousel-item active">
-          <img src="/images/magnet-1.jpg" alt="" class="d-block" id="">
-        </div>
+    {{#each homePage as |hp|}}
+      {{#if hp.name3_2Switch}}
+        <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner loyalty">
+            <div class="carousel-item active">
+              <img src="/images/magnet-1.jpg" alt="" class="d-block" id="">
+            </div>
 
-        <div class="carousel-item active">
-          <img src="/images/magnet-full-2.jpg" alt="" class="d-block" id="">
+            <div class="carousel-item active">
+              <img src="/images/magnet-full-2.jpg" alt="" class="d-block" id="">
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      {{/if}}
+    {{/each}}
   </center>
 
-  <div class="flex-box">
-    <center>
-      <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
-    </center>
-  </div>
+  {{#each homePage as |hp|}}
+    {{#if hp.name3_2Switch}}
+      <div class="flex-box">
+        <center>
+          <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
+        </center>
+      </div>
+    {{/if}}
+  {{/each}}
 
   <div class="container-fluid takeout-dinein">
-    {{#if loggedIn}}
-      <center>
-        <a href="#" class="active btn btn-primary">Update Takeout or Dine in</a>
-      </center>
-    {{/if}}
-
     <center>
       {{#each homePage as |hp|}}
-        <h1>{{hp.name4}}</h1>
-        <h5>{{hp.description4}}</h5>
+        {{#if hp.name4Switch}}
+          <h1>{{hp.name4}}</h1>
+          <h5>{{hp.description4}}</h5>
+        {{/if}}
       {{/each}}
 
       {{#each information as |i|}}
-        <a href="tel:+14808991200" style="text-decoration:none;">
-          <h5>{{i.phoneNumber}}</h5>
-        </a>
-        <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;">
-          <h5>{{i.address}}</h5>
-        </a>
+        {{#each homePage as |hp|}}
+          {{#if hp.name4Swicth}}
+            <a href="tel:+14808991200" style="text-decoration:none;">
+              <h5>{{i.phoneNumber}}</h5>
+            </a>
+            <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;">
+              <h5>{{i.address}}</h5>
+            </a>
+          {{/if}}
+        {{/each}}
       {{/each}}
     </center>
   </div>
@@ -237,40 +244,61 @@
   <div class="container-fluid delivery">
     <center>
       {{#each homePage as |hp|}}
-        <h1>{{hp.name5_1}}</h1>
-        <h4>{{hp.description5_1}}</h4>
-        <center>
-          <a href="https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com">
-            <img src="/images/slice-logo-600x200.jpg" class="btn-delivery-main"></img>
-          </a>
-          <ul class="nav flex-row delivery">
-            <a href="https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/">
-              <img src="/images/delivery-doordash-icon.jpg" class="btn-delivery"></img>
+        {{#if hp.name5_1Switch}}
+          <h1>{{hp.name5_1}}</h1>
+          <h4>{{hp.description5_1}}</h4>
+          <center>
+            <a href="https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com">
+              <img src="/images/slice-logo-600x200.jpg" class="btn-delivery-main"></img>
             </a>
-            <a href="https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg">
-              <img src="/images/delivery-uber-eats.jpg" class="btn-delivery"></img>
+            <ul class="nav flex-row delivery">
+              <a href="https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/">
+                <img src="/images/delivery-doordash-icon.jpg" class="btn-delivery"></img>
+              </a>
+              <a href="https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg">
+                <img src="/images/delivery-uber-eats.jpg" class="btn-delivery"></img>
+              </a>
+              <a href="https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436">
+                <img src="/images/delivery-grubhub.jpg" class="btn-delivery"></img>
+              </a>
+            </ul>
+          </center>
+        {{/if}}
+
+        {{#if name5_2Switch}}
+          <p>{{description5_2}}</p>
+            {{#if name5_3Switch}}
+              <h4>{{description5_3}}</h4>
+            {{/if}}
+
+          {{#each information as |i|}}
+            <a href="tel:+14808991200" style="text-decoration:none;">
+              <h4>{{i.phoneNumber}}</h4>
             </a>
-            <a href="https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436">
-              <img src="/images/delivery-grubhub.jpg" class="btn-delivery"></img>
+            <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;">
+              <h5>{{i.address}}</h5>
             </a>
-          </ul>
-        </center>
-        <p>{{description5_2}}</p>
-        <h4>{{description5_3}}</h4>
+          {{/each}}
+        {{/if}}
       {{/each}}  
 
-      {{#each information as |i|}}
+
+      {{!-- {{#each information as |i|}}
         <a href="tel:+14808991200" style="text-decoration:none;">
           <h4>{{i.phoneNumber}}</h4>
         </a>
         <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;">
           <h5>{{i.address}}</h5>
         </a>
-      {{/each}}
+      {{/each}} --}}
 
       {{#each homePage as |hp|}}
-        <p>{{description5_4}}</p> 
-        <p>{{description5_5}}</p>
+        {{#if hp.name5_4Switch}}
+          <p>{{hp.description5_4}}</p> 
+        {{/if}}
+        {{#if hp.name5_5Switch}}
+          <p>{{hp.description5_5}}</p>
+        {{/if}}
       {{/each}}
     </center>
   </div>
