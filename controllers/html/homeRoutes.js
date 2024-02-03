@@ -3,7 +3,7 @@ const router = require('express').Router();
 const { 
 	Categories, 
 	Dressings, 
-	Employees, 
+	// Employees, 
 	Images, 
 	Marinaras, 
 	MenuItems, 
@@ -312,6 +312,63 @@ router.get('/categories/update/:catId', withAuth, async (req, res) => {
 			name: req.session.name,
 		});
 	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error); // 500 - internal server error
+	};
+});
+
+//Route to update promise
+// router.get('/promise/update/:promiseId', withAuth, async (req, res) => {
+// 	try {
+// 		const promise =
+// 	}
+// 	catch (error) {
+// 		console.log(error);
+// 		res.status(500).json(error); // 500 - internal server error
+// 	};
+// }); 
+
+//Route to update information
+router.get('/information/update/:infoId', withAuth, async (req, res) => {
+	try {
+		const information = await Information.findOne({
+			where: {
+				id: req.params.infoId,
+			}
+		});
+		
+		const info = information.get({ plain: true });
+
+		res.status(200).render('update-information', {
+			info,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name,
+		});
+	}
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error); // 500 - internal server error
+	};
+});
+
+//Route to uppdate home
+router.get('/home/update/:homeId', withAuth, async (req, res) => {
+	try {
+		const home = await HomePage.findOne({
+			where: {
+				id: req.params.homeId
+			}
+		});
+
+		const x =	home.get({ plain: true});
+
+		res.status(200).render('update-home', {
+			x,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name,
+		})
+	}
 	catch (error) {
 		console.log(error);
 		res.status(500).json(error); // 500 - internal server error

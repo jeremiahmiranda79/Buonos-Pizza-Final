@@ -6,9 +6,10 @@ router.use('/menu', menuRoutes);
 const employeeRoutes = require('./employee');
 router.use('/employee', employeeRoutes);
 
-// const homePageRoutes = require('./hours');
-// router.use('/hours', homePageRoutes);
+const informationRoutes = require('./information');
+router.use('/information', informationRoutes);
 
-
+const homeRoutes = require('./home');
+router.use('/home', homeRoutes);
 
 module.exports = router;

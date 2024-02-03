@@ -10,20 +10,25 @@
     <div class="container-fluid item">
       <form class="" id="updateMenuItem">
         <div class="container py-3">
-
           <h2 class="py-3">Update ({{item.name}}) item</h2>
 
           <div class="">
+            <label 
+              for="menu-item-name" class="form-label">Item name
+            </label>
 
-            <label for="menu-item-name" class="form-label">Item name</label>
+            <input 
+              id="name" type="text" value="{{item.name}}" class="form-control" placeholder="{{item.name}}" required
+            >
 
-            <input id="name" type="text" value="{{item.name}}" class="form-control" placeholder="{{item.name}}" required>
-
-            <label for="item-description" class="form-label">
+            <label 
+              for="item-description" class="form-label">
               Item description
             </label>
 
-            <input type="text" id="description" class="form-control" value="{{item.description}}" placeholder="{{item.description}}" required>
+            <input 
+              type="text" id="description" class="form-control" value="{{item.description}}" placeholder="{{item.description}}" required
+            >
           </div>
 
           {{!-- <div class="mb-3 py-3">

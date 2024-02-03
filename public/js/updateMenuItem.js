@@ -1,16 +1,23 @@
 // Update the Menu Item through the API
 const updateMenuItem = async(event) => {
   event.preventDefault();
+
   const itemId = document.querySelector('input[name="item-id"]').value;
+
   const name = document.querySelector('#name').value.trim();
+  
   const description = document.querySelector('#description').value.trim();
   
   const categoryId = document.querySelector('#categories').value;
 
   const response = await fetch(`../../api/menu/updateMenuItem/${itemId}`, {
     method: 'PUT',
-    body: JSON.stringify({ name, description, categoryId }),
-    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ 
+      name, 
+      description, 
+      categoryId 
+    }),
+    headers: { 'Content-Type': 'application/json' }
   });
 
   if (response.ok) {
@@ -34,9 +41,9 @@ const deleteMenuItem = async(event) => {
         // alert('Are you sure you want to delete this menu item and all things related to it? This action cannot be undone.');
         document.location.replace('/menu');
       } 
-      // else {
-      //   alert(response.statusText);
-      // };
+      else {
+        alert(response.statusText);
+      };
     };
   }
   else 

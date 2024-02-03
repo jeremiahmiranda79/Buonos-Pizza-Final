@@ -12,10 +12,12 @@ const {
   ToppingsHotSub, 
   ToppingsPremium, 
   ToppingsRegular, 
-
   Hours
 } = require('../../models');
 
+/***** READ *****/
+// Route to retrieve all categories and associated menu items
+// Get method with endpoints '/api/menu'
 router.get('/', async (req, res) => {
   try {
     const menu = await Categories.findAll({
@@ -165,7 +167,7 @@ router.delete('/deleteMenuItem/:menuItemId', async (req, res) => {
     const deletedMenuItem = await MenuItems.destroy({
       where: {
         id: req.params.menuItemId
-      },
+      }
     });
 
     console.log(deletedMenuItem);

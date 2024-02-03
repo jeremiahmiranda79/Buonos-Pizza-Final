@@ -12,6 +12,11 @@ HomePage.init(
       autoIncrement: true
     },
 
+
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     name1: {
       type: DataTypes.STRING,
       allowNull: false
@@ -50,10 +55,10 @@ HomePage.init(
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
-    // description3_2: {
-    //   type: DataTypes.STRING,
-    //   allowNull: false
-    // },
+    description3_2: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     name3_2Switch: {
       type: DataTypes.BOOLEAN,
       allowNull: false
