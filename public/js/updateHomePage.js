@@ -33,10 +33,13 @@ const updateHomePage = async(event) => {
   const name5_2Switch = document.querySelector('#name5_2Switch').value.trim();
 
   const description5_3 = document.querySelector('#description5_3').value.trim();
-  const name5_3Switch = document.querySelector('#name3_3Switch').value.trim();
+  const name5_3Switch = document.querySelector('#name5_3Switch').value.trim();
 
-  const description5_4 = document.querySelector('#descrition5_4').value.trim();
+  const description5_4 = document.querySelector('#description5_4').value.trim();
   const name5_4Switch = document.querySelector('#name5_4Switch').value.trim();
+
+  const description5_5 = document.querySelector('#description5_5').value.trim();
+  const name5_5Switch = document.querySelector('#name5_5Switch').value.trim();
  
   const response = await fetch(`../../api/home/updateHome/${homeId}`, {
     method: 'PUT',
@@ -75,7 +78,8 @@ const updateHomePage = async(event) => {
       description5_4,
       name5_4Switch,
 
-
+      description5_5,
+      name5_5Switch
     }),
     headers: { 'Content-Type': 'application/json' }
   });
