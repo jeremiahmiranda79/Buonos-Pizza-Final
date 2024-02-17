@@ -1,21 +1,27 @@
 [
   { 
-    "name": "Pistachio"
+    "name": "Pistachio",
+    "price": 0.75
   },
   { 
-    "name": "Maraschino cherries"
+    "name": "Maraschino cherries",
+    "price": 0.75
   },
   {
-    "name": "Glace Fruit"
+    "name": "Glace Fruit",
+    "price": 0.75
   },
 
   {
-    "name": "Vanilla whipped cream"
+    "name": "Vanilla whipped cream",
+    "price": 0.75
   },
   {
-    "name": "Cocoa whipped cream"
+    "name": "Cocoa whipped cream",
+    "price": 0.75
   },
   {
-    "name": "Strawberry whipped cream"
+    "name": "Strawberry whipped cream",
+    "price": 0.75
   }
 ]

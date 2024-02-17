@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, FLOAT } = require('sequelize');
 const connection = require('../config/connection');
 
 class ToppingsDesert extends Model {};
@@ -13,6 +13,11 @@ ToppingsDesert.init(
     },
     name: {
       type: DataTypes.STRING,
+      allowNull: false
+    },
+
+    price: {
+      type: DataTypes.FLOAT,
       allowNull: false
     }
   },

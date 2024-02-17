@@ -8,309 +8,271 @@
   <link rel="stylesheet" href="/css/takeout-dinein.css">
 </head>
 
-<div>
-  <div class="container-fluid promise" >
+<section label="home-page">
+  <section label="admin buttons">
     {{#if loggedIn}}
       <center>
-        {{#each homePage as |i|}}
-          <a href="/home/update/{{i.id}}" class="active btn btn-primary">Update {{i.name}}</a>
-        {{/each}}
-      </center>
-    {{/if}}
-
-    <center>
-      {{#each homePage as |hp|}}
-        {{#if hp.name1Switch}}
-          <h1>{{hp.name1}}</h1>
-          <h5>{{hp.description1}}</h5>
-        {{/if}}
-      {{/each}}
-
-      {{#each information as |i|}}
-        <h6>{{i.style}}</h6>
-      {{/each}}
-
-      {{#if loggedIn}}
-        <center>
-          {{#each information as |i|}}
-            <a href="/information/update/{{i.id}}" class="active btn btn-primary">Update {{i.name}}</a>
-          {{/each}}
-        </center>
-      {{/if}}
-
-      {{#each information as |i|}}
+        <br><br>
         {{#each homePage as |hp|}}
-          {{#if hp.name1Switch}}
-            <a href={{i.telNumber}} style="text-decoration:none;">
-              <h5>{{i.phoneNumber}}</h5>
-            </a>
-            <a href={{i.map}} style="text-decoration:none;">
-              <h5>{{i.address}}</h5>
-            </a>
-          {{/if}}
-        {{/each}}
-      {{/each}} 
-    </center>
-  </div>
+          <a href="/home/update/{{hp.id}}" class="active btn btn-primary">Update {{hp.name}}</a>
+        {{/each}}        
+      </center>
 
-  {{#each homePage as |hp|}}
-    {{#if hp.name1Switch}}
       <center>
-        <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner promise">
-            <div class="carousel-item active">
-              <img src="/images/home-buonos-place.jpg" alt="" class="d-block" id="buonos">
-              <div class="carousel-caption">
-                <h3>Buonos Pizza</h3>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="/images/home-pizza-dough.jpg" alt="" class="d-block"  id="buonos">
-              <div class="carousel-caption">
-                <h3>Taste the myth</h3>
-              </div> 
-            </div>
-            <div class="carousel-item">
-              <img src="/images/home-legend-2.jpg" alt="" class="d-block"  id="buonos">
-              <div class="carousel-caption">
-                <h3>Become a legend</h3>
-              </div>
-            </div>
-          </div>  
-        </div>
+        {{#each information as |i|}}
+          <a href="/information/update/{{i.id}}" class="active btn btn-primary">Update {{i.name}}</a>
+        {{/each}}
       </center>
-
-      <div class="flex-box">
-        <center>
-          <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
-        </center>
-      </div>
     {{/if}}
-  {{/each}}
+  </section>
 
-  <div class="container-fluid specialties">
-    <center>      
-      {{#each homePage as |hp|}}
-        {{#if hp.name2Switch}}
-          <h1>{{hp.name2}}</h1>
-          <h5>{{hp.description2}}</h5>
-        {{/if}}
-      {{/each}}
+  <section label="promise">
+    {{#each homePage as |hp|}}
+      {{#if hp.name1Switch}}
+        <div class="container-fluid promise" >
+          <center>
+            <h1>{{hp.name1}}</h1>
+            <h5>{{hp.description1}}</h5> 
+          </center>
+        </div>
+      {{/if}}
+    {{/each}}
+  </section>
+  
+  <section label="information"> 
+    {{#each information as |i|}}
+      {{#if i.information1_switch}}
+      {{!-- <div class="container-fluid promise" > --}}
+        <center>
+          <h6>{{i.style}}</h6>
+          <a href={{i.telNumber}} style="text-decoration:none;">
+            <h5>{{i.phoneNumber}}</h5>
+          </a>
+          <a href={{i.map}} style="text-decoration:none;">
+            <h5>{{i.address}}</h5>
+          </a>
+          <h5>{{i.email}}</h5>
+          <h5>{{i.company}}</h5>
+        </center> 
+      {{!-- </div> --}}
+      {{/if}}
+    {{/each}} 
+  </section>
+  
+  <section label="promise-carousel">
+    {{#each homePage as |hp|}}
+      {{#if hp.name1Switch}}
+        <center>
+          <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner promise">
+              <div class="carousel-item active">
+                <img src="/images/home-buonos-place.jpg" alt="" class="d-block" id="buonos">
+                <div class="carousel-caption">
+                  <h3>Buonos Pizza</h3>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/home-pizza-dough.jpg" alt="" class="d-block"  id="buonos">
+                <div class="carousel-caption">
+                  <h3>Taste the myth</h3>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="/images/home-legend-2.jpg" alt="" class="d-block"  id="buonos">
+                <div class="carousel-caption">
+                  <h3>Become a legend</h3>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </center>
 
-      {{#each homePage as |hp|}}
-        {{#if hp.name2Switch}}
-          {{#each information as |i|}}
+        <div class="flex-box">
+          <center>
+            <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
+          </center>
+        </div>
+      {{/if}}
+    {{/each}}
+  </section>
+  
+  <section label="specialties">
+    {{#each homePage as |hp|}}
+      {{#if hp.name2Switch}}
+        <div class="container-fluid specialties">
+          <center>      
+            <h1>{{hp.name2}}</h1>
+            <h5>{{hp.description2}}</h5>
             <h6>{{i.style}}</h6>
-          {{/each}}
-        {{/if}}
-      {{/each}}
+            <br><br>
+            <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="3"></button>
+              </div>
 
-      {{#each homePage as |hp|}}
-        {{#if hp.name2Switch}}
-          {{#each information as |i|}}
-            <a href="tel:+14808991200" style="text-decoration:none;">
-              <h5>{{i.phoneNumber}}</h5>
-            </a>
-            <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;">
-              <h5>{{i.address}}</h5>
-            </a>
-          {{/each}}
-        {{/if}}
-      {{/each}}  
-    </center>
-  </div>
+              <div class="carousel-inner specialty">
+                <div class="carousel-item active">
+                  <img src="/images/specialties-pizza-togo.jpg" alt="s1" class="d-block" id="buonos">
+                  <div class="carousel-caption">
+                    <p>Neopolotian thin crust</p>
+                  </div>
+                </div>
 
-  <center>
-    {{#each homePage as |hp|}}
-      {{#if hp.name2Switch}}
-        <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="3"></button>
-          </div>
+                <div class="carousel-item">
+                  <img src="/images/specialties-sicillian-pizza.jpg" alt="s2" class="d-block" id="buonos">
+                  <div class="carousel-caption">
+                    <p>Sicillian deep dish</p>
+                  </div> 
+                </div>
 
-          <div class="carousel-inner specialty">
-            <div class="carousel-item active">
-              <img src="/images/specialties-pizza-togo.jpg" alt="s1" class="d-block" id="buonos">
-              <div class="carousel-caption">
-                <p>Neopolotian thin crust</p>
+                <div class="carousel-item">
+                  <img src="/images/specialties-calzone-2.jpg" alt="s1" class="d-block" id="buonos">
+                  <div class="carousel-caption">
+                    <p>Calzone</p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="/images/specialties-stromboli-1.jpg" alt="s2" class="d-block" id="buonos">
+                  <div class="carousel-caption">
+                    <p>Stromboli</p>
+                  </div> 
+                </div>
               </div>
             </div>
-
-            <div class="carousel-item">
-              <img src="/images/specialties-sicillian-pizza.jpg" alt="s2" class="d-block" id="buonos">
-              <div class="carousel-caption">
-                <p>Sicillian deep dish</p>
-              </div> 
+            <div class="flex-box">
+              <center>
+                <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
+              </center>
             </div>
-
-            <div class="carousel-item">
-              <img src="/images/specialties-calzone-2.jpg" alt="s1" class="d-block" id="buonos">
-              <div class="carousel-caption">
-                <p>Calzone</p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <img src="/images/specialties-stromboli-1.jpg" alt="s2" class="d-block" id="buonos">
-              <div class="carousel-caption">
-                <p>Stromboli</p>
-              </div> 
-            </div>
-          </div>
+          </center>
         </div>
       {{/if}}
     {{/each}}
-  </center>
+  </section>
 
-  <div class="flex-box">
+  <section label="loyalty">
     {{#each homePage as |hp|}}
-      {{#if hp.name2Switch}}
-        <center>
-          <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
-        </center>
+      {{#if hp.name3_1Switch}}
+        <div class="container-fluid loyalty">
+          <center>
+            <h1>{{hp.name3_1}}</h1>
+            <h5>{{hp.description3_1}}</h5>
+            {{#if hp.name3_2Switch}}
+              <h6>*Avaliable only through Dine in or in person Take out orders.*</h6>
+            {{/if}}
+          </center>
+        </div>
       {{/if}}
-    {{/each}}
-  </div>
 
-  <div class="container-fluid loyalty">
-    <center>
-      {{#each homePage as |hp|}}
-        {{#if hp.name3_1Switch}}
-          <h1>{{hp.name3_1}}</h1>
-          <h5>{{hp.description3_1}}</h5>
-        {{/if}}
-        {{#if hp.name3_2Switch}}
-          <h6>*Avaliable only through Dine in or in person Take out orders.*</h6>
-        {{/if}}
-      {{/each}}
-    </center>
-  </div>
-
-  <center>
-    {{#each homePage as |hp|}}
       {{#if hp.name3_2Switch}}
-        <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner loyalty">
-            <div class="carousel-item active">
-              <img src="/images/magnet-1.jpg" alt="" class="d-block" id="">
-            </div>
+        <center>
+          <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner loyalty">
+              <div class="carousel-item active">
+                <img src="/images/magnet-1.jpg" alt="" class="d-block" id="">
+              </div>
 
-            <div class="carousel-item active">
-              <img src="/images/magnet-full-2.jpg" alt="" class="d-block" id="">
+              <div class="carousel-item active">
+                <img src="/images/magnet-full-2.jpg" alt="" class="d-block" id="">
+              </div>
             </div>
           </div>
+        </center>
+      {{/if}}
+      
+      {{#if hp.name3_2Switch}}
+        <div class="flex-box">
+          <center>
+            <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
+          </center>
         </div>
       {{/if}}
     {{/each}}
-  </center>
+  </section>
 
-  {{#each homePage as |hp|}}
-    {{#if hp.name3_2Switch}}
-      <div class="flex-box">
-        <center>
-          <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
-        </center>
-      </div>
-    {{/if}}
-  {{/each}}
-
-  <div class="container-fluid takeout-dinein">
-    <center>
-      {{#each homePage as |hp|}}
-        {{#if hp.name4Switch}}
-          <h1>{{hp.name4}}</h1>
-          <h5>{{hp.description4}}</h5>
-        {{/if}}
-      {{/each}}
-
-      {{#each information as |i|}}
+  <section label="takeout-dinein">
+    <div class="container-fluid takeout-dinein">
+      <center>
         {{#each homePage as |hp|}}
-          {{#if hp.name4Swicth}}
-            <a href="tel:+14808991200" style="text-decoration:none;">
-              <h5>{{i.phoneNumber}}</h5>
-            </a>
-            <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;">
-              <h5>{{i.address}}</h5>
-            </a>
+          {{#if hp.name4Switch}}
+            <h1>{{hp.name4}}</h1>
+            <h5>{{hp.description4}}</h5>
           {{/if}}
         {{/each}}
-      {{/each}}
-    </center>
-  </div>
-  
-  <div class="container-fluid delivery">
-    <center>
-      {{#each homePage as |hp|}}
-        {{#if hp.name5_1Switch}}
-          <h1>{{hp.name5_1}}</h1>
-          <h4>{{hp.description5_1}}</h4>
-          <center>
-            <a href="https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com">
-              <img src="/images/slice-logo-600x200.jpg" class="btn-delivery-main"></img>
-            </a>
-            <ul class="nav flex-row delivery">
-              <a href="https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/">
-                <img src="/images/delivery-doordash-icon.jpg" class="btn-delivery"></img>
-              </a>
-              <a href="https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg">
-                <img src="/images/delivery-uber-eats.jpg" class="btn-delivery"></img>
-              </a>
-              <a href="https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436">
-                <img src="/images/delivery-grubhub.jpg" class="btn-delivery"></img>
-              </a>
-            </ul>
-          </center>
-        {{/if}}
+      </center>
+    </div>
+  </section>
 
-        {{#if name5_2Switch}}
-          <p>{{description5_2}}</p>
-            {{#if name5_3Switch}}
-              <h4>{{description5_3}}</h4>
-            {{/if}}
+  <section label="delivery">
+    <div class="container-fluid delivery">
+      <center>
+        {{#each homePage as |hp|}}
+          {{#if hp.name5_1Switch}}
+            <h1>{{hp.name5_1}}</h1>
+            <h4>{{hp.description5_1}}</h4>
+            <center>
+              {{#if hp.slice_switch}}
+                <a href="https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com">
+                  <img src="/images/slice-logo-600x200.jpg" class="btn-delivery-main"></img>
+                </a>
+              {{/if}}
 
-          {{#each information as |i|}}
-            <a href="tel:+14808991200" style="text-decoration:none;">
-              <h4>{{i.phoneNumber}}</h4>
-            </a>
-            <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;">
-              <h5>{{i.address}}</h5>
-            </a>
-          {{/each}}
-        {{/if}}
-      {{/each}}  
+              <ul class="nav flex-row delivery">
+                {{#if hp.doordash_switch}}
+                  <a href="https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/">
+                    <img src="/images/delivery-doordash-icon.jpg" class="btn-delivery"></img>
+                  </a>
+                {{/if}}
 
+                {{#if hp.ubereats_switch}}
+                  <a href="https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg">
+                    <img src="/images/delivery-uber-eats.jpg" class="btn-delivery"></img>
+                  </a>
+                {{/if}}
 
-      {{!-- {{#each information as |i|}}
-        <a href="tel:+14808991200" style="text-decoration:none;">
-          <h4>{{i.phoneNumber}}</h4>
-        </a>
-        <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;">
-          <h5>{{i.address}}</h5>
-        </a>
-      {{/each}} --}}
+                {{#if hp.grubhub_switch}}
+                  <a href="https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436">
+                    <img src="/images/delivery-grubhub.jpg" class="btn-delivery"></img>
+                  </a>
+                {{/if}}
+              </ul>
+            </center>
+          {{/if}}
 
-      {{#each homePage as |hp|}}
-        {{#if hp.name5_4Switch}}
-          <p>{{hp.description5_4}}</p> 
-        {{/if}}
-        {{#if hp.name5_5Switch}}
-          <p>{{hp.description5_5}}</p>
-        {{/if}}
-      {{/each}}
-    </center>
-  </div>
+          {{#if name5_2Switch}}
+            <p>{{description5_2}}</p>
+          {{/if}}
 
-  <div class="container main-footer">
-    <center>
-      <ul class="nav flex-row social">
-        <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
-        <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="btn"><i class=" icon fa fa-yelp"></i></a>
-      </ul>
-      <h3 class="copy-right">	&copy; 2023 buonos pizza</h3>
-    </center>
-  </div>
-</div>
+          {{#if name5_3Switch}}
+            <h4>{{description5_3}}</h4>
+          {{/if}}
+
+          {{#if hp.name5_4Switch}}
+            <p>{{hp.description5_4}}</p> 
+          {{/if}}
+
+          {{#if hp.name5_5Switch}}
+            <p>{{hp.description5_5}}</p>
+          {{/if}}
+        {{/each}}
+      </center>
+    </div>
+  </section>
+
+  <section label="footer">
+    <div class="container main-footer">
+      <center>
+        <ul class="nav flex-row social">
+          <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
+          <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert" class="btn"><i class="icon fa fa-yelp"></i></a>
+        </ul>
+        <h3 class="copy-right">	&copy; 2023 buonos pizza</h3>
+      </center>
+    </div>
+  </section>
+</section>

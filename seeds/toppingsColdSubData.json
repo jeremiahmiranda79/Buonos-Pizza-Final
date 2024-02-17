@@ -1,48 +1,60 @@
 [
   {
-    "name": "Italian dressing"
+    "name": "Italian dressing",
+    "price": 0.75
   },
   {
-    "name": "Mayonnaise"
+    "name": "Mayonnaise",
+    "price": 0.75
   },
   {
-    "name": "Yellow mustard"
+    "name": "Yellow mustard",
+    "price": 0.75
   }, 
   {
-    "name": "Basil puree"
+    "name": "Basil puree",
+    "price": 0.75
   },
   {
-    "name": "Balsamic fig glaze"
+    "name": "Balsamic fig glaze",
+    "price": 0.75
   },
   {
-    "name": "Mikes honey hot"
+    "name": "Mikes honey hot",
+    "price": 0.75
   },
 
-
   {
-    "name": "Tomato"
+    "name": "Tomato",
+    "price": 0.99
   },
   {
-    "name": "Onion"
+    "name": "Onion",
+    "price": 0.99
   }, 
   {
-    "name": "Lettuce"
+    "name": "Lettuce",
+    "price": 0.99
   },
   {
-    "name": "Banana pepper"
+    "name": "Banana pepper",
+    "price": 0.99
   },
   {
-    "name": "Pepperoncini"
+    "name": "Pepperoncini",
+    "price": 0.99
   }, 
   {
-    "name": "Jalapeno"
+    "name": "Jalapeno",
+    "price": 0.99
   },
   {
-    "name": "Roasted red bell pepper"
+    "name": "Roasted red bell pepper",
+    "price": 0.99
   },
 
-
   {
-    "name": "Extra cheese"
+    "name": "Extra cheese",
+    "price": 1.25
   }
 ]

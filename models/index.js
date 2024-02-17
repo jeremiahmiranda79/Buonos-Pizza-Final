@@ -17,6 +17,8 @@ const Information = require('./Information');
 const HomePage = require('./HomePage');
 const Hours = require('./Hours');
 
+const Location = require('./Location');
+
 // MenuItems to Categories
 Categories.hasMany(MenuItems, {
   foreignKey: 'categoryId'
@@ -44,5 +46,7 @@ module.exports = {
   
   Information,
   HomePage,
-  Hours
+  Hours,
+
+  Location
 };

@@ -14,6 +14,15 @@ Pastas.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    
+    price5oz:{
+      type: DataTypes.FLOAT,
+      allowNull: false
+    },
+    price9oz: {
+      type: DataTypes.FLOAT,
+      allowNull: false
     }
   },
   {

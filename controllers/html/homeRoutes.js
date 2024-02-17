@@ -3,7 +3,7 @@ const router = require('express').Router();
 const { 
 	Categories, 
 	Dressings, 
-	// Employees, 
+	Employees, //
 	Images, 
 	Marinaras, 
 	MenuItems, 
@@ -15,23 +15,24 @@ const {
 	ToppingsHotSub, 
 	ToppingsPremium, 
 	ToppingsRegular,
-
 	Hours,
 	Information,
-	HomePage
+	HomePage,
+	Location,
+
+	Addons
 } = require('../../models');
 
 const withAuth = require('../../utils/auth');
 const isAdmin = require('../../utils/admin');
 
-// Homepage
+// Route to find home page
 router.get('/', async (req, res) => {
 	try {
-		const hp = await HomePage.findAll();
-		const serializedHomePage = hp.map((x) => x.get({plain: true}));
-
+		const h = await HomePage.findAll();
+		const serializedHomePage = h.map((x) => x.get({ plain: true }));
 		const i = await Information.findAll();
-		const serializedInfo = i.map((x) => x.get({plain: true}));
+		const serializedInfo = i.map((x) => x.get({ plain: true }));
 
 		res.status(200).render('home', {
 			loggedIn: req.session.loggedIn, 
@@ -42,78 +43,59 @@ router.get('/', async (req, res) => {
 	}	
 	catch (error) {
 		console.log(error);
-		res.status(500).json(error);
+		res.status(500).json(error);// 500 - internal server error
 	}
 });
 
+// Route to find menu
 router.get('/menu', async (req, res) => {
 	try {
-		const items = await Categories.findAll({
-			include: [
-				{
-					model: MenuItems
-				}
-			]
-		});	
-			
-		const serializedItems = items.map((item) => item.get({ plain: true }));
+		const i = await Categories.findAll({ include: [{ model: MenuItems }] });	
+		const serializedItems = i.map((x) => x.get({ plain: true }));
 
 		res.status(200).render('menu', {
 			loggedIn: req.session.loggedIn, 
 			name: req.session.name,
-
 			items: serializedItems
 		});
 	}
 	catch (error) {
 		console.log(error);
-		res.status(500).json(error);
+		res.status(500).json(error);// 500 - internal server error
 	}
 });
 
+// Route to find a single menu item
 router.get('/menu/:menuitemsId', async (req, res) => {
 	try {
-		const item = await MenuItems.findByPk(req.params.menuitemsId, {
-			include: [
-				{ model: Categories }]
-		});
-		const serializedItem = item.get({ plain: true });
-
-		const dressings = await Dressings.findAll({});
-		const serializedDressings = dressings.map((item) => item.get({ plain: true }));
-
-		const marinaras = await Marinaras.findAll({});
-		const serializedMarinaras = marinaras.map((item) => item.get({plain: true}));
-
-		const pastas = await Pastas.findAll({});
-		const serializedPastas = pastas.map((item) => item.get({ plain: true}));
-
-		const sauces = await Sauces.findAll({});
-		const serializedSauces = sauces.map((item) => item.get({ plain: true})); 
-
-		const saucesDesert = await SaucesDesert.findAll({});
-		const serializedSaucesDesert = saucesDesert.map((item) => item.get({ plain: true})); 
-
-		const toppingsColdSub = await ToppingsColdSub.findAll({});
-		const serializedToppingsColdSub = toppingsColdSub.map((item) => item.get({plain: true}));
-		
-		const toppingsDesert = await ToppingsDesert.findAll({});
-		const serializedToppingsDesert = toppingsDesert.map((item) => item.get({plain: true}));
-		
-		const toppingsHotSub = await ToppingsHotSub.findAll({});
-		const serializedToppingsHotSub = toppingsHotSub.map((item) => item.get({plain: true}));
-
-		const toppingsPremium = await ToppingsPremium.findAll({});	
-		const serializedtoppingsPremium = toppingsPremium.map((item) => item.get({ plain: true }));
-
-		const toppingsRegular = await ToppingsRegular.findAll({});	
-		const serializedtoppingsRegular = toppingsRegular.map((item) => item.get({ plain: true }));
+		const i = await MenuItems.findByPk(req.params.menuitemsId, {
+			include: [{ model: Categories }]});
+		const serializedItem = i.get({ plain: true });
+		const d = await Dressings.findAll();
+		const serializedDressings = d.map((x) => x.get({ plain: true }));
+		const m = await Marinaras.findAll();
+		const serializedMarinaras = m.map((x) => x.get({ plain: true }));
+		const p = await Pastas.findAll();
+		const serializedPastas = p.map((x) => x.get({ plain: true }));
+		const s = await Sauces.findAll();
+		const serializedSauces = s.map((x) => x.get({ plain: true })); 
+		const sd = await SaucesDesert.findAll();
+		const serializedSaucesDesert = sd.map((x) => x.get({ plain: true })); 
+		const tcp = await ToppingsColdSub.findAll();
+		const serializedToppingsColdSub = tcp.map((x) => x.get({ plain: true }));
+		const td = await ToppingsDesert.findAll();
+		const serializedToppingsDesert = td.map((x) => x.get({ plain: true }));
+		const ths = await ToppingsHotSub.findAll();
+		const serializedToppingsHotSub = ths.map((x) => x.get({ plain: true }));
+		const tp = await ToppingsPremium.findAll();	
+		const serializedtoppingsPremium = tp.map((x) => x.get({ plain: true }));
+		const tr = await ToppingsRegular.findAll();	
+		const serializedtoppingsRegular = tr.map((x) => x.get({ plain: true }));
 		
 		res.status(200).render('item-details', {
 			loggedIn: req.session.loggedIn, 
 			name: req.session.name,
 			item: serializedItem,
-			
 			dressing: serializedDressings,
 			marinara: serializedMarinaras,
 			pasta: serializedPastas,
@@ -128,25 +110,28 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 	} 
 	catch (error) {
 		console.log(error);
-		res.status(500).json(error);
+		res.status(500).json(error);// 500 - internal server error
 	}
 });
 
 // Route to add a menu item
 router.get('/menuitems/create', withAuth, isAdmin, async (req, res) => {
   try {
-    const categories = await Categories.findAll();
-    const menuitems = await MenuItems.findAll();
-    const cats = categories.map((cat) => cat.get({ plain: true }));
-    const items = menuitems.map((item) => item.get({ plain: true }));
+    const c = await Categories.findAll();
+    const serializedCats = c.map((x) => x.get({ plain: true }));
+    const i = await MenuItems.findAll();
+    const serializeditems = i.map((x) => x.get({ plain: true }));
 
     res.status(200).render('create-menu-item', {
-      items, cats, loggedIn: req.session.loggedIn, name: req.session.name
+			serializedCats, 
+      serializeditems,
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name
     });
   } 
   catch (error) {
     console.log(error);
-    res.status(500).json(error); // 500 - internal server error
+    res.status(500).json(error);// 500 - internal server error
   };
 });
 
@@ -169,23 +154,47 @@ router.get('/menuitems/update/:menuitemId', withAuth, isAdmin, async (req, res) 
 	} 
 	catch (error) {
 		console.log(error);
-		res.status(500).json(error); // 500 - internal server error
+		res.status(500).json(error);// 500 - internal server error
 	};
+});
+
+// Route to update addons for menu items
+router.get('/addons', withAuth, isAdmin, async (req, res) => {
+	try {
+		
+
+
+		res.status(200).render('update-addons', {
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+
+
+		});
+	}
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);// 500 - internal server error
+	}
 });
 
 router.get('/location', async (req, res) => {
 	try {
 		const x = await Hours.findAll();
+		const serializedHours = x.map((x) => x.get({plain: true}));
 
-		const serializedHours = x.map((hour) => hour.get({plain: true}));
+		const i = await Information.findAll();
+		const serializedInfo = i.map((x) => x.get({plain: true}));
 
-		console.log(serializedHours);
+		const l = await Location.findAll();
+		const serializedLocation = l.map((x) => x.get({plain: true}));
 
 		res.status(200).render('location', {
 			loggedIn: req.session.loggedIn, 
 			name: req.session.name,
 
-			hours: serializedHours
+			hours: serializedHours,
+			information: serializedInfo,
+			location: serializedLocation
 		});
 	}
 	catch (error) {
@@ -236,6 +245,7 @@ router.get('/contact', async (req, res) => {
 	}
 });
 
+// Route to find about
 router.get('/about', async (req, res) => {
 	try {
 		const x = await Hours.findAll();
@@ -258,6 +268,7 @@ router.get('/about', async (req, res) => {
 	}
 });
 
+// Route to employee login
 router.get('/employee/login', async (req, res) => {
 	if (req.session.loggedIn) {
 		return res.redirect('../');
@@ -317,17 +328,6 @@ router.get('/categories/update/:catId', withAuth, async (req, res) => {
 		res.status(500).json(error); // 500 - internal server error
 	};
 });
-
-//Route to update promise
-// router.get('/promise/update/:promiseId', withAuth, async (req, res) => {
-// 	try {
-// 		const promise =
-// 	}
-// 	catch (error) {
-// 		console.log(error);
-// 		res.status(500).json(error); // 500 - internal server error
-// 	};
-// }); 
 
 //Route to update information
 router.get('/information/update/:infoId', withAuth, async (req, res) => {

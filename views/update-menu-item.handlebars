@@ -1,5 +1,9 @@
-<div class="update-item-background">
-  <div class="container-update-item-header">
+<head>
+  <link rel="stylesheet" href="/css/updateInformation.css">
+</head>
+ 
+<div class="information-background">
+  <div class="container-information-header">
     <center>
       <h1>Update item</h1>
       <h4>For admin only</h4>
@@ -12,62 +16,432 @@
         <div class="container py-3">
           <h2 class="py-3">Update ({{item.name}}) item</h2>
 
-          <div class="">
+          <div class="forms">
             <label 
-              for="menu-item-name" class="form-label">Item name
-            </label>
-
-            <input 
-              id="name" type="text" value="{{item.name}}" class="form-control" placeholder="{{item.name}}" required
+              for="name" 
+              class="form-label"
             >
-
+              <b>Name</b>
+            </label>
+            <input 
+              id="name" 
+              type="text" 
+              class="form-control" 
+              value="{{item.name}}" 
+              placeholder="{{item.name}}" 
+              required
+            >
+            <br><br>
             <label 
-              for="item-description" class="form-label">
-              Item description
-            </label>
-
-            <input 
-              type="text" id="description" class="form-control" value="{{item.description}}" placeholder="{{item.description}}" required
+              for="description" 
+              class="form-label"
             >
+              <b>Description</b>
+            </label>
+            <input 
+              id="description" 
+              type="text" 
+              class="form-control"
+              value="{{item.description}}" 
+              placeholder="{{item.description}}" 
+              required
+            >
+            <br><br>
+            <label 
+              for="size1" 
+              class="form-label"
+            >
+              <b>Size 1</b>
+            </label>
+            <input 
+              id="size1" 
+              type="text" 
+              class="form-control"
+              value="{{item.size1}}" 
+              placeholder="{{item.size1}}" 
+              required
+            >
+            <br>
+            <label 
+              for="price1" 
+              class="form-label"
+            >
+              <b>Price 1</b>
+            </label>
+            <input 
+              id="price1" 
+              type="text" 
+              class="form-control"
+              value="{{item.price1}}" 
+              placeholder="{{item.price1}}" 
+              required
+            >
+            <br><br>
+            <label 
+              for="size2" 
+              class="form-label"
+            >
+              <b>Size 2</b>
+            </label>
+            <input 
+              id="size2" 
+              type="text" 
+              class="form-control"
+              value="{{item.size2}}" 
+              placeholder="{{item.size2}}" 
+              required
+            >
+            <br>
+            <label 
+              for="price2" 
+              class="form-label"
+            >
+              <b>Price 2</b>
+            </label>
+            <input 
+              id="price2" 
+              type="text" 
+              class="form-control"
+              value="{{item.price2}}" 
+              placeholder="{{item.price2}}" 
+              required
+            >
+            <br><br>
+            <label 
+              for="size3" 
+              class="form-label"
+            >
+              <b>Size 3</b>
+            </label>
+            <input 
+              id="size3" 
+              type="text" 
+              class="form-control"
+              value="{{item.size3}}" 
+              placeholder="{{item.size3}}" 
+              required
+            >
+            <br>
+            <label 
+              for="price3" 
+              class="form-label"
+            >
+              <b>Price 3</b>
+            </label>
+            <input 
+              id="price3" 
+              type="text" 
+              class="form-control"
+              value="{{item.price3}}" 
+              placeholder="{{item.price3}}" 
+              required
+            >
+            <br><br>
+            {{!-- <label 
+              for="addonsDescription1" 
+              class="form-label"
+            >
+              <b>Addons Description 1</b>
+            </label>
+            <input 
+              id="addonsDescription1" 
+              type="text" 
+              class="form-control"
+              value="{{item.addonsDescription1}}" 
+              placeholder="{{item.addonsDescription1}}" 
+              required
+            >
+            <br>
+            <label 
+              for="addonsPrice1" 
+              class="form-label"
+            >
+              <b>Addons Price 1</b>
+            </label>
+            <input 
+              id="addonsPrice1" 
+              type="text" 
+              class="form-control"
+              value="{{item.addonsPrice1}}" 
+              placeholder="{{item.addonsPrice1}}" 
+              required
+            >
+            <br><br>
+            <label 
+              for="addonsDescription2" 
+              class="form-label"
+            >
+              <b>Addons Description 2</b>
+            </label>
+            <input 
+              id="addonsDescription2" 
+              type="text" 
+              class="form-control"
+              value="{{item.addonsDescription2}}" 
+              placeholder="{{item.addonsDescription2}}" 
+              required
+            >
+            <br>
+            <label 
+              for="addonsPrice2" 
+              class="form-label"
+            >
+              <b>Addons Price 2</b>
+            </label>
+            <input 
+              id="addonsPrice2" 
+              type="text" 
+              class="form-control"
+              value="{{item.addonsPrice2}}" 
+              placeholder="{{item.addonsPrice2}}" 
+              required
+            >
+            <br><br>
+            <label 
+              for="addonsDescription3" 
+              class="form-label"
+            >
+              <b>Addons Description 3</b>
+            </label>
+            <input 
+              id="addonsDescription3" 
+              type="text" 
+              class="form-control"
+              value="{{item.addonsDescription3}}" 
+              placeholder="{{item.addonsDescription3}}" 
+            >
+            <br>
+            <label 
+              for="addonsPrice3" 
+              class="form-label"
+            >
+              <b>Addons Price 3</b>
+            </label>
+            <input 
+              id="addonsPrice3" 
+              type="text" 
+              class="form-control"
+              value="{{item.addonsPrice3}}" 
+              placeholder="{{item.addonsPrice3}}"
+            > --}}
+            {{!-- <br><br> --}}
+            <label 
+              for="toppingPizzaFull" 
+              class="form-label"
+            >
+              <b>Topping Pizza Full</b>
+            </label>
+            <input 
+              id="toppingPizzaFull" 
+              type="text" 
+              class="form-control"
+              value="{{item.toppingPizzaFull}}" 
+              placeholder="{{item.toppingPizzaFull}}" 
+              required
+            >
+            <br>
+            <label 
+              for="toppingPizzaSlice" 
+              class="form-label"
+            >
+              <b>Topping Pizza Slice</b>
+            </label>
+            <input 
+              id="toppingPizzaSlice" 
+              type="text" 
+              class="form-control"
+              value="{{item.toppingPizzaSlice}}" 
+              placeholder="{{item.toppingPizzaSlice}}" 
+              required
+            >
+            <br>
+            <label 
+              for="toppingPizzaGlutenFree" 
+              class="form-label"
+            >
+              <b>Topping Pizza Gluten Free</b>
+            </label>
+            <input 
+              id="toppingPizzaGlutenFree" 
+              type="text" 
+              class="form-control"
+              value="{{item.toppingPizzaGlutenFree}}" 
+              placeholder="{{item.toppingPizzaGlutenFree}}" 
+              required
+            >
+            <br>
+            <label 
+              for="toppingHotSub" 
+              class="form-label"
+            >
+              <b>Topping Hot Sub</b>
+            </label>
+            <input 
+              id="toppingHotSub" 
+              type="text" 
+              class="form-control"
+              value="{{item.toppingHotSub}}" 
+              placeholder="{{item.toppingHotSub}}" 
+              required
+            >
+            <br>
+            <label 
+              for="toppingColdSub" 
+              class="form-label"
+            >
+              <b>Topping Cold Sub</b>
+            </label>
+            <input 
+              id="toppingColdSub" 
+              type="text" 
+              class="form-control"
+              value="{{item.toppingColdSub}}" 
+              placeholder="{{item.toppingColdSub}}" 
+              required
+            >
+            <br>
+            <label 
+              for="toppingDesert" 
+              class="form-label"
+            >
+              <b>Topping Desert</b>
+            </label>
+            <input 
+              id="toppingDesert" 
+              type="text" 
+              class="form-control"
+              value="{{item.toppingDesert}}" 
+              placeholder="{{item.toppingDesert}}" 
+              required
+            >
+            <br>
+            <label 
+              for="saladDressing" 
+              class="form-label"
+            >
+              <b>Salad Dressing</b>
+            </label>
+            <input 
+              id="saladDressing" 
+              type="text" 
+              class="form-control"
+              value="{{item.saladDressing}}" 
+              placeholder="{{item.saladDressing}}" 
+              required
+            >
+            <br>
+            <label 
+              for="wingSauce" 
+              class="form-label"
+            >
+              <b>Wing Sauce</b>
+            </label>
+            <input 
+              id="wingSauce" 
+              type="text" 
+              class="form-control"
+              value="{{item.wingSauce}}" 
+              placeholder="{{item.wingSauce}}" 
+              required
+            >
+            <br>
+            <label 
+              for="pastaType" 
+              class="form-label"
+            >
+              <b>Pasta Type</b>
+            </label>
+            <input 
+              id="pastaType" 
+              type="text" 
+              class="form-control"
+              value="{{item.pastaType}}" 
+              placeholder="{{item.pastaType}}" 
+              required
+            >
+            <br>
+            <label 
+              for="marinaraSauce" 
+              class="form-label"
+            >
+              <b>Marinara Sauce</b>
+            </label>
+            <input 
+              id="marinaraSauce" 
+              type="text" 
+              class="form-control"
+              value="{{item.marinaraSauce}}" 
+              placeholder="{{item.marinaraSauce}}" 
+              required
+            >
+            <br>
+            <label 
+              for="desertSauce" 
+              class="form-label"
+            >
+              <b>Desert Sauce</b>
+            </label>
+            <input 
+              id="desertSauce" 
+              type="text" 
+              class="form-control"
+              value="{{item.desertSauce}}" 
+              placeholder="{{item.desertSauce}}" 
+              required
+            >
+            <br>
+            <label 
+              for="desertType" 
+              class="form-label"
+            >
+              <b>Desert Type</b>
+            </label>
+            <input 
+              id="desertType" 
+              type="text" 
+              class="form-control"
+              value="{{item.desertType}}" 
+              placeholder="{{item.desertType}}" 
+              required
+            >
+            <br><br>
           </div>
 
-          {{!-- <div class="mb-3 py-3">
-            <label for="item-description" class="form-label">
-              Item description
-            </label>
-
-            <input type="text" id="description" class="form-control" value="{{item.description}}" placeholder="{{item.description}}" required>
-          </div> --}}
-
           <div class="">
-            <label for="category" class="form-label">Choose a category</label>
-            <select id="categories" name="categories" class="form-select">
-              <option value="{{cat.id}}" selected>Current ({{item.categoryId}})</option>
+            <label 
+              for="category" 
+              class="form-label">
+                <b>Choose a Category</b>
+            </label>
+            <select 
+              id="categories" 
+              name="categories" 
+              class="form-select"
+            >
+              <option value="{{cat.id}}" selected>
+                Current ({{item.categoryId}})
+              </option>
               {{#each cats as |cat|}}
-                <option value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
+                <option value="{{cat.id}}" 
+                id="categoryId"
+                >
+                  {{cat.name}}
+                </option>
               {{/each}}
             </select>
           </div>
 
-          {{!-- <div class="category-dropdown-main">
-            <h6>Item category *required</h6>
-            <div class="category-dropdown">
-              <select class="" name="categories" 	id="categories">
-                {{#each cats as |cat|}}
-                  <option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
-                {{/each}}
-              </select>
-            </div>
-          </div> --}}
-
           <div class="d-flex justify-content-evenly">
             <input type="hidden" name="item-id" value="{{item.id}}"/>
+
             <button type="submit" class="btn btn-primary">Update</button>
-            <div>
-              <a href="/menu" id="cancelButton" class="btn btn-warning">
-                Cancel
-              </a>
-            </div>
+            
+            <button 
+              class="btn btn-warning view-menu-button" onclick="history.back()"
+            >
+              Cancel
+            </button>
+
             <button class="btn btn-danger" id="deleteButton" data-id="{{item.id}}">Delete</button>
           </div>
         </div>

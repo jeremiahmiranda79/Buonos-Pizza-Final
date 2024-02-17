@@ -49,6 +49,10 @@ Information.init(
     description: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    information1_switch: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false
     }
   },
 

@@ -14,6 +14,15 @@ Marinaras.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+
+    price3oz: {
+      type: DataTypes.FLOAT,
+      allowNull: false
+    },
+    price16oz: {
+      type: DataTypes.FLOAT,
+      allowNull: false
     }
   },
   {

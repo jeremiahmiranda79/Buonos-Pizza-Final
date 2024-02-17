@@ -5,311 +5,294 @@
 
 <div class="item-background">
   <center>
-  <div class="container-item">
-    <img src="/images/buonos-logo.jpg" alt="buonos-logo" class="d-block" >
+    <div class="container-item">
+      <img src="/images/buonos-logo.jpg" alt="buonos-logo" class="d-block" >
 
-    <h1>{{item.name}}</h1>
-    <h5>{{item.description}}</h5>
-    <h4>{{item.size1}} {{item.price1}}</h4>
-    <h4>{{item.size2}} {{item.price2}}</h4>
-    <h4>{{item.size3}} {{item.price3}}</h4>
-  </div>
-  
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/menuitems/create" 
+              class="active btn btn-primary"
+            >
+              Update Image for Item {{item.name}} {{category.name}}
+            </a>
+          </center>
+        </section>
+      {{/if}}
 
-  {{#if item.toppingPizzaFull}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all regular full size pizza toppings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Regular full size pizza toppings are $2.75 each</th>
-          </tr>
-          {{#each toppingsRegular as |tr|}}
+      <h1>{{item.name}}</h1>
+      <h5>{{item.description}}</h5>
+      <h4>{{item.size1}} {{item.price1}}</h4>
+      <h4>{{item.size2}} {{item.price2}}</h4>
+      <h4>{{item.size3}} {{item.price3}}</h4>
+
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/menuitems/update/{{item.id}}" 
+              class="active btn btn-primary"
+            >
+              Update Item {{item.name}}
+            </a>
+          </center>
+        </section>
+      {{/if}}
+    </div>
+
+    {{#if item.toppingPizzaFull}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all pizza toppings</button>
+        <div class="content">
+          <table>
             <tr>
-              <td>{{tr.name}}</td>
+              <th>Additional pizza toppings are sold by the each</th>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
+            {{#each toppingsRegular as |tr|}}
+              <tr>
+                <td>{{tr.name}} - (Full: <b>${{tr.priceFull}}</b>) (Half: <b>${{tr.priceHalf}}</b>)</td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-    <br>
-
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all premium full size pizza toppings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Premium full size pizza toppings are $5.25 each</th>
-          </tr>
-          {{#each toppingsPremium as |tp|}}
+    {{#if item.toppingPizzaSlice}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all single pizza slice toppings</button>
+        <div class="content">
+          <table>
             <tr>
-              <td>{{tp.name}}</td>
+              <th>Additional pizza toppings are sold by the each</th>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
+            {{#each toppingsRegular as |tr|}}
+              <tr>
+                <td>{{tr.name}} - (Full: <b>${{tr.priceSlice}}</b>)</td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-    <br>
-
-  {{/if}}
-
-  {{#if item.toppingPizzaSlice}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all regular single pizza slice toppings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Regular single pizza slice toppings are $.75 each</th>
-          </tr>
-          {{#each toppingsRegular as |tr|}}
+    {{#if item.toppingPizzaGlutenFree}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all gluten free pizza toppings</button>
+        <div class="content">
+          <table>
             <tr>
-              <td>{{tr.name}}</td>
+              <th>Additional pizza toppings are sold by the each</th>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
+            {{#each toppingsRegular as |tr|}}
+              <tr>
+                <td>{{tr.name}} - (Full: <b>${{tr.priceGlutenFree}}</b>)</td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-    <br>
-
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all premium single pizza slice toppings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Premium single pizza slice toppings are $1.50 each</th>
-          </tr>
-          {{#each toppingsPremium as |tp|}}
+    {{#if item.toppingHotSub}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all hot sub topppings</button>
+        <div class="content">
+          <table>
             <tr>
-              <td>{{tp.name}}</td>
+              <th>Additional hot sub topppings are sold by the each</th>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
+            {{#each toppingsHotSub as |ths|}}
+              <tr>
+                <td>{{ths.name}} - <b>${{ths.price}}</b></td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-    <br>
-
-  {{/if}}
-
-  {{#if item.toppingPizzaGlutenFree}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all regular gluten free pizza toppings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Regular gluten free pizza toppings are $1.75 each</th>
-          </tr>
-          {{#each toppingsRegular as |tr|}}
+    {{#if item.toppingColdSub}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all cold sub topppings</button>
+        <div class="content">
+          <table>
             <tr>
-              <td>{{tr.name}}</td>
+              <th>Additional cold sub topppings are sold by the each</th>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
+            {{#each toppingsColdSub as |tcs|}}
+              <tr>
+                <td>{{tcs.name}} - <b>${{tcs.price}}</b></td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-    <br>
-
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all premium gluten free pizza toppings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Premium gluten free pizza toppings are $3.50 each</th>
-          </tr>
-          {{#each toppingsPremium as |tp|}}
+    {{#if item.toppingDesert}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all desert topppings</button>
+        <div class="content">
+          <table>
             <tr>
-              <td>{{tp.name}}</td>
+              <th>Additional desert toppings are sold by the each</th>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-
-    <br>
-    
-  {{/if}}
-
-  {{#if item.toppingHotSub}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all hot sub topppings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Additional hot sub toppings are $.99 each</th>
-          </tr>
-          {{#each toppingsHotSub as |ths|}}
+            {{#each toppingsDesert as |td|}}
             <tr>
-              <td>{{ths.name}}</td>
+              <td>{{td.name}} - (3 Oz: <b>${{td.price}}</b>)</td>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-    <br>
-  {{/if}}
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-  {{#if item.toppingColdSub}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all cold sub topppings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Additional cold sub toppings are $.25 each</th>
-          </tr>
-          {{#each toppingsColdSub as |tcs|}}
+    {{#if item.wingSauce}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all wing sauces</button>
+        <div class="content">
+          <table>
             <tr>
-              <td>{{tcs.name}}</td>
+              <th>Additional wing sauces are sold by the each</th>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-    <br>
-  {{/if}}
-
-  {{#if item.toppingDesert}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all desert topppings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Additional desert toppings are $.25 each</th>
-          </tr>
-          {{#each toppingsDesert as |td|}}
-          <tr>
-            <td>{{td.name}}</td>
-          </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-    <br>
-  {{/if}}
-
-  {{#if item.wingSauce}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all wing sauces</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Additional wing sauces are $.75 each</th>
-          </tr>
-          {{#each sauce as |s|}}
-          <tr>
-            <td>{{s.name}}</td>
-          </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-    <br>
-  {{/if}}
-
-  {{#if item.saladDressing}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all salad dressings</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Additional salad dressings are $.75 each</th>
-          </tr>
-          {{#each dressing as |d|}}
-          <tr>
-            <td>{{d.name}}</td>
-          </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-    <br>
-  {{/if}}
-
-  {{#if item.pastaType}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all pasta options</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Pasta options</th>
-          </tr>
-          {{#each pasta as |p|}}
+            {{#each sauce as |s|}}
             <tr>
-              <td>{{p.name}}</td>
+              {{!-- <td>{{s.name}}</td> --}}
+              <td>{{s.name}} - (3 Oz: <b>${{s.price3oz}}</b>) (16 Oz: <b>${{s.price16oz}}</b>)</td>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-    <br>
-  {{/if}}
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-  {{#if item.desertSauce}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all desert sauces</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Additional desert sauces are $.75 each</th>
-          </tr>
-          {{#each sauceDesert as |sd|}}
+    {{#if item.saladDressing}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all salad dressings</button>
+        <div class="content">
+          <table>
             <tr>
-              <td>{{sd.name}}</td>
+              <th>Additional salad dressings are sold by the each</th>
             </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-    <br>
-  {{/if}}
+            {{#each dressing as |d|}}
+            <tr>
+              {{!-- <td>{{d.name}}</td> --}}
+              <td>{{d.name}} - (3 Oz: <b>${{d.price3oz}}</b>) (16 Oz: <b>${{d.price16oz}}</b>)</td>
+            </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-  {{#if item.marinaraSauce}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all marinara sauce options</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Additional sauces are $.75 each</th>
-          </tr>
-          {{#each marinara as |m|}}
-          <tr>
-            <td>{{m.name}}</td>
-          </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-    <br>
-  {{/if}}
+    {{#if item.pastaType}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all pasta options</button>
+        <div class="content">
+          <table>
+            <tr>
+              <th>Additional pasta portions are sold by the each</th>
+            </tr>
+            {{#each pasta as |p|}}
+              <tr>
+                {{!-- <td>{{p.name}}</td> --}}
+                <td>{{p.name}} - (3 Oz: <b>${{p.price5oz}}</b>) (16 Oz: <b>${{p.price9oz}}</b>)</td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-  {{#if item.desertTopping}}
-    <section class="card" id="html-section-tags">
-      <button class="collapsible">See all desert sauces</button>
-      <div class="content">
-        <table>
-          <tr>
-            <th>Additional sauces are $.75 each</th>
-          </tr>
-          {{#each sauceDesert as |sd|}}
-          <tr>
-            <td>{{sd.name}}</td>
-          </tr>
-          {{/each}}
-        </table>
-      </div>
-    </section>
-    <br>
-  {{/if}}
-</center>
+    {{#if item.desertSauce}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all desert sauces</button>
+        <div class="content">
+          <table>
+            <tr>
+              <th>Additional desert sauces are sold by the each</th>
+            </tr>
+            {{#each sauceDesert as |sd|}}
+              <tr>
+                <td>{{sd.name}} (3 Oz: <b>${{sd.price}}</b>)</td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
 
-<center>
-  {{!-- <a href="/menu" type="button" class="btn btn-success view-menu-button">back to menu</a> --}}
-  <button class="btn btn-success view-menu-button" onclick="history.back()">Go Back</button>
-</center>
+    {{#if item.marinaraSauce}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all sauce options</button>
+        <div class="content">
+          <table>
+            <tr>
+              <th>Sauces are sold by the each</th>
+            </tr>
+            {{#each marinara as |m|}}
+              <tr>
+                <td>{{m.name}} - (3 Oz: <b>${{m.price3oz}}</b>) (16 Oz: <b>${{m.price16oz}}</b>)</td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}}
+
+    {{!-- {{#if item.desertTopping}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all desert toppings</button>
+        <div class="content">
+          <table>
+            <tr>
+              <th>Additional desert toppings sold by the each</th>
+            </tr>
+            {{#each sauceDesert as |sd|}}
+              <tr>
+                <td>{{sd.name}} - (3 Oz: <b>${{sd.price}}</b>) (16 Oz: <b>${{m.price16oz}}</b>)</td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+    {{/if}} --}}
+
+    {{#if loggedIn}}
+      <section>
+        <center>
+          <a 
+            href="/addons" 
+            class="active btn btn-primary"
+          >
+            Update Addons for item {{item.name}}
+          </a>
+        </center>
+      </section>
+    {{/if}}
+  </center>
+
+  <center>
+    <button 
+      class="btn btn-success view-menu-button" onclick="history.back()"
+    >
+      Go Back
+    </button>
+  </center>
 </div>
-
 
 <script src="/js/collapsable.js"></script>

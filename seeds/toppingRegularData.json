@@ -1,65 +1,255 @@
 [
   {
-    "name": "Anchovy"
+    "name": "Anchovy",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+    
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   {
-    "name": "Bacon"
+    "name": "Bacon",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Banana Peppers"
+    "name": "Banana Peppers",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Basil Puree"
+    "name": "Basil Puree",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Green Bell Peppers"
+    "name": "Green Bell Peppers",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Broccoli"
+    "name": "Broccoli",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Garlic"
+    "name": "Garlic",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Ham"
+    "name": "Ham",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Jalapenos"
+    "name": "Jalapenos",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Meatballs"
+    "name": "Meatballs",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Mushrooms"
+    "name": "Mushrooms",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Olives"
+    "name": "Olives",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Onions"
+    "name": "Onions",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Pepperoni"
+    "name": "Pepperoni",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Pepperoncini"
+    "name": "Pepperoncini",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Pineapple"
+    "name": "Pineapple",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Roasted Red Pepper"
+    "name": "Roasted Red Pepper",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Sausage"
+    "name": "Sausage",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Spinach"
+    "name": "Spinach",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Salami"
+    "name": "Salami",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
   },
   { 
-    "name": "Tomato"
+    "name": "Tomato",
+
+    "priceFull": 2.75,
+    "priceHalf": 1.50,
+
+    "priceSlice": 0.75,
+
+    "priceGlutenFree": 1.75
+  },
+
+
+
+  { 
+    "name": "Capicola",
+
+    "priceFull": 5.25,
+    "priceHalf": 2.75,
+    
+    "priceSlice": 1.50,
+
+    "priceGlutenFree": 3.50
+  },
+  { 
+    "name": "Chicken Cutlet",
+
+    "priceFull": 5.25,
+    "priceHalf": 2.75,
+    
+    "priceSlice": 1.50,
+
+    "priceGlutenFree": 3.50
+  },
+  { 
+    "name": "Eggplant",
+
+    "priceFull": 5.25,
+    "priceHalf": 2.75,
+    
+    "priceSlice": 1.50,
+
+    "priceGlutenFree": 3.50
+  },
+  { 
+    "name": "Soppressata",
+
+    "priceFull": 5.25,
+    "priceHalf": 2.75,
+    
+    "priceSlice": 1.50,
+
+    "priceGlutenFree": 3.50
   }
 ]

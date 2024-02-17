@@ -1,8 +1,42 @@
 [
   { 
-    "name": "Marinara 4oz"
+    "name": "Marinara Sauce",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
   },
-  { 
-    "name": "Marinara 16oz"
+  {
+    "name": "Red Pizza Sauce",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+
+  {
+    "name": "White Pizza Sauce",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+
+  {
+    "name": "Vodka Sauce",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+
+  {
+    "name": "Alfredo Sauce",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+
+  {
+    "name": "Pesto Sauce",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
   }
 ]

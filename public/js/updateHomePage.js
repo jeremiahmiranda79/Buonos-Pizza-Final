@@ -40,6 +40,13 @@ const updateHomePage = async(event) => {
 
   const description5_5 = document.querySelector('#description5_5').value.trim();
   const name5_5Switch = document.querySelector('#name5_5Switch').value.trim();
+
+  const slice_switch = document.querySelector('#slice_switch').value.trim();
+  const doordash_switch = document.querySelector('#doordash_switch').value.trim();
+  const ubereats_switch = document.querySelector('#ubereats_switch').value.trim();
+  const grubhub_switch = document.querySelector('#grubhub_switch').value.trim();
+
+  // const information_switch = document.querySelector('#information_switch').value.trim();
  
   const response = await fetch(`../../api/home/updateHome/${homeId}`, {
     method: 'PUT',
@@ -79,7 +86,12 @@ const updateHomePage = async(event) => {
       name5_4Switch,
 
       description5_5,
-      name5_5Switch
+      name5_5Switch,
+
+      slice_switch,
+      doordash_switch,
+      ubereats_switch,
+      grubhub_switch
     }),
     headers: { 'Content-Type': 'application/json' }
   });

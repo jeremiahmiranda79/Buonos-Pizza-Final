@@ -120,6 +120,23 @@ HomePage.init(
     name5_5Switch: {
       type: DataTypes.BOOLEAN,
       allowNull: false
+    },
+
+    slice_switch: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false
+    },
+    doordash_switch: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false
+    },
+    ubereats_switch: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false
+    },
+    grubhub_switch: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false
     }
   },
 

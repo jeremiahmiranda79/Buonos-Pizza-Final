@@ -25,6 +25,8 @@
     "description5_1": "We use 3rd party online ordering & delivery services.",
     "name5_1Switch": true,
 
+
+
     "description5_2": "PLEASE NOTE: Buono's cannot guarantee the warmth or quality of food delivered by any of the 3rd party delivery services. We make ALL our food to order and have no control over time of pick up or delivery quality. We make every effort to ensure we provide the best quality food.",
     "name5_2Switch": true,
 
@@ -35,6 +37,11 @@
     "name5_4Switch": true,
 
     "description5_5": "BUONO'S MANAGEMENT",
-    "name5_5Switch": true
+    "name5_5Switch": true,
+
+    "slice_switch": true,
+    "doordash_switch": true,
+    "ubereats_switch": true,
+    "grubhub_switch": true
   }
 ]

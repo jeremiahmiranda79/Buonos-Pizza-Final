@@ -31,7 +31,7 @@
 
 
 {{#if loggedIn}}
-<br><br>
+<br><br><br>
   <center>
     {{!-- <h5>Create a category</h5> --}}
     <a href="/categories/create" class="active btn btn-primary">Create new category</a>
@@ -63,7 +63,7 @@
             </div>
             <p class="mb-1">{{i.description}}</p>
             <center>
-              <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item</a>
+              <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
             </center>
           </a>
         </div>

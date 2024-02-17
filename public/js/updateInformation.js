@@ -14,6 +14,8 @@ const updateInformation = async(event) => {
   const style = document.querySelector('#style').value.trim();
   const description = document.querySelector('#description').value.trim();
 
+  const information1_switch = document.querySelector('#information1_switch').value.trim();
+
   const response = await fetch(`../../api/information/updateInformation/${infoId}`, {
     method: 'PUT',
     body: JSON.stringify({
@@ -25,7 +27,9 @@ const updateInformation = async(event) => {
       map,
       email,
       style,
-      description
+      description,
+
+      information1_switch
     }),
     headers: { 'Content-Type': 'application/json' }
   });

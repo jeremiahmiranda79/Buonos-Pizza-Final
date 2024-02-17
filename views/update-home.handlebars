@@ -257,6 +257,59 @@
             >
             <br>
             <label 
+              for="slice_switch"
+              class="form-label"
+            >
+              <b>Slice Switch</b>
+            </label>
+            <input 
+              id="slice_switch"
+              type="text"
+              class="form-control"
+              value="{{x.slice_switch}}"
+              placeholder="{{x.slice_switch}}" required
+            >
+            <label 
+              for="doordash_switch"
+              class="form-label"
+            >
+              <b>Door Dash Switch</b>
+            </label>
+            <input 
+              id="doordash_switch"
+              type="text"
+              class="form-control"
+              value="{{x.doordash_switch}}"
+              placeholder="{{x.doordash_switch}}" required
+            >
+            <label 
+              for="ubereats_switch"
+              class="form-label"
+            >
+              <b>Uber Eats Switch</b>
+            </label>
+            <input 
+              id="ubereats_switch"
+              type="text"
+              class="form-control"
+              value="{{x.ubereats_switch}}"
+              placeholder="{{x.ubereats_switch}}" required
+            >
+            <label 
+              for="grubhub_switch"
+              class="form-label"
+            >
+              <b>Grub Hub Switch</b>
+            </label>
+            <input 
+              id="grubhub_switch"
+              type="text"
+              class="form-control"
+              value="{{x.grubhub_switch}}"
+              placeholder="{{x.grubhub_switch}}" required
+            >
+            <br>
+            <label 
               for="desription5_2"
               class="form-label"
             >
@@ -310,7 +363,6 @@
               placeholder="{{x.name5_3Switch}}" required
             >
             <br>
-
             <label 
               for="desription5_4"
               class="form-label"
@@ -337,9 +389,7 @@
               value="{{x.name5_4Switch}}"
               placeholder="{{x.name5_4Switch}}" required
             >
-
             <br>
-
             <label 
               for="desription5_5"
               class="form-label"
@@ -375,13 +425,11 @@
             <button 
               type="submit" class="btn btn-primary">Update
             </button>
-
             <div>
               <a href="/" id="cancelButton" class="btn btn-warning">
                 Cancel
               </a>
             </div>
-
             <button 
               class="btn btn-danger" id="deleteButton" data-id="{{item.id}}">Delete
             </button>

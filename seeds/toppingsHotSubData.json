@@ -1,24 +1,31 @@
 [
   {
-    "name": "Onion"
+    "name": "Onion",
+    "price": 0.99
   },
   {
-    "name": "Mushroom"
+    "name": "Mushroom",
+    "price": 0.99
   },
   {
-    "name": "Green bell pepper"
+    "name": "Green bell pepper",
+    "price": 0.99
   },
 
   { 
-    "name": "Banana pepper"
+    "name": "Banana pepper",
+    "price": 0.99
   },
   { 
-    "name": "Pepperoncini"
+    "name": "Pepperoncini",
+    "price": 0.99
   },
   {
-    "name": "Jalapeno"
+    "name": "Jalapeno",
+    "price": 0.99
   },
   {
-    "name":"Extra cheese ($1.25)"
+    "name":"Extra cheese",
+    "price": 1.25
   }
 ]

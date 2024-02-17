@@ -14,6 +14,22 @@ Toppings.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    priceFull: {
+      type: DataTypes.FLOAT,
+      allowNull: false
+    },
+    priceHalf: {
+      type: DataTypes.FLOAT,
+      allowNull: false
+    },
+    priceSlice: {
+      type: DataTypes.FLOAT,
+      allowNull: false
+    },
+    priceGlutenFree: {
+      type: DataTypes.FLOAT,
+      allowNull: false
     }
   },
   {

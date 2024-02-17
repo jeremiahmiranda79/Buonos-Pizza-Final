@@ -19,7 +19,9 @@ const {
 
   HomePage,
   Information,
-  Hours
+  Hours,
+
+  Location
 } = require('../models');
 
 const categoryData = require('./categoryData.json');
@@ -44,6 +46,8 @@ const marinarasData = require('./marinaraData.json');
 const homePageData = require('./homePageData.json');
 const informationData = require('./informationData.json');
 const hoursData = require('./hoursData.json');
+
+const locationData = require('./locationData.json');
 
 const seedData = async () => {
   await sequelize.sync({ force: true });
@@ -76,6 +80,8 @@ const seedData = async () => {
   await HomePage.bulkCreate(homePageData);
   await Information.bulkCreate(informationData);
   await Hours.bulkCreate(hoursData);
+
+  await Location.bulkCreate(locationData);
 
   console.log('All seeded!')
   process.exit(0);

@@ -1,26 +1,24 @@
-<div class="update-category-background">
-  <div class="container-update-category-header">
+<head>
+  <link rel="stylesheet" href="/css/updateInformation.css">
+</head>
+
+<div class="information-background">
+  <div class="container-information-header">
     <center>
       <h1>Update category</h1>
       <h4>For admin only</h4>
     </center>
   </div>
 
-  <div class="container-update-category">
+  <div class="container-update-item">
     <div class="container-fluid contact">
       <form class="" id="updateCategory">   
         <div class="container py-3">
-
           <h2 class="py-3">Update ({{cat.name}}) category</h2>
-
           <div class="">
-            
             <label for="category-name" class="form-label">Category name</label>
-
             <input id="name" type="text" value="{{cat.name}}" class="form-control" placeholder="{{cat.name}}" required>
-
             {{!-- <input type="hidden" name="cat-id" value="{{cat.id}}"/> --}}
-
           </div>
           
           <div class="">
@@ -50,6 +48,9 @@
       </form>
     </div>
   </div>
+  
+  <br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br>
 </div>
 
 <script src="/js/updateCategory.js"></script>
