@@ -1,22 +1,25 @@
 const Categories = require('./Categories');
 const MenuItems = require('./MenuItems');
-const ToppingsRegular = require('./ToppingsRegular');
-const ToppingsPremium = require('./ToppingsPremium');
+const ToppingsPizza = require('./ToppingsPizza');
 const ToppingsHotSub = require('./ToppingsHotSub');
 const ToppingsColdSub = require('./ToppingsColdSub');
 const ToppingsDesert = require('./ToppingsDesert');
 const Employees = require('./Employees');
 const Images = require('./Images');
 const Dressings = require('./Dressings');
-const Sauces = require('./Sauces');
+
+
+const SauceWing = require('./SauceWing');
+
+
 const SaucesDesert = require('./SaucesDesert');
 const Pastas = require('./Pastas');
-const Marinaras = require('./Marinaras');
+
+const SaucePasta = require('./SaucePasta');
 
 const Information = require('./Information');
 const HomePage = require('./HomePage');
 const Hours = require('./Hours');
-
 const Location = require('./Location');
 
 // MenuItems to Categories
@@ -31,22 +34,19 @@ MenuItems.belongsTo(Categories, {
 module.exports = { 
   Categories, 
   MenuItems, 
-  ToppingsRegular, 
-  ToppingsPremium, 
+  ToppingsPizza, 
   ToppingsHotSub, 
   ToppingsColdSub, 
   ToppingsDesert,
   Employees, 
   Images, 
   Dressings, 
-  Sauces, 
+  SauceWing, 
   SaucesDesert,
   Pastas, 
-  Marinaras,
-  
+  SaucePasta,
   Information,
   HomePage,
   Hours,
-
   Location
 };

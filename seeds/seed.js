@@ -3,50 +3,45 @@ const sequelize = require('../config/connection');
 const { 
   Categories, 
   MenuItems, 
-  ToppingsPremium, 
-  ToppingsRegular, 
+  ToppingsPizza, 
   Employees, 
   Images, 
   Dressings,
-  Sauces, 
+  SauceWing, 
   SaucesDesert,
   Pastas,
   ToppingsHotSub, 
   ToppingsColdSub,
   ToppingsDesert,
 
-  Marinaras,
+  SaucePasta,
 
   HomePage,
   Information,
   Hours,
-
   Location
 } = require('../models');
 
 const categoryData = require('./categoryData.json');
 const menuItemData = require('./menuItemData.json');
-const toppingRegularData = require('./toppingRegularData.json');
-const toppingPremiumData = require('./toppingPremiumData.json');
+const toppingPizzaData = require('./toppingPizzaData.json');
 const employeeData = require('./employeeData.json');
 const imageData = require('./imageData.json');
 const dressingData = require('./dressingData.json');
 
-const sauceData = require('./sauceData.json'); 
+const sauceWingData = require('./sauceWingData.json');
+
 const sauceDesertData = require('./sauceDesertData.json');
-
 const pastaData = require('./pastaData.json');
-
 const toppingsHotSubData = require('./toppingsHotSubData.json');
 const toppingsColdSubData = require('./toppingsColdSubData.json');
 const toppingsDesertData = require('./toppingDesertData.json');
 
-const marinarasData = require('./marinaraData.json');
+const saucePastaData = require('./saucePastaData.json');
 
 const homePageData = require('./homePageData.json');
 const informationData = require('./informationData.json');
 const hoursData = require('./hoursData.json');
-
 const locationData = require('./locationData.json');
 
 const seedData = async () => {
@@ -55,11 +50,11 @@ const seedData = async () => {
   await Categories.bulkCreate(categoryData);
 
   await MenuItems.bulkCreate(menuItemData);
-  
-  await ToppingsPremium.bulkCreate(toppingPremiumData);
-  await ToppingsRegular.bulkCreate(toppingRegularData);
+
+  await ToppingsPizza.bulkCreate(toppingPizzaData);
 
   await ToppingsHotSub.bulkCreate(toppingsHotSubData);
+
   await ToppingsColdSub.bulkCreate(toppingsColdSubData);
 
   await ToppingsDesert.bulkCreate(toppingsDesertData);
@@ -70,15 +65,22 @@ const seedData = async () => {
 
   await Dressings.bulkCreate(dressingData);
 
-  await Sauces.bulkCreate(sauceData);
+
+  //TODO
+  await SauceWing.bulkCreate(sauceWingData);
+
+
+
   await SaucesDesert.bulkCreate(sauceDesertData);
 
   await Pastas.bulkCreate(pastaData);
 
-  await Marinaras.bulkCreate(marinarasData)
+  await SaucePasta.bulkCreate(saucePastaData)
 
   await HomePage.bulkCreate(homePageData);
+
   await Information.bulkCreate(informationData);
+
   await Hours.bulkCreate(hoursData);
 
   await Location.bulkCreate(locationData);

@@ -4,23 +4,20 @@ const {
 	Categories, 
 	Dressings, 
 	Employees, //
+	HomePage,
+	Hours,
 	Images, 
-	Marinaras, 
+	Information,
+	Location,
 	MenuItems, 
 	Pastas, 
-	Sauces, 
+	SaucePasta, 
 	SaucesDesert,
+	SauceWing, 
 	ToppingsColdSub, 
 	ToppingsDesert,
-	ToppingsHotSub, 
-	ToppingsPremium, 
-	ToppingsRegular,
-	Hours,
-	Information,
-	HomePage,
-	Location,
-
-	Addons
+	ToppingsHotSub,  
+	ToppingsPizza,
 } = require('../../models');
 
 const withAuth = require('../../utils/auth');
@@ -71,41 +68,48 @@ router.get('/menu/:menuitemsId', async (req, res) => {
 		const i = await MenuItems.findByPk(req.params.menuitemsId, {
 			include: [{ model: Categories }]});
 		const serializedItem = i.get({ plain: true });
+
 		const d = await Dressings.findAll();
 		const serializedDressings = d.map((x) => x.get({ plain: true }));
-		const m = await Marinaras.findAll();
-		const serializedMarinaras = m.map((x) => x.get({ plain: true }));
+		
 		const p = await Pastas.findAll();
 		const serializedPastas = p.map((x) => x.get({ plain: true }));
-		const s = await Sauces.findAll();
-		const serializedSauces = s.map((x) => x.get({ plain: true })); 
+
 		const sd = await SaucesDesert.findAll();
 		const serializedSaucesDesert = sd.map((x) => x.get({ plain: true })); 
+		
+		const sp = await SaucePasta.findAll();
+		const serializedSaucePasta = sp.map((x) => x.get({ plain: true }));
+		
+		const sw = await SauceWing.findAll();
+		const serializedSauceWing = sw.map((x) => x.get({ plain: true })); 
+		
 		const tcp = await ToppingsColdSub.findAll();
 		const serializedToppingsColdSub = tcp.map((x) => x.get({ plain: true }));
+		
 		const td = await ToppingsDesert.findAll();
 		const serializedToppingsDesert = td.map((x) => x.get({ plain: true }));
+		
 		const ths = await ToppingsHotSub.findAll();
 		const serializedToppingsHotSub = ths.map((x) => x.get({ plain: true }));
-		const tp = await ToppingsPremium.findAll();	
-		const serializedtoppingsPremium = tp.map((x) => x.get({ plain: true }));
-		const tr = await ToppingsRegular.findAll();	
-		const serializedtoppingsRegular = tr.map((x) => x.get({ plain: true }));
+	
+		const tp = await ToppingsPizza.findAll();	
+		const serializedtoppingsPizza = tp.map((x) => x.get({ plain: true }));
 		
 		res.status(200).render('item-details', {
 			loggedIn: req.session.loggedIn, 
 			name: req.session.name,
 			item: serializedItem,
+	
 			dressing: serializedDressings,
-			marinara: serializedMarinaras,
 			pasta: serializedPastas,
-			sauce: serializedSauces,
 			sauceDesert: serializedSaucesDesert,
+			saucePasta: serializedSaucePasta,
+			sauceWing: serializedSauceWing,
 			toppingsColdSub: serializedToppingsColdSub,
 			toppingsDesert: serializedToppingsDesert,
 			toppingsHotSub: serializedToppingsHotSub,
-			toppingsPremium: serializedtoppingsPremium,
-			toppingsRegular: serializedtoppingsRegular,
+			toppingsPizza: serializedtoppingsPizza,
 		});
 	} 
 	catch (error) {
@@ -158,24 +162,24 @@ router.get('/menuitems/update/:menuitemId', withAuth, isAdmin, async (req, res) 
 	};
 });
 
-// Route to update addons for menu items
-router.get('/addons', withAuth, isAdmin, async (req, res) => {
-	try {
+// // Route to update addons for menu items
+// router.get('/addons', withAuth, isAdmin, async (req, res) => {
+// 	try {
 		
 
 
-		res.status(200).render('update-addons', {
-			loggedIn: req.session.loggedIn, 
-			name: req.session.name,
+// 		res.status(200).render('update-addons', {
+// 			loggedIn: req.session.loggedIn, 
+// 			name: req.session.name,
 
 
-		});
-	}
-	catch (error) {
-		console.log(error);
-		res.status(500).json(error);// 500 - internal server error
-	}
-});
+// 		});
+// 	}
+// 	catch (error) {
+// 		console.log(error);
+// 		res.status(500).json(error);// 500 - internal server error
+// 	}
+// });
 
 router.get('/location', async (req, res) => {
 	try {
@@ -268,7 +272,7 @@ router.get('/about', async (req, res) => {
 	}
 });
 
-// Route to employee login
+//Route to employee login
 router.get('/employee/login', async (req, res) => {
 	if (req.session.loggedIn) {
 		return res.redirect('../');
@@ -280,7 +284,7 @@ router.get('/employee/login', async (req, res) => {
 	});
 });
 
-// Route to add a category
+//Route to add a category
 router.get('/categories/create', withAuth, async (req, res) => {
 	try {
 		const categories = await Categories.findAll();
@@ -298,11 +302,11 @@ router.get('/categories/create', withAuth, async (req, res) => {
 	} 
 	catch (error) {
 		console.log(error);
-		res.status(500).json(error); // 500 - internal server error
+		res.status(500).json(error);//500 - internal server error
 	};
 });
 
-// Route to update a category
+//Route to update a category
 router.get('/categories/update/:catId', withAuth, async (req, res) => {
 	try {
 		const category = await Categories.findOne({
@@ -325,7 +329,7 @@ router.get('/categories/update/:catId', withAuth, async (req, res) => {
 	} 
 	catch (error) {
 		console.log(error);
-		res.status(500).json(error); // 500 - internal server error
+		res.status(500).json(error);//500 - internal server error
 	};
 });
 
@@ -348,7 +352,7 @@ router.get('/information/update/:infoId', withAuth, async (req, res) => {
 	}
 	catch (error) {
 		console.log(error);
-		res.status(500).json(error); // 500 - internal server error
+		res.status(500).json(error);//500 - internal server error
 	};
 });
 
@@ -371,8 +375,391 @@ router.get('/home/update/:homeId', withAuth, async (req, res) => {
 	}
 	catch (error) {
 		console.log(error);
-		res.status(500).json(error); // 500 - internal server error
+		res.status(500).json(error);//500 - internal server error
 	};
 });
 
+//Route to create topping pizza
+router.get('/pizzaTopping/create', withAuth, async (req, res) => {
+	try {
+		const toppingsPizza = await ToppingsPizza.findAll();
+		const tp = toppingsPizza.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-toppings-pizza', {
+			tp,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	};
+});
+
+//Route to update topping pizza
+router.get('/pizzaTopping/updatePizzaTopping/:pizzaToppingID', withAuth, async (req, res) => {
+	try {
+		const toppingPizza = await ToppingsPizza.findOne({
+			where: {
+				id: req.params.pizzaToppingID
+			}
+		});
+		
+		const tp = toppingPizza.get({ plain: true })
+
+		res.status(200).render('update-toppings-pizza', {
+			tp,
+			
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	}
+});
+
+//Route to create dressing
+router.get('/dressing/create', withAuth, async (req, res) => {
+	try {
+		const dressing = await Dressings.findAll();
+		const d = dressing.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-dressing', {
+			d,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	};
+});
+
+//Route to update dressing
+router.get('/dressing/updateDressing/:dressingID', withAuth, async (req, res) => {
+	try {
+		const dressing = await Dressings.findOne({
+			where: {
+				id: req.params.dressingID
+			}
+		});
+		
+		const d = dressing.get({ plain: true })
+
+		res.status(200).render('update-dressing', {
+			d,
+			
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	}
+});
+
+//Route to update sauce pasta
+router.get('/saucePasta/updateSaucePasta/:saucePastaId', withAuth, async (req, res) => {
+	try {
+		const saucePasta = await SaucePasta.findOne({
+			where: {
+				id: req.params.saucePastaId
+			}
+		});
+		
+		const sp = saucePasta.get({ plain: true })
+
+		res.status(200).render('update-sauce-pasta', {
+			sp,
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	}
+});
+
+//Route to create sauce pasta
+router.get('/saucePasta/create', withAuth, async (req, res) => {
+	try {
+		const saucePasta = await SaucePasta.findAll();
+		const sp = saucePasta.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-sauce-pasta', {
+			sp,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	};
+});
+
+//Route to create sauce wing
+router.get('/sauceWing/create', withAuth, async (req, res) => {
+	try {
+		const sauceWing = await SauceWing.findAll();
+		const sw = sauceWing.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-sauce-wing', {
+			sw,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	};
+});
+
+//Route to update sauce wing
+router.get('/sauceWing/updateSauceWing/:sauceWingId', withAuth, async (req, res) => {
+	try {
+		const sauceWing = await SauceWing.findOne({
+			where: {
+				id: req.params.sauceWingId
+			}
+		});
+		
+		const sw = sauceWing.get({ plain: true })
+
+		res.status(200).render('update-sauce-wing', {
+			sw,
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	}
+});
+
+
+
+//Route to create pasta
+router.get('/pasta/createPasta', withAuth, async (req, res) => {
+	try {
+		const pasta = await Pastas.findAll();
+		const p = pasta.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-pasta', {
+			p,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	};
+});
+
+//Route to update pasta
+router.get('/pasta/updatePasta/:pastaId', withAuth, async (req, res) => {
+	try {
+		const pasta = await Pastas.findOne({
+			where: {
+				id: req.params.pastaId
+			}
+		});
+		
+		const p = pasta.get({ plain: true })
+
+		res.status(200).render('update-pasta', {
+			p,
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	}
+});
+
+
+
+//Route to create topping hot sub
+router.get('/toppingHotSub/createToppingHotSub', withAuth, async (req, res) => {
+	try {
+		const toppingHotSub = await ToppingsHotSub.findAll();
+		const ths = toppingHotSub.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-topping-hot-sub', {
+			ths,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	};
+});
+
+//Route to update topping hot sub
+router.get('/toppingHotSub/updateToppingHotSub/:toppingHotSubId', withAuth, async (req, res) => {
+	try {
+		const toppingHotSub = await ToppingsHotSub.findOne({
+			where: {
+				id: req.params.toppingHotSubId
+			}
+		});
+		
+		const ths = toppingHotSub.get({ plain: true })
+
+		res.status(200).render('update-topping-hot-sub', {
+			ths,
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	}
+});
+
+
+
+//Route to create topping cold sub
+router.get('/toppingColdSub/createToppingColdSub', withAuth, async (req, res) => {
+	try {
+		const toppingColdSub = await ToppingsColdSub.findAll();
+		const tcs = toppingColdSub.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-topping-cold-sub', {
+			tcs,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	};
+});
+
+//Route to update topping cold sub
+router.get('/toppingColdSub/updateToppingColdSub/:toppingColdSubId', withAuth, async (req, res) => {
+	try {
+		const toppingColdSub = await ToppingsColdSub.findOne({
+			where: {
+				id: req.params.toppingColdSubId
+			}
+		});
+		
+		const tcs = toppingColdSub.get({ plain: true })
+
+		res.status(200).render('update-topping-cold-sub', {
+			tcs,
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	}
+});
+
+
+
+
+
+
+
+//Route to create topping desert
+router.get('/toppingDesert/createToppingDesert', withAuth, async (req, res) => {
+	try {
+		const toppingDesert = await ToppingsDesert.findAll();
+		const td = toppingDesert.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-topping-desert', {
+			td,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	};
+});
+
+//Route to update topping desert
+router.get('/toppingDesert/updateToppingDesert/:toppingDesertId', withAuth, async (req, res) => {
+	try {
+		const toppingDesert = await toppingDesert.findOne({
+			where: {
+				id: req.params.toppingDesertId
+			}
+		});
+		
+		const td = toppingDesert.get({ plain: true })
+
+		res.status(200).render('update-topping-desert', {
+			td,
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	}
+});
+
+
+//Route to create sauce desert
+router.get('/sauceDesert/createSauceDesert', withAuth, async (req, res) => {
+	try {
+		const sauceDesert = await SaucesDesert.findAll();
+		const sd = sauceDesert.map((x) => x.get({ plain: true }));
+
+		res.status(200).render('create-sauce-desert', {
+			sd,
+			loggedIn: req.session.loggedIn,
+			name: req.session.name
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	};
+});
+
+//Route to update sauce desert
+router.get('/sauceDesert/updateSauceDesert/:sauceDesertId', withAuth, async (req, res) => {
+	try {
+		const sauceDesert = await SaucesDesert.findOne({
+			where: {
+				id: req.params.sauceDesertId
+			}
+		});
+		
+		const sd = sauceDesert.get({ plain: true })
+
+		res.status(200).render('update-sauce-desert', {
+			sd,
+			loggedIn: req.session.loggedIn, 
+			name: req.session.name,
+		});
+	} 
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);//500 - internal server error
+	}
+});
 module.exports = router;

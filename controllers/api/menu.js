@@ -10,7 +10,6 @@ const {
   ToppingsColdSub, 
   ToppingsDesert,
   ToppingsHotSub, 
-  ToppingsPremium, 
   ToppingsRegular, 
   Hours
 } = require('../../models');
@@ -45,7 +44,6 @@ router.get('/:menuitemsId', async (req, res) => {
         { model: ToppingsColdSub },
         { model: ToppingsDesert },  
         { model: ToppingsHotSub },
-        { model: ToppingsPremium },
         { model: ToppingsRegular }
       ]
     });

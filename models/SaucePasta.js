@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
 
-class Toppings extends Model {};
+class SaucePasta extends Model {};
 
-Toppings.init(
+SaucePasta.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -15,19 +15,12 @@ Toppings.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    priceFull: {
+
+    price3oz: {
       type: DataTypes.FLOAT,
       allowNull: false
     },
-    priceHalf: {
-      type: DataTypes.FLOAT,
-      allowNull: false
-    },
-    priceSlice: {
-      type: DataTypes.FLOAT,
-      allowNull: false
-    },
-    priceGlutenFree: {
+    price16oz: {
       type: DataTypes.FLOAT,
       allowNull: false
     }
@@ -36,8 +29,8 @@ Toppings.init(
     sequelize: connection,
     timestamps: true,
     freezeTableName: true,
-    modelName: 'toppingsRegular'
+    modelName: 'saucePasta'
   }
 );
 
-module.exports = Toppings;
+module.exports = SaucePasta;

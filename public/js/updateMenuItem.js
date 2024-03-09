@@ -1,4 +1,4 @@
-// Update the Menu Item through the API
+//Update the Menu Item through the API
 const updateMenuItem = async(event) => {
   event.preventDefault();
 
@@ -84,7 +84,7 @@ const updateMenuItem = async(event) => {
 
 // Functionality for Delete button as well
 const deleteMenuItem = async(event) => {
-  if (confirm("Are you sure you want to delete this menu item and all things related to it? This action cannot be undone!!") == true) {
+  if (confirm("Are you sure you want to delete this MENU ITEM and all things related to it? This action cannot be undone!!") == true) {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
       const response = await fetch(`/api/menu/deleteMenuItem/${id}`, {

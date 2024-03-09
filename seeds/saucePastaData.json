@@ -1,37 +1,35 @@
 [
   { 
-    "name": "Hot Sauce",
-
+    "name": "Marinara Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
   },
-  { 
-    "name": "Medium Sauce",
-
+  {
+    "name": "Red Pizza Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
   },
-  {  
-    "name": "Mild Sauce",
 
+  {
+    "name": "White Pizza Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
   },
-  { 
-    "name": "Honey Hot",
 
+  {
+    "name": "Vodka Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
   },
-  { 
-    "name": "BBQ",
 
+  {
+    "name": "Alfredo Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
   },
-  { 
-    "name": "Honey BBQ",
 
+  {
+    "name": "Pesto Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
   }
