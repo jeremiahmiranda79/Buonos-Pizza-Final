@@ -18,7 +18,7 @@
     "addonsDescription3": null,
     "addonsPrice3": null,
 
-    "toppingPizzaFull": true,
+    "toppingPizzaFull": false,
     "toppingPizzaSlice": false,
     "toppingPizzaGlutenFree": false,
     "toppingHotSub": false,

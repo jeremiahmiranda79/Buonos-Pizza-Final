@@ -1,14 +1,17 @@
-// Update the category through the API
+// Update category
 const updateCategory = async(event) => {
   event.preventDefault();
-  const catId = document.querySelector('input[name="cat-id"]').value;
+
+  const categoryId = document.querySelector('input[name="category-id"]').value;
   const name = document.querySelector('#name').value.trim();
 
   const image = document.querySelector('#image').value;
 
-  const response = await fetch(`../../api/menu/updateCategory/${catId}`, {
+  const response = await fetch(`../../api/menu/updateCategory/${categoryId}`, {
     method: 'PUT',
-    body: JSON.stringify({ name, image }),
+    body: JSON.stringify({ 
+      name, image 
+    }),
     headers: { 'Content-Type': 'application/json' },
   });
 
@@ -16,14 +19,13 @@ const updateCategory = async(event) => {
     document.location.replace('/menu');
   } 
   else {
-    // alert(response.statusText);
+    alert(response.statusText);
   };
 };
 
-// Functionality for Delete button as well
+//Delete Category
 const deleteCategory = async(event) => {
-  // confirm("confirm!");
-  if (confirm(`Are you sure you want to delete this category and ALL things related to it? This action CAN NOT be undone!!`) == true) {
+  if (confirm(`Are you sure you want to delete this Category and ALL things related to it? This action CAN NOT be undone!!`) == true) {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
       const response = await fetch(`/api/menu/deleteCategory/${id}`, {
@@ -34,7 +36,7 @@ const deleteCategory = async(event) => {
         document.location.replace('/menu');
       } 
       else {
-        // alert(response.statusText);
+        alert(response.statusText);
       };
     };
   } 
@@ -44,5 +46,4 @@ const deleteCategory = async(event) => {
 };
 
 document.querySelector('#updateCategory').addEventListener('submit', updateCategory);
-
 document.querySelector('#deleteButton').addEventListener('click', deleteCategory);

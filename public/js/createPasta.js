@@ -1,23 +1,24 @@
-// Create topping hot sub
-const createToppingHotSub = async(event) => {
+// Create pasta
+const createPasta = async(event) => {
   event.preventDefault();
   
   // const id = document.querySelector('#id').value.trim();
   const name = document.querySelector('#name').value.trim();
-  const price = document.querySelector('#price').value.trim();
+  const price5oz = document.querySelector('#price5oz').value.trim();
+  const price9oz = document.querySelector('#price9oz').value.trim();
 
-  const response = await fetch('../../api/toppingHotSub/createToppingHotSub', {
+  const response = await fetch('../../api/pasta/createPasta', {
     method: 'POST',
     body: JSON.stringify({ 
-      // id,
       name,
-      price
+      price5oz,
+      price9oz
     }),
     headers: { 'Content-Type': 'application/json' },
   });
 
   if (response.ok) {
-    alert('Topping Hot Sub Created');
+    alert('Pasta Created');
     document.location.replace('/menu');
   } 
   else {
@@ -25,4 +26,4 @@ const createToppingHotSub = async(event) => {
   };
 };
 
-document.querySelector('#createToppingHotSub').addEventListener('submit', createToppingHotSub);
+document.querySelector('#createPastas').addEventListener('submit', createPasta);

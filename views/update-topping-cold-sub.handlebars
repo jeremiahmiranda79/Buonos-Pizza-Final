@@ -14,9 +14,7 @@
 		<div class="container-fluid item">
 			<form id="updateToppingColdSub">
 				<div class="container py-3">
-					<h2 class="">Update ({{tcs.name}}) 
-            Topping Cold Sub</h2>
-
+					<h2>Update ({{tcs.name}}) Topping Cold Sub</h2>
 					<div class="forms">
 						<label 
 							for="menu-item-name" 
@@ -30,14 +28,13 @@
 							class="form-control" 
 							value="{{tcs.id}}" 
 							placeholder="{{tcs.id}}"
-							required
 						>
-
 						<label 
 							for="menu-item-name" 
 							class="form-label"
 						>
 							<b>Name</b>
+							<b style="color:#FF0000";>*required</b>
 						</label>
 						<input 
 							id="name" 
@@ -47,12 +44,12 @@
 							placeholder="{{tcs.name}}"
 							required
 						>
-
 						<label 
 							for="menu-item-description" 
 							class="form-label"
 						>
 							<b>Price</b>
+							<b style="color:#FF0000";>*required</b>
 						</label>
 						<input 
 							id="price" 
@@ -62,29 +59,26 @@
 							placeholder="{{tcs.price}}"
 							require
 						>
-						<br><br>
-					</div>	
-
-					<div class="d-flex justify-content-evenly">
 						<input 
 							type="hidden" 
 							name="topping-cold-sub-id" 
 							value="{{tcs.id}}"
 						/>
+						<br><br>
+					</div>	
 
+					<div class="d-flex justify-content-evenly">
             <button 
 							type="submit" 
 							class="btn btn-primary"
 						>
 							Update
-						</button>
-            
+						</button>  
             <button 
               class="btn btn-warning view-menu-button" onclick="history.back()"
             >
               Cancel
             </button>
-
             <button 
 							class="btn btn-danger"
 							id="deleteButton" 
@@ -96,9 +90,9 @@
 			</form>
 		</div>
 	</div>
-	
-	<br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br>
 </div>
+
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 <script src="/js/updateToppingColdSub.js"></script>

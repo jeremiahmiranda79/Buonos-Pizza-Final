@@ -1,125 +1,142 @@
 <head>
   <link rel="stylesheet" href="/css/scrollableTabs.css">
   <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="/css/updateInformation.css">
 </head>
 
-<div class="scrollable-tabs-container">
-  <div class="left-arrow" >
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
-  </svg>
+<div class="scrollable-tabs-container"> 
+  <div class="left-arrow">
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 24 24" 
+      stroke-width="1.5" 
+      stroke="currentColor" 
+      class="w-6 h-6">
+        <path 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+        />
+    </svg>
   </div>
   <ul>
     <div class="left-arrow" >
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
-  </svg>
-  </div>
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke-width="1.5" 
+        stroke="currentColor" 
+        class="w-6 h-6"
+      >
+        <path 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+        />
+      </svg>
+    </div>
     <li><a href="#" class="active">All</a></li>
     {{#each items as |c|}}
       <li><a href="#{{c.id}}">{{c.name}}</a></li>
     {{/each}}
   </ul>
   <div class="right-arrow active">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+    <svg 
+      xmlns="http://www.w3.org/2000/svg" 
+      fill="none" 
+      viewBox="0 0 24 24" 
+      stroke-width="1.5" 
+      stroke="currentColor" 
+      class="w-6 h-6"
+    >
+      <path 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" 
+      />
     </svg>
   </div>
 </div>
-
 <br>
-
-
 {{#if loggedIn}}
-<br><br><br>
-  <center>
-    {{!-- <h5>Create a category</h5> --}}
-    <a href="/categories/create" class="active btn btn-primary">Create new category</a>
-    {{!-- <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a> --}}
-  </center>
-  <center>
-    <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a>
-  </center>
-{{/if}}
-
-{{#if loggedIn}}
-  <div class="container-menu">
-    {{#each items as |c|}}
-      <center>
-        <a class="anchor" id="{{c.id}}"></a>
-        <h1><strong>{{c.name}}</strong></h1>
-        <img src="{{c.image}}" alt="food-image" class="category-image">
-        <br>
-        <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Update catagory ({{c.name}})</a>
-        {{!-- <a href="/menuitems/create" class="active btn btn-primary">Create new menu item in category ({{c.name}})</a> --}}
-        {{!-- <button id="deleteButton" data-id="{{cat.id}}" class="btn btn-danger">Delete ({{c.name}})</button> --}}
-      </center>
-      <br>
-      {{#each c.menuitems as |i|}}
-        <div class="list-group">
-          <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">{{i.name}}</h5>
-            </div>
-            <p class="mb-1">{{i.description}}</p>
-            <center>
-              <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
-            </center>
-          </a>
-        </div>
-      {{/each}}
-    {{/each}}
+  <br><br><br>
+  <div class="container-information-header">
+    <center>
+      <h1>Update Menu </h1>
+      <h4>For admin only</h4>
+    </center>
   </div>
-
-{{else}}
+  <center>
+    <a href="/categories/create" class="active btn btn-primary">Create new category</a>
+  </center>
   <div class="container-menu">
     <br>
     <div class="grid-container-2">
       {{#each items as |c|}}
-      <center>
-        <a class="anchor" id="{{c.id}}"></a>
-        <h1><strong>{{c.name}}</strong></h1>
-        <img src="{{c.image}}" alt="food-image" class="category-image">
-      </center>
-      {{!-- {{#each c.menuitems as |i|}} --}}
-        {{!-- <div class="list-group">
-          <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">{{i.name}}</h5>
-            </div>
-            <p class="mb-1">{{i.description}}</p>
-          </a>
-        </div> --}}
-
+        <center>
+          <a class="anchor" id="{{c.id}}"></a>
+          <h1><strong>{{c.name}}</strong></h1>
+          <img src="{{c.image}}" alt="food-image" class="category-image">
+          <br><br>
+          <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Update catagory ({{c.name}})</a>
+           &nbsp; &nbsp; &nbsp;
+          <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a>
+        </center>
+        <br>
         <div class="grid-container">
           {{#each c.menuitems as |i|}}
-            <div class="grid-item"><a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">{{i.name}}</h5>
-              </div>
-              <p class="mb-1">{{i.description}}</p>
-            </a>
+            <div class="grid-item">
+              <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">{{i.name}}</h5>
+                </div>
+                <p class="mb-1">{{i.description}}</p>
+                <center>
+                  <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
+                </center>
+              </a>
             </div>
           {{/each}}
-
         </div>
-       
-      {{!-- {{/each}} --}}
-    {{/each}}
+      {{/each}}
     </div>
-    
   </div>
+  {{else}}
+    <div class="container-menu">
+      <br>
+      <div class="grid-container-2">
+        {{#each items as |c|}}
+          <center>
+            <a class="anchor" id="{{c.id}}"></a>
+            <h1><strong>{{c.name}}</strong></h1>
+            <img src="{{c.image}}" alt="food-image" class="category-image">
+            {{#if loggedIn}}
+              <br>
+              <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Update catagory ({{c.name}})</a>
+            {{/if}}
+          </center>
+          <div class="grid-container">
+            {{#each c.menuitems as |i|}}
+              <div class="grid-item">
+                <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{i.name}}</h5>
+                  </div>
+                  <p class="mb-1">{{i.description}}</p>
+                  {{#if loggedIn}}
+                    <center>
+                      <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
+                    </center>
+                  {{/if}}
+                </a>
+              </div>
+            {{/each}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
 {{/if}}
-
-{{!-- <div class="container main-footer">
-    <center>
-      <ul class="nav flex-row social">
-        <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
-        <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="btn"><i class=" icon fa fa-yelp"></i></a>
-      </ul>
-      <h3 class="copy-right">	&copy; 2023 buonos pizza</h3>
-    </center>
-  </div> --}}
 
 <script src="/js/menuScrollbar.js"></script>

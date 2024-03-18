@@ -6,16 +6,15 @@ const { Dressings } = require('../../models');
   //Post method with endpoint '/api/dressing/createDressing'
   router.post('/createDressing', async (req, res) => {
     try {
-      const newDressing = await Dressings.create({
+      const dressing = await Dressings.create({
         name: req.body.name,
         price3oz: req.body.price3oz,
         price16oz: req.body.price16oz
       });
       
-      res.status(201).json(newDressing);
+      res.status(201).json(dressing);
     } 
     catch (error) {
-      console.log(error);
       res.status(500).json(error);//500 - internal server error
     };
   });
@@ -26,11 +25,10 @@ const { Dressings } = require('../../models');
   //GET method with endpoint '/api/dressing'
   router.get('/', async (req, res) => {
     try {
-      const allDressing = await Dressings.findAll();
-      res.status(200).json(allDressing);
+      const dressings = await Dressings.findAll();
+      res.status(200).json(dressings);
     }
     catch (error) {
-      console.log(error);
       res.status(500).json(error);//500 - internal server error
     }
   });
@@ -43,7 +41,6 @@ const { Dressings } = require('../../models');
       res.status(200).json(dressing);
     } 
     catch (error) {
-      console.log(error);
       res.status(500).json(error);//500 - internal server error
     }
   });
@@ -54,18 +51,18 @@ const { Dressings } = require('../../models');
   //POST method with endpoint '/api/dressing/updateDressing/:dressingId'
   router.put('/updateDressing/:dressingId', async (req, res) => {
     try {
-      const updateDressing = await Dressings.update(req.body, {
+      const dressing = await Dressings.update(req.body, {
         where: {
           id: req.params.dressingId
         }
       });
 
-      if (!updateDressing[0]) return res.status(202).json(updateDressing);
+      if (!dressing[0]) return res.status(202).json(dressing);
 
-      res.status(202).json(updateDressing);
+      res.status(202).json(dressing);
     }
     catch (error) {
-      console.log(error);
+
       res.status(500).json(error);//500 - internal server error
     }
   });
@@ -76,18 +73,17 @@ const { Dressings } = require('../../models');
   //DELETE method with endpoint '/api/dressing/deleteDressing/:dressingId'
   router.delete('/deleteDressing/:dressingId', async (req, res) => {
     try {
-      const deleteDressing = await Dressings.destroy({
+      const dressing = await Dressings.destroy({
         where: {
           id: req.params.dressingId
         }
       }); 
 
-      if (!deleteDressing) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
+      if (!dressing) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
 
       res.status(202).json(deleteDressing);
     } 
     catch (error) {
-      console.log(error);
       res.status(500).json(error);//500 - internal server error
     };
   });

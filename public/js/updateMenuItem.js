@@ -16,15 +16,6 @@ const updateMenuItem = async(event) => {
   const size3 = document.querySelector('#size3').value.trim();
   const price3 = document.querySelector('#price3').value.trim();
 
-  const addonsDescription1 = document.querySelector('#addonsDescription1').value.trim();
-  const addonsPrice1 = document.querySelector('#addonsPrice1').value.trim();
-
-  const addonsDescription2 = document.querySelector('#addonsDescription2').value.trim();
-  const addonsPrice2 = document.querySelector('#addonsPrice2').value.trim();
-
-  const addonsDescription3 = document.querySelector('#addonsDescription3').value.trim();
-  const addonsPrice3 = document.querySelector('#addonsPrice3').value.trim();
-
   const toppingPizzaFull = document.querySelector('#toppingPizzaFull').value.trim().toLowerCase();
   const toppingPizzaSlice = document.querySelector('#toppingPizzaSlice').value.trim().toLowerCase();
   const toppingPizzaGlutenFree = document.querySelector('#toppingPizzaGlutenFree').value.trim().toLowerCase();
@@ -36,7 +27,6 @@ const updateMenuItem = async(event) => {
   const pastaType = document.querySelector('#pastaType').value.trim().toLowerCase();
   const marinaraSauce = document.querySelector('#marinaraSauce').value.trim().toLowerCase();
   const desertSauce = document.querySelector('#desertSauce').value.trim().toLowerCase();
-  const desertType = document.querySelector('#desertType').value.trim().toLowerCase();
   
   const categoryId = document.querySelector('#categories').value;
 
@@ -51,12 +41,6 @@ const updateMenuItem = async(event) => {
       price2,
       size3,
       price3,
-      addonsDescription1,
-      addonsPrice1,
-      addonsDescription2,
-      addonsPrice2,
-      addonsDescription3,
-      addonsPrice3,
       toppingPizzaFull,
       toppingPizzaSlice,
       toppingPizzaGlutenFree,
@@ -68,7 +52,6 @@ const updateMenuItem = async(event) => {
       pastaType,
       marinaraSauce,
       desertSauce,
-      desertType,
       categoryId,
     }),
     headers: { 'Content-Type': 'application/json' }
@@ -106,6 +89,195 @@ const deleteMenuItem = async(event) => {
   }
 };
 
+//var checkbox = document.querySelector("input[type='checkbox']");
+var checkbox1 = document.querySelector("#toppingPizzaFull");
+checkbox1.value = "false";
+//checkbox1.value = checkbox1.value;
+checkbox1.addEventListener('change', function(){
+  if(this.checked){
+    checkbox1.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox1.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox1.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox1.value}`);
+  }
+  else {
+    checkbox1.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox1.value}`);
+  }
+});
+
+var checkbox2 = document.querySelector("#toppingPizzaSlice");
+checkbox2.value = "false";
+checkbox2.addEventListener('change', function(){
+  if(this.checked){
+    checkbox2.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox2.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox2.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox2.value}`);
+  }
+  else {
+    checkbox2.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox2.value}`);
+  }
+});
+
+var checkbox3 = document.querySelector("#toppingPizzaGlutenFree");
+checkbox3.value = "false";
+checkbox3.addEventListener('change', function(){
+  if(this.checked){
+    checkbox3.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox3.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox3.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox3.value}`);
+  }
+  else {
+    checkbox3.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox3.value}`);
+  }
+});
+
+var checkbox4 = document.querySelector("#toppingHotSub");
+checkbox4.value = "false";
+checkbox4.addEventListener('change', function(){
+  if(this.checked){
+    checkbox4.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox4.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox4.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox4.value}`);
+  }
+  else {
+    checkbox4.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox4.value}`);
+  }
+});
+
+var checkbox5 = document.querySelector("#toppingColdSub");
+checkbox5.value = "false";
+checkbox5.addEventListener('change', function(){
+  if(this.checked){
+    checkbox5.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox5.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox5.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox5.value}`);
+  }
+  else {
+    checkbox5.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox5.value}`);
+  }
+});
+
+var checkbox6 = document.querySelector("#toppingDesert");
+checkbox6.value = "false";
+checkbox6.addEventListener('change', function(){
+  if(this.checked){
+    checkbox6.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox6.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox6.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox6.value}`);
+  }
+  else {
+    checkbox6.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox6.value}`);
+  }
+});
+
+var checkbox7 = document.querySelector("#saladDressing");
+checkbox7.value = "false";
+checkbox7.addEventListener('change', function(){
+  if(this.checked){
+    checkbox7.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox7.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox7.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox7.value}`);
+  }
+  else {
+    checkbox7.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox7.value}`);
+  }
+});
+
+var checkbox8 = document.querySelector("#wingSauce");
+checkbox8.value = "false";
+checkbox8.addEventListener('change', function(){
+  if(this.checked){
+    checkbox8.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox8.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox8.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox8.value}`);
+  }
+  else {
+    checkbox8.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox8.value}`);
+  }
+});
+
+var checkbox9 = document.querySelector("#pastaType");
+checkbox9.value = "false";
+checkbox9.addEventListener('change', function(){
+  if(this.checked){
+    checkbox9.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox9.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox9.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox9.value}`);
+  }
+  else {
+    checkbox9.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox9.value}`);
+  }
+});
+
+var checkbox10 = document.querySelector("#marinaraSauce");
+checkbox10.value = "false";
+checkbox10.addEventListener('change', function(){
+  if(this.checked){
+    checkbox10.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox10.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox10.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox10.value}`);
+  }
+  else {
+    checkbox10.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox10.value}`);
+  }
+});
+
+var checkbox11 = document.querySelector("#desertSauce");
+checkbox11.value = "false";
+checkbox11.addEventListener('change', function(){
+  if(this.checked){
+    checkbox11.value = "true"
+    console.log(`Checkbox is checked! Do something about it! ${checkbox11.value}`);
+  } 
+  else if(this.checked == false){
+    checkbox11.value = "false"
+    console.log(`Checkbox wasn't checked. Do something about it! ${checkbox11.value}`);
+  }
+  else {
+    checkbox11.value = "false"
+    console.log(`Forget it. Checkbox wasn't checked. ${checkbox11.value}`);
+  }
+});
+
 document.querySelector('#updateMenuItem').addEventListener('submit', updateMenuItem);
 
-document.querySelector('#deleteButton').addEventListener('click', deleteMenuItem)
+document.querySelector('#deleteButton').addEventListener('click', deleteMenuItem);

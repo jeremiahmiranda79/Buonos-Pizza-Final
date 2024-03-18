@@ -72,7 +72,7 @@ const { SaucesDesert } = require('../../models');
 
 //#region /***** DELETE ******/
   //Route to delete a single sauce desert
-  //DELETE method with endpoint '/api/saucesDesert/deleteSauce/:sauceDesertId'
+  //DELETE method with endpoint '/api/sauceDesert/deleteSauceDesert/:sauceDesertId'
   router.delete('/deleteSauceDesert/:sauceDesertId', async (req, res) => {
     try {
       const deleteSauceDesert = await SaucesDesert.destroy({

@@ -2,7 +2,7 @@
 const createSauceWing = async(event) => {
   event.preventDefault();
   
-  const id = document.querySelector('#id').value.trim();
+  // const id = document.querySelector('#id').value.trim();
   const name = document.querySelector('#name').value.trim();
   const price3oz = document.querySelector('#price3oz').value.trim();
   const price16oz = document.querySelector('#price16oz').value.trim();
@@ -10,7 +10,7 @@ const createSauceWing = async(event) => {
   const response = await fetch('../../api/sauceWing/createSauceWing', {
     method: 'POST',
     body: JSON.stringify({ 
-      id,
+      // id,
       name,
       price3oz,
       price16oz

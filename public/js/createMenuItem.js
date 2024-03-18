@@ -1,13 +1,21 @@
-// POST method using information in an HTML <form> tag
-const addMenuItem = async(event) => {
+//Create menu item
+const createMenuItem = async(event) => {
   event.preventDefault();
   
   const name = document.querySelector('#name').value.trim();
+
   const description = document.querySelector('#description').value.trim();
+
   const categoryId = document.querySelector('#categories').value.trim();
+  
   const response = await fetch('/api/menu/newitem', {
     method: 'POST',
-    body: JSON.stringify({ name, description, categoryId }),
+    body: JSON.stringify({ 
+      name, 
+      description, 
+      categoryId 
+    }),
+
     headers: { 'Content-Type': 'application/json' },
   });
 
@@ -20,4 +28,4 @@ const addMenuItem = async(event) => {
   };
 };
 
-document.querySelector('#addMenuItem').addEventListener('submit', addMenuItem);
+document.querySelector('#createMenuItem').addEventListener('submit', createMenuItem);

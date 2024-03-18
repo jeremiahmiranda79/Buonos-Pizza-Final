@@ -1,13 +1,17 @@
-// POST method using information in an HTML <form> tag
-const addCat = async(event) => {
+// Create category
+const createcategory = async(event) => {
 	event.preventDefault();
+
 	const name = document.querySelector('#name').value.trim();
-	// const image = document.querySelector('#image').value.true();
+
 	const image = document.querySelector('#image').value;
 
 	const response = await fetch('/api/menu/newcategory', {
 		method: 'POST',
-		body: JSON.stringify({ name, image }),
+		body: JSON.stringify({ 
+			name, image 
+		}),
+
 		headers: { 'Content-Type': 'application/json' },
 	});
 
@@ -20,4 +24,4 @@ const addCat = async(event) => {
 	};
 };
 
-document.querySelector('#addCat').addEventListener('submit', addCat);
+document.querySelector('#createCategory').addEventListener('submit', createcategory);

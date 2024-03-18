@@ -14,8 +14,7 @@
 		<div class="container-fluid item">
 			<form id="updateToppingPizza">
 				<div class="container py-3">
-					<h2 class="">Update ({{tp.name}}) pizza topping</h2>
-
+					<h2>Update ({{tp.name}}) pizza topping</h2>
 					<div class="forms">
 						<label 
 							for="menu-item-name" 
@@ -29,7 +28,6 @@
 							class="form-control" 
 							value="{{tp.id}}" 
 							placeholder="{{tp.id}}"
-							required
 						>
 
 						<label 
@@ -37,6 +35,7 @@
 							class="form-label"
 						>
 							<b>Name</b>
+							<b style="color:#FF0000";>*required</b>
 						</label>
 						<input 
 							id="name" 
@@ -46,12 +45,12 @@
 							placeholder="{{tp.name}}"
 							required
 						>
-
 						<label 
 							for="menu-item-description" 
 							class="form-label"
 						>
 							<b>Price Full</b>
+							<b style="color:#FF0000";>*required</b>
 						</label>
 						<input 
 							id="priceFull" 
@@ -61,12 +60,12 @@
 							placeholder="{{tp.priceFull}}"
 							require
 						>
-
 						<label 
 							for="menu-item-description" 
 							class="form-label"
 						>
 							<b>Price Half</b>
+							<b style="color:#FF0000";>*required</b>
 						</label>
 						<input 
 							id="priceHalf" 
@@ -76,12 +75,12 @@
 							placeholder="{{tp.priceHalf}}"
 							require
 						>
-
 						<label 
 							for="menu-item-description" 
 							class="form-label"
 						>
 							<b>Price Slice</b>
+							<b style="color:#FF0000";>*required</b>
 						</label>
 						<input 
 							id="priceSlice" 
@@ -91,12 +90,12 @@
 							placeholder="{{tp.priceSlice}}"
 							require
 						>
-
 						<label 
 							for="menu-item-description" 
 							class="form-label"
 						>
 							<b>Price Gluten Free</b>
+							<b style="color:#FF0000";>*required</b>
 						</label>
 						<input 
 							id="priceGlutenFree" 
@@ -106,30 +105,25 @@
 							placeholder="{{tp.priceGlutenFree}}"
 							require
 						>
-
-						<br><br>
-					</div>	
-
-					<div class="d-flex justify-content-evenly">
 						<input 
 							type="hidden" 
 							name="toppingPizza-id" 
 							value="{{tp.id}}"
 						/>
-
+						<br><br>
+					</div>	
+					<div class="d-flex justify-content-evenly">
             <button 
 							type="submit" 
 							class="btn btn-primary"
 						>
 							Update
 						</button>
-            
             <button 
               class="btn btn-warning view-menu-button" onclick="history.back()"
             >
               Cancel
             </button>
-
             <button 
 							class="btn btn-danger"
 							id="deleteButton" 
@@ -140,10 +134,9 @@
 				</div>
 			</form>
 		</div>
-	</div>
-	
-	<br><br><br><br><br><br><br>
-  {{!-- <br><br><br><br><br><br><br> --}}
+	</div>	
 </div>
+
+<br><br><br><br><br><br><br>
 
 <script src="/js/updateToppingsPizza.js"></script>

@@ -5,46 +5,64 @@
 <div class="information-background">
   <div class="container-information-header">
     <center>
-      <h1>Create category</h1>
+      <h1>Create Category</h1>
       <h4>For admin only</h4>
     </center>
   </div>
-
   <div class="container-update-item">
     <div class="container-fluid item">
-      <form id="addCat">
-        <div class="">
-          <h2 class="">Menu Categories</h2>
+      <form id="createCategory">
+        <div class="container py-3">
+          <h2 class="">Categories</h2>
           <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-catgeory-list" aria-expanded="false" aria-controls="collapsable-catgeory-list">
             See all active categories
           </button>
-
           <div class="collapse" id="collapsable-catgeory-list">
             <div class="card card-body">
               <ul>
-                {{#each cats as |cat|}}  
-                  <li>{{cat.name}}</li>           
+                {{#each c as |x|}}  
+                  <li>{{x.name}}</li>           
                 {{/each}}
               </ul>
             </div>
           </div>
-
-          <div class="mb-3 py-3">
+          <br><br>
+          <div class="forms">
+            <label 
+              for="menu-item-name" 
+              class="form-label"
+            >
+              <b>Name</b>
+              <b style="color:#FF0000";>*required</b>
+            </label>
             <input 
+              id="name"
               type="text"
               class="form-control"
-              id="name"
-              placeholder="Add New Category"/>
+              placeholder="Some Name..."
+              required
+            >
             </input>
-
-            <label for="image" class="form-label">Choose an image:</label>
-            <select id="image" name="image" class="form-select">
-              {{#each imgs as |img|}}
-                <option value="{{img.url}}">{{img.name}}</option>
+            <label 
+              for="image" 
+              class="form-label"
+            >
+              <b>Choose an image:</b>
+              <b style="color:#FF0000";>*required</b>
+            </label>
+            <select 
+              id="image" 
+              name="image" 
+              class="form-select"
+              required
+            >
+              {{#each i as |x|}}
+                <option 
+                  value="{{x.url}}">{{x.name}}
+                </option>
               {{/each}}
             </select>
           </div>
-           
           <div class="d-flex justify-content-evenly">
             <button
               type="submit"
@@ -52,9 +70,11 @@
               id="addCatButton">
               Submit
             </button>
-            <div>
-              <a href="/menu" id="cancelButton" class="btn btn-warning">Cancel</a>
-            </div>
+            <button 
+              class="btn btn-warning view-menu-button" onclick="history.back()"
+            >
+              Cancel
+            </button>
           </div>  
         </div>
       </form>
@@ -62,7 +82,7 @@
   </div>
 
   <br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br>
+  <br><br><br><br><br>
 </div>
 
 <script src="/js/createCategory.js"></script>

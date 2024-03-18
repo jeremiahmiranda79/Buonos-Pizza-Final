@@ -5,7 +5,7 @@
 
 <div class="item-background">
   <center>
-    <section>
+    <section class="item-image">
       <div class="container-item">
         <img src="/images/buonos-logo.jpg" alt="buonos-logo" class="d-block">
         {{#if loggedIn}}
@@ -36,7 +36,7 @@
                   href="/menuitems/update/{{item.id}}" 
                   class="active btn btn-primary"
                 >
-                  Update Item {{item.name}}
+                  Update {{item.name}}
                 </a>
               </center>
             </section>
@@ -58,13 +58,15 @@
               {{#each toppingsPizza as |tp|}}
                 <tr>
                   <td>{{tp.name}} - (Full: <b>${{tp.priceFull}}</b>) (Half: <b>${{tp.priceHalf}}</b>) 
-                    <br>
-                    <a 
-                      href="/pizzaTopping/UpdatePizzaTopping/{{tp.id}}" 
-                      class="active btn btn-primary"
-                    >
-                      Update {{tp.name}}
-                    </a>
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/pizzaTopping/UpdatePizzaTopping/{{tp.id}}" 
+                        class="active btn btn-primary"
+                      >
+                        Update {{tp.name}}
+                      </a>
+                    {{/if}}
                   </td>
                 </tr>
               {{/each}}
@@ -74,19 +76,18 @@
         <br>
 
         {{#if loggedIn}}
-        <section>
-          <center>
-            <a 
-              href="/pizzaTopping/create" 
-              class="active btn btn-primary"
-            >
-              Create Pizza Topping
-            </a>
-          </center>
-        </section>
-        <br>
-      {{/if}}
-        
+          <section>
+            <center>
+              <a 
+                href="/pizzaTopping/create" 
+                class="active btn btn-primary"
+              >
+                Create Pizza Topping
+              </a>
+            </center>
+          </section>
+          <br>
+        {{/if}}
       {{/if}}
     </section>
 
@@ -102,13 +103,15 @@
               {{#each toppingsPizza as |tp|}}
                 <tr>
                   <td>{{tp.name}} - (Full: <b>${{tp.priceSlice}}</b>)
-                    <br>
-                    <a 
-                      href="/desertSauce/updateDesertSauce/{{td.id}}"
-                      class="active btn btn-primary"
-                    >
-                      Update {{td.name}}
-                    </a>
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/pizzaTopping/UpdatePizzaTopping/{{tp.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{tp.name}}
+                      </a>
+                    {{/if}}
                   </td>
                 </tr>
               {{/each}}
@@ -116,14 +119,15 @@
           </div>
         </section>
         <br>
+        
         {{#if loggedIn}}
           <section>
             <center>
               <a 
-                href="#" 
+                href="/pizzaTopping/create" 
                 class="active btn btn-primary"
               >
-                Update Salad Dressings
+                Create Pizza Topping Slice
               </a>
             </center>
           </section>
@@ -132,7 +136,7 @@
       {{/if}}
     </section>
     
-    <section class="pizza-toppings-glute-free">
+    <section class="pizza-toppings-gluten-free">
       {{#if item.toppingPizzaGlutenFree}}
         <section class="card" id="html-section-tags">
           <button class="collapsible">See all gluten free pizza toppings</button>
@@ -144,13 +148,15 @@
               {{#each toppingsPizza as |tp|}}
                 <tr>
                   <td>{{tp.name}} - (Full: <b>${{tp.priceGlutenFree}}</b>)
-                    <br>
-                    <a 
-                      href="/desertSauce/updateDesertSauce/{{td.id}}"
-                      class="active btn btn-primary"
-                    >
-                      Update {{td.name}}
-                    </a>
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/pizzaTopping/UpdatePizzaTopping/{{tp.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{tp.name}}
+                      </a>
+                    {{/if}}
                   </td>
                 </tr>
               {{/each}}
@@ -162,10 +168,186 @@
           <section>
             <center>
               <a 
-                href="#" 
+                href="/pizzaTopping/create" 
                 class="active btn btn-primary"
               >
-                Update Gluten Free Pizza Toppings
+                Create Gluten Free Pizza Toppings
+              </a>
+            </center>
+          </section>
+          <br>
+        {{/if}}
+      {{/if}}
+    </section>
+
+    <section class="salad-dressing">
+      {{#if item.saladDressing}}
+        <section class="card" id="html-section-tags">
+          <button class="collapsible">See all salad dressings</button>
+          <div class="content">
+            <table>
+              <tr>
+                <th>Additional salad dressings are sold by the each</th>
+              </tr>
+              {{#each dressing as |d|}}
+                <tr>
+                  <td>{{d.name}} - (3 Oz: <b>${{d.price3oz}}</b>) (16 Oz: <b>${{d.price16oz}}</b>)
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/dressing/updateDressing/{{d.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{d.name}}
+                      </a>
+                    {{/if}}
+                  </td>
+                </tr>
+              {{/each}}
+            </table>
+          </div>
+        </section>
+        <br>
+        {{#if loggedIn}}
+          <section>
+            <center>
+              <a 
+                href="/dressing/create"
+                class="active btn btn-primary"
+              >
+                Create Dressings
+              </a>
+            </center>
+          </section>
+          <br>
+        {{/if}}
+      {{/if}}
+    </section>
+
+    <section class="pasta-sauce">
+      {{#if item.marinaraSauce}}
+        <section class="card" id="html-section-tags">
+          <button class="collapsible">See all sauce options</button>
+          <div class="content">
+            <table>
+              <tr>
+                <th>Sauces are sold by the each</th>
+              </tr>
+              {{#each saucePasta as |sp|}}
+                <tr>
+                  <td>{{sp.name}} - (3 Oz: <b>${{sp.price3oz}}</b>) (16 Oz: <b>${{sp.price16oz}}</b>)
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/saucePasta/UpdateSaucePasta/{{sp.id}}" 
+                        class="active btn btn-primary"
+                      >
+                        Update {{sp.name}}
+                      </a>
+                    {{/if}}
+                  </td>
+                </tr> 
+              {{/each}}
+            </table>
+          </div>
+        </section>
+        <br>
+        {{#if loggedIn}}
+          <section>
+            <center>
+              <a 
+                href="/saucePasta/create" 
+                class="active btn btn-primary"
+              >
+                Create Pasta Sauce
+              </a>
+            </center>
+          </section>
+          <br>
+        {{/if}}
+      {{/if}}
+    </section>
+
+    <section class="wing-sauce">
+      {{#if item.wingSauce}}
+        <section class="card" id="html-section-tags">
+          <button class="collapsible">See all wing sauces</button>
+          <div class="content">
+            <table>
+              <tr>
+                <th>Additional wing sauces are sold by the each</th>
+              </tr>
+              {{#each sauceWing as |sw|}}
+                <tr>
+                  <td>{{sw.name}} - (3 Oz: <b>${{sw.price3oz}}</b>) (16 Oz: <b>${{sw.price16oz}}</b>)
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/sauceWing/UpdateSauceWing/{{sw.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{sw.name}}
+                      </a>
+                    {{/if}}
+                  </td>
+                </tr>
+              {{/each}}
+            </table>
+          </div>
+        </section>
+        <br>
+        {{#if loggedIn}}
+          <section>
+            <center>
+              <a 
+                href="/sauceWing/create" 
+                class="active btn btn-primary"
+              >
+                Create Wing Sauces
+              </a>
+            </center>
+          </section>
+          <br>
+        {{/if}}
+      {{/if}}
+    </section>
+
+    <section class="pasta">
+      {{#if item.pastaType}}
+        <section class="card" id="html-section-tags">
+          <button class="collapsible">See all pasta options</button>
+          <div class="content">
+            <table>
+              <tr>
+                <th>Additional pasta portions are sold by the each</th>
+              </tr>
+              {{#each pasta as |p|}}
+                <tr>
+                  <td>{{p.name}} - (3 Oz: <b>${{p.price5oz}}</b>) (16 Oz: <b>${{p.price9oz}}</b>)
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/pasta/updatePasta/{{p.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{p.name}}
+                      </a>
+                    {{/if}}
+                  </td>
+                </tr>
+              {{/each}}
+            </table>
+          </div>
+        </section>
+        <br>
+        {{#if loggedIn}}
+          <section>
+            <center>
+              <a 
+                href="/pasta/createPasta" 
+                class="active btn btn-primary"
+              >
+                Create Pastas
               </a>
             </center>
           </section>
@@ -187,13 +369,15 @@
                 <tr>
                   <td>
                     {{ths.name}} - <b>${{ths.price}}</b>
-                    <br>
-                    <a 
-                      href="/toppingHotSub/updateToppingHotSub/{{ths.id}}"
-                      class="active btn btn-primary"
-                    >
-                      Update {{ths.name}}
-                    </a>
+                      {{#if loggedIn}}
+                        <br>
+                        <a 
+                          href="/toppingHotSub/updateToppingHotSub/{{ths.id}}"
+                          class="active btn btn-primary"
+                        >
+                          Update {{ths.name}}
+                        </a>
+                      {{/if}}
                   </td>
                 </tr>
               {{/each}}
@@ -229,13 +413,15 @@
               {{#each toppingsColdSub as |tcs|}}
                 <tr>
                   <td>{{tcs.name}} - <b>${{tcs.price}}</b>
-                    <br>
-                    <a 
-                      href="/toppingColdSub/updateToppingColdSub/{{tcs.id}}"
-                      class="active btn btn-primary"
-                    >
-                      Update {{tcs.name}}
-                    </a>
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/toppingColdSub/updateToppingColdSub/{{tcs.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{tcs.name}}
+                      </a>
+                    {{/if}}
                   </td>
                 </tr>
               {{/each}}
@@ -271,13 +457,15 @@
               {{#each toppingsDesert as |td|}}
                 <tr>
                   <td>{{td.name}} - (3 Oz: <b>${{td.price}}</b>)
-                    <br>
-                    <a 
-                      href="/desertSauce/updateDesertSauce/{{td.id}}"
-                      class="active btn btn-primary"
-                    >
-                      Update {{td.name}}
-                    </a>
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/toppingDesert/updateToppingDesert/{{td.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{td.name}}
+                      </a>
+                    {{/if}}
                   </td>
                 </tr>
               {{/each}}
@@ -301,132 +489,6 @@
       {{/if}}
     </section>
     
-    <section class="wing-sauce">
-      {{#if item.wingSauce}}
-        <section class="card" id="html-section-tags">
-          <button class="collapsible">See all wing sauces</button>
-          <div class="content">
-            <table>
-              <tr>
-                <th>Additional wing sauces are sold by the each</th>
-              </tr>
-              {{#each sauceWing as |sw|}}
-                <tr>
-                  <td>{{sw.name}} - (3 Oz: <b>${{sw.price3oz}}</b>) (16 Oz: <b>${{sw.price16oz}}</b>)
-                    <br>
-                    <a 
-                      href="/sauceWing/UpdateSauceWing/{{sw.id}}"
-                      class="active btn btn-primary"
-                    >
-                      Update {{sw.name}}
-                    </a>
-                  </td>
-                </tr>
-              {{/each}}
-            </table>
-          </div>
-        </section>
-        <br>
-        {{#if loggedIn}}
-          <section>
-            <center>
-              <a 
-                href="/sauceWing/create" 
-                class="active btn btn-primary"
-              >
-                Create Wing Sauces
-              </a>
-            </center>
-          </section>
-          <br>
-        {{/if}}
-      {{/if}}
-    </section>
-
-    <section class="salad-dressing">
-      {{#if item.saladDressing}}
-        <section class="card" id="html-section-tags">
-          <button class="collapsible">See all salad dressings</button>
-          <div class="content">
-            <table>
-              <tr>
-                <th>Additional salad dressings are sold by the each</th>
-              </tr>
-              {{#each dressing as |d|}}
-                <tr>
-                  <td>{{d.name}} - (3 Oz: <b>${{d.price3oz}}</b>) (16 Oz: <b>${{d.price16oz}}</b>)
-                    <br>
-                    <a 
-                      href="/dressing/updateDressing/{{d.id}}"
-                      class="active btn btn-primary"
-                    >
-                      Update {{d.name}}
-                    </a>
-                  </td>
-                </tr>
-              {{/each}}
-            </table>
-          </div>
-        </section>
-        <br>
-        {{#if loggedIn}}
-          <section>
-            <center>
-              <a 
-                href="/dressing/create"
-                class="active btn btn-primary"
-              >
-                Create Dressings
-              </a>
-            </center>
-          </section>
-          <br>
-        {{/if}}
-      {{/if}}
-    </section>
-
-    <section class="pasta">
-      {{#if item.pastaType}}
-        <section class="card" id="html-section-tags">
-          <button class="collapsible">See all pasta options</button>
-          <div class="content">
-            <table>
-              <tr>
-                <th>Additional pasta portions are sold by the each</th>
-              </tr>
-              {{#each pasta as |p|}}
-                <tr>
-                  <td>{{p.name}} - (3 Oz: <b>${{p.price5oz}}</b>) (16 Oz: <b>${{p.price9oz}}</b>)
-                    <br>
-                    <a 
-                      href="/pasta/updatePasta/{{p.id}}"
-                      class="active btn btn-primary"
-                    >
-                      Update {{p.name}}
-                    </a>
-                  </td>
-                </tr>
-              {{/each}}
-            </table>
-          </div>
-        </section>
-        <br>
-        {{#if loggedIn}}
-          <section>
-            <center>
-              <a 
-                href="/pasta/createPasta" 
-                class="active btn btn-primary"
-              >
-                Create Pastas
-              </a>
-            </center>
-          </section>
-          <br>
-        {{/if}}
-      {{/if}}
-    </section>
-
     <section class="desert-sauce">
       {{#if item.desertSauce}}
         <section class="card" id="html-section-tags">
@@ -439,13 +501,15 @@
               {{#each sauceDesert as |sd|}}
                 <tr>
                   <td>{{sd.name}} (3 Oz: <b>${{sd.price}}</b>)
-                    <br>
-                    <a 
-                      href="/desertSauce/updateDesertSauce/{{sd.id}}"
-                      class="active btn btn-primary"
-                    >
-                      Update {{sd.name}}
-                    </a>
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/sauceDesert/updateSauceDesert/{{sd.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{sd.name}}
+                      </a>
+                    {{/if}}
                   </td>
                 </tr>
               {{/each}}
@@ -461,48 +525,6 @@
                 class="active btn btn-primary"
               >
                 Create Sauce Desert
-              </a>
-            </center>
-          </section>
-          <br>
-        {{/if}}
-      {{/if}}
-    </section>
-
-    <section class="pasta-sauce">
-      {{#if item.marinaraSauce}}
-        <section class="card" id="html-section-tags">
-          <button class="collapsible">See all sauce options</button>
-          <div class="content">
-            <table>
-              <tr>
-                <th>Sauces are sold by the each</th>
-              </tr>
-              {{#each saucePasta as |sp|}}
-                <tr>
-                  <td>{{sp.name}} - (3 Oz: <b>${{sp.price3oz}}</b>) (16 Oz: <b>${{sp.price16oz}}</b>)
-                    <br>
-                    <a 
-                      href="/saucePasta/UpdateSaucePasta/{{sp.id}}" 
-                      class="active btn btn-primary"
-                    >
-                      Update {{sp.name}}
-                    </a>
-                  </td>
-                </tr> 
-              {{/each}}
-            </table>
-          </div>
-        </section>
-        <br>
-        {{#if loggedIn}}
-          <section>
-            <center>
-              <a 
-                href="/saucePasta/create" 
-                class="active btn btn-primary"
-              >
-                Create Pasta Sauce
               </a>
             </center>
           </section>

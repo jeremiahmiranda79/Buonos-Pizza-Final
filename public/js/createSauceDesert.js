@@ -2,14 +2,14 @@
 const createSauceDesert = async(event) => {
   event.preventDefault();
   
-  const id = document.querySelector('#id').value.trim();
+  // const id = document.querySelector('#id').value.trim();
   const name = document.querySelector('#name').value.trim();
   const price = document.querySelector('#price').value.trim();
  
   const response = await fetch('../../api/sauceDesert/createSauceDesert', {
     method: 'POST',
     body: JSON.stringify({ 
-      id,
+      // id,
       name,
       price
     }),

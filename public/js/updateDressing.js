@@ -31,7 +31,7 @@ const updateDressing = async(event) => {
   };
 };
 
-//Delete deleteDressing
+//Delete Dressing
 const deleteDressing = async(event) => {
   if (confirm("Are you sure you want to delete this DRESSING and all things related to it? This action cannot be undone!!") == true) {
     if (event.target.hasAttribute('data-id')) {

@@ -5,70 +5,97 @@
 <div class="information-background">
 	<div class="container-information-header">
     <center>
-      <h1>Create item</h1>
+      <h1>Create Menu Item</h1>
       <h4>For admin only</h4>
     </center>
   </div>
 
 	<div class="container-update-item">
 		<div class="container-fluid item">
-			<form id="addMenuItem">
+			<form id="createMenuItem">
 				<div class="container py-3">
-					<h2 class="">Create a new menu item</h2>
-
-					<div class="">
-						<label for="menu-item-name" class="form-label">Menu item name</label>
-
-						<input id="name" type="text" value="{{cat.name}}" class="form-control" placeholder="Menu Item Name...">
-
-						{{!-- <input type="hidden" name="cat-id" value="{{cat.id}}"/> --}}
-
-					</div>
-					
-					<div class="">
-						<label for="menu-item-description" class="form-label">
-							Menu item description
+					<h2 class="">Menu Item</h2>
+					<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-catgeory-list" aria-expanded="false" aria-controls="collapsable-catgeory-list">
+            See all active menu items
+          </button>
+					<div class="collapse" id="collapsable-catgeory-list">
+            <div class="card card-body">
+              <ul>
+                {{#each c as |x|}}  
+                  <li>{{x.name}}</li>           
+                {{/each}}
+              </ul>
+            </div>
+          </div>
+          <br><br>
+					<div class="forms">
+						<label 
+							for="menu-item-name" 
+							class="form-label"
+						>
+							<b>Menu item name</b>
+							<b style="color:#FF0000";>*required</b>
 						</label>
-						<input id="description" type="text" value="{{cat.description}}" class="form-control" placeholder="Menu Item Description...">
+						<input 
+							id="name" 
+							type="text" 
+							value="{{i.name}}" 
+							class="form-control" 
+							placeholder="Some name..."
+							required
+						>
+						<input 
+							type="hidden"
+							name="cat-id" 
+							value="{{i.id}}"
+						/>
+						<label 
+							for="menu-item-description" 
+							class="form-label"
+						>
+							<b>Menu item description</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input 
+							id="description" 
+							type="text" 
+							value="{{cat.description}}" class="form-control" 
+							placeholder="Some description"
+							required
+						>
+						<label 
+              for="image" 
+              class="form-label"
+            >
+              <b>Choose a category:</b>
+              <b style="color:#FF0000";>*required</b>
+            </label>
+						<select 
+              id="categories" 
+              name="categories" 
+              class="form-select"
+              require
+            >
+              {{#each c as |x|}}
+                <option 
+                  value="{{x.id}}">{{x.name}}
+                </option>
+              {{/each}}
+            </select>
 					</div>
-
-					<div class="">
-						<label for="categories" class="form-label">Choose a category</label>
-
-						<select id="categories" name="categories" class="form-select">
-							{{!-- <option value="{{cats.name}}" selected>Current ({{name}})</option> --}}
-
-							{{#each cats as |cat|}}
-								<option value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
-							{{/each}}
-						</select>
-					</div>
-
-					{{!-- <div class="category-dropdown-main">
-						<h6>Item category *required</h6>
-						<div class="category-dropdown">
-							<select class="" name="categories" 	id="categories">
-								{{#each cats as |cat|}}
-									<option  value="{{cat.id}}" id="categoryId">{{cat.name}}</option>
-								{{/each}}
-							</select>
-						</div>
-					</div> --}}
 
 					<div class="d-flex justify-content-evenly">
-						<div>
-							<button
-								type="submit"
-								class="btn btn-primary">
-									Create
-							</button>
-						</div>
-						
-						<div>
-							<a href="/menu" id="cancelButton" class="btn btn-warning">
-								Cancel
-							</a>
-						</div>
+						<button
+							type="submit"
+							class="btn btn-primary"
+						>
+							Create
+						</button>
+						<button 
+							class="btn btn-warning view-menu-button" onclick="history.back()"
+						>
+							Cancel
+						</button>
 					</div>
 				</div>
 			</form>
@@ -76,7 +103,7 @@
 	</div>
 	
 	<br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br>
+  <br><br>
 </div>
 
 <script src="/js/createMenuItem.js"></script>

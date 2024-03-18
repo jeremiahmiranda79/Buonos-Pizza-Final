@@ -18,7 +18,6 @@
           <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapsable-catgeory-list" aria-expanded="false" aria-controls="collapsable-catgeory-list">
             See all active topping hot sub
           </button>
-
           <div class="collapse" id="collapsable-catgeory-list">
             <div class="card card-body">
               <ul>
@@ -28,76 +27,58 @@
               </ul>
             </div>
           </div>
-
           <br><br>
-
           <div class="forms">
             <label 
               for="menu-item-name" 
               class="form-label"
             >
-              <b>ID</b>
-            </label>
-            <input 
-              id="id" 
-              type="text" 
-              class="form-control" 
-              value="{{ths.id}}" 
-              placeholder="not required"
-            >
-
-            <label 
-              for="menu-item-name" 
-              class="form-label"
-            >
               <b>Name</b>
+              <b style="color:#FF0000";>*required</b>
             </label>
             <input 
               id="name" 
               type="text" 
               class="form-control" 
               value="{{ths.name}}" 
-              placeholder="Some Name"
+              placeholder="Some Name..."
               required
             >
-
             <label 
               for="menu-item-description" 
               class="form-label"
             >
               <b>Price</b>
+              <b style="color:#FF0000";>*required</b>
             </label>
             <input 
               id="price" 
               type="text" 
               class="form-control" 
               value="{{ths.price}}" 
-              placeholder="0.00"
+              placeholder="0.00..."
               require
             >
-    <br><br>
-  </div>	
-
-  <div class="d-flex justify-content-evenly">
-    <div>
-      <button
-        type="submit"
-        class="btn btn-primary">
-          Create
-      </button>
+            <br><br>
+          </div>	
+        </div>
+        <div class="d-flex justify-content-evenly">
+          <button
+            type="submit"
+            class="btn btn-primary">
+              Create
+          </button>
+          <button 
+            class="btn btn-warning view-menu-button" onclick="history.back()"
+          >
+            Cancel
+          </button>
+        </div>
+      </form>
     </div>
- 
-    <button 
-      class="btn btn-warning view-menu-button" onclick="history.back()"
-    >
-      Cancel
-    </button>
-
-</div>
-</form>
-</div>
   </div>
   
+  <br><br><br><br>
   <br><br><br><br>
   <br><br><br><br>
 </div>
