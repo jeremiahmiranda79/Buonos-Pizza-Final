@@ -13,7 +13,6 @@ const updateInformation = async(event) => {
   const email = document.querySelector('#email').value.trim();
   const style = document.querySelector('#style').value.trim();
   const description = document.querySelector('#description').value.trim();
-
   const information1_switch = document.querySelector('#information1_switch').value.trim();
 
   const response = await fetch(`../../api/information/updateInformation/${infoId}`, {
@@ -28,7 +27,6 @@ const updateInformation = async(event) => {
       email,
       style,
       description,
-
       information1_switch
     }),
     headers: { 'Content-Type': 'application/json' }
@@ -63,6 +61,32 @@ const deleteInformation = async (event) => {
     document.location.replace('/');
   }
 }
+
+function checkbox(x) {
+  var box = x;
+
+  if(box.value == "false"){
+     x.value = "false"; 
+     x.checked = false;
+  }
+  else if(box.value == "true"){
+    x.value = "true";
+    x.checked = true;
+  }
+
+  x.addEventListener('change', function(){
+    if(this.checked){
+      x.value = "true";
+    } 
+    else if(this.checked == false){
+      x.value = "false";
+    }
+  });
+
+  return box;
+}
+
+checkbox(information1_switch);
 
 document.querySelector('#updateInformation').addEventListener('submit', updateInformation);
 document.querySelector('#deleteButton').addEventListener('click', deleteInformation);

@@ -30,7 +30,22 @@
               value="{{info.name}}" 
               placeholder="{{info.name}}" required
             >
+            <br>
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label> 
+            <br>
+            <input 
+              type="checkbox"
+              id="information1_switch" 
+              value="{{info.information1_switch}}"
+            >
 
+            <label>
+              <span class="slider"></span>
+              <b>Information 1 Switch</b>
+            </label>
+            <br><br>
             <label 
               for="company-name" 
               class="form-label"
@@ -128,7 +143,6 @@
               value="{{info.style}}"
               placeholder="{{info.style}}" required
             >
-
             <label 
               for="desription"
               class="form-label"
@@ -141,20 +155,6 @@
               class="form-control"
               value="{{info.description}}"
               placeholder="{{info.description}}" required
-            >
-
-             <label 
-              for="information1_switch"
-              class="form-label"
-            >
-              <b>Information 1 Switch</b> 
-            </label>
-            <input 
-              id="information1_switch"
-              type="text"
-              class="form-control"
-              value="{{info.information1_switch}}"
-              placeholder="{{info.infrmation1_switch}}" required
             >
           </div>
 

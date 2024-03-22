@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/css/social.css">
   <link rel="stylesheet" href="/css/promise.css">
   <link rel="stylesheet" href="/css/takeout-dinein.css">
+  <link rel="stylesheet" href="/css/video-player.css">
 </head>
 
 <section label="home-page">
@@ -26,19 +27,21 @@
     {{/if}}
   </section>
 
-  <section label="promise">
-    {{#each homePage as |hp|}}
-      {{#if hp.name1Switch}}
-        <div class="container-fluid promise" >
+  <section>
+    <div class="container-fluid promise" >
+          <center>
+            <div class="video-player">
+              <iframe src="https://www.youtube.com/embed/OEs41ELo6ds?vq=hd1080&autoplay=1&loop=1&mute=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=0&disablekb=1&playlist=OEs41ELo6ds" width="100%" height="100%"  frameborder="0" class="video-player"></iframe>
+            </div>
+          </center>
+          
           <center>
             <h1>{{hp.name1}}</h1>
             <h5>{{hp.description1}}</h5> 
           </center>
         </div>
-      {{/if}}
-    {{/each}}
   </section>
-  
+
   <section label="information"> 
     {{#each information as |i|}}
       {{#if i.information1_switch}}
@@ -58,6 +61,27 @@
       {{/if}}
     {{/each}} 
   </section>
+
+  <section label="promise">
+    {{#each homePage as |hp|}}
+      {{#if hp.name1Switch}}
+        <div class="container-fluid promise" >
+          {{!-- <center>
+            <div class="video-player">
+              <iframe src="https://www.youtube.com/embed/OEs41ELo6ds?vq=hd1080&autoplay=1&loop=1&mute=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=0&disablekb=1&playlist=OEs41ELo6ds" width="100%" height="100%"  frameborder="0" class="video-player"></iframe>
+            </div>
+          </center> --}}
+          
+          <center>
+            <h1>{{hp.name1}}</h1>
+            <h5>{{hp.description1}}</h5> 
+          </center>
+        </div>
+      {{/if}}
+    {{/each}}
+  </section>
+  
+  
   
   <section label="promise-carousel">
     {{#each homePage as |hp|}}
