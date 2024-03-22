@@ -21,14 +21,16 @@
               for="name" 
               class="form-label"
             >
-              <b>Name</b>  
+              <b>Name</b> 
+              <b style="color:#FF0000";>*required</b> 
             </label>
             <input 
               id="name" 
               type="text" 
               class="form-control" 
               value="{{info.name}}" 
-              placeholder="{{info.name}}" required
+              placeholder="{{info.name}}" 
+              required
             >
             <br>
             <label>
@@ -57,7 +59,8 @@
               type="text" 
               class="form-control" 
               value="{{info.company}}" 
-              placeholder="{{info.company}}" required
+              placeholder="{{info.company}}" 
+              {{!-- required --}}
             >
 
             <label 
@@ -65,6 +68,7 @@
               class="form-label"
             >
               <b>Phone Number</b>
+              <b style="color:#FF0000";>*required</b>
             </label>
             <input 
               id="phoneNumber" 
@@ -79,13 +83,15 @@
               class="form-label"
             >
               <b>Tel Number</b>
+              <b style="color:#FF0000";>*required</b>
             </label>
             <input 
               id="telNumber" 
               type="text" 
               class="form-control" 
               value="{{info.telNumber}}" 
-              placeholder="{{info.telNumber}}" required
+              placeholder="{{info.telNumber}}" 
+              required
             >
 
             <label 
@@ -93,13 +99,15 @@
               class="form-label"
             >
               <b>Address</b>
+              <b style="color:#FF0000";>*required</b>
             </label>
             <input 
               id="address"
               type="text"
               class="form-control"
               value="{{info.address}}"
-              placeholder="{{info.address}}" required
+              placeholder="{{info.address}}" 
+              required
             >
 
             <label 
@@ -113,7 +121,8 @@
               type="text"
               class="form-control"
               value="{{info.map}}"
-              placeholder="{{info.map}}" required
+              placeholder="{{info.map}}" 
+              {{!-- required --}}
             >
 
             <label 
@@ -121,13 +130,15 @@
               class="form-label"
             >
               <b>Email</b>
+              <b style="color:#FF0000";>*required</b>
             </label>
             <input 
               id="email"
               type="text"
               class="form-control"
               value="{{info.email}}"
-              placeholder="{{info.email}}" required
+              placeholder="{{info.email}}" 
+              required
             >
 
             <label 
@@ -141,7 +152,8 @@
               type="text"
               class="form-control"
               value="{{info.style}}"
-              placeholder="{{info.style}}" required
+              placeholder="{{info.style}}" 
+              {{!-- required --}}
             >
             <label 
               for="desription"
@@ -154,7 +166,8 @@
               type="text"
               class="form-control"
               value="{{info.description}}"
-              placeholder="{{info.description}}" required
+              placeholder="{{info.description}}"
+              {{!-- required --}}
             >
           </div>
 
