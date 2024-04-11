@@ -7,30 +7,21 @@ const ToppingsDesert = require('./ToppingsDesert');
 const Employees = require('./Employees');
 const Images = require('./Images');
 const Dressings = require('./Dressings');
-
-
 const SauceWing = require('./SauceWing');
-
-
 const SaucesDesert = require('./SaucesDesert');
 const Pastas = require('./Pastas');
-
 const SaucePasta = require('./SaucePasta');
-
 const Information = require('./Information');
 const HomePage = require('./HomePage');
 const Hours = require('./Hours');
 const Location = require('./Location');
-
 // MenuItems to Categories
 Categories.hasMany(MenuItems, {
   foreignKey: 'categoryId'
 });
-
 MenuItems.belongsTo(Categories, {
   foreignKey: 'categoryId'
 });
-
 module.exports = { 
   Categories, 
   MenuItems, 

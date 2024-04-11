@@ -1,17 +1,11 @@
 //Update Pasta
 const updatePasta = async(event) => {
   event.preventDefault();
-
   const pastaId = document.querySelector('input[name="pasta-id"]').value;
-
   const id = document.querySelector('#id').value.trim();
-
   const name = document.querySelector('#name').value.trim();
-
   const price5oz = document.querySelector('#price5oz').value.trim();
-
   const price9oz = document.querySelector('#price9oz').value.trim();
-
   const response = await fetch(`../../api/pasta/updatePasta/${pastaId}`, {
     method: 'PUT',
     body: JSON.stringify({
@@ -22,7 +16,6 @@ const updatePasta = async(event) => {
     }),
     headers: { 'Content-Type': 'application/json' }
   });
-
   if (response.ok) {
     alert('Pasta Updated');
     document.location.replace(`/menu`);
@@ -31,7 +24,6 @@ const updatePasta = async(event) => {
     alert(response.statusText);
   };
 };
-
 // Delete Pasta
 const deletePasta = async(event) => {
   if (confirm("Are you sure you want to delete this PASTA and all things related to it? This action cannot be undone!!") == true) {
@@ -40,7 +32,6 @@ const deletePasta = async(event) => {
       const response = await fetch(`/api/pasta/deletePasta/${id}`, {
         method: 'DELETE',
       });
-      
       if (response.ok) {
         document.location.replace('/menu');
       } 
@@ -54,7 +45,5 @@ const deletePasta = async(event) => {
     document.location.replace('/menu');
   }
 };
-
 document.querySelector('#updatePasta').addEventListener('submit', updatePasta);
-
 document.querySelector('#deleteButton').addEventListener('click', deletePasta);

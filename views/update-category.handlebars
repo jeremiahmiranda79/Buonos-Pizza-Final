@@ -9,12 +9,28 @@
       <h4>For admin only</h4>
     </center>
   </div>
+
   <div class="container-update-item">
     <div class="container-fluid contact">
       <form id="updateCategory">   
         <div class="container py-3">
           <h2 class="py-3">Update ({{c.name}}) category</h2>
           <div class="forms">
+
+            <label>
+              <b style="color:#FF0000";>Please select or de-select to switch on or off!</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="switchy" 
+              value="{{c.switchy}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>{{c.name}}</b>
+            </label>
+            <br><br>
             <label 
 							for="menu-item-name" 
 							class="form-label"
@@ -48,7 +64,7 @@
               class="form-label"
             >
               <b>Choose an image:</b>
-              <b style="color:#FF0000";>*required</b>
+              <b style="color:#FF0000";>*Please select the proper image for this category</b>
             </label>
             <select 
               id="image" 
@@ -56,13 +72,16 @@
               class="form-select"
               require
             >
+              <option value="{{c.image}}" selected>
+                  Current ({{c.image}})
+                </option>
+
               {{#each i as |x|}}
                 <option 
                   value="{{x.url}}">{{x.name}}
                 </option>
               {{/each}}
             </select>
-
             <input 
               type="hidden" 
               name="category-id" 

@@ -2,7 +2,6 @@ const router = require('express').Router();
 const {
   ToppingsDesert
 } = require('../../models');
-
 //#region /***** CREATE ******/
   //Route to create new topping desert
   //Post method with endpoint '/api/toppingDesert/createToppingDesert'
@@ -12,7 +11,6 @@ const {
         name: req.body.name,
         price: req.body.price
       });
-      
       res.status(201).json(newToppingDesert);
     } 
     catch (error) {
@@ -21,7 +19,6 @@ const {
     };
   });
 //#endregion
-
 //#region /***** READ ******/
   //Route to retrieve all toppings desert
   //GET method with endpoint '/api/toppingDesert'
@@ -35,7 +32,6 @@ const {
       res.status(500).json(error);//500 - internal server error
     }
   });
-  
   //Route to retrieve a single topping desert
   //GET method with endpoint '/api/toppingDesert/:toppingDesert'
   router.get('/:toppingDesertId', async (req, res) => {
@@ -49,7 +45,6 @@ const {
     }
   });
 //#endregion
-
 //#region /***** UPDATE ******/
   //Route to update a single topping desert
   //POST method with endpoint '/api/toppingDesert/updateToppingDesert/:toppingDesertId
@@ -60,9 +55,7 @@ const {
           id: req.params.toppingDesertId
         }
       });
-
       if (!updateToppingDesert[0]) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(updateToppingDesert);
     } 
     catch (error) {
@@ -71,7 +64,6 @@ const {
     }
   });
 //#endregion
-
 //#region /***** DELETE ******/
   //Route to delete a single topping desert
   //DELETE method with endpoint '/api/toppingDesert/deleteToppingDesert/:toppingDesertId'
@@ -82,9 +74,7 @@ const {
           id: req.params.toppingDesertId
         }
       });
-
       if (!deleteToppingDesert) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(deleteToppingDesert);
     } 
     catch (error) {
@@ -93,5 +83,4 @@ const {
     }
   });
 //#endregion
-
 module.exports = router;

@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { SauceWing } = require('../../models');
-
 //#region /***** CREATE ******/
   //Route to create new sauce wing
   //Post method with endpoint '/api/sauceWing/createSauceWing'
@@ -11,7 +10,6 @@ const { SauceWing } = require('../../models');
         price3oz: req.body.price3oz,
         price16oz: req.body.price16oz
       });
-      
       res.status(201).json(newSauceWing);
     } 
     catch (error) {
@@ -20,7 +18,6 @@ const { SauceWing } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** READ ******/
   //Route to retrieve all sauce wing
   //GET method with endpoint '/api/sauceWing'
@@ -34,7 +31,6 @@ const { SauceWing } = require('../../models');
       res.status(500).json(error);//500 - internal server error
     }
   });
-
   //Route to retrieve a single sauce wing
   //GET method with endpoint '/api/sauceWing/:sauceWingId'
   router.get('/:sauceWingId', async (req, res) => {
@@ -48,7 +44,6 @@ const { SauceWing } = require('../../models');
     }
   });
 //#endregion
-
 //#region /***** UPDATE ******/
   //Route to update a single sauce wing
   //POST method with endpoint '/api/sauceWing/updateSauceWing/:sauceWingId'
@@ -59,9 +54,7 @@ const { SauceWing } = require('../../models');
           id: req.params.sauceWingId
         }
       });
-
       if (!updateSauceWing[0]) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(updateSauceWing);
     } 
     catch (error) {
@@ -70,7 +63,6 @@ const { SauceWing } = require('../../models');
     }
   });
 //#endregion
-
 //#region /***** DELETE ******/
   //Route to delete a single sauce wing
   //DELETE method with endpoint '/api/sauceWing/deleteSauceWing/:sauceWingId'
@@ -81,9 +73,7 @@ const { SauceWing } = require('../../models');
           id: req.params.sauceWingId
         }
       });
-
-      if (!deleteSauceWing) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
+      if (!deleteSauceWing) return res.status(404).json({ message: 'Not found!' });//404 - Not Foun
       res.status(202).json(deleteSauceWing);
     }
     catch (error) {
@@ -92,5 +82,4 @@ const { SauceWing } = require('../../models');
     };
   });
 //#endregion
-
 module.exports = router;

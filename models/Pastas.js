@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
-
 class Pastas extends Model {};
-
 Pastas.init(
   {
     id: {
@@ -15,7 +13,6 @@ Pastas.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    
     price5oz:{
       type: DataTypes.FLOAT,
       allowNull: false
@@ -32,5 +29,4 @@ Pastas.init(
     modelName: 'pastas'
   }
 );
-
 module.exports = Pastas;

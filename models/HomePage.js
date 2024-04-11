@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
-
 class HomePage extends Model {};
-
 HomePage.init(
   {
     id: {
@@ -11,8 +9,6 @@ HomePage.init(
       primaryKey: true,
       autoIncrement: true
     },
-
-
     name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -29,7 +25,6 @@ HomePage.init(
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
-
     name2: {
       type: DataTypes.STRING,
       allowNull: false
@@ -42,7 +37,6 @@ HomePage.init(
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
-
     name3_1: {
       type: DataTypes.STRING,
       allowNull: false
@@ -63,7 +57,6 @@ HomePage.init(
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
-
     name4: {
       type: DataTypes.STRING,
       allowNull: false
@@ -76,7 +69,6 @@ HomePage.init(
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
-
     name5_1: {
       type: DataTypes.STRING,
       allowNull: false
@@ -121,7 +113,6 @@ HomePage.init(
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
-
     slice_switch: {
       type: DataTypes.BOOLEAN,
       allowNull: false
@@ -139,7 +130,6 @@ HomePage.init(
       allowNull: false
     }
   },
-
   {
     sequelize: connection,
     timestamps: true,
@@ -147,5 +137,4 @@ HomePage.init(
     modelName: 'homepage'
   }
 );
-
 module.exports = HomePage;

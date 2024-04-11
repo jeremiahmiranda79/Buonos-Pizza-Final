@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
-
 class Information extends Model {};
-
 Information.init(
   {
     id: {
@@ -15,7 +13,6 @@ Information.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-
     phoneNumber: {
       type: DataTypes.STRING,
       allowNull: false
@@ -24,7 +21,6 @@ Information.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-
     address: {
       type: DataTypes.STRING,
       allowNull: false
@@ -33,7 +29,6 @@ Information.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-
     email: {
       type: DataTypes.STRING,
       allowNull: false
@@ -55,7 +50,6 @@ Information.init(
       allowNull: false
     }
   },
-
   {
     sequelize: connection,
     timestamps: true,
@@ -63,5 +57,4 @@ Information.init(
     modelName: 'information'
   }
 );
-
 module.exports = Information;

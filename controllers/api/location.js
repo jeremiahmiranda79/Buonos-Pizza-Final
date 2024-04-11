@@ -2,11 +2,8 @@ const router = require('express').Router();
 const {
   Location
 } = require('../../models');
-
 /***** CREATE ******/
-
 /***** READ ******/
-
 // Route to retrieve all Location
 // GET method with endpoint '/api/location'
 router.get('/', async (req, res) => {
@@ -31,9 +28,6 @@ router.get('/:locationId', async (req, res) => {
     res.status(500).json(error);
   }
 })
-
 /***** UPDATE ******/
-
 /***** DELETE ******/
-
 module.exports = router;

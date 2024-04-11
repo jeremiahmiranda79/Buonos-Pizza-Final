@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Pastas } = require('../../models')
-
 //#region /***** CREATE ******/
   //Route to create new pasta
   //Post method with endpoint '/api/pasta/createPasta'
@@ -11,7 +10,6 @@ const { Pastas } = require('../../models')
         price5oz: req.body.price5oz,
         price9oz: req.body.price9oz
       });
-      
       res.status(201).json(newPasta);
     } 
     catch (error) {
@@ -20,7 +18,6 @@ const { Pastas } = require('../../models')
     };
   });
 //#endregion
-
 //#region /***** READ ******/
   //Route to retrieve all pastas
   //GET method with endpoint '/api/pasta'
@@ -34,7 +31,6 @@ const { Pastas } = require('../../models')
       res.status(500).json(error);//500 - internal server error
     }
   });
-
   //Route to retrieve a single pasta
   //GET method with endpoint '/api/pasta/:pastaId'
   router.get('/:pastaId', async (req, res) => {
@@ -48,7 +44,6 @@ const { Pastas } = require('../../models')
     }
   });
 //#endregion
-
 //#region /***** UPDATE ******/
   //Route to update a single pasta
   //POST method with endpoint '/api/pasta/updatePasta/:pastaId'
@@ -59,9 +54,7 @@ const { Pastas } = require('../../models')
           id: req.params.pastaId
         }
       });
-
       if (!updatePasta[0]) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(updatePasta);
     } 
     catch (error) {
@@ -70,7 +63,6 @@ const { Pastas } = require('../../models')
     }
   });
 //#endregion
-
 //#region /***** DELETE ******/
   //Route to delete a single pasta
   //DELETE method with endpoint '/api/pasta/deletePasta/:pastaId'
@@ -81,9 +73,7 @@ const { Pastas } = require('../../models')
           id: req.params.pastaId
         }
       });
-
       if (!deletePasta) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(deletePasta);
     }
     catch (error) {
@@ -92,5 +82,4 @@ const { Pastas } = require('../../models')
     };
   });
 //#endregion
-
 module.exports = router;

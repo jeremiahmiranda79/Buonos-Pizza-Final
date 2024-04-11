@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { ToppingsPizza } = require('../../models');
-
 //#region /***** CREATE ******/
   //Route to create new topping pizza
   //Post method with endpoint '/api/toppingPizza/createToppingPizza'
@@ -14,7 +13,6 @@ const { ToppingsPizza } = require('../../models');
         priceSlice: req.body.priceSlice,
         priceGlutenFree: req.body.priceGlutenFree
       });
-      
       res.status(201).json(newToppingPizza);
     } 
     catch (error) {
@@ -23,7 +21,6 @@ const { ToppingsPizza } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** READ ******/
   //Route to retrieve all toppings pizza
   //GET method with endpoint '/api/toppingPizza'
@@ -37,7 +34,6 @@ const { ToppingsPizza } = require('../../models');
       res.status(500).json(error);//500 - internal server error
     }
   });
-
   //Route to retrieve a single toppings pizza
   //GET method with endpoint '/api/toppingPizza/:toppingPizzaId'
   router.get('/:toppingPizzaId', async (req, res) => {
@@ -51,7 +47,6 @@ const { ToppingsPizza } = require('../../models');
     }
   });
 //#endregion
-
 //#region /***** UPDATE ******/
   //Route to update a single topping pizza
   //POST method with endpoint '/api/toppingPizza/updateToppingPizza/:toppingPizzaId'
@@ -62,9 +57,7 @@ const { ToppingsPizza } = require('../../models');
           id: req.params.toppingPizzaId
         }
       });
-
       if (!updateToppingPizza[0]) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(updateToppingPizza);
     } 
     catch (error) {
@@ -73,7 +66,6 @@ const { ToppingsPizza } = require('../../models');
     }
   });
 //#endregion
-
 //#region /***** DELETE ******/
   //Route to delete a single topping pizza
   //DELETE method with endpoint '/api/toppingPizza/deleteToppingPizza/:toppingPizzaId'
@@ -84,9 +76,7 @@ const { ToppingsPizza } = require('../../models');
           id: req.params.toppingPizzaId
         }
       });
-
       if (!deleteToppingPizza) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(deleteToppingPizza);
     }
     catch (error) {
@@ -95,5 +85,4 @@ const { ToppingsPizza } = require('../../models');
     };
   });
 //#endregion
-
 module.exports = router;

@@ -26,7 +26,7 @@
     padding: 6px;
   }
 
-  ul {
+  .navbar-top ul {
     color: var(--buonos-green);
   }
 

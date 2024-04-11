@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Employees } = require('../../models');
-
 //#region /***** CREATE ******/
   //Route to create new Employee
   //GET method with endpoint '/api/employee'
@@ -12,13 +11,11 @@ const { Employees } = require('../../models');
         admin: req.body.admin,
         email: req.body.email,
         password: req.body.password
-      });
-      
+      }); 
       req.session.save(() => {
         //Create session variables based on the newly signed up employee
         (req.session.userId = newEmployee.id), 
         (req.session.loggedIn = true);
-
         res.status(201).json(newEmployee);//201 - Created
       });
     } 
@@ -28,7 +25,6 @@ const { Employees } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** READ ******/
   // Route to retireve all Employees
   // GET method with endpoint '/api/employee'
@@ -42,7 +38,6 @@ const { Employees } = require('../../models');
       res.status(500).json(error);//500 - internal server error
     };
   });
-
   // Route to retireve a single Employee
   // GET method with endpoint '/api/customer/:employeeId'
   router.get('/:employeeId', async (req, res) => {
@@ -56,7 +51,6 @@ const { Employees } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** UPDATE ******/
   //Route to update Employee
   //GET method with endpoint '/api/customer/:employeeId'
@@ -67,9 +61,7 @@ const { Employees } = require('../../models');
             id: req.params.employeeId
         },
       });
-
       if (!updatedEmployee[0]) return res.status(202).json({ message: 'No employee found.' });//404 - Not Found
-
       res.status(202).json(updatedEmployee);
     } 
     catch (error) {
@@ -78,7 +70,6 @@ const { Employees } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** DELETE ******/
   //Route to delete Employee
   //GET method with endpoint '/api/employee/:employeeId'
@@ -89,9 +80,7 @@ const { Employees } = require('../../models');
           id: req.params.employeeId
         },
       });
-
       if (!deletedEmployee) return res.status(404).json({ message: 'No employee found!' });//404 - Not Found
-
       res.status(202).json(deletedEmployee);
     } 
     catch (error) {
@@ -100,11 +89,9 @@ const { Employees } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** LOGIN ******/
   //Route to login an existing employee
   //POST method with endpoint '/api/employee/login'
-  //Expects {"email":"ogogin0@vk.com","password":"password"}
   router.post('/login', async (req, res) => {
     try {
       const user = await Employees.findOne({
@@ -112,13 +99,9 @@ const { Employees } = require('../../models');
           email: req.body.email
         }
       });
-
       if (!user) return res.status(400).json({ message: 'The email or password is incorrect.' });
-
       const validPassword = await user.checkPassword(req.body.password);
-
       if (!validPassword) return res.status(400).json({ message: 'The email or password is incorrect.' });
-
       req.session.save(() => {
         req.session.name = user.first_name;
         req.session.userId = user.id;
@@ -134,7 +117,6 @@ const { Employees } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** LOGOUT ******/
   //Route to logout an existing employee
   //POST method with endpoint '/api/employee/logout'
@@ -149,5 +131,4 @@ const { Employees } = require('../../models');
     };
   });
 //#endregion
-
 module.exports = router;

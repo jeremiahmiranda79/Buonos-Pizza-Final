@@ -2,13 +2,8 @@ const router = require('express').Router();
 const { 
   Information 
 } = require('../../models');
-
 /***** CREATE ******/
-
-
-
 /***** READ ******/
-
 // Route to retrieve all Information
 // GET method with endpoint '/api/information'
 router.get('/', async (req, res) => {
@@ -33,9 +28,7 @@ router.get('/:infoId', async (req, res) => {
     res.status(500).json(error);
   }
 });
-
 /***** UPDATE ******/
-
 // Route to update a single information
 // POST method with endpoint '/api/information/updateInformation/:infoId'
 router.put('/updateInformation/:infoId', async (req, res) => {
@@ -45,9 +38,7 @@ router.put('/updateInformation/:infoId', async (req, res) => {
         id: req.params.infoId
       }
     });
-
     if (!updateInfo[0]) return res.status(404).json({ message: 'No information found.' }); // 404 - Not Found
-
     res.status(202).json(updateInfo);
   } 
   catch (error) {
@@ -55,9 +46,7 @@ router.put('/updateInformation/:infoId', async (req, res) => {
     res.status(500).json(error); // 500 - internal server error
   }
 }); 
-
 /***** DELETE ******/
-
 // Route to delete an Informtion
 // DELETE method with endpoint '/api/'information/deleteInformation/:infoId'
 router.delete('/deleteInformation/:infoId', async (req, res) => {
@@ -67,11 +56,7 @@ router.delete('/deleteInformation/:infoId', async (req, res) => {
         id: req.params.infoId
       }
     });
-
-    console.log(deleteInformation);
-
     if (!deleteInformation) return res.status(404).json({ message: 'No information found.' }); // 404 - Not Found
-
     res.status(202).json(deleteInformation);
   }
   catch (error) {
@@ -79,5 +64,4 @@ router.delete('/deleteInformation/:infoId', async (req, res) => {
     res.status(500).json(error); // 500 - internal server error
   };
 });
-
 module.exports = router;

@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { ToppingsColdSub } = require('../../models');
-
 //#region /***** CREATE ******/
   //Route to create new topping cold sub
   //Post method with endpoint '/api/toppingColdSub/createToppingColdSub'
@@ -10,7 +9,6 @@ const { ToppingsColdSub } = require('../../models');
         name: req.body.name,
         price: req.body.price
       });
-      
       res.status(201).json(newToppingColdSub);
     } 
     catch (error) {
@@ -19,7 +17,6 @@ const { ToppingsColdSub } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** READ ******/
   //Route to retrieve all toppings cold sub
   //GET method with endpoint '/api/toppingColdSub'
@@ -33,7 +30,6 @@ const { ToppingsColdSub } = require('../../models');
       res.status(500).json(error);//500 - internal server error
     }
   });
-
 //Route to retrieve a single topping cold sub
 //GET method with endpoint '/api/toppingColdSub/:toppingColdSubId'
   router.get('/:toppingColdSubId', async (req, res) => {
@@ -47,7 +43,6 @@ const { ToppingsColdSub } = require('../../models');
     }
   });
 //#endregion
-
 //#region /***** UPDATE ******/
   //Route to update a single topping cold sub
   //POST method with endpoint '/api/toppingColdSub/updateToppingColdSub/:toppingColdSubId
@@ -58,9 +53,7 @@ const { ToppingsColdSub } = require('../../models');
           id: req.params.toppingColdSubId
         }
       });
-
       if (!updateToppingColdSub[0]) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(updateToppingColdSub);
     } 
     catch (error) {
@@ -69,7 +62,6 @@ const { ToppingsColdSub } = require('../../models');
     }
   });
 //#endregion
-
 //#region /***** DELETE ******/
   //Route to delete a single topping cold sub
   //DELETE method with endpoint '/api/toppingColdSub/deleteToppingColdSub/:toppingColdSubId'
@@ -80,9 +72,7 @@ const { ToppingsColdSub } = require('../../models');
           id: req.params.toppingColdSubId
         }
       });
-
       if (!deleteToppingColdSub) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(deleteToppingColdSub);
     } 
     catch (error) {
@@ -91,5 +81,4 @@ const { ToppingsColdSub } = require('../../models');
     }
   });
 //#endregion
-
 module.exports = router;

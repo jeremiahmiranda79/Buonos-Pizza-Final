@@ -14,7 +14,6 @@
       </center>
     </div>
   </section>
-  
   <section label="information"> 
     {{#each information as |i|}}
       {{#if i.information1_switch}}
@@ -32,7 +31,6 @@
       {{/if}}
     {{/each}} 
   </section>
-
   <section label="google-maps">
     {{#each location as |l|}}
       {{#if l.nameSwitch}}
@@ -41,14 +39,12 @@
             <h1>{{l.name1}}</h1>
           </center>
         </div>
-
         <div class="container-location">
           <div id="googleMap" style="width:100%;height:400px;"></div>
         </div>
       {{/if}}
     {{/each}}
   </section>
-  
   <section label="hours">
     {{#each location as |l|}}
       {{#if l.nameSwitch}}
@@ -59,7 +55,6 @@
         </div>
       {{/if}}
     {{/each}}
-
     <div class="container-location">
       <center>
         <ul>   
@@ -70,7 +65,6 @@
       </center>
     </div>
   </section>
-
   <section label="thank you">
     {{#each location as |l|}}
       {{#if l.nameSwitch}}
@@ -79,7 +73,6 @@
             <h1>{{l.name2}}</h1>
           </center>
         </div>
-
         <div class="container-location">
           <center>
             <h3>{{l.description2}}</h3>
@@ -88,7 +81,7 @@
       {{/if}}
     {{/each}}
   </section>
-
+  
   <section label="social-media">
     <center>
       <ul class="nav flex-row social">
@@ -102,10 +95,6 @@
 </div>
 
 <script>
-
-</script>
-
-{{!-- <script>
   function myMap() {
     var mapProp= {
       center: new google.maps.LatLng(33.30722 ,-111.75850),
@@ -118,4 +107,4 @@
 
 <script 
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu0jYubSfxYv4YY6qS07FaDdR1mBRpoZ0&callback=myMap">
-<script> --}}
+<script>

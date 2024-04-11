@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
-
 class Categories extends Model {};
-
 Categories.init(
   {
     id: {
@@ -18,6 +16,10 @@ Categories.init(
     image: {
       type: DataTypes.STRING,
       allowNull: true
+    },
+    switchy: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
     }
   },
   {
@@ -27,5 +29,4 @@ Categories.init(
     modelName: 'categories'
   }
 );
-
 module.exports = Categories;

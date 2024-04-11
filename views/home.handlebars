@@ -18,7 +18,6 @@
           <a href="/home/update/{{hp.id}}" class="active btn btn-primary">Update {{hp.name}}</a>
         {{/each}}        
       </center>
-
       <center>
         {{#each information as |i|}}
           <a href="/information/update/{{i.id}}" class="active btn btn-primary">Update {{i.name}}</a>
@@ -26,27 +25,23 @@
       </center>
     {{/if}}
   </section>
-
   <section>
     <div class="container-fluid promise" >
-          <center>
-            <div class="video-player">
-              <iframe src="https://www.youtube.com/embed/OEs41ELo6ds?vq=hd1080&autoplay=1&loop=1&mute=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=0&disablekb=1&playlist=OEs41ELo6ds" width="100%" height="100%"  frameborder="0" class="video-player"></iframe>
-              {{!-- <iframe src="https://www.youtube-nocookie.com/embed/-yCUuy-aX80?start=1&end=10&vq=hd1080&autoplay=1&loop=0&modestbranding=1&rel=0&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&playlist=-yCUuy-aX80" width="1000" height="315" title="Authentic NY/NJ Italian PIZZA in AZ!" frameborder="0"></iframe> --}}
-            </div>
-          </center>
-          
-          <center>
-            <h1>{{hp.name1}}</h1>
-            <h5>{{hp.description1}}</h5> 
-          </center>
+      <center>
+        <div class="video-player">
+          <iframe src="https://www.youtube.com/embed/OEs41ELo6ds?vq=hd1080&autoplay=1&loop=1&mute=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=0&disablekb=1&playlist=OEs41ELo6ds" width="100%" height="100%"  frameborder="0" class="video-player"></iframe>
         </div>
+      </center>
+      <center>
+        <h1>{{hp.name1}}</h1>
+        <h5>{{hp.description1}}</h5> 
+      </center>
+    </div>
   </section>
 
   <section label="information"> 
     {{#each information as |i|}}
       {{#if i.information1_switch}}
-      {{!-- <div class="container-fluid promise" > --}}
         <center>
           <h6>{{i.style}}</h6>
           <a href={{i.telNumber}} style="text-decoration:none;">
@@ -58,21 +53,13 @@
           <h5>{{i.email}}</h5>
           <h5>{{i.company}}</h5>
         </center> 
-      {{!-- </div> --}}
       {{/if}}
     {{/each}} 
   </section>
-
   <section label="promise">
     {{#each homePage as |hp|}}
       {{#if hp.name1Switch}}
         <div class="container-fluid promise" >
-          {{!-- <center>
-            <div class="video-player">
-              <iframe src="https://www.youtube.com/embed/OEs41ELo6ds?vq=hd1080&autoplay=1&loop=1&mute=1&modestbranding=1&rel=0&iv_load_policy=3&fs=0&controls=0&disablekb=1&playlist=OEs41ELo6ds" width="100%" height="100%"  frameborder="0" class="video-player"></iframe>
-            </div>
-          </center> --}}
-          
           <center>
             <h1>{{hp.name1}}</h1>
             <h5>{{hp.description1}}</h5> 
@@ -81,14 +68,11 @@
       {{/if}}
     {{/each}}
   </section>
-  
-  
-  
   <section label="promise-carousel">
     {{#each homePage as |hp|}}
       {{#if hp.name1Switch}}
         <center>
-          <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div id="home-page-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner promise">
               <div class="carousel-item active">
                 <img src="/images/home-buonos-place.jpg" alt="" class="d-block" id="buonos">
@@ -111,7 +95,6 @@
             </div>  
           </div>
         </center>
-
         <div class="flex-box">
           <center>
             <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
@@ -120,7 +103,6 @@
       {{/if}}
     {{/each}}
   </section>
-  
   <section label="specialties">
     {{#each homePage as |hp|}}
       {{#if hp.name2Switch}}
@@ -137,7 +119,6 @@
                 <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="2"></button>
                 <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="3"></button>
               </div>
-
               <div class="carousel-inner specialty">
                 <div class="carousel-item active">
                   <img src="/images/specialties-pizza-togo.jpg" alt="s1" class="d-block" id="buonos">
@@ -145,21 +126,18 @@
                     <p>Neopolotian thin crust</p>
                   </div>
                 </div>
-
                 <div class="carousel-item">
                   <img src="/images/specialties-sicillian-pizza.jpg" alt="s2" class="d-block" id="buonos">
                   <div class="carousel-caption">
                     <p>Sicillian deep dish</p>
                   </div> 
                 </div>
-
                 <div class="carousel-item">
                   <img src="/images/specialties-calzone-2.jpg" alt="s1" class="d-block" id="buonos">
                   <div class="carousel-caption">
                     <p>Calzone</p>
                   </div>
                 </div>
-
                 <div class="carousel-item">
                   <img src="/images/specialties-stromboli-1.jpg" alt="s2" class="d-block" id="buonos">
                   <div class="carousel-caption">
@@ -178,7 +156,6 @@
       {{/if}}
     {{/each}}
   </section>
-
   <section label="loyalty">
     {{#each homePage as |hp|}}
       {{#if hp.name3_1Switch}}
@@ -192,15 +169,13 @@
           </center>
         </div>
       {{/if}}
-
       {{#if hp.name3_2Switch}}
         <center>
-          <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div id="home-page-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner loyalty">
               <div class="carousel-item active">
                 <img src="/images/magnet-1.jpg" alt="" class="d-block" id="">
               </div>
-
               <div class="carousel-item active">
                 <img src="/images/magnet-full-2.jpg" alt="" class="d-block" id="">
               </div>
@@ -208,7 +183,6 @@
           </div>
         </center>
       {{/if}}
-      
       {{#if hp.name3_2Switch}}
         <div class="flex-box">
           <center>
@@ -218,7 +192,6 @@
       {{/if}}
     {{/each}}
   </section>
-
   <section label="takeout-dinein">
     <div class="container-fluid takeout-dinein">
       <center>
@@ -231,7 +204,6 @@
       </center>
     </div>
   </section>
-
   <section label="delivery">
     <div class="container-fluid delivery">
       <center>
@@ -245,20 +217,17 @@
                   <img src="/images/slice-logo-600x200.jpg" class="btn-delivery-main"></img>
                 </a>
               {{/if}}
-
               <ul class="nav flex-row delivery">
                 {{#if hp.doordash_switch}}
                   <a href="https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/">
                     <img src="/images/delivery-doordash-icon.jpg" class="btn-delivery"></img>
                   </a>
                 {{/if}}
-
                 {{#if hp.ubereats_switch}}
                   <a href="https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg">
                     <img src="/images/delivery-uber-eats.jpg" class="btn-delivery"></img>
                   </a>
                 {{/if}}
-
                 {{#if hp.grubhub_switch}}
                   <a href="https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436">
                     <img src="/images/delivery-grubhub.jpg" class="btn-delivery"></img>
@@ -267,19 +236,15 @@
               </ul>
             </center>
           {{/if}}
-
           {{#if name5_2Switch}}
             <p>{{description5_2}}</p>
           {{/if}}
-
           {{#if name5_3Switch}}
             <h4>{{description5_3}}</h4>
           {{/if}}
-
           {{#if hp.name5_4Switch}}
             <p>{{hp.description5_4}}</p> 
           {{/if}}
-
           {{#if hp.name5_5Switch}}
             <p>{{hp.description5_5}}</p>
           {{/if}}
@@ -287,7 +252,6 @@
       </center>
     </div>
   </section>
-
   <section label="footer">
     <div class="container main-footer">
       <center>
@@ -301,7 +265,3 @@
     </div>
   </section>
 </section>
-
-<br><br><br><br><br><br><br><br><br>
-
-<br><br><br><br><br><br><br><br>

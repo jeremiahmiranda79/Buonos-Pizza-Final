@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { ToppingsHotSub } = require('../../models');
-
 //#region /***** CREATE ******/
   //Route to create new topping hot sub
   //Post method with endpoint '/api/toppingHotSub/createToppingHotSub'
@@ -9,8 +8,7 @@ const { ToppingsHotSub } = require('../../models');
       const newToppingHotSub = await ToppingsHotSub.create({
         name: req.body.name,
         price: req.body.price
-      });
-      
+      }); 
       res.status(201).json(newToppingHotSub);
     } 
     catch (error) {
@@ -19,7 +17,6 @@ const { ToppingsHotSub } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** READ ******/
   //Route to retrieve all toppings hot sub
   //GET method with endpoint '/api/toppingHotSub'
@@ -33,7 +30,6 @@ const { ToppingsHotSub } = require('../../models');
       res.status(500).json(error);//500 - internal server error
     }
   });
-  
   //Route to retrieve a single topping hot sub
   //GET method with endpoint '/api/toppingHotSub/:toppingHotSubId'
   router.get('/:toppingHotSubId', async (req, res) => {
@@ -47,7 +43,6 @@ const { ToppingsHotSub } = require('../../models');
     }
   });
 //#endregion
-
 //#region /***** UPDATE ******/
   //Route to update a single topping hot sub
   //POST method with endpoint '/api/toppingHotSub/updateToppingHotSub/:toppingHotSubId
@@ -58,9 +53,7 @@ const { ToppingsHotSub } = require('../../models');
           id: req.params.toppingHotSubId
         }
       });
-
       if (!updateToppingHotSub[0]) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(updateToppingHotSub);
     } 
     catch (error) {
@@ -69,7 +62,6 @@ const { ToppingsHotSub } = require('../../models');
     }
   });
 //#endregion
-
 //#region /***** DELETE ******/
   //Route to delete a single topping hot sub
   //DELETE method with endpoint '/api/toppingHotSub/deleteToppingHotSub/:toppingHotSubId'
@@ -80,9 +72,7 @@ const { ToppingsHotSub } = require('../../models');
           id: req.params.toppingHotSubId
         }
       });
-
       if (!deleteToppingHotSub) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(deleteToppingHotSub);
     } 
     catch (error) {
@@ -91,5 +81,4 @@ const { ToppingsHotSub } = require('../../models');
     }
   });
 //#endregion
-
 module.exports = router;

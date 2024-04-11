@@ -3,6 +3,7 @@
     "categoryId": 1,
     "name": "Napolitana", 
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$15.49",
@@ -35,6 +36,7 @@
     "categoryId": 1,
     "name": "Bianca",
     "description": "Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$16.99",
@@ -67,6 +69,7 @@
     "categoryId": 1,
     "name": "Siciliana",
     "description": "Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Small, 8 cut",
     "price1": "$16.99",
@@ -102,6 +105,7 @@
     "categoryId": 2,
     "name": "Napolitana Slice",
     "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "1/8th slice of a 20 inch pie",
     "price1": "$2.99",
@@ -134,6 +138,7 @@
     "categoryId": 2,
     "name": "Bianca Slice",
     "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "1/8th slice of a 20 inch pie",
     "price1": "$3.49",
@@ -166,6 +171,7 @@
     "categoryId": 2,
     "name": "Siciliana Slice",
     "description": "Single slice of a 20 inch Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro(tomato) sauce, mozzarella, oregano, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "1/8th slice of a 20 inch pie",
     "price1": "$3.49",
@@ -201,6 +207,7 @@
     "categoryId": 3,
     "name": "Grandma Pie",
     "description": "Long Island-style; a rustic rectangular pan pizza crust, topped with mozzarella fresca, mozzarella, garlic, & stone deck oven baked. Finished with a fresh pomodoro(tomato) sauce, basil puree, & parmesan",
+    "switchy": true,
 
     "size1": "Small, 8 cut",
     "price1": "$18.99",
@@ -233,6 +240,7 @@
     "categoryId": 3,
     "name": "Margherita Buono",
     "description": "Neapolitan-style; a thin, round crust, topped with mozzarella fresca, olive oil, & stone deck oven baked. Finished with a fresh pomodoro(tomato) sauce, & basil puree",
+    "switchy": true,
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$16.49",
@@ -265,6 +273,7 @@
     "categoryId": 3,
     "name": "Meat Lover",
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, pepperoni, sausage, meatballs, bacon, mozzarella, oregano, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$23.99",
@@ -297,6 +306,7 @@
     "categoryId": 3,
     "name": "Vegetarian",
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$23.99",
@@ -329,6 +339,7 @@
     "categoryId": 3,
     "name": "Works",
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, pepperoni, sausage, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$26.99",
@@ -361,6 +372,7 @@
     "categoryId": 3,
     "name": "Baked Ziti",
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro(tomato) sauce, ricotta, ziti pasta, mozzarella, oregano, & stone deck oven baked",
+    "switchy": true,
 
     "size1": null,
     "price1": null,
@@ -396,6 +408,7 @@
     "categoryId": 4,
     "name": "Gluten Free",
     "description": "Gluten free-style; a thin, round 12 inch pizza crust that is a combination of gluten free flours & starches like rice flour, almond flour, potato starch, & tapioca starch",
+    "switchy": true,
 
     "size1": "Small 12 inch, 6 cut",
     "price1": "$13.49",
@@ -428,6 +441,7 @@
     "categoryId": 4,
     "name": "Cauliflower",
     "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, low-carb & keto pizza recipe. It's a simple blend of cauliflower, eggs, cheese, & a few spices that's flattened & baked into a golden crust",
+    "switchy": true,
 
     "size1": "Small 10 inch, 4 cut",
     "price1": "$13.49",
@@ -463,6 +477,7 @@
     "categoryId": 5,
     "name": "Calzone",
     "description": "Neapolitan-style; an Italian turnover made with leavened dough & folded. Stuffed with mozzarella, ricotta, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Small, serves one",
     "price1": "$9.99",
@@ -498,6 +513,7 @@
     "categoryId": 6,
     "name": "Salami, Capocollo, Soppressata, & Provolone",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with salami, capocollo, soppressata, provolone. & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -530,6 +546,7 @@
     "categoryId": 6,
     "name": "Sausage, Onion, & Pepper",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with sausage, onions, green bell peppers, mozzarella, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -562,6 +579,7 @@
     "categoryId": 6,
     "name": "Meatball & Mozzarella",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, marinara, mozzarella, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Large, serves one-two",
     "price1": "$13.99",
@@ -594,6 +612,7 @@
     "categoryId": 6,
     "name": "Eggplant & Mozzarella",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded eggplant cutlets, marinara, mozzarella, & stone deck oven baked.",
+    "switchy": true,
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -626,6 +645,7 @@
     "categoryId": 6,
     "name": "Chicken & Mozzarella",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded chicken cutlets, marinara, mozzarella, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -658,6 +678,7 @@
     "categoryId": 6,
     "name": "Meatballs, Sausage, Pepperoni, & Mozzarella",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, sausage, pepperoni, marinara, mozzarella, & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -693,6 +714,7 @@
     "categoryId": 7,
     "name": "Sausage Roll",
     "description": "NYC-style; a blend of sausage, onions, green bell peppers, & mozzarella. Rolled in a light pizza dough. Brushed with garlic herb butter & stone deck oven baked",
+    "switchy": true,
 
     "size1": "Small, serves one",
     "price1": "$8.99",
@@ -728,6 +750,7 @@
     "categoryId": 8,
     "name": "Garlic Bread",
     "description": "An Italian baguette brushed with garlic herb butter & lightly toasted",
+    "switchy": true,
 
     "size1": null,
     "price1": "$3.99",
@@ -760,6 +783,7 @@
     "categoryId": 8,
     "name": "Sicilian Garlic Bread",
     "description": "An Italian baguette brushed with garlic herb butter, topped with mozzarella, & lightly toasted",
+    "switchy": true,
 
     "size1": null,
     "price1": "$4.99",
@@ -792,6 +816,7 @@
     "categoryId": 8,
     "name": "Meatballs & Ricotta",
     "description": "Twin jumbo meatballs accompanied by marinara sauce, ricotta & parmesan",
+    "switchy": true,
 
     "size1": "Two piece",
     "price1": "$6.99",
@@ -824,6 +849,7 @@
     "categoryId": 8,
     "name": "Meatball Sliders",
     "description": "Five crostini's topped with our meatballs, marinara sauce, oregenao, & mozzarella",
+    "switchy": true,
 
     "size1": "Five piece",
     "price1": "$6.99",
@@ -856,6 +882,7 @@
     "categoryId": 8,
     "name": "Fries",
     "description": "Tossed with salt, black pepper, garlic seasoning, oregano, & parsley",
+    "switchy": true,
 
     "size1": null,
     "price1": "$3.99",
@@ -888,6 +915,7 @@
     "categoryId": 8,
     "name": "Pepperoni Pizza Fries",
     "description": "Bounos-style; seasoned french fries baked with pepperoni, mozzarella, oregano, & finished with marinara sauce",
+    "switchy": true,
 
     "size": null,
     "price1": "$8.99",
@@ -920,6 +948,7 @@
     "categoryId": 8,
     "name": "NJ Style Disco Fries",
     "description": "New Jersey diner-style; seasoned french fries baked with mozzarella, topped with a classic brown chicken gravy, & parsley",
+    "switchy": true,
 
     "size1": null,
     "price1": "$8.99",
@@ -952,6 +981,7 @@
     "categoryId": 8,
     "name": "Fried Mushrooms",
     "description": "Cremini mushrooms, coated in a light & crispy seasoned batter, then deep fried to golden brown perfection. Served with buttermilk ranch",
+    "switchy": true,
 
     "size1": null,
     "price1": "$8.99",
@@ -984,6 +1014,7 @@
     "categoryId": 8,
     "name": "Fried Zucchini",
     "description": "Fresh zucchini sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with buttermilk ranch",
+    "switchy": true,
     
     "size1": null,
     "price1": "$8.99",
@@ -1016,6 +1047,7 @@
     "categoryId": 8,
     "name": "Fried Mozzarella Sticks",
     "description": "Six mozzarella sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce",
+    "switchy": true,
 
     "size1": "Six piece",
     "price1": "$8.99",
@@ -1048,6 +1080,7 @@
     "categoryId": 8,
     "name": "Fried Ravioli",
     "description": "Six ricotta stuffed ravioli, lightly Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce",
+    "switchy": true,
 
     "size1": "Six piece",
     "price1": "$8.99",
@@ -1080,6 +1113,7 @@
     "categoryId": 8,
     "name": "Traditional Chicken Wings",
     "description": "Bone-in fried chicken wings tossed in your choice of sauce. Served with celery sticks, & choice of dressing",
+    "switchy": true,
 
     "size1": "Six piece",
     "price1": "$7.75",
@@ -1112,6 +1146,7 @@
     "categoryId": 8,
     "name": "Boneless Chicken Wings",
     "description": "Boneless fried chicken pieces tossed in your choice of sauce. Served with celery sticks, & choice of dressing",
+    "switchy": true,
 
     "size1": "Six piece",
     "price1": "$7.25",
@@ -1147,6 +1182,7 @@
     "categoryId": 9,
     "name": "Caesar Salad",
     "description": "Romaine lettuce, Italian style croutons, caesar dressing, & parmesan",
+    "switchy": true,
 
     "size1": "Small, serves one-two",
     "price1": "$5.25",
@@ -1179,6 +1215,7 @@
     "categoryId": 9,
     "name": "House Salad",
     "description": "Romaine lettuce, tomatoes, onions, black olives, oregano, parmesan, & choice of dressing",
+    "switchy": true,
 
     "size1": "Small, serves one-two",
     "price1": "$5.25",
@@ -1211,6 +1248,7 @@
     "categoryId": 9,
     "name": "Chef Salad",
     "description": "Romaine lettuce, tomatoes, onions, black olives, banana peppers, provolone, deli ham, oregano, parmesan, & choice of dressing",
+    "switchy": true,
 
     "size1": "Large, serves two-three",
     "price1": "$11.99",
@@ -1243,6 +1281,7 @@
     "categoryId": 9,
     "name": "Chicken Cutlet Salad",
     "description": "Romaine lettuce, tomatoes, onions, black olives, bananas peppers, sliced chicken cutlets, oregano, parmesan, & choice of dressing",
+    "switchy": true,
 
     "size1": "Large, serves two-three",
     "price1": "$11.99",
@@ -1275,6 +1314,7 @@
     "categoryId": 9,
     "name": "Antipasto",
     "description": "Romaine lettuce, tomatoes, onions, black olives, mild giardiniera, provolone, salami, cappocolo, oregano, parmesan, & choice of dressing",
+    "switchy": true,
 
     "size1": "Large, serves two-three",
     "price1": "$11.99",
@@ -1307,6 +1347,7 @@
     "categoryId": 9,
     "name": "Caprese",
     "description": "Mozzarella fresca, vine-ripened tomatoes, olive oil, balsamic fig glaze, basil puree, salt, & pepper",
+    "switchy": true,
 
     "size1": "Large, serves two-three",
     "price1": "$8.49",
@@ -1342,6 +1383,7 @@
     "categoryId": 10,
     "name": "Chicken Parmesan",
     "description": "Breaded chicken cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette",
+    "switchy": true,
 
     "size1": "Dinner portion for one",
     "price1": "$18.99",
@@ -1374,6 +1416,7 @@
     "categoryId": 10,
     "name": "Eggplant Parmesan",
     "description": "Breaded eggplant cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette",
+    "switchy": true,
 
     "size1": "Dinner portion for one",
     "price1": "$18.99",
@@ -1406,6 +1449,7 @@
     "categoryId": 10,
     "name": "Lasagna Bolognese",
     "description": "A baked six layer Neapolitan style lasagna stacked with bechamel, ground beef, marinara, ricotta, mozzarella, & parmesan. Served with a small house salad, & small Italian baguette",
+    "switchy": true,
 
     "size1": "Dinner portion for one",
     "price1": "$16.99",
@@ -1438,6 +1482,7 @@
     "categoryId": 10,
     "name": "Ravioli Grande",
     "description": "Six jumbo ricotta stuffed ravioli topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "switchy": true,
 
     "size1": "Dinner portion for one",
     "price1": "$16.99",
@@ -1470,6 +1515,7 @@
     "categoryId": 10,
     "name": "Pasta & Marinara Sauce",
     "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "switchy": true,
 
     "size1": "Dinner portion for one",
     "price1": "$9.49",
@@ -1502,6 +1548,7 @@
     "categoryId": 10,
     "name": "Pasta & Meat Sauce",
     "description": "Choice of pasta topped with meat sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "switchy": true,
 
     "size1": "Dinner portion for one",
     "price1": "$14.99",
@@ -1534,6 +1581,7 @@
     "categoryId": 10,
     "name": "Pasta & Meatballs ",
     "description": "Choice of pasta topped with marinara sauce, two jumbo meatballs, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "switchy": true,
 
     "size1": "Dinner portion for one",
     "price1": "$14.99",
@@ -1566,6 +1614,7 @@
     "categoryId": 10,
     "name": "Pasta & Saugage",
     "description": "Choice of pasta topped with marinara sauce, two sausage links,parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "switchy": true,
 
     "size1": "Dinner portion for one",
     "price1": "$14.99",
@@ -1601,6 +1650,7 @@
     "categoryId": 11,
     "name": "Meatball Parmesan",
     "description": "Foot long Italian baguette stuffed with meatballs, marinara sauce, mozzarella, oregano, & lightly toasted",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$9.99",
@@ -1633,6 +1683,7 @@
     "categoryId": 11,
     "name": "Sausage Parmesan",
     "description": "Foot long Italian baguette stuffed with suasage links, marinara sauce, mozzarella, oregano, & lightly toasted",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$9.99",
@@ -1665,6 +1716,7 @@
     "categoryId": 11,
     "name": "Chicken Parmesan",
     "description": "Foot long Italian baguette stuffed with breaded chicken cutlets, marinara sauce, mozzarella, oregano, & lightly toasted",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$10.99",
@@ -1697,6 +1749,7 @@
     "categoryId": 11,
     "name": "Eggplant Parmesan",
     "description": "Foot long Italian baguette stuffed with breaded eggplant cutlets, marinara sauce, mozzarella, oregano, & lightly toasted",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$10.99",
@@ -1729,6 +1782,7 @@
     "categoryId": 11,
     "name": "Pepperoni Melt",
     "description": "Foot long Italian baguette stuffed with pepperoni, marinara, mozzarella, oregano, & lightly toasted",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$9.99",
@@ -1761,6 +1815,7 @@
     "categoryId": 11,
     "name": "Sausage, Onions, Peppers",
     "description": "Foot long Italian baguette stuffed with sauteed sausage, onions, peppers, oregano, & lightly toasted",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$9.99",
@@ -1793,6 +1848,7 @@
     "categoryId": 11,
     "name": "Philly Steak",
     "description": "Foot long Italian baguette stuffed with sauteed shaved steak, onions, & white wine. Topped with choice of melted cheese, & lightly toasted",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$10.99",
@@ -1825,6 +1881,7 @@
     "categoryId": 11,
     "name": "Philly Chicken",
     "description": "Foot long Italian baguette stuffed with sauteed shaved chicken breast, onions, & white wine. Topped with choice of melted cheese, & lightly toasted",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$10.99",
@@ -1860,6 +1917,7 @@
     "categoryId": 12,
     "name": "Italian Deli Mix",
     "description": "Foot long Italian baguette layered with salami, capocollo, soppressata, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$9.99",
@@ -1892,6 +1950,7 @@
     "categoryId": 12,
     "name": "Ham & Provolone",
     "description": "Foot long Italian baguette layered with deli ham, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$8.99",
@@ -1924,6 +1983,7 @@
     "categoryId": 12,
     "name": "Salami & Provolone",
     "description": "Foot long Italian baguette layered with salami, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$8.99",
@@ -1956,6 +2016,7 @@
     "categoryId": 12,
     "name": "Capocollo & Provolone",
     "description": "Foot long Italian baguette layered with capocollo, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$8.99",
@@ -1988,6 +2049,7 @@
     "categoryId": 12,
     "name": "Pepperoni & Provolone",
     "description": "Foot long Italian baguette layered with pepperoni, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "switchy": true,
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$8.99",
@@ -2023,6 +2085,7 @@
     "categoryId": 13,
     "name": "Side of Pasta",
     "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs",
+    "switchy": true,
 
     "size1": "Side portion",
     "price1": "$4.99",
@@ -2055,6 +2118,7 @@
     "categoryId": 13,
     "name": "Side of Pasta & Meatball",
     "description": "Choice of pasta topped with marinara sauce, one jumbo meatball, parmesan, & Italian herbs",
+    "switchy": true,
 
     "size1": "Side portion",
     "price1": "$6.99",
@@ -2087,6 +2151,7 @@
     "categoryId": 13,
     "name": "Side of Pasta & Sausage",
     "description": "Choice of pasta topped with marinara sauce, one sausage link, parmesan, & Italian herbs",
+    "switchy": true,
 
     "size1": "Side portion",
     "price1": "$6.99",
@@ -2119,6 +2184,7 @@
     "categoryId": 13,
     "name": "Side of Meatballs",
     "description": "Twin jumbo meatballs topped with marinara sauce, parmesan, & Italian herbs",
+    "switchy": true,
 
     "size1": "Two jumbo meatballs",
     "price1": "$4.99",
@@ -2151,6 +2217,7 @@
     "categoryId": 13,
     "name": "Side of Sausage",
     "description": "Twin sweet Italian sausage links topped with marinara sauce, parmesan, & Italian herbs",
+    "switchy": true,
 
     "size1": "Two links",
     "price1": "$4.99",
@@ -2183,6 +2250,7 @@
     "categoryId": 13,
     "name": "Garlic Bread",
     "description": "An Italian baguette brushed with garlic herb butter & lightly toasted",
+    "switchy": true,
 
     "size1": "12 inch baguette",
     "price1": "$3.99",
@@ -2215,6 +2283,7 @@
     "categoryId": 13,
     "name": "Fries",
     "description": "Tossed with salt, black pepper, garlic seasoning, oregano, & parsley",
+    "switchy": true,
 
     "size1": "Side of fries",
     "price1": "$3.99",
@@ -2250,6 +2319,7 @@
     "categoryId": 14,
     "name": "Italian Ice",
     "description": "Refreshing icy textured treat that is dairy-free, gluten-free, cholesterol-free, and fat-free",
+    "switchy": true,
 
     "size1": "5 Ounce",
     "price1": "$1.50",
@@ -2282,6 +2352,7 @@
     "categoryId": 14,
     "name": "Black & White Cookie",
     "description": "Queens NYC-style; a round cookies frosted in two colors, with one half vanilla & the other chocolate",
+    "switchy": true,
 
     "size1": "Single jumbo cookie",
     "price1": "$3.75",
@@ -2314,6 +2385,7 @@
     "categoryId": 14,
     "name": "Crumb Cake",
     "description": "Queens NYC-style; a cake made of yeast dough covered with a sweet crumb topping referred to as streusel",
+    "switchy": true,
 
     "size1": "Single slice",
     "price1": "$4.50",
@@ -2346,6 +2418,7 @@
     "categoryId": 14,
     "name": "Cannoli Grande",
     "description": "Sicilian-style; a tube-shaped shell of fried pastry dough, filled with a sweet, creamy filling containing ricotta, mini chocolate chips, & topped with crushed pistachios",
+    "switchy": true,
 
     "size1": "Single jumbo tube",
     "price1": "$5.49",
@@ -2378,6 +2451,7 @@
     "categoryId": 14,
     "name": "Tiramisu",
     "description": "A coffee-flavoured Italian dessert made of ladyfingers (savoiardi) dipped in coffee, layered with a whipped mascarpone, & flavoured with cocoa",
+    "switchy": true,
 
     "size1": "Single slice",
     "price1": "$6.49",
@@ -2410,6 +2484,7 @@
     "categoryId": 14,
     "name": "Cheese Cake",
     "description": "NYC-style; a dense and rich cheese cake baked in a graham cracker crust with sweet cream cheese vanilla filling",
+    "switchy": true,
 
     "size1": "Single slice",
     "price1": "$6.49",
@@ -2442,6 +2517,7 @@
     "categoryId": 14,
     "name": "Limoncello Cake",
     "description": "Fluffy sponge cake layers, brushed with a limoncello syrup, filled with a thin layer of lemon curd and frosted with a decadent mascarpone and cream cheese frosting",
+    "switchy": true,
 
     "size1": "Single slice",
     "price1": "$6.49",
@@ -2474,6 +2550,7 @@
     "categoryId": 14,
     "name": "Chocolate Mousse Cake",
     "description": "Rich layers of dark, milk and white chocolate come together perfectly in this no-bake cake. A chocolate cookie-crumb crust adds a satisfying crunch to the silky, smooth mousse",
+    "switchy": true,
 
     "size1": "Single slice",
     "price1": "$6.99",
@@ -2506,6 +2583,7 @@
     "categoryId": 14,
     "name": "Zeppolis",
     "description": "Italian-style; deep-fried dough fritters & topped with powdered sugar",
+    "switchy": true,
 
     "size1": "A baker's dozen",
     "price1": "$6.49",
@@ -2538,53 +2616,63 @@
 
 
   {
+    "categoryId": 15,
     "name": "Fountain Drink",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   },
   {
+    "categoryId": 15,
     "name": "San Pellegrino",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   },
   {
+    "categoryId": 15,
     "name": "Dr Browns Soda",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   },
   {
+    "categoryId": 15,
     "name": "Bottled Soda",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   },
   {
+    "categoryId": 15,
     "name": "Domestic Beer",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   },
   {
+    "categoryId": 15,
     "name": "Imported Beer",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   },
   {
+    "categoryId": 15,
     "name": "House Red Wine",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   },
   {
+    "categoryId": 15,
     "name": "Premium Red Wine",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   },
   {
+    "categoryId": 15,
     "name": "House White Wine",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   },
   {
+    "categoryId": 15,
     "name": "Premium White Wine",
     "description": "",
-    "categoryId": 15
+    "switchy": true
   }
 ]

@@ -1,8 +1,6 @@
 const { Model, DataTypes, FLOAT } = require('sequelize');
 const connection = require('../config/connection');
-
 class ToppingsDesert extends Model {};
-
 ToppingsDesert.init(
   {
     id: {
@@ -15,7 +13,6 @@ ToppingsDesert.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-
     price: {
       type: DataTypes.FLOAT,
       allowNull: false
@@ -28,5 +25,4 @@ ToppingsDesert.init(
     modelName: 'toppingsDesert'
   }
 );
-
 module.exports = ToppingsDesert;

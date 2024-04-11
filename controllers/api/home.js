@@ -2,11 +2,8 @@ const router = require('express').Router();
 const {
   HomePage
 } = require('../../models');
-
 /***** CREATE ******/
-
 /***** READ ******/
-
 // Route to retrieve all HomePage
 // GET method with endpoint '/api/home'
 router.get('/', async (req, res) => {
@@ -31,9 +28,7 @@ router.get('/:homeId', async (req, res) => {
     res.status(500).json(error);
   }
 });
-
 /***** UPDATE ******/
-
 // Router to update single home page
 // POST method with endpoint '/api/home/updateHomePage/:homeId'
 router.put('/updateHome/:homeId', async (req, res) => {
@@ -43,9 +38,7 @@ router.put('/updateHome/:homeId', async (req, res) => {
         id: req.params.homeId
       }
     });
-
     if (!updateHomePage[0]) return res.status(404).json({ message: 'No Home Page found' }); // 404 - Not Found
-
     res.status(202).json(updateHomePage);
   }
   catch (error) {
@@ -53,7 +46,5 @@ router.put('/updateHome/:homeId', async (req, res) => {
     res.status(500).json(error); // 500 - internal server error
   }
 });
-
 /***** DELETE ******/
-
 module.exports = router;

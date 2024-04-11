@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { SaucePasta } = require('../../models');
-
 //#region /***** CREATE ******/
   //Route to create new sauce pasta
   //Post method with endpoint '/api/saucePasta/createSaucePasta'
@@ -11,7 +10,6 @@ const { SaucePasta } = require('../../models');
         price3oz: req.body.price3oz,
         price16oz: req.body.price16oz
       });
-      
       res.status(201).json(newSaucePasta);
     } 
     catch (error) {
@@ -20,7 +18,6 @@ const { SaucePasta } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** READ ******/
   // Route to retireve all sauce pasta
   // GET method with endpoint '/api/saucePasta'
@@ -34,7 +31,6 @@ const { SaucePasta } = require('../../models');
       res.status(500).json(error);//500 - internal server error
     };
   });
-
   // Route to retireve a single sauce pasta
   // GET method with endpoint '/api/saucePasta/:saucePastaId'
   router.get('/:saucePastaId', async (req, res) => {
@@ -48,7 +44,6 @@ const { SaucePasta } = require('../../models');
     };
   });
 //#endregion
-
 //#region /***** UPDATE ******/
   //Route to update a single sauce pasta
   //POST method with endpoint '/api/saucePasta/updateSaucePasta/:saucePastaId'
@@ -59,9 +54,7 @@ const { SaucePasta } = require('../../models');
           id: req.params.saucePastaId
         }
       });
-
       if (!updateSaucePasta[0]) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(updateSaucePasta);
     } 
     catch (error) {
@@ -70,7 +63,6 @@ const { SaucePasta } = require('../../models');
     }
   });
 //#endregion
-
 //#region /***** DELETE ******/
   //Route to delete a single sauce pasta
   //DELETE method with endpoint '/api/saucePasta/deleteSaucePasta/:saucePastaId'
@@ -81,9 +73,7 @@ const { SaucePasta } = require('../../models');
           id: req.params.saucePastaId
         }
       });
-
       if (!deleteSaucePasta) return res.status(404).json({ message: 'Not found!' });//404 - Not Found
-
       res.status(202).json(deleteSaucePasta);
     }
     catch (error) {
@@ -92,5 +82,4 @@ const { SaucePasta } = require('../../models');
     };
   });
 //#endregion
-
 module.exports = router;

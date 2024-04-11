@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
-
 class SauceWing extends Model {};
-
 SauceWing.init(
   {
     id: {
@@ -15,7 +13,6 @@ SauceWing.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-
     price3oz: {
       type: DataTypes.FLOAT,
       allowNull: false
@@ -32,5 +29,4 @@ SauceWing.init(
     modelName: 'sauceWing'
   }
 );
-
 module.exports = SauceWing;

@@ -1,7 +1,6 @@
 const {Model, DataTypes} = require('sequelize');
 const connection = require('../config/connection');
 const bcrypt = require('bcrypt');
-
 // Employees, with an Admin boolean for added permissions
 // We hash the password upon creating and updating the Employee
 class Employees extends Model {
@@ -9,7 +8,6 @@ class Employees extends Model {
 		return bcrypt.compareSync(loginPW, this.password);
 	};
 };
-
 Employees.init(
 	{
 		id: {
@@ -66,5 +64,4 @@ Employees.init(
 		modelName: 'employees'
 	}
 );
-
 module.exports = Employees;

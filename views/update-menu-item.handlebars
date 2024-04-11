@@ -17,6 +17,23 @@
           <h2 class="py-3">Update ({{item.name}}) item</h2>
           <div class="forms">
             <!--#region main  -->
+              <label>
+              <b style="color:#FF0000";>Please select or de-select to switch on or off!</b>
+            </label>
+            <br>
+
+            <input 
+              type="checkbox"
+              id="switchy" 
+              value="{{item.switchy}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>{{item.name}}</b>
+            </label>
+
+            <br><br>
+
               <label 
                 for="menu-item-name" 
                 class="form-label"
@@ -278,12 +295,12 @@
                 name="categories" 
                 class="form-select"
               >
-                {{!-- <option value="{{cat.id}}" selected>
+                <option value="{{item.categoryId}}" selected>
                   Current ({{item.categoryId}})
-                </option> --}}
+                </option>
                 {{#each cats as |cat|}}
                   <option value="{{cat.id}}" 
-                  id="categoryId"
+                  {{!-- id="categoryId" --}}
                   >
                     {{cat.name}}
                   </option>

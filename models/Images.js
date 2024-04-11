@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
-
 class Images extends Model {};
-
 Images.init(
   {
     id: {
@@ -31,5 +29,4 @@ Images.init(
     modelName: 'images'
   }
 );
-
 module.exports = Images;

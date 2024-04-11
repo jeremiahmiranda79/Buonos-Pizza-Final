@@ -1,27 +1,53 @@
 <head>
-  <link rel="stylesheet" href="/css/scrollableTabs.css">
+  {{!-- <link rel="stylesheet" href="/css/scrollableTabs.css"> --}}
+  <link rel="stylesheet" href="/css/scrollableTabs2.css">
   <link rel="stylesheet" href="/css/menu.css">
   <link rel="stylesheet" href="/css/updateInformation.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 
-<div class="scrollable-tabs-container"> 
-  <div class="left-arrow">
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      fill="none" 
-      viewBox="0 0 24 24" 
-      stroke-width="1.5" 
-      stroke="currentColor" 
-      class="w-6 h-6">
-        <path 
-          stroke-linecap="round" 
-          stroke-linejoin="round" 
-          d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
-        />
-    </svg>
-  </div>
-  <ul>
-    <div class="left-arrow" >
+<!--#region scrollable tabs  -->
+  {{!-- <div class="scrollable-tabs-container"> 
+    <div class="left-arrow">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke-width="1.5" 
+        stroke="currentColor" 
+        class="w-6 h-6">
+          <path 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+          />
+      </svg>
+    </div>
+    <ul>
+      <div class="left-arrow" >
+        <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          fill="none" 
+          viewBox="0 0 24 24" 
+          stroke-width="1.5" 
+          stroke="currentColor" 
+          class="w-6 h-6"
+        >
+          <path 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+          />
+        </svg>
+      </div>
+      <li><a href="#" class="active">All</a></li>
+      {{#each items as |c|}}
+        {{#if c.switchy}}
+          <li><a href="#{{c.id}}">{{c.name}}</a></li>
+        {{/if}}
+      {{/each}}
+    </ul>
+    <div class="right-arrow active">
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
         fill="none" 
@@ -33,110 +59,162 @@
         <path 
           stroke-linecap="round" 
           stroke-linejoin="round" 
-          d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+          d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" 
         />
       </svg>
     </div>
-    <li><a href="#" class="active">All</a></li>
-    {{#each items as |c|}}
-      <li><a href="#{{c.id}}">{{c.name}}</a></li>
-    {{/each}}
-  </ul>
-  <div class="right-arrow active">
-    <svg 
-      xmlns="http://www.w3.org/2000/svg" 
-      fill="none" 
-      viewBox="0 0 24 24" 
-      stroke-width="1.5" 
-      stroke="currentColor" 
-      class="w-6 h-6"
-    >
-      <path 
-        stroke-linecap="round" 
-        stroke-linejoin="round" 
-        d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" 
-      />
-    </svg>
-  </div>
-</div>
-<br>
-{{#if loggedIn}}
-  <br><br><br>
-  <div class="container-information-header">
-    <center>
-      <h1>Update Menu </h1>
-      <h4>For admin only</h4>
-    </center>
-  </div>
-  <center>
-    <a href="/categories/create" class="active btn btn-primary">Create new category</a>
-  </center>
-  <div class="container-menu">
-    <br>
-    <div class="grid-container-2">
-      {{#each items as |c|}}
-        <center>
-          <a class="anchor" id="{{c.id}}"></a>
-          <h1><strong>{{c.name}}</strong></h1>
-          <img src="{{c.image}}" alt="food-image" class="category-image">
-          <br><br>
-          <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Update catagory ({{c.name}})</a>
-           &nbsp; &nbsp; &nbsp;
-          <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a>
-        </center>
-        <br>
-        <div class="grid-container">
-          {{#each c.menuitems as |i|}}
-            <div class="grid-item">
-              <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-1">{{i.name}}</h5>
-                </div>
-                <p class="mb-1">{{i.description}}</p>
-                <center>
-                  <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
-                </center>
-              </a>
-            </div>
+  </div> --}}
+<!--#endregion -->
+
+<!--#region scollable tabs 2 -->
+  <section class="main-container">
+    <div class="tab-nav-bar">
+      <div class="tab-navigation">
+        <i class="uil uil-angle-left left-btn"></i> 
+        <i class="uil uil-angle-right right-btn"></i>
+        <ul class="tab-menu">
+          <li class="tab-btn"><a href="#" class="active">All</a></li>
+          {{#each items as |c|}}
+            {{#if c.switchy}}
+              <li class="tab-btn"><a href="#{{c.id}}">{{c.name}}</a></li>
+            {{/if}}
           {{/each}}
-        </div>
-      {{/each}}
+        </ul>
+      </div>
     </div>
-  </div>
-  {{else}}
+  </section>
+<!--#endregion -->
+
+<!--#region if logged in  -->
+  {{#if loggedIn}}
+    <br><br><br>
+    <div class="container-information-header">
+      <center>
+        <h1>Update Menu </h1>
+        <h4>For admin only</h4>
+      </center>
+    </div>
+    <center>
+      <a href="/categories/create" class="active btn btn-primary">Create new category</a>
+    </center>
+    
     <div class="container-menu">
       <br>
       <div class="grid-container-2">
         {{#each items as |c|}}
-          <center>
-            <a class="anchor" id="{{c.id}}"></a>
-            <h1><strong>{{c.name}}</strong></h1>
-            <img src="{{c.image}}" alt="food-image" class="category-image">
-            {{#if loggedIn}}
-              <br>
+          {{#if c.switchy}}
+            <center>
+              <a class="anchor" id="{{c.id}}"></a>
+              <h1><strong>{{c.name}}</strong></h1>
+              <img src="{{c.image}}" alt="food-image" class="category-image">
+              <br><br>
               <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Update catagory ({{c.name}})</a>
-            {{/if}}
-          </center>
-          <div class="grid-container">
-            {{#each c.menuitems as |i|}}
-              <div class="grid-item">
-                <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{i.name}}</h5>
-                  </div>
-                  <p class="mb-1">{{i.description}}</p>
-                  {{#if loggedIn}}
-                    <center>
-                      <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
-                    </center>
+              <h1>---------------------------------------------------------</h1>
+              <br>
+              <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a>
+            </center>
+            <br>
+            <div class="grid-container">
+                {{#each c.menuitems as |i|}}
+                  {{#if i.switchy}}
+                    <div class="grid-item">
+                      <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">{{i.name}}</h5>
+                        </div>
+                        <p class="mb-1">{{i.description}}</p>
+                        <center>
+                          <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
+                        </center>
+                      </a>
+                    </div>
+                  {{else}}
+                    <div class="grid-item">
+                      <center>
+                        <h1 style="color:#FF0000";>
+                          <b>({{i.name}}) is currently turned off!</b>
+                        </h1>
+                        <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary">
+                          Toggle  ({{i.name}}) Back On!
+                        </a>
+                        <center>
+                          <h1>--------------</h1>
+                        </center>
+                        <br>
+                      </center>
+                    </div>
                   {{/if}}
-                </a>
-              </div>
-            {{/each}}
-          </div>
+                {{/each}}
+            </div>
+            <center>
+              <h1>---------------------------------------------------------</h1>
+            </center>
+          {{else}}
+            <center>
+              <h1 style="color:#FF0000";><b>({{c.name}}) is currently turned off!</b></h1>
+              <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Toggle  ({{c.name}}) Back On!</a>
+              <center>
+                <h1>---------------------------------------------------------</h1>
+              </center>
+              <br>
+            </center>
+          {{/if}}
         {{/each}}
       </div>
     </div>
-{{/if}}
+<!--#endregion -->
 
-<script src="/js/menuScrollbar.js"></script>
+<!--#region if NOT logged in  -->
+    {{else}}
+      <div class="container-menu">
+        <div class="grid-container-2">
+          {{!-- <br><br><br><br> --}}
+          {{#each items as |c|}}
+            {{#if c.switchy}}
+              <center class="xxx">
+                {{!-- <br><br><br><br> --}}
+                <a class="anchor" id="{{c.id}}"></a>
+                <h1 class="yyy"><strong>{{c.name}}</strong></h1>
+                <img src="{{c.image}}" alt="food-image" class="category-image">
+              </center>
+              <div class="grid-container">
+                {{!-- <br><br><br><br> --}}
+                {{#each c.menuitems as |i|}}
+                  {{#if i.switchy}}
+                  
+                    <div class="grid-item">
+                      {{!-- <br><br><br><br> --}}
+                      <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">{{i.name}}</h5>
+                        </div>
+                        <p class="mb-1">{{i.description}}</p>
+                      </a>
+                    </div>
+                  {{else}}
+                    <div class="grid-item">
+                      <center>
+                        <h1 style="color:#FF0000";>
+                          <b>({{i.name}}) is currently turned off!</b>
+                        </h1>
+                        <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary">
+                          Toggle  ({{i.name}}) Back On!
+                        </a>
+                        <br>
+                      </center>
+                    </div>
+                  {{/if}}
+                {{/each}}
+              </div>
+            {{/if}}
+          {{/each}}
+        </div>
+      </div>
+  {{/if}}
+<!--#endregion -->
+
+{{!-- <script src="/js/menuScrollbar.js"></script> --}}
+<script src="/js/menu.js"></script>
+
+
+<script src="/js/menuScrollbar2.js"></script>

@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
-
 class Location extends Model {};
-
 Location.init(
   {
     id: {
@@ -11,7 +9,6 @@ Location.init(
       primaryKey: true,
       autoIncrement: true
     },
-
     name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -20,7 +17,6 @@ Location.init(
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
-
     name1: {
       type: DataTypes.STRING,
       allowNull: false
@@ -29,12 +25,10 @@ Location.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-
     hours: {
       type: DataTypes.STRING,
       allowNull: false
     },
-
     name2: {
       type: DataTypes.STRING,
       allowNull: false
@@ -44,7 +38,6 @@ Location.init(
       allowNull: false
     }
   },
-
   {
     sequelize: connection,
     timestamps: true,
@@ -52,5 +45,4 @@ Location.init(
     modelName: 'location'
   }
 );
-
 module.exports = Location;

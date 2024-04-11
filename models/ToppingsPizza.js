@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
-
 class ToppingsPizza extends Model {};
-
 ToppingsPizza.init(
   {
     id: {
@@ -39,5 +37,4 @@ ToppingsPizza.init(
     modelName: 'toppingsPizza'
   }
 );
-
 module.exports = ToppingsPizza;

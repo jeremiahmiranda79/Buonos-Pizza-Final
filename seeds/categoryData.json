@@ -1,68 +1,82 @@
 [
   {
     "name": "Pizza",
-    "image": "/images/menu-pizza.jpg"
+    "image": "/images/menu-pizza.jpg",
+    "switchy": true
   },
   {
     "name": "Pizza Slice",
-    "image": "/images/menu-pizza-slice-2.jpg"
+    "image": "/images/menu-pizza-slice-2.jpg",
+    "switchy": true
   },
   {
     "name": "Specialty Pizza",
-    "image": "/images/menu-specialty.jpg"
+    "image": "/images/menu-specialty.jpg",
+    "switchy": true
   },
   {
     "name": "Gluten Free",
-    "image": "/images/menu-gluten-free.jpg"
+    "image": "/images/menu-gluten-free.jpg",
+    "switchy": true
   },
-  
   {
     "name": "Calzone",
-    "image": "/images/menu-calzone-4.jpg"
+    "image": "/images/menu-calzone-4.jpg",
+    "switchy": true
   },
   {
     "name": "Stromboli",
-    "image": "/images/menu-stromboli-4.jpg"
+    "image": "/images/menu-stromboli-4.jpg",
+    "switchy": true
   },
   {
     "name": "Sausage Roll",
-    "image": "/images/menu-sausage-roll-2.jpg"
+    "image": "/images/menu-sausage-roll-2.jpg",
+    "switchy": true
   },
-
   {
     "name": "Appetizer",
-    "image": "/images/menu-appetizer.jpg"
+    "image": "/images/menu-appetizer.jpg",
+    "switchy": true
   },
   {
     "name": "Salad",
-    "image": "/images/menu-salad.jpg"
+    "image": "/images/menu-salad.jpg",
+    "switchy": true
   },
   {
     "name": "Entree",
-    "image": "/images/menu-entree.jpg"
+    "image": "/images/menu-entree.jpg",
+    "switchy": true
   },
   {
     "name": "Hot Sub",
-    "image": "/images/menu-hot-sub.jpg"
+    "image": "/images/menu-hot-sub.jpg",
+    "switchy": true
   },
   {
     "name": "Cold Sub",
-    "image": "/images/menu-cold-sub-2.jpg"
+    "image": "/images/menu-cold-sub-2.jpg",
+    "switchy": true
   },
   {
     "name": "Side Order",
-    "image": "/images/menu-side.jpg"
+    "image": "/images/menu-side.jpg",
+    "switchy": true
   },
   {
     "name": "Dessert",
-    "image": "/images/menu-dessert.jpg"
+    "image": "/images/menu-dessert.jpg",
+    "switchy": true
   },
   {
     "name": "Beverage",
-    "image": "/images/menu-soda-fountain-2.jpg"
+    "image": "/images/menu-soda-fountain-2.jpg",
+    "switchy": true
   },
   {
     "name": "NY Specialty",
-    "image": "/images/menu-drakes-cakes.jpg"
+    "image": "/images/menu-drakes-cakes.jpg",
+    "switchy": true
   }
 ]

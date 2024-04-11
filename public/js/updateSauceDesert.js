@@ -1,15 +1,10 @@
 //Update sauce desert
 const updateSauceDesert = async(event) => {
   event.preventDefault();
-
   const sauceDesertId = document.querySelector('input[name="sauce-desert-id"]').value;
-
   const id = document.querySelector('#id').value.trim();
-
   const name = document.querySelector('#name').value.trim();
-
   const price = document.querySelector('#price').value.trim();
-
   const response = await fetch(`../../api/sauceDesert/updateSauceDesert/${sauceDesertId}`, {
     method: 'PUT',
     body: JSON.stringify({
@@ -19,7 +14,6 @@ const updateSauceDesert = async(event) => {
     }),
     headers: { 'Content-Type': 'application/json' }
   });
-
   if (response.ok) {
     document.location.replace('/menu');
   } 
@@ -27,7 +21,6 @@ const updateSauceDesert = async(event) => {
     alert(response.statusText);
   };
 };
-
 //Delete Dressing
 const deleteSauceDesert = async(event) => {
   if (confirm("Are you sure you want to delete this SAUCE DESERT and all things related to it? This action cannot be undone!!") == true) {
@@ -35,8 +28,7 @@ const deleteSauceDesert = async(event) => {
       const id = event.target.getAttribute('data-id');
       const response = await fetch(`/api/sauceDesert/deleteSauceDesert/${id}`, {
         method: 'DELETE',
-      });
-      
+      });    
       if (response.ok) {
         document.location.replace('/menu');
       } 
@@ -50,7 +42,5 @@ const deleteSauceDesert = async(event) => {
     document.location.replace('/menu');
   }
 };
-
 document.querySelector('#updateSauceDesert').addEventListener('submit', updateSauceDesert);
-
 document.querySelector('#deleteButton').addEventListener('click', deleteSauceDesert);

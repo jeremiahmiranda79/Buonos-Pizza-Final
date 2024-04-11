@@ -74,13 +74,16 @@
               id="categories" 
               name="categories" 
               class="form-select"
-              require
             >
+						{{!-- <option value="{{i.categoryId}}" selected>
+                  Current ({{i.categoryId}})
+                </option> --}}
               {{#each c as |x|}}
                 <option 
                   value="{{x.id}}">{{x.name}}
                 </option>
               {{/each}}
+							require
             </select>
 					</div>
 
