@@ -168,27 +168,26 @@
     {{else}}
       <div class="container-menu">
         <div class="grid-container-2">
-          {{!-- <br><br><br><br> --}}
           {{#each items as |c|}}
             {{#if c.switchy}}
               <center class="xxx">
-                {{!-- <br><br><br><br> --}}
                 <a class="anchor" id="{{c.id}}"></a>
                 <h1 class="yyy"><strong>{{c.name}}</strong></h1>
                 <img src="{{c.image}}" alt="food-image" class="category-image">
               </center>
-              <div class="grid-container">
-                {{!-- <br><br><br><br> --}}
+                <div class="grid-container">
                 {{#each c.menuitems as |i|}}
-                  {{#if i.switchy}}
-                  
+                  {{#if i.switchy}}    
                     <div class="grid-item">
-                      {{!-- <br><br><br><br> --}}
                       <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                          <h5 class="mb-1">{{i.name}}</h5>
+                          <h5 class="mb-1">{{i.name}}</h5> 
                         </div>
-                        <p class="mb-1">{{i.description}}</p>
+
+                        <div class="subitem">
+                          <p class="mb-1">{{i.description}}</p>
+                          <img src={{i.image}} alt="food-image" class="category-image">  
+                        </div> 
                       </a>
                     </div>
                   {{else}}
@@ -215,6 +214,4 @@
 
 {{!-- <script src="/js/menuScrollbar.js"></script> --}}
 <script src="/js/menu.js"></script>
-
-
 <script src="/js/menuScrollbar2.js"></script>

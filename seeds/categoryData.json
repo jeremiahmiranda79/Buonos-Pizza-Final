@@ -5,11 +5,6 @@
     "switchy": true
   },
   {
-    "name": "Pizza Slice",
-    "image": "/images/menu-pizza-slice-2.jpg",
-    "switchy": true
-  },
-  {
     "name": "Specialty Pizza",
     "image": "/images/menu-specialty.jpg",
     "switchy": true
@@ -17,6 +12,16 @@
   {
     "name": "Gluten Free",
     "image": "/images/menu-gluten-free.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Pizza Slice",
+    "image": "/images/menu-pizza-slice-2.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Appetizer",
+    "image": "/images/menu-appetizer.jpg",
     "switchy": true
   },
   {
@@ -32,11 +37,6 @@
   {
     "name": "Sausage Roll",
     "image": "/images/menu-sausage-roll-2.jpg",
-    "switchy": true
-  },
-  {
-    "name": "Appetizer",
-    "image": "/images/menu-appetizer.jpg",
     "switchy": true
   },
   {

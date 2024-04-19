@@ -1,5 +1,5 @@
 .carousel {
-  /* box-shadow: 6px 6px 8px var(--shadow); */
+
 }
 
 .carousel-caption h3 {
@@ -30,27 +30,23 @@
 
 @media (min-width: 768px) {
   .carousel .promise{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(/images/brick-texture.jpg);
+    background-color: var(--buonos-green);
     background-clip: content-box;
   }
 
   .carousel .specialty{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(/images/bleached-wood-texture.jpg);
+    background-color: var(--buonos-white);
     background-clip: content-box;
   }
 
   .carousel .loyalty{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(/images/gray-texture.jpg);
+    background-color: var(--buonos-red);
     background-clip: content-box;
   }
 
   .carousel-item img{
     width: 50%; 
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

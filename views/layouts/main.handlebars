@@ -14,12 +14,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">    
   </head>
+
   <body>
     <header>
       <div class="navbar-top hidden-top">
         <center>
           <a href="/"><img src="/images/buonos-logo1.jpg" class="logo" alt="buonos-logo"></a>
         <center>
+
         <ul class="navbar-nav me-auto">
           <li>
             <a href="/"><img src="/images/buonos-logo1.jpg" class="logo2" alt="buonos-logo"></a>
@@ -37,31 +39,35 @@
             <a class="nav-link" href="/hours">Hours</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact Us</a>
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About Us</a>
+            <a class="nav-link" href="/about">About</a>
           </li>
-          {{#if loggedIn}}
-            <button id="employeelogout">
-              Logout | {{name}}
-            </button>
-          {{else}}
-            <li class="nav-item">
-              <a href="/employee/login" class="nav-link">Login</a>
-            </li>
-          {{/if}}
+
+          <!--#region LOGGED IN  -->
+            {{#if loggedIn}}
+              <button id="employeelogout">
+                Logout | {{name}}
+              </button>
+            {{else}}
+              <li class="nav-item">
+                <a href="/employee/login" class="nav-link">Login</a>
+              </li>
+            {{/if}}
+          <!--#endregion -->
         </ul>  
       </div>
     </header>
+
     <main>
       {{{ body }}}
     </main>
+
     <footer>
       <nav class="navbar navbar-dark bg-dark fixed-bottom hidden">
+
         <div class="container-fluid">
-          {{!-- <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
-           --}}
 
            <div class="icons">
             <a class="nav-icon navbar-brand fa fa-phone-square" href="tel:+14808991200"></a>
@@ -93,207 +99,72 @@
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              {{!-- <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> --}}
+              <ul>
                 <center>
                   <li class="nav-item btn btn-info">
-                  <a class="nav-link active" aria-current="page" href="/">Home</a>
-                </li>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
 
-                <br>
+                  <br>
 
-                <li class="nav-item btn btn-info">
-                  <a class="nav-link" href="/menu">Menu</a>
-                </li>
+                  <li class="nav-item btn btn-info">
+                    <a class="nav-link" href="/menu">Menu</a>
+                  </li>
 
-                <br>
+                  <br>
 
-                <li class="nav-item btn btn-info">
-                  <a class="nav-link" href="/location">Location</a>
-                </li>
+                  <li class="nav-item btn btn-info">
+                    <a class="nav-link" href="/location">Location</a>
+                  </li>
 
-                <br>
+                  <br>
 
-                <li class="nav-item btn btn-info">
-                  <a class="nav-link" href="/hours">Hours</a>
-                </li>
+                  <li class="nav-item btn btn-info">
+                    <a class="nav-link" href="/hours">Hours</a>
+                  </li>
 
-                <br>
+                  <br>
 
-                <li class="nav-item btn btn-info">
-                  <a class="nav-link" href="/contact">Contact Us<a>
-                </li>
+                  <li class="nav-item btn btn-info">
+                    <a class="nav-link" href="/contact">Contact<a>
+                  </li>
 
-                <br>
+                  <br>
 
-                <li class="nav-item btn btn-info">
-                  <a class="nav-link" href="/about">About Us</a>
-                </li>
+                  <li class="nav-item btn btn-info">
+                    <a class="nav-link" href="/about">About</a>
+                  </li>
 
-                <br>
+                  <br>
 
-                <li class="nav-item dropdown btn btn-primary">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Login In / Out
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="/employee/login">Admin</a></li>
+                  <li class="nav-item dropdown btn btn-primary">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Login In / Out
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="/employee/login">Admin</a></li>
 
-                    <li><a class="dropdown-item" href="#">Employees</a></li>
+                      <li><a class="dropdown-item" href="#">Employees</a></li>
 
-                    <li><hr class="dropdown-divider"></li>
+                      <li><hr class="dropdown-divider"></li>
 
-                    <li><a class="dropdown-item" href="#">Guests</a></li>
-                  </ul>
-                </li>
+                      <li><a class="dropdown-item" href="#">Guests</a></li>
+                    </ul>
+                  </li>
                 </center>
+              </ul>
 
-                
-
-              {{!-- </ul> --}}
-              {{!-- <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form> --}}
             </div>
           </div>
         </div>
+
       </nav>
 
-        
-  
-
-
-
-
-
-      {{!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container-fluid">
-
-          <section class="hidden">
-            <div class="icons">
-            <a class="nav-icon navbar-brand fa fa-phone-square" href="tel:+14808991200"></a>
-            <p style="color: aliceblue;">Phone</p>
-          </div>
-
-          <div class="icons">
-            <a class="nav-icon navbar-brand fa fa-book" href="/menu"></a>
-            <p style="color: aliceblue;">Menu</p>
-          </div>
-
-          <div class="icons">
-            <a class="nav-icon navbar-brand fa fa-map-marker" href="/location"></a>
-            <p style="color: aliceblue;">Location</p>
-          </div>
-
-          <div class="icons">
-            <a class="nav-icon navbar-brand fa fa-yelp" href="/contact"></a>
-            <p style="color: aliceblue;">Contact</p> 
-          </div>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          </section>
-          
-
-          <div class="collapse navbar-collapse bottom-navbar" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/menu">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/location">Location</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/hours">Hours</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">About Us</a>
-              </li>
-            </ul>
-
-            {{#if loggedIn}}
-              <button id="employeelogout">
-                Logout | {{name}}
-              </button>
-            {{else}}
-              <a href="/employee/login" class="">Login</a>
-            {{/if}}
-          </div>
-  
-        </div>
-      </nav> --}}
-
-      {{!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-bottom hidden">
-        <div class="container-fluid">
-          <div class="icons">
-            <a class="nav-icon navbar-brand fa fa-phone-square" href="tel:+14808991200"></a>
-            <p style="color: aliceblue;">Phone</p>
-          </div>
-
-          <div class="icons">
-            <a class="nav-icon navbar-brand fa fa-book" href="/menu"></a>
-            <p style="color: aliceblue;">Menu</p>
-          </div>
-
-          <div class="icons">
-            <a class="nav-icon navbar-brand fa fa-map-marker" href="/location"></a>
-            <p style="color: aliceblue;">Location</p>
-          </div>
-
-          <div class="icons">
-            <a class="nav-icon navbar-brand fa fa-yelp" href="/contact"></a>
-            <p style="color: aliceblue;">Contact</p> 
-          </div>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse bottom-navbar" id="mynavbar">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/menu">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/location">Location</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/hours">Hours</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about">About Us</a>
-              </li>
-            </ul>
-            {{#if loggedIn}}
-              <button id="employeelogout">
-                Logout | {{name}}
-              </button>
-            {{else}}
-              <a href="/employee/login" class="">Login</a>
-            {{/if}}
-          </div>
-  
-        </div>
-      </nav> --}}
-
-      
-
-
     </footer>
+
     <script src="/js/logout.js"></script>
     <script src="/js/login.js"></script>
+
   </body>
+
 </html>

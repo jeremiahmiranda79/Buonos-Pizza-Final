@@ -9,53 +9,16 @@
 }
 
 /* ======= Main CSS ======= */
-
-/* body {
-  background: var(--first-color);
-} */
-
-/* section {
-  position: relative;
-  margin: 0 80px;
-  margin: 0 0px;
-  transition: 0.5s ease;
-} */
-
-
-
-
 .main-container {
-  /* position: relative; */
-   position: fixed;
-   margin-top: -40px;
-   /* position: -webkit-sticky;  */
-   /* Safari */
-  /* position: sticky; */
-  /* top: 0; */
-  /* margin-top: 100px; */
-  /* margin-bottom: 200px; */
-
+  position: fixed;
   z-index:9999;
 }
-
 
 /* ======= Tab Navigation Bar ======= */
 .tab-nav-bar {
   position: fixed;
-  /* margin: 40px 1% 40px 1%; */
-  margin: 40px 0% 20px 0%;
-  /* max-width: 98%; */
   width: 100%;
-  /* z-index:9999; */
-  
-  /* margin-bottom: 1000px; */
-
-  /* pointer-events: none; */
 }
-
-
-
-
 
 .tab-navigation {
   position: relative;
@@ -64,9 +27,6 @@
   align-items: center;
   max-width: fit-content;
   margin: 0 auto;
-
-  /* pointer-events: none; */
-  /* z-index: 100; */
 }
 
 .tab-menu {
@@ -97,7 +57,7 @@
   display: inline-block;
   font-size: 1em;
   font-weight: 400;
-  margin: 0 1px;
+  margin: 0 px;
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -106,7 +66,6 @@
 }
 
 .tab-btn a {
-  /* display: none; */
   text-decoration: none;
   color: aliceblue;
 }
@@ -126,48 +85,39 @@
 .left-btn, .right-btn {
   position: absolute;
   color: var(--text-color);
-  font-size: 1.8em;
-  padding: 10px;
+  text-align: center;
+  font-size: 41px;
   cursor: pointer;
+  bottom: 16.5px;
 }
 
 .left-btn {
   left: 0;
-  bottom: 16.5px;
-  background: linear-gradient(to left, transparent, var(--first-color) 50%);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px; 
+  background: linear-gradient(to left, transparent, var(--first-color) 10%);
   display: none;
 }
 
 .right-btn {
   right: 0;
-  bottom: 16.5px;
-  background: linear-gradient(to right, transparent, var(--first-color) 50%);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px; 
+  background: linear-gradient(to right, transparent, var(--first-color) 10%);
 }
 
 /* ======= Tab Content ======= */
+@media (max-width: 1440px) {
+  .left-btn, .right-btn {
 
-/* ======= Media Queries (max-width: 1050px) ======= */
-@media (max-width: 1050px) {
-  
+  }
+}
+
+@media (max-width: 1024px) {
+  .left-btn, .right-btn {
+
+  }
 }
 
 @media (max-width: 768px) {
-  /* .xxx {
-    margin-top: 510px;
-  } */
-
-  .tab-nav-bar {
-    margin: 0px 1% 40px 1%;
-    max-width: 98%;
-  }
-
   .tab-btn {
     font-size: 1.2em;
-    padding: 5px 7.5px;
   }
 
   .tab-btn a {
@@ -175,25 +125,17 @@
   }
 
   .left-btn, .right-btn {
-    font-size: 1.2em;
-    /* font-size: 12px; */
-    /* padding: 5px; */
+    font-size: 2.5em;
   }
   
   .left-btn {
     left: 0;
-    /* bottom: 16.5px; */
     background: linear-gradient(to left, transparent, var(--first-color) 50%);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; 
     display: none;
   }
   
   .right-btn {
     right: 0;
-    /* bottom: 16.5px; */
     background: linear-gradient(to right, transparent, var(--first-color) 50%);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; 
   }
 }

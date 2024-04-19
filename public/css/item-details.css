@@ -3,15 +3,12 @@
 }
 
 .item-background {
-  /* height: 78vh; */
-  
-}
 
+}
 
 @media (min-width: 768px) {
   .container-item {
-    /* padding-left: 20%;
-    padding-right: 20%; */
+
   }
   
   .container-item img {

@@ -24,6 +24,12 @@ MenuItems.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+
+    image: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+
     switchy: {
       type: DataTypes.BOOLEAN,
       allowNull: true

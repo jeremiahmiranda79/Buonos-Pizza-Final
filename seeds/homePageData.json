@@ -3,11 +3,11 @@
     "name": "Home Page",
 
     "name1": "Our Promise",
-    "description1": "Our craft pizza's are so fresh, we have to slap them!",
+    "description1": "Our classic pizza's are so fresh, we have to slap them!",
     "name1Switch": true,
 
     "name2": "Buonos Specialties",
-    "description2": "We refuse to compromise. We use the freshest and finest ingredients. Our dough and tomato sauce is made fresh daily in house.",
+    "description2": "We refuse to compromise. We use the freshest and finest ingredients. Our pizza dough, pizza sauce, and pasta sauce are made fresh daily in house.",
     "name2Switch": true,
 
     "name3_1": "Loyalty Bonus",
@@ -21,7 +21,7 @@
     "description4": "Come see us in person! To take full advantage of our quality the best option is to dine in, or reserve an in store pick up order. We love our customers so feel free to visit during our normal business hours.",
     "name4Switch": true,
 
-    "name5_1": "Online & Delivery Service",
+    "name5_1": "Delivery Service thru 3rd party",
     "description5_1": "We use 3rd party online ordering & delivery services.",
     "name5_1Switch": true,
 

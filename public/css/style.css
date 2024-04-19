@@ -17,7 +17,6 @@ body, html {
 main {
   margin-top: 60px;
   margin-bottom: 82px;
-  /* margin-bottom: -10px; */
   background-color: var(--background-1);
 } 
 
@@ -43,10 +42,6 @@ main {
   color: var(--buonos-white)
 }
 
-/* .main-footer {
-  padding-top: 10px;
-} */
-
 .container-menu h1 {
   font-family: var(--buonos-font);
   color: var(--buonos-red);
@@ -68,11 +63,7 @@ main {
   margin-left: 10px;
   margin-right: 10px;
   box-shadow: 2px 2px 4px var(--shadow);
-
-  /* margin-bottom: 500px; */
 }
-
-
 
 /* Update Category */
 .container-update-category-header {

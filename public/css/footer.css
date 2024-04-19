@@ -10,44 +10,12 @@ li  a {
 }
 
 @media (min-width: 768px) {
-  /* .icons {
-    padding-right: 15px;
-  }
-
-  .bottom-navbar {
-    padding-left: 10px;
-  } */
-
   .hidden {
     display: none;
     
   }
 
   .not-hidden {
-    /* display: ; */
+
   }
 }
-
-
-
-
-
-/* @media (min-width: 1024px) {
-  .icons {
-    padding-right: 30px;
-  }
-
-  .bottom-navbar {
-    padding-left: 100px;
-  }
-} */
-
-/* @media (min-width: 1440px) {
-  .icons {
-    padding-right: 60px;
-  }
-
-  .bottom-navbar {
-    padding-left: 200px;
-  }
-} */
