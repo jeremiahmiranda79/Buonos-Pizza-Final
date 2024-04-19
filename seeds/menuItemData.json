@@ -5,7 +5,7 @@
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro (tomato) sauce, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/pizza-neopolitan.jpg",
+    "image": "/images/neopolitan-pizza-2.jpg",
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$15.49",
@@ -40,7 +40,7 @@
     "description": "Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/pizza-white.jpg",
+    "image": "/images/white-pizza-2.jpg",
 
 
     "size1": "Small 14 inch, 6 cut",
@@ -150,7 +150,7 @@
     "description": "Neapolitan-style; a thin, round crust, topped with mozzarella fresca, olive oil, & stone deck oven baked. Finished with a fresh pomodoro (tomato) sauce, & basil puree",
     "switchy": true,
 
-    "image": "/images/specialty-pizza-margherita.jpg",
+    "image": "/images/margherita-pizza-2.jpg",
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$16.49",
@@ -185,7 +185,7 @@
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro (tomato) sauce, pepperoni, sausage, meatballs, bacon, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/specialty-pizza-meat-lover.jpg",
+    "image": "/images/meat-lover-pizza-2.jpg",
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$23.99",
@@ -220,7 +220,7 @@
     "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro (tomato) sauce, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/veggi-pizza.jpg",
 
     "size1": "Small 14 inch, 6 cut",
     "price1": "$23.99",
@@ -363,7 +363,7 @@
     "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, low-carb & keto pizza recipe. It's a simple blend of cauliflower, eggs, cheese, & a few spices that's flattened & baked into a golden crust",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/cauliflower-pizza.jpg",
 
     "size1": "Small 10 inch, 4 cut",
     "price1": "$13.49",
@@ -435,7 +435,7 @@
     "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/pizza-white-slice.jpg",
 
     "size1": "1/8th slice of a 20 inch pie",
     "price1": "$3.49",
@@ -507,7 +507,7 @@
     "description": "An Italian baguette brushed with garlic herb butter & lightly toasted",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/app-garlic-bread-1.jpg",
 
     "size1": null,
     "price1": "$3.99",
@@ -577,7 +577,7 @@
     "description": "Twin jumbo meatballs accompanied by marinara sauce, ricotta & parmesan",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/app-meatballs-ricotta.jpg",
 
     "size1": "Two piece",
     "price1": "$6.99",
@@ -612,7 +612,7 @@
     "description": "Five crostini's topped with our meatballs, marinara sauce, oregenao, & mozzarella",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/meatball-sliders.jpg",
 
     "size1": "Five piece",
     "price1": "$6.99",
@@ -647,7 +647,7 @@
     "description": "Tossed with salt, black pepper, garlic seasoning, oregano, & parsley",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/app-fries.jpg",
 
     "size1": null,
     "price1": "$3.99",
@@ -717,7 +717,7 @@
     "description": "New Jersey diner-style; seasoned french fries baked with mozzarella, topped with a classic brown chicken gravy, & parsley",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/disco-fries.jpg",
 
     "size1": null,
     "price1": "$8.99",
@@ -752,7 +752,7 @@
     "description": "Cremini mushrooms, coated in a light & crispy seasoned batter, then deep fried to golden brown perfection. Served with buttermilk ranch",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/app-fried-mushrooms.jpg",
 
     "size1": null,
     "price1": "$8.99",
@@ -787,7 +787,7 @@
     "description": "Fresh zucchini sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with buttermilk ranch",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/zucchini-sticks-2.jpg",
     
     "size1": null,
     "price1": "$8.99",
@@ -822,7 +822,7 @@
     "description": "Six mozzarella sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/mozzarella-sticks-2.jpg",
 
     "size1": "Six piece",
     "price1": "$8.99",
@@ -857,7 +857,7 @@
     "description": "Six ricotta stuffed ravioli, lightly Italian bread crumb dredged, then deep fried to golden brown perfection. Served with marinara sauce",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/app-fried-ravioli.jpg",
 
     "size1": "Six piece",
     "price1": "$8.99",
@@ -892,7 +892,7 @@
     "description": "Bone-in fried chicken wings tossed in your choice of sauce. Served with celery sticks, & choice of dressing",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/app-wings.jpg",
 
     "size1": "Six piece",
     "price1": "$7.75",
@@ -927,7 +927,7 @@
     "description": "Boneless fried chicken pieces tossed in your choice of sauce. Served with celery sticks, & choice of dressing",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/boneless-wings-2.jpg",
 
     "size1": "Six piece",
     "price1": "$7.25",
@@ -1254,7 +1254,7 @@
     "description": "Romaine lettuce, Italian style croutons, caesar dressing, & parmesan",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/caesar-salad-2.jpg",
 
     "size1": "Small, serves one-two",
     "price1": "$5.25",
@@ -1324,7 +1324,7 @@
     "description": "Romaine lettuce, tomatoes, onions, black olives, banana peppers, provolone, deli ham, oregano, parmesan, & choice of dressing",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/salad-chef.jpg",
 
     "size1": "Large, serves two-three",
     "price1": "$11.99",
@@ -1468,7 +1468,7 @@
     "description": "Breaded chicken cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/chicken-parm.jpg",
 
     "size1": "Dinner portion for one",
     "price1": "$18.99",
