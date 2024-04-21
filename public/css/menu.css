@@ -41,8 +41,14 @@
 }
 
 .grid-item:hover { 
-  box-shadow: 0 4px 8px 0 rgba(255, 30, 0, 0.2), 0 6px 20px 0 rgba(255, 30, 0, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(255, 30, 0, 0.432), 0 6px 20px 0 rgba(255, 30, 0, 0.19); */
   border-radius: 7px;
+
+  transform: scale(1.07);
+  /* opacity: 1.1;
+  z-index: 100; */
+
+  border: 3px solid rgba(0, 0, 0, 0.8);
 }
 
 .grid-container p {
@@ -60,6 +66,9 @@
 
 .subitem img {
   max-width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  /* box-shadow: 0 4px 8px 0 rgba(51, 160, 18, 0.2), 0 6px 20px 0 rgba(51, 160, 18, 0.2); */
+  box-shadow: 0 4px 8px 0 rgba(255, 30, 0, 0.2), 0 6px 20px 0 rgba(255, 30, 0, 0.19);
 }
 
 @media (min-width: 768px) {
