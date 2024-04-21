@@ -965,7 +965,7 @@
     "description": "Neapolitan-style; an Italian turnover made with leavened dough & folded. Stuffed with mozzarella, ricotta, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/calzone-5.jpg",
 
     "size1": "Small, serves one",
     "price1": "$9.99",
@@ -1395,7 +1395,7 @@
     "description": "Romaine lettuce, tomatoes, onions, black olives, mild giardiniera, provolone, salami, cappocolo, oregano, parmesan, & choice of dressing",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/antipasto-2.jpg",
 
     "size1": "Large, serves two-three",
     "price1": "$11.99",
@@ -1430,7 +1430,7 @@
     "description": "Mozzarella fresca, vine-ripened tomatoes, olive oil, balsamic fig glaze, basil puree, salt, & pepper",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/caprese-2.jpg",
 
     "size1": "Large, serves two-three",
     "price1": "$8.49",
@@ -1926,7 +1926,7 @@
     "description": "Foot long Italian baguette stuffed with sauteed sausage, onions, peppers, oregano, & lightly toasted",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/sausage-onion-pepper-sub-2.jpg",
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$9.99",
@@ -1961,7 +1961,7 @@
     "description": "Foot long Italian baguette stuffed with sauteed shaved steak, onions, & white wine. Topped with choice of melted cheese, & lightly toasted",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/philly-steak-sub.jpg",
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$10.99",
@@ -2069,7 +2069,7 @@
     "description": "Foot long Italian baguette layered with deli ham, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/ham-provalone.jpg",
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$8.99",
@@ -2317,7 +2317,7 @@
     "description": "Twin jumbo meatballs topped with marinara sauce, parmesan, & Italian herbs",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/side-meatballs.jpg",
 
     "size1": "Two jumbo meatballs",
     "price1": "$4.99",
@@ -2530,7 +2530,7 @@
     "description": "Queens NYC-style; a cake made of yeast dough covered with a sweet crumb topping referred to as streusel",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/crumb-cake-2.jpg",
 
     "size1": "Single slice",
     "price1": "$4.50",
@@ -2635,7 +2635,7 @@
     "description": "NYC-style; a dense and rich cheese cake baked in a graham cracker crust with sweet cream cheese vanilla filling",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/cheese-cake.jpg",
 
     "size1": "Single slice",
     "price1": "$6.49",
@@ -2775,7 +2775,7 @@
     "description": "Italian-style; deep-fried dough fritters & topped with powdered sugar",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/zeppolis.jpg",
 
     "size1": "A baker's dozen",
     "price1": "$6.49",
