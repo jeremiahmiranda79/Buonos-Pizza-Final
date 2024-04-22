@@ -76,7 +76,7 @@
     "description": "Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro (tomato) sauce, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/sicillian.jpg",
 
 
     "size1": "Small, 8 cut",
@@ -115,7 +115,7 @@
     "description": "Long Island-style; a rustic rectangular pan pizza crust, topped with mozzarella fresca, mozzarella, garlic, & stone deck oven baked. Finished with a fresh pomodoro (tomato) sauce, basil puree, & parmesan",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/grandma-pie-2.jpg",
 
     "size1": "Small, 8 cut",
     "price1": "$18.99",
@@ -507,7 +507,7 @@
     "description": "An Italian baguette brushed with garlic herb butter & lightly toasted",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/garlic-bread-2.jpg",
 
     "size1": null,
     "price1": "$3.99",
@@ -1003,7 +1003,7 @@
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with salami, capocollo, soppressata, provolone. & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -1038,7 +1038,7 @@
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with sausage, onions, green bell peppers, mozzarella, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -1073,7 +1073,7 @@
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, marinara, mozzarella, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
     "price1": "$13.99",
@@ -1108,7 +1108,7 @@
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded eggplant cutlets, marinara, mozzarella, & stone deck oven baked.",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -1143,7 +1143,7 @@
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded chicken cutlets, marinara, mozzarella, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -1178,7 +1178,7 @@
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, sausage, pepperoni, marinara, mozzarella, & stone deck oven baked",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
     "price1": "$14.99",
@@ -1324,7 +1324,7 @@
     "description": "Romaine lettuce, tomatoes, onions, black olives, banana peppers, provolone, deli ham, oregano, parmesan, & choice of dressing",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/chef-salad.jpg",
 
     "size1": "Large, serves two-three",
     "price1": "$11.99",
@@ -2352,7 +2352,7 @@
     "description": "Twin sweet Italian sausage links topped with marinara sauce, parmesan, & Italian herbs",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/side-sausage.jpg",
 
     "size1": "Two links",
     "price1": "$4.99",
@@ -2387,7 +2387,7 @@
     "description": "An Italian baguette brushed with garlic herb butter & lightly toasted",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/garlic-bread-2.jpg",
 
     "size1": "12 inch baguette",
     "price1": "$3.99",
