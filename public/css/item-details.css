@@ -12,7 +12,9 @@
   }
   
   .container-item img {
-    width: 30%;
+    /* width: 30%;  */
+    width: 90%;
+    /* height: 200px; */
   }
 
   .item-background {

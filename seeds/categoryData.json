@@ -1,32 +1,32 @@
 [
   {
     "name": "Pizza",
-    "image": "/images/menu-pizza.jpg",
+    "image": "/images/menu-pizza-regular-neopolitan-2.jpg",
     "switchy": true
   },
   {
     "name": "Specialty Pizza",
-    "image": "/images/menu-specialty.jpg",
+    "image": "/images/menu-specialty-2.jpg",
     "switchy": true
   },
   {
     "name": "Gluten Free",
-    "image": "/images/menu-gluten-free.jpg",
+    "image": "/images/menu-gluten-free-10.jpg",
     "switchy": true
   },
   {
     "name": "Pizza Slice",
-    "image": "/images/menu-pizza-slice-2.jpg",
+    "image": "/images/menu-pizza-slice-3.jpg",
     "switchy": true
   },
   {
     "name": "Appetizer",
-    "image": "/images/menu-appetizer.jpg",
+    "image": "/images/menu-app-wings-6.jpg",
     "switchy": true
   },
   {
     "name": "Calzone",
-    "image": "/images/menu-calzone-4.jpg",
+    "image": "/images/menu-calzone-10.jpg",
     "switchy": true
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "name": "Hot Sub",
-    "image": "/images/menu-hot-sub.jpg",
+    "image": "/images/menu-hot-sub-2.jpg",
     "switchy": true
   },
   {
@@ -61,7 +61,7 @@
   },
   {
     "name": "Side Order",
-    "image": "/images/menu-side.jpg",
+    "image": "/images/menu-side-meatballs-2.jpg",
     "switchy": true
   },
   {
