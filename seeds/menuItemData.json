@@ -322,15 +322,16 @@
 
 
 
+ 
   {
     "categoryId": 3,
-    "name": "Gluten Free",
-    "description": "Gluten free-style; a thin, round 12 inch pizza crust that is a combination of gluten free flours & starches like rice flour, almond flour, potato starch, & tapioca starch",
+    "name": "Cauliflower",
+    "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, low-carb & keto pizza recipe. It's a simple blend of cauliflower, eggs, cheese, & a few spices that's flattened & baked into a golden crust",
     "switchy": true,
 
-    "image": "/images/buonos-logo.jpg",
+    "image": "/images/pizza-gluten-free-cauliflower-3.jpg",
 
-    "size1": "Small 12 inch, 6 cut",
+    "size1": "Small 10 inch, 4 cut",
     "price1": "$13.49",
     "size2": null,
     "price2": null,
@@ -359,13 +360,13 @@
   },
   {
     "categoryId": 3,
-    "name": "Cauliflower",
-    "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, low-carb & keto pizza recipe. It's a simple blend of cauliflower, eggs, cheese, & a few spices that's flattened & baked into a golden crust",
+    "name": "Gluten Free",
+    "description": "Gluten free-style; a thin, round 12 inch pizza crust that is a combination of gluten free flours & starches like rice flour, almond flour, potato starch, & tapioca starch",
     "switchy": true,
 
-    "image": "/images/cauliflower-pizza.jpg",
+    "image": "/images/pizza-gluten-free-gluten-free-3.jpg",
 
-    "size1": "Small 10 inch, 4 cut",
+    "size1": "Small 12 inch, 6 cut",
     "price1": "$13.49",
     "size2": null,
     "price2": null,
