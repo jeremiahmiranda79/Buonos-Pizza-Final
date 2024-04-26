@@ -122,6 +122,7 @@ const isAdmin = require('../../utils/admin');
 		}
 	});
 //#endregion
+
 //#region /***** MENU ******/
 	// Route to find menu
 	router.get('/menu', async (req, res) => {
@@ -223,6 +224,109 @@ const isAdmin = require('../../utils/admin');
 		};
 	});
 //#endregion
+
+//#region /***** CATERING MENU ******/
+	// Route to find menu
+	router.get('/cateringmenu', async (req, res) => {
+		try {
+			// const i = await Categories.findAll({ include: [{ model: MenuItems }] });	
+			// const serializedItems = i.map((x) => x.get({ plain: true }));
+			res.status(200).render('catering-menu', {
+				loggedIn: req.session.loggedIn, 
+				// name: req.session.name,
+				// items: serializedItems
+			});
+		}
+		catch (error) {
+			console.log(error);
+			res.status(500).json(error);// 500 - internal server error
+		}
+	});
+	// Route to find a single menu item
+	// router.get('/menu/:menuitemsId', async (req, res) => {
+	// 	try {
+	// 		const i = await MenuItems.findByPk(req.params.menuitemsId, {
+	// 			include: [{ model: Categories }]});
+	// 		const serializedItem = i.get({ plain: true });
+	// 		const d = await Dressings.findAll();
+	// 		const serializedDressings = d.map((x) => x.get({ plain: true }));
+	// 		const p = await Pastas.findAll();
+	// 		const serializedPastas = p.map((x) => x.get({ plain: true }));
+	// 		const sd = await SaucesDesert.findAll();
+	// 		const serializedSaucesDesert = sd.map((x) => x.get({ plain: true })); 
+	// 		const sp = await SaucePasta.findAll();
+	// 		const serializedSaucePasta = sp.map((x) => x.get({ plain: true }));
+	// 		const sw = await SauceWing.findAll();
+	// 		const serializedSauceWing = sw.map((x) => x.get({ plain: true })); 
+	// 		const tcp = await ToppingsColdSub.findAll();
+	// 		const serializedToppingsColdSub = tcp.map((x) => x.get({ plain: true }));
+	// 		const td = await ToppingsDesert.findAll();
+	// 		const serializedToppingsDesert = td.map((x) => x.get({ plain: true }));
+	// 		const ths = await ToppingsHotSub.findAll();
+	// 		const serializedToppingsHotSub = ths.map((x) => x.get({ plain: true }));
+	// 		const tp = await ToppingsPizza.findAll();	
+	// 		const serializedtoppingsPizza = tp.map((x) => x.get({ plain: true }));
+	// 		res.status(200).render('item-details', {
+	// 			loggedIn: req.session.loggedIn, 
+	// 			name: req.session.name,
+	// 			item: serializedItem,
+	// 			dressing: serializedDressings,
+	// 			pasta: serializedPastas,
+	// 			sauceDesert: serializedSaucesDesert,
+	// 			saucePasta: serializedSaucePasta,
+	// 			sauceWing: serializedSauceWing,
+	// 			toppingsColdSub: serializedToppingsColdSub,
+	// 			toppingsDesert: serializedToppingsDesert,
+	// 			toppingsHotSub: serializedToppingsHotSub,
+	// 			toppingsPizza: serializedtoppingsPizza,
+	// 		});
+	// 	} 
+	// 	catch (error) {
+	// 		console.log(error);
+	// 		res.status(500).json(error);// 500 - internal server error
+	// 	}
+	// });
+	// Route to create a menu item
+	// router.get('/menuitems/create', withAuth, isAdmin, async (req, res) => {
+	// 	try {
+	// 		const category = await Categories.findAll();
+	// 		const c = category.map((x) => x.get({ plain: true }));
+	// 		const menuItems = await MenuItems.findAll();
+	// 		const i = menuItems.map((x) => x.get({ plain: true }));
+	// 		res.status(200).render('create-menu-item', {
+	// 			c, 
+	// 			i,
+	// 			loggedIn: req.session.loggedIn, 
+	// 			name: req.session.name
+	// 		});
+	// 	} 
+	// 	catch (error) {
+	// 		console.log(error);
+	// 		res.status(500).json(error);// 500 - internal server error
+	// 	};
+	// });
+	// Route to update a menu item
+	// router.get('/menuitems/update/:menuitemId', withAuth, isAdmin, async (req, res) => {
+	// 	try {
+	// 		const categories = await Categories.findAll();
+	// 		const menuitem = await MenuItems.findOne({
+	// 			where: {
+	// 				id: req.params.menuitemId,
+	// 			}
+	// 		});
+	// 		const cats = categories.map((cat) => cat.get({ plain: true }));
+	// 		const item = menuitem.get({ plain: true });
+	// 		res.status(200).render('update-menu-item', {
+	// 			item, cats, loggedIn: req.session.loggedIn, name: req.session.name
+	// 		});
+	// 	} 
+	// 	catch (error) {
+	// 		console.log(error);
+	// 		res.status(500).json(error);// 500 - internal server error
+	// 	};
+	// });
+//#endregion
+
 //#region /***** LOCATION ******/
 	router.get('/location', async (req, res) => {
 		try {
