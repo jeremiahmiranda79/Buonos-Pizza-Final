@@ -6,22 +6,5 @@
   { 
     "name": "Maraschino cherries",
     "price": 0.75
-  },
-  {
-    "name": "Glace Fruit",
-    "price": 0.75
-  },
-
-  {
-    "name": "Vanilla whipped cream",
-    "price": 0.75
-  },
-  {
-    "name": "Cocoa whipped cream",
-    "price": 0.75
-  },
-  {
-    "name": "Strawberry whipped cream",
-    "price": 0.75
   }
 ]

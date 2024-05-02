@@ -16,7 +16,8 @@ const {
   HomePage,
   Information,
   Hours,
-  Location
+  Location,
+  StuffingsCalzone
 } = require('../models');
 const categoryData = require('./categoryData.json');
 const menuItemData = require('./menuItemData.json');
@@ -35,6 +36,7 @@ const homePageData = require('./homePageData.json');
 const informationData = require('./informationData.json');
 const hoursData = require('./hoursData.json');
 const locationData = require('./locationData.json');
+const stuffingsCalzone = require('./stuffingsCalzoneData.json');
 const seedData = async () => {
   await sequelize.sync({ force: true });
   await Categories.bulkCreate(categoryData);
@@ -54,6 +56,7 @@ const seedData = async () => {
   await Information.bulkCreate(informationData);
   await Hours.bulkCreate(hoursData);
   await Location.bulkCreate(locationData);
+  await StuffingsCalzone.bulkCreate(stuffingsCalzone);
   console.log('All seeded!')
   process.exit(0);
 };

@@ -1,53 +1,82 @@
 <head>
-  <style>
+  {{!-- <style>
     h1 {
       color: var(--buonos-red);
       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
       font-family: var(--buonos-font);
     }
-  </style>
+  </style> --}}
 
+  <link rel="stylesheet" href="/css/scrollableTabs2.css">
   <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="/css/updateInformation.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 
-<center>
-  <h1>CATERING MENU</h1>
-  <h2>CALL TO ORDER 480 899-1200</h1>
-  <h3>PORTIONS 1/2 TRAYS FEEDS 10-12 People, Bread Included</h1>
-</center>
+<!--#region scollable tabs 2 -->
+  <section class="main-container">
+    <div class="tab-nav-bar">
+      <div class="tab-navigation">
+        <i class="uil uil-angle-left left-btn"></i> 
+        <i class="uil uil-angle-right right-btn"></i>
+        <ul class="tab-menu">
+          <li class="tab-btn"><a href="#" class="active">All</a></li>
+        
+          <li class="tab-btn"><a href="#app">Appetizer</a></li>
+
+          <li class="tab-btn"><a href="#salad">Salads</a></li>
+
+          <li class="tab-btn"><a href="#pasta">Pastas</a></li>
+
+          <li class="tab-btn"><a href="#entree">Entrees</a></li>
+
+          <li class="tab-btn"><a href="#side">Sides</a></li>
+
+          <li class="tab-btn"><a href="#dessert">Desserts</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+<!--#endregion -->
+
+
+
 
 <div class="container-menu">
   <div class="grid-container-2">
 
-    <center class="">
+    <center class="appetizer">
+      <a class="anchor" id="app"></a>
       <h1 class=""><strong>Appertizers</strong></h1>
       <img src="/images/catering-category-appetizer.jpg" alt="food-image" class="category-image">
+      {{!-- <h2>CALL TO ORDER 480 899-1200</h1> --}}
       <h2>Choice of Marinara or Ranch Dressing</h2>
+      <h3>PORTIONS 1/2 TRAYS FEEDS 10-12 People</h3>
     </center>
-
     <div class="grid-container">
         
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Chicken Wings</h5> 
           </div>
 
           <div class="subitem">
-            <p class="mb-1">Starting price is <b>$??</b></p>
+            <p class="mb-1">Starting price is <b>$Market</b></p>
             <img src="/images/buonos-logo-3.jpg" alt="food-image" class="category-image">  
           </div> 
         </a>
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Boneless Chicken Wings</h5> 
           </div>
 
           <div class="subitem">
-            <p class="mb-1">Starting price is <b>$??</b></p>
+            <p class="mb-1">Starting price is <b>$Market</b></p>
             <img src="/images/buonos-logo-3.jpg" alt="food-image" class="category-image">  
           </div> 
         </a>
@@ -55,7 +84,7 @@
 
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Fried Zucchini</h5> 
           </div>
@@ -68,7 +97,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Fried Mushrooms</h5> 
           </div>
@@ -81,7 +110,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Fried Mozzarella Sticks</h5> 
           </div>
@@ -94,7 +123,7 @@
       </div>   
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Fried Ravioli</h5> 
           </div>
@@ -106,22 +135,19 @@
         </a>
       </div>    
     </div>
-  </div>
-</div>
 
-<div class="container-menu">
-  <div class="grid-container-2">
-
-    <center class="">
+    <center class="salad">
+      <a class="anchor" id="salad"></a>
       <h1 class=""><strong>Salads</strong></h1>
       <img src="/images/catering-category-salad.jpg" alt="food-image" class="category-image">
+      {{!-- <h2>CALL TO ORDER 480 899-1200</h1> --}}
       <h2>Choice of Blue Cheese, Italian, or Ranch Dressing</h2>
+      <h3>PORTIONS 1/2 TRAYS FEEDS 10-12 People</h3>
     </center>
-
     <div class="grid-container">
         
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">House</h5> 
           </div>
@@ -134,7 +160,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Antipasto</h5> 
           </div>
@@ -147,7 +173,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Caprese</h5> 
           </div>
@@ -160,7 +186,7 @@
       </div>  
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Chef</h5> 
           </div>
@@ -172,22 +198,20 @@
         </a>
       </div>        
     </div>
-  </div>
-</div>
 
-<div class="container-menu">
-  <div class="grid-container-2">
-
-    <center class="">
+    <center class="pasta">
+      <a class="anchor" id="pasta"></a>
       <h1 class=""><strong>Pastas</strong></h1>
       <img src="/images/catering-category-pasta.jpg" alt="food-image" class="category-image">
-      <h2>Choice of  Spaghetti, Penne, or Fettucini</h2>
+      {{!-- <h2>CALL TO ORDER 480 899-1200</h1> --}}
+      <h2>Toasted bread included with each tray</h2>
+      <h2>Choice of Spaghetti, Penne, or Fettucini</h2>
+      <h3>PORTIONS 1/2 TRAYS FEEDS 10-12 People</h3>
     </center>
-
-    <div class="grid-container">
+    <div class="grid-container"> 
         
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Marinara</h5> 
           </div>
@@ -204,7 +228,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Garlic & Oil</h5> 
           </div>
@@ -221,7 +245,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Alfredo</h5> 
           </div>
@@ -238,7 +262,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Pink Vodka</h5> 
           </div>
@@ -255,21 +279,19 @@
       </div>
             
     </div>
-  </div>
-</div>
 
-<div class="container-menu">
-  <div class="grid-container-2">
-
-    <center class="">
+    <center class="entree">
+      <a class="anchor" id="entree"></a>
       <h1 class=""><strong>Entrees</strong></h1>
       <img src="/images/catering-category-entree.jpg" alt="food-image" class="category-image">
+      {{!-- <h2>CALL TO ORDER 480 899-1200</h1> --}}
+      <h2>Toasted bread included with each tray</h2>
+      <h3>PORTIONS 1/2 TRAYS FEEDS 10-12 People</h3>
     </center>
-
     <div class="grid-container">
         
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Chicken Parm</h5> 
           </div>
@@ -282,7 +304,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Eggplant Parm</h5> 
           </div>
@@ -295,7 +317,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Sausage Onions Peppers</h5> 
           </div>
@@ -308,7 +330,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Baked Ziti</h5> 
           </div>
@@ -321,7 +343,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Ravioli</h5> 
           </div>
@@ -334,7 +356,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Manicotti</h5> 
           </div>
@@ -347,7 +369,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Stuffed Shells</h5> 
           </div>
@@ -360,7 +382,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Lasagna Bolognese</h5> 
           </div>
@@ -373,21 +395,19 @@
       </div>
             
     </div>
-  </div>
-</div>
 
-<div class="container-menu">
-  <div class="grid-container-2">
-
-    <center class="">
+    <center class="side">
+      <a class="anchor" id="side"></a>
       <h1 class=""><strong>Sides</strong></h1>
       <img src="/images/menu-side-meatballs-2.jpg" alt="food-image" class="category-image">
+      {{!-- <h2>CALL TO ORDER 480 899-1200</h1> --}}
+      {{!-- <h2>Choice of Marinara or Ranch Dressing</h2> --}}
+      <h3>PORTIONS 1/2 TRAYS FEEDS 10-12 People</h3>
     </center>
-
     <div class="grid-container">
         
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Meatballs</h5> 
           </div>
@@ -400,7 +420,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Sausage</h5> 
           </div>
@@ -415,21 +435,18 @@
       
             
     </div>
-  </div>
-</div>
 
-<div class="container-menu">
-  <div class="grid-container-2">
-
-    <center class="">
+    <center class="dessert">
+      <a class="anchor" id="dessert"></a>
       <h1 class=""><strong>Desserts</strong></h1>
       <img src="/images/catering-category-dessert-2.jpg" alt="food-image" class="category-image">
+      {{!-- <h2>Choice of Marinara or Ranch Dressing</h2> --}}
+      <h3>PORTIONS 1/2 TRAYS FEEDS 10-12 People</h3>
     </center>
-
     <div class="grid-container">
         
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">Zeppolis</h5> 
           </div>
@@ -442,7 +459,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">12 Slices Limoncello</h5> 
           </div>
@@ -455,7 +472,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">12 Slices Tiramisu</h5> 
           </div>
@@ -468,7 +485,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">12 Slices Cheese Cake</h5> 
           </div>
@@ -481,7 +498,7 @@
       </div>
 
       <div class="grid-item">
-        <a href="#" class="list-group-item list-group-item-action">
+        <a class="list-group-item list-group-item-action">
           <div class="d-flex w-100 justify-content-between">
             <h5 class="mb-1">20 Large Cannolis</h5> 
           </div>
@@ -494,13 +511,23 @@
       </div>
             
     </div>
+
   </div>
+
 </div>
+
+
+
+
+
 
 <center>
   <h2>CALL TO ORDER 480 899-1200</h1>
-  <h2>PORTIONS 1/2 TRAYS FEEDS 10-12 People, Bread Included</h1>
+  <h2>PORTIONS 1/2 TRAYS FEEDS 10-12 People</h1>
   <p>Prices do not include tax. Menu & Pricing are subject to change. Plates & Plasticware are available at an additional cost. Deposit of 20% due at time of ordering. Order requirements minimum of 72 hours. Cancellations 24 hours prior for deposit refund</p>
   <p>COPYRIGHT © 2021 BUONO'S GILBERT - ALL RIGHTS RESERVED</p>
   <p>SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE</p>
 </center>
+
+{{!-- <script src="/js/menu.js"></script> --}}
+<script src="/js/menuScrollbar2.js"></script>

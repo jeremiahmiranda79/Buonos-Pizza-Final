@@ -16,6 +16,7 @@ const {
 	ToppingsDesert,
 	ToppingsHotSub,  
 	ToppingsPizza,
+	StuffingsCalzone,
 } = require('../../models');
 const withAuth = require('../../utils/auth');
 const isAdmin = require('../../utils/admin');
@@ -164,6 +165,8 @@ const isAdmin = require('../../utils/admin');
 			const serializedToppingsHotSub = ths.map((x) => x.get({ plain: true }));
 			const tp = await ToppingsPizza.findAll();	
 			const serializedtoppingsPizza = tp.map((x) => x.get({ plain: true }));
+			const sc = await StuffingsCalzone.findAll();
+			const serializedStuffingsCalzone = sc.map((x) => x.get({ plain: true }));
 			res.status(200).render('item-details', {
 				loggedIn: req.session.loggedIn, 
 				name: req.session.name,
@@ -177,6 +180,7 @@ const isAdmin = require('../../utils/admin');
 				toppingsDesert: serializedToppingsDesert,
 				toppingsHotSub: serializedToppingsHotSub,
 				toppingsPizza: serializedtoppingsPizza,
+				stuffingsCalzone: serializedStuffingsCalzone
 			});
 		} 
 		catch (error) {

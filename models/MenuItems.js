@@ -129,6 +129,10 @@ MenuItems.init(
     desertType: {
       type: DataTypes.BOOLEAN,
       allowNull: true
+    },
+    stuffingCalzone: {
+      type: DataTypes.BOOLEAN,
+      allowNull: true
     }
   },
   {

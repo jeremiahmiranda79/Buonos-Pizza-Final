@@ -982,7 +982,7 @@
     "addonsDescription3": null,
     "addonsPrice3": null,
 
-    "toppingPizzaFull": true,
+    "toppingPizzaFull": false,
     "toppingPizzaSlice": false,
     "toppingPizzaGlutenFree": false,
     "toppingHotSub": false,
@@ -993,7 +993,8 @@
     "pastaType": false,
     "marinaraSauce": true,
     "desertSauce": false,
-    "desertType": false
+    "desertType": false,
+    "stuffingCalzone": true
   },
 
 
@@ -1504,7 +1505,7 @@
     "description": "Breaded eggplant cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette",
     "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/entree-eggplant-parm-3.jpg",
 
     "size1": "Dinner portion for one",
     "price1": "$18.99",

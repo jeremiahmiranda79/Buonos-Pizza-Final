@@ -173,6 +173,49 @@
         {{/if}}
       {{/if}}
     </section>
+    <section class="stuffing-calzone">
+      {{#if item.stuffingCalzone}}
+        <section class="card" id="html-section-tags">
+          <button class="collapsible">See all calzone stuffings</button>
+          <div class="content">
+            <table>
+              <tr>
+                <th>Additional calzone stuffings are sold by the each</th>
+              </tr>
+              {{#each stuffingsCalzone as |sc|}}
+                <tr>
+                  <td>{{sc.name}} (Small: <b>${{sc.priceSmall}}</b>) (Large: <b>${{sc.priceLarge}}</b>)
+                    {{#if loggedIn}}
+                      <br>
+                      <a 
+                        href="/sauceDesert/updateSauceDesert/{{sd.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{sd.name}}
+                      </a>
+                    {{/if}}
+                  </td>
+                </tr>
+              {{/each}}
+            </table>
+          </div>
+        </section>
+        <br>
+        {{#if loggedIn}}
+          <section>
+            <center>
+              <a 
+                href="/sauceDesert/createSauceDesert" 
+                class="active btn btn-primary"
+              >
+                Create Sauce Desert
+              </a>
+            </center>
+          </section>
+          <br>
+        {{/if}}
+      {{/if}}
+    </section>
     <section class="salad-dressing">
       {{#if item.saladDressing}}
         <section class="card" id="html-section-tags">

@@ -3,14 +3,14 @@
 }
 
 .container-location {
-  background: var(--buonos-white);
+  /* background: var(--buonos-white); */
   margin-right: 15px;
   margin-left: 15px;
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 15px;
-  box-shadow: 2px 2px 4px var(--shadow);
-  border-radius: 4px;
+  /* box-shadow: 2px 2px 4px var(--shadow); */
+  /* border-radius: 4px; */
 }
 
 .container-location-header {

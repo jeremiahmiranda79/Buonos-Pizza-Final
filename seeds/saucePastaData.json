@@ -5,31 +5,19 @@
     "price16oz": 3.50
   },
   {
-    "name": "Red Pizza Sauce",
+    "name": "Pizza Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
   },
 
   {
-    "name": "White Pizza Sauce",
+    "name": "Garlic Butter Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
   },
 
   {
     "name": "Vodka Sauce",
-    "price3oz": 0.75,
-    "price16oz": 3.50
-  },
-
-  {
-    "name": "Alfredo Sauce",
-    "price3oz": 0.75,
-    "price16oz": 3.50
-  },
-
-  {
-    "name": "Pesto Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
   }
