@@ -1536,7 +1536,7 @@
   },
   {
     "categoryId": 10,
-    "name": "Lasagna Bolognese",
+    "name": "Lasagna",
     "description": "A baked six layer Neapolitan style lasagna stacked with bechamel, ground beef, marinara, ricotta, mozzarella, & parmesan. Served with a small house salad, & small Italian baguette",
     "switchy": true,
 
@@ -1571,7 +1571,7 @@
   },
   {
     "categoryId": 10,
-    "name": "Ravioli Grande",
+    "name": "Cheese Ravioli",
     "description": "Six jumbo ricotta stuffed ravioli topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
     "switchy": true,
 
@@ -1610,7 +1610,7 @@
     "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
     "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/entree-pasta-tomato-sauce-3.jpg",
 
     "size1": "Dinner portion for one",
     "price1": "$9.49",
@@ -1645,7 +1645,7 @@
     "description": "Choice of pasta topped with meat sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
     "switchy": true,
 
-    "image": "/images/entree-pasta-meat-sauce-3.jpg",
+    "image": "/images/entree-pasta-meat-sauce-4.jpg",
 
     "size1": "Dinner portion for one",
     "price1": "$14.99",
