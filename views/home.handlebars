@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="/css/rotating.css">
   {{!-- <link rel="stylesheet" type="text/css" href="/css/rotating-2.css"> --}}
+  <link rel="stylesheet" href="/css/gallery-flip-animation.css">
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
@@ -85,6 +86,29 @@
     {{/each}}
   </section>
 
+  <div class="gallery-flip-container">
+    <div class="center">
+      <input type="radio" checked name="active" id="tab-1">
+      <input type="radio" name="active" id="tab-2">
+      <input type="radio" name="active" id="tab-3">
+      <input type="radio" name="active" id="tab-4">
+      <div class="sliders">
+        <label for="tab-1"><img src="/images/home-buonos-place.jpg" alt=""></label>
+        <label for="tab-2"><img src="/images/home-pizza-dough.jpg" alt=""></label>
+        <label for="tab-3"><img src="/images/home-legend-2.jpg" alt=""></label>
+        <label for="tab-4"><img src="/images/home-legend-2.jpg" alt=""></label>
+      </div>
+      
+      <div class="img-card">
+        <img src="/images/home-buonos-place.jpg" alt="">
+        <img src="/images/home-pizza-dough.jpg" alt="">
+        <img src="/images/home-legend-2.jpg" alt="">
+        <img src="/images/home-legend-2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  
+
   <section label="promise-carousel">
     {{#each homePage as |hp|}}
       {{#if hp.name1Switch}}
@@ -120,6 +144,7 @@
       {{/if}}
     {{/each}}
   </section>
+
 
   {{!-- <section class="spot">
 
