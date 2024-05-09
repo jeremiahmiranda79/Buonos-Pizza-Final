@@ -7,7 +7,14 @@
   <link rel="stylesheet" href="/css/promise.css">
   <link rel="stylesheet" href="/css/takeout-dinein.css">
   <link rel="stylesheet" href="/css/video-player.css">
+
+  <link rel="stylesheet" href="/css/rotating.css">
+  {{!-- <link rel="stylesheet" type="text/css" href="/css/rotating-2.css"> --}}
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
+
+
 
 <section label="home-page">
   <section label="admin buttons">
@@ -114,6 +121,44 @@
     {{/each}}
   </section>
 
+  {{!-- <section class="spot">
+
+      <div class="image-container">
+      <span style="--i: 1">
+        <img src="/images/specialties-stromboli-1.jpg">
+      </span>
+      <span style="--i: 2">
+        <img src="/images/specialties-sicillian-pizza.jpg">
+      </span>
+      <span style="--i: 3">
+        <img src="/images/specialties-pizza-togo.jpg">
+      </span>
+      <span style="--i: 4">
+        <img src="/images/specialties-calzone-2.jpg">
+      </span>
+      <span style="--i: 5">
+        <img src="/images/specialties-pizza-togo.jpg">
+      </span>
+      <span style="--i: 6">
+        <img src="/images/specialties-pizza-togo.jpg">
+      </span>
+      <span style="--i: 7">
+        <img src="/images/specialties-pizza-togo.jpg">
+      </span>
+      <span style="--i: 8">
+        <img src="/images/specialties-pizza-togo.jpg">
+      </span>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn" id="prev">Prev</button>
+        <button class="btn" id="next">Next</button>
+      </div>
+    
+  
+  </section> --}}
+  
+
   <section label="specialties">
     {{#each homePage as |hp|}}
       {{#if hp.name2Switch}}
@@ -122,8 +167,8 @@
             <h1>{{hp.name2}}</h1>
             <h5>{{hp.description2}}</h5>
             <h6>{{i.style}}</h6>
-            <br><br>
-            <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
+            {{!-- <br><br> --}}
+            {{!-- <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="1"></button>
@@ -156,17 +201,58 @@
                   </div> 
                 </div>
               </div>
-            </div>
-            <div class="flex-box">
+
+            </div> --}}
+            
+  
+
+            {{!-- <div class="flex-box">
               <center>
                 <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
               </center>
-            </div>
+            </div> --}}
           </center>
         </div>
       {{/if}}
     {{/each}}
   </section>
+
+  <div class="gallery-container">
+    <div class="box">
+      <div style="--v: 1;">
+        <img src="/images/calzone-2.jpg">
+        <h3>Calzone</h3>
+      </div>
+      <div style="--v: 2;">
+        <img src="/images/pizza-specialty-margherita-pizza-2.jpg">
+        <h3>Pizza</h3>
+      </div>
+      <div style="--v: 3;">
+        <img src="/images/salad-antipasto-2.jpg">
+        <h3>Salad</h3>
+      </div>
+      <div style="--v: 4;">
+        <img src="images/dessert-lemoncello-2.jpg">
+        <h3>Dessert</h3>
+      </div>
+      <div style="--v: 5;">
+        <img src="images/stromboli-2.jpg">
+        <h3>Stromboli</h3>
+      </div>
+      <div style="--v: 6;">
+        <img src="images/app-wings-2.jpg">
+        <h3>Wings</h3>
+      </div>
+      <div style="--v: 7;">
+        <img src="images/hot-sub-philly-steak-2.jpg">
+        <h3>Subs</h3>
+      </div>
+      <div style="--v: 8;">
+        <img src="images/pizza-regular-sicilian-2.jpg">
+        <h3>Sicilian</h3>
+      </div>
+    </div>
+  </div>
 
   <section label="loyalty">
     {{#each homePage as |hp|}}
@@ -267,6 +353,8 @@
     </div>
   </section>
 
+  
+
   <section label="footer">
     <div class="container main-footer">
       <center>
@@ -281,3 +369,19 @@
   </section>
   
 </section>
+
+{{!-- <script src="rotating.js">
+</script> --}}
+<script>
+  $(document).ready(function() {
+    $('.box div').click(function() {
+      if($(this).hasClass('spin')) {
+        $('.box div').removeClass('spin');
+      }
+      else {
+         $('.box div').removeClass('spin');
+         $(this).addClass('spin');
+      }
+    });
+  });
+</script>

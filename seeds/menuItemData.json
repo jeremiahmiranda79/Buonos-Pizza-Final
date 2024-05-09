@@ -2,7 +2,7 @@
   {
     "categoryId": 1,
     "name": "Napolitana", 
-    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro (tomato) sauce, mozzarella, oregano, & stone deck oven baked",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh tomato sauce, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
     "image": "/images/pizza-regular-neopolitan-3.jpg",
@@ -36,8 +36,8 @@
   },
   {
     "categoryId": 1,
-    "name": "White",
-    "description": "Neapolitan-style; a thin round crust topped with garlic butter, ricotta, mozzarella, & stone deck oven baked",
+    "name": "Bianca",
+    "description": "Neapolitan-style; a thin round crust topped with garlic, butter, ricotta, mozzarella, & stone deck oven baked",
     "switchy": true,
 
     "image": "/images/pizza-regular-white-3.jpg",
@@ -73,7 +73,7 @@
   {
     "categoryId": 1,
     "name": "Siciliana",
-    "description": "Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro (tomato) sauce, mozzarella, oregano, & stone deck oven baked",
+    "description": "Sicilian-style; a thick rectangular deep dish crust topped with a fresh tomato sauce, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
     "image": "/images/pizza-regular-sicilian-3.jpg",
@@ -112,7 +112,7 @@
   {
     "categoryId": 2,
     "name": "Grandma Pie",
-    "description": "Long Island-style; a rustic rectangular pan pizza crust, topped with mozzarella fresca, mozzarella, garlic, & stone deck oven baked. Finished with a fresh pomodoro (tomato) sauce, basil puree, & parmesan",
+    "description": "Long Island-style; a rustic rectangular pan pizza crust, topped with fresh mozzarella, garlic, & stone deck oven baked. Finished with a fresh tomato sauce, basil puree, & parmesan",
     "switchy": true,
 
     "image": "/images/pizza-specialty-grandma-pie-3.jpg",
@@ -147,7 +147,7 @@
   {
     "categoryId": 2,
     "name": "Margherita Buono",
-    "description": "Neapolitan-style; a thin, round crust, topped with mozzarella fresca, olive oil, & stone deck oven baked. Finished with a fresh pomodoro (tomato) sauce, & basil puree",
+    "description": "Neapolitan-style; a thin, round crust, topped with fresh mozzarella, & stone deck oven baked. Finished with a fresh tomato sauce, & basil puree",
     "switchy": true,
 
     "image": "/images/pizza-specialty-margherita-pizza-3.jpg",
@@ -182,7 +182,7 @@
   {
     "categoryId": 2,
     "name": "Meat Lover",
-    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro (tomato) sauce, pepperoni, sausage, meatballs, bacon, mozzarella, oregano, & stone deck oven baked",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh tomato sauce, pepperoni, sausage, meatballs, bacon, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
     "image": "/images/pizza-specialty-meat-lover-3.jpg",
@@ -217,7 +217,7 @@
   {
     "categoryId": 2,
     "name": "Vegetarian",
-    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro (tomato) sauce, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh tomato sauce, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
     "image": "/images/pizza-specialty-veggi-3.jpg",
@@ -252,7 +252,7 @@
   {
     "categoryId": 2,
     "name": "Works",
-    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro (tomato) sauce, pepperoni, sausage, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh tomato sauce, pepperoni, sausage, mushrooms, green bell peppers, onions, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
     "image": "/images/pizza-specialty-works-3.jpg",
@@ -287,7 +287,7 @@
   {
     "categoryId": 2,
     "name": "Baked Ziti",
-    "description": "Neapolitan-style; a thin round crust topped with a fresh pomodoro (tomato) sauce, ricotta, ziti pasta, mozzarella, oregano, & stone deck oven baked",
+    "description": "Neapolitan-style; a thin round crust topped with a fresh tomato sauce, ricotta, ziti pasta, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
     "image": "/images/pizza-specialty-ziti-3.jpg",
@@ -398,7 +398,7 @@
   {
     "categoryId": 4,
     "name": "Napolitana Slice",
-    "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with a fresh pomodoro (tomato) sauce, mozzarella, oregano, & stone deck oven baked",
+    "description": "Single slice of a 20 inch Neapolitan-style; a thin round crust topped with a fresh tomato sauce, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
     "image": "/images/pizza-slice-neopolitan-3.jpg",
@@ -468,7 +468,7 @@
   {
     "categoryId": 4,
     "name": "Siciliana Slice",
-    "description": "Single slice of a 20 inch Sicilian-style; a thick rectangular deep dish crust topped with a fresh pomodoro (tomato) sauce, mozzarella, oregano, & stone deck oven baked",
+    "description": "Single slice of a 20 inch Sicilian-style; a thick rectangular deep dish crust topped with a fresh tomato sauce, mozzarella, oregano, & stone deck oven baked",
     "switchy": true,
 
     "image": "/images/pizza-slice-sicilian-3.jpg",
@@ -1998,7 +1998,7 @@
     "description": "Foot long Italian baguette stuffed with sauteed shaved chicken breast, onions, & white wine. Topped with choice of melted cheese, & lightly toasted",
     "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/hot-sub-philly-chicken-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$10.99",

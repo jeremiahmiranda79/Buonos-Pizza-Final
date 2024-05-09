@@ -123,7 +123,6 @@ const isAdmin = require('../../utils/admin');
 		}
 	});
 //#endregion
-
 //#region /***** MENU ******/
 	// Route to find menu
 	router.get('/menu', async (req, res) => {
@@ -228,7 +227,6 @@ const isAdmin = require('../../utils/admin');
 		};
 	});
 //#endregion
-
 //#region /***** CATERING MENU ******/
 	// Route to find menu
 	router.get('/cateringmenu', async (req, res) => {
@@ -330,7 +328,6 @@ const isAdmin = require('../../utils/admin');
 	// 	};
 	// });
 //#endregion
-
 //#region /***** LOCATION ******/
 	router.get('/location', async (req, res) => {
 		try {
