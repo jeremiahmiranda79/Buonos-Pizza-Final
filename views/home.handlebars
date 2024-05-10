@@ -10,7 +10,12 @@
 
   <link rel="stylesheet" href="/css/rotating.css">
   {{!-- <link rel="stylesheet" type="text/css" href="/css/rotating-2.css"> --}}
+
   <link rel="stylesheet" href="/css/gallery-flip-animation.css">
+
+  <link rel="stylesheet" href="/css/new-animation.css">
+
+  <link rel="stylesheet" href="/css/magic-card.css">
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
@@ -73,7 +78,7 @@
     {{/each}} 
   </section>
 
-  <section label="promise">
+  <section label="promise">    
     {{#each homePage as |hp|}}
       {{#if hp.name1Switch}}
         <div class="container-fluid promise" >
@@ -86,17 +91,66 @@
     {{/each}}
   </section>
 
+  <div class="animation-container">
+    <div class="wrapper">
+      <input type="radio" name="slide" id="one" checked>
+      <input type="radio" name="slide" id="two">
+      <input type="radio" name="slide" id="three">
+      <input type="radio" name="slide" id="four">
+      <input type="radio" name="slide" id="five">
+  
+      <div class="img img-1">
+        <img src="/images/home-buonos-place.jpg" alt="">
+        <div class="centered"><h1>Buonos Pizza</h1></div>
+      </div>
+      <div class="img img-2">
+        <img src="/images/home-pizza-dough.jpg" alt="">
+        <div class="centered"><h1>Made in House</h1></div>
+      </div>
+      <div class="img img-3">
+        <img src="/images/home-legend-2.jpg" alt="">
+        <div class="centered"><h1>Experienced Chefs</h1></div>
+      </div>
+      <div class="img img-4">
+        <img src="/images/new-york-style.jpg" alt="">
+        <div class="centered"><h1>New York Style</h1></div>
+      </div>
+      <div class="img img-5">
+        <img src="/images/buonos-old.jpg" alt="">
+        <div class="centered"><h1>Quality Since 1989</h1></div>
+      </div>
+      <div class="animation-sliders">
+        <label for="one" class="one"></label>
+        <label for="two" class="two"></label>
+        <label for="three" class="three"></label>
+        <label for="four" class="four"></label>
+        <label for="five" class="five"></label>
+      </div>
+    </div>
+  </div>
+  
+
   <div class="gallery-flip-container">
     <div class="center">
       <input type="radio" checked name="active" id="tab-1">
       <input type="radio" name="active" id="tab-2">
       <input type="radio" name="active" id="tab-3">
       <input type="radio" name="active" id="tab-4">
+      <input type="radio" name="slide" id="one">
+      
       <div class="sliders">
-        <label for="tab-1"><img src="/images/home-buonos-place.jpg" alt=""></label>
-        <label for="tab-2"><img src="/images/home-pizza-dough.jpg" alt=""></label>
-        <label for="tab-3"><img src="/images/home-legend-2.jpg" alt=""></label>
-        <label for="tab-4"><img src="/images/home-legend-2.jpg" alt=""></label>
+        <label for="tab-1">
+          <img src="/images/home-buonos-place.jpg" alt="">
+        </label>
+        <label for="tab-2">
+          <img src="/images/home-pizza-dough.jpg" alt="">
+        </label>
+        <label for="tab-3">
+          <img src="/images/home-legend-2.jpg" alt="">
+        </label>
+        <label for="tab-4">
+          <img src="/images/home-legend-2.jpg" alt="">
+        </label>
       </div>
       
       <div class="img-card">
@@ -105,11 +159,16 @@
         <img src="/images/home-legend-2.jpg" alt="">
         <img src="/images/home-legend-2.jpg" alt="">
       </div>
+
     </div>
+
+    {{!-- <input type="radio" checked name="active" id="tab-1">
+      <input type="radio" name="active" id="tab-2">
+      <input type="radio" name="active" id="tab-3">
+      <input type="radio" name="active" id="tab-4"> --}}
   </div>
   
-
-  <section label="promise-carousel">
+  {{!-- <section label="promise-carousel">
     {{#each homePage as |hp|}}
       {{#if hp.name1Switch}}
         <center>
@@ -143,7 +202,7 @@
         </div>
       {{/if}}
     {{/each}}
-  </section>
+  </section> --}}
 
 
   {{!-- <section class="spot">
@@ -279,6 +338,9 @@
     </div>
   </div>
 
+  
+  
+
   <section label="loyalty">
     {{#each homePage as |hp|}}
       {{#if hp.name3_1Switch}}
@@ -293,7 +355,7 @@
         </div>
       {{/if}}
       {{#if hp.name3_2Switch}}
-        <center>
+        {{!-- <center>
           <div id="home-page-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner loyalty">
               <div class="carousel-item active">
@@ -304,7 +366,29 @@
               </div>
             </div>
           </div>
-        </center>
+        </center> --}}
+        <div class="body">
+    <div class="magic-card-container">
+      <div class="magic-card-1">
+        <div class="magic-card-item">
+          {{!-- <h2>01</h2>
+          <h3>Magic Card</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates modi hic dolorum iure ducimus adipisci ullam labore iste, minus suscipit delectus libero eaque quis?</p>
+          <a href="#">Read More</a> --}}
+        </div>
+      </div>
+
+      <div class="magic-card-2">
+        <div class="magic-card-item">
+          {{!-- <h2>01</h2>
+          <h3>Magic Card</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates modi hic dolorum iure ducimus adipisci ullam labore iste, minus suscipit delectus libero eaque quis?</p>
+          <a href="#">Read More</a> --}}
+        </div>
+      </div>
+
+    </div>
+  </div>
       {{/if}}
       {{#if hp.name3_2Switch}}
         <div class="flex-box">
@@ -378,8 +462,6 @@
     </div>
   </section>
 
-  
-
   <section label="footer">
     <div class="container main-footer">
       <center>
@@ -388,7 +470,10 @@
           <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
           <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert" class="btn"><i class="icon fa fa-yelp"></i></a>
         </ul>
-        <h3 class="copy-right">	&copy; 2023 buonos pizza</h3>
+        <h3 class="copy-right">	COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED.</h3>
+        <h3 class="copy-right">SORRY NO CHECKS.</h3>
+        <h3 class="copy-right">GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED.</h3>
+        <h3 class="copy-right">ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.</h3>
       </center>
     </div>
   </section>
@@ -409,4 +494,24 @@
       }
     });
   });
+</script>
+
+<script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".magic-card-1"), {
+		max: 20,
+		speed: 1000,
+    glare: true,
+    "max-glare": 1
+	});
+
+  VanillaTilt.init(document.querySelector(".magic-card-2"), {
+		max: 20,
+		speed: 1000,
+    glare: true,
+    "max-glare": 1
+	});
+	
+	//It also supports NodeList
+	//VanillaTilt.init(document.querySelectorAll(".your-element"));
 </script>

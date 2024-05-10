@@ -131,25 +131,25 @@
   { 
     "name": "Capicola",
 
-    "priceSmall": 0.00,
-    "priceLarge": 0.00
+    "priceSmall": 2.50,
+    "priceLarge": 3.25
   },
   { 
     "name": "Chicken Cutlet",
 
-    "priceSmall": 0.00,
-    "priceLarge": 0.00
+    "priceSmall": 2.50,
+    "priceLarge": 3.25
   },
   { 
     "name": "Eggplant",
 
-    "priceSmall": 0.00,
-    "priceLarge": 0.00
+    "priceSmall": 2.50,
+    "priceLarge": 3.25
   },
   { 
     "name": "Soppressata",
 
-    "priceSmall": 0.00,
-    "priceLarge": 0.00
+    "priceSmall": 2.50,
+    "priceLarge": 3.25
   }
 ]

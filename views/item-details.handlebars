@@ -203,7 +203,7 @@
           </div>
         </section>
         <br>
-        {{#if loggedIn}}
+        {{!-- {{#if loggedIn}}
           <section>
             <center>
               <a 
@@ -215,7 +215,7 @@
             </center>
           </section>
           <br>
-        {{/if}}
+        {{/if}} --}}
       {{/if}}
     </section>
     <section class="salad-dressing">
@@ -229,7 +229,7 @@
               </tr>
               {{#each dressing as |d|}}
                 <tr>
-                  <td>{{d.name}} - (3 Oz: <b>${{d.price3oz}}</b>) (16 Oz: <b>${{d.price16oz}}</b>)
+                  <td>{{d.name}} - Side: <b>${{d.price3oz}}</b>
                     {{#if loggedIn}}
                       <br>
                       <a 
@@ -272,7 +272,7 @@
               </tr>
               {{#each saucePasta as |sp|}}
                 <tr>
-                  <td>{{sp.name}} - (3 Oz: <b>${{sp.price3oz}}</b>) (16 Oz: <b>${{sp.price16oz}}</b>)
+                  <td>{{sp.name}} - Side: <b>${{sp.price3oz}}</b>
                     {{#if loggedIn}}
                       <br>
                       <a 
@@ -315,7 +315,7 @@
               </tr>
               {{#each sauceWing as |sw|}}
                 <tr>
-                  <td>{{sw.name}} - (3 Oz: <b>${{sw.price3oz}}</b>) (16 Oz: <b>${{sw.price16oz}}</b>)
+                  <td>{{sw.name}} - Side: <b>${{sw.price3oz}}</b>
                     {{#if loggedIn}}
                       <br>
                       <a 
@@ -358,7 +358,7 @@
               </tr>
               {{#each pasta as |p|}}
                 <tr>
-                  <td>{{p.name}} - (3 Oz: <b>${{p.price5oz}}</b>) (16 Oz: <b>${{p.price9oz}}</b>)
+                  <td>{{p.name}} - Side: <b>${{p.price5oz}}</b>
                     {{#if loggedIn}}
                       <br>
                       <a 
