@@ -1,5 +1,7 @@
 body, html {
   margin: 0;
+  padding: 0;
+  background: var(--background-1);
 }
 
 :root {
@@ -17,7 +19,7 @@ body, html {
 main {
   margin-top: 60px;
   margin-bottom: 82px;
-  background-color: var(--background-1);
+  /* background-color: var(--background-1); */
 } 
 
 @media (min-width: 768px) {

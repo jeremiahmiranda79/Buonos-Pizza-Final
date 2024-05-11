@@ -3,22 +3,5 @@
     "name": "Marinara Sauce",
     "price3oz": 0.75,
     "price16oz": 3.50
-  },
-  {
-    "name": "Pizza Sauce",
-    "price3oz": 0.75,
-    "price16oz": 3.50
-  },
-
-  {
-    "name": "Garlic Butter Sauce",
-    "price3oz": 0.75,
-    "price16oz": 3.50
-  },
-
-  {
-    "name": "Vodka Sauce",
-    "price3oz": 0.75,
-    "price16oz": 3.50
   }
 ]

@@ -39,7 +39,7 @@ li {
 }
 
 .container-image img {
-  filter: grayscale(20%) blur(2px) brightness(60%);
+  /* filter: grayscale(20%) blur(2px) brightness(60%); */
   width: 60%;
 }
 
@@ -73,7 +73,7 @@ li {
   }
 
   .container-image img {
-    filter: grayscale(20%) blur(2px) brightness(60%);
+    /* filter: grayscale(20%) blur(2px) brightness(60%); */
     width: 85%;
   }
 }

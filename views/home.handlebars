@@ -1,4 +1,5 @@
 <head>
+  <link rel="stylesheet" href="/css.home.css">
   <link rel="stylesheet" href="/css/carousel.css">
   <link rel="stylesheet" href="/css/specialties.css">
   <link rel="stylesheet" href="/css/loyalty.css">
@@ -6,131 +7,108 @@
   <link rel="stylesheet" href="/css/social.css">
   <link rel="stylesheet" href="/css/promise.css">
   <link rel="stylesheet" href="/css/takeout-dinein.css">
-  <link rel="stylesheet" href="/css/video-player.css">
-
   <link rel="stylesheet" href="/css/rotating.css">
-  {{!-- <link rel="stylesheet" type="text/css" href="/css/rotating-2.css"> --}}
-
   <link rel="stylesheet" href="/css/gallery-flip-animation.css">
-
   <link rel="stylesheet" href="/css/new-animation.css">
-
   <link rel="stylesheet" href="/css/magic-card.css">
-
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
+{{!-- <section label="admin buttons">
+  {{#if loggedIn}}
+    <center>
+      <br><br>
+      {{#each homePage as |hp|}}
+        <a href="/home/update/{{hp.id}}" class="active btn btn-primary">Update {{hp.name}}</a>
+      {{/each}}        
+    </center>
+    <center>
+      {{#each information as |i|}}
+        <a href="/information/update/{{i.id}}" class="active btn btn-primary">Update {{i.name}}</a>
+      {{/each}}
+    </center>
+  {{/if}}
+</section> --}}
 
+<section label="video-player">
+  <div class="video-player">
+    <video width="100%" height="" controls loop autoplay muted>
+    <source src="/images/buonos-video-2.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  </div>
+</section>
 
-<section label="home-page">
-  <section label="admin buttons">
-    {{#if loggedIn}}
+<section label="information"> 
+  {{#each information as |i|}}
+    {{#if i.information1_switch}}
       <center>
-        <br><br>
-        {{#each homePage as |hp|}}
-          <a href="/home/update/{{hp.id}}" class="active btn btn-primary">Update {{hp.name}}</a>
-        {{/each}}        
-      </center>
-      <center>
-        {{#each information as |i|}}
-          <a href="/information/update/{{i.id}}" class="active btn btn-primary">Update {{i.name}}</a>
-        {{/each}}
-      </center>
+        <h6>{{i.style}}</h6>
+        <a href={{i.telNumber}} style="text-decoration:none;">
+          <h5>{{i.phoneNumber}}</h5>
+        </a>
+        <a href={{i.map}} style="text-decoration:none;">
+          <h5>{{i.address}}</h5>
+        </a>
+        <h5>{{i.email}}</h5>
+        <h5>{{i.company}}</h5>
+      </center> 
     {{/if}}
-  </section>
+  {{/each}} 
+</section>
 
-
-  <section>
-    <div class="container-fluid promise" >
-      <center>
-        <div class="video-player">
-          <video width="100%" height="" controls loop autoplay muted>
-          <source src="/images/buonos-video-2.mp4" type="video/mp4">
-          <source src="movie.ogg" type="video/ogg">
-        </div>
-
-      </center>
-
-      <center>
-        <h1>{{hp.name1}}</h1>
-        <h5>{{hp.description1}}</h5> 
-      </center>
-
-    </div>
-
-  </section>
-
-  <section label="information"> 
-    {{#each information as |i|}}
-      {{#if i.information1_switch}}
+<section label="promise">    
+  {{#each homePage as |hp|}}
+    {{#if hp.name1Switch}}
+      <div class="container-fluid promise" >
         <center>
-          <h6>{{i.style}}</h6>
-          <a href={{i.telNumber}} style="text-decoration:none;">
-            <h5>{{i.phoneNumber}}</h5>
-          </a>
-          <a href={{i.map}} style="text-decoration:none;">
-            <h5>{{i.address}}</h5>
-          </a>
-          <h5>{{i.email}}</h5>
-          <h5>{{i.company}}</h5>
-        </center> 
-      {{/if}}
-    {{/each}} 
-  </section>
+          <h1>{{hp.name1}}</h1>
+          <h5>{{hp.description1}}</h5> 
+        </center>
+      </div>
+    {{/if}}
+  {{/each}}
+</section>
 
-  <section label="promise">    
-    {{#each homePage as |hp|}}
-      {{#if hp.name1Switch}}
-        <div class="container-fluid promise" >
-          <center>
-            <h1>{{hp.name1}}</h1>
-            <h5>{{hp.description1}}</h5> 
-          </center>
-        </div>
-      {{/if}}
-    {{/each}}
-  </section>
+<div class="animation-container">
+  <div class="wrapper">
+    <input type="radio" name="slide" id="one" checked>
+    <input type="radio" name="slide" id="two">
+    <input type="radio" name="slide" id="three">
+    <input type="radio" name="slide" id="four">
+    <input type="radio" name="slide" id="five">
 
-  <div class="animation-container">
-    <div class="wrapper">
-      <input type="radio" name="slide" id="one" checked>
-      <input type="radio" name="slide" id="two">
-      <input type="radio" name="slide" id="three">
-      <input type="radio" name="slide" id="four">
-      <input type="radio" name="slide" id="five">
-  
-      <div class="img img-1">
-        <img src="/images/home-buonos-place.jpg" alt="">
-        <div class="centered"><h1>Buonos Pizza</h1></div>
-      </div>
-      <div class="img img-2">
-        <img src="/images/home-pizza-dough.jpg" alt="">
-        <div class="centered"><h1>Made in House</h1></div>
-      </div>
-      <div class="img img-3">
-        <img src="/images/home-legend-2.jpg" alt="">
-        <div class="centered"><h1>Experienced Chefs</h1></div>
-      </div>
-      <div class="img img-4">
-        <img src="/images/new-york-style.jpg" alt="">
-        <div class="centered"><h1>New York Style</h1></div>
-      </div>
-      <div class="img img-5">
-        <img src="/images/buonos-old.jpg" alt="">
-        <div class="centered"><h1>Quality Since 1989</h1></div>
-      </div>
-      <div class="animation-sliders">
-        <label for="one" class="one"></label>
-        <label for="two" class="two"></label>
-        <label for="three" class="three"></label>
-        <label for="four" class="four"></label>
-        <label for="five" class="five"></label>
-      </div>
+    <div class="img img-1">
+      <img src="/images/home-buonos-place.jpg" alt="">
+      <div class="centered"><h1>Buonos Pizza</h1></div>
+    </div>
+    <div class="img img-2">
+      <img src="/images/home-pizza-dough.jpg" alt="">
+      <div class="centered"><h1>Made in House</h1></div>
+    </div>
+    <div class="img img-3">
+      <img src="/images/home-legend-2.jpg" alt="">
+      <div class="centered"><h1>Experienced Chefs</h1></div>
+    </div>
+    <div class="img img-4">
+      <img src="/images/new-york-style.jpg" alt="">
+      <div class="centered"><h1>New York Style</h1></div>
+    </div>
+    <div class="img img-5">
+      <img src="/images/buonos-old.jpg" alt="">
+      <div class="centered"><h1>Quality Since 1989</h1></div>
+    </div>
+    <div class="animation-sliders">
+      <label for="one" class="one"></label>
+      <label for="two" class="two"></label>
+      <label for="three" class="three"></label>
+      <label for="four" class="four"></label>
+      <label for="five" class="five"></label>
     </div>
   </div>
+</div>
   
+  {{!-- <div class="gallery-flip-container">
 
-  <div class="gallery-flip-container">
     <div class="center">
       <input type="radio" checked name="active" id="tab-1">
       <input type="radio" name="active" id="tab-2">
@@ -162,11 +140,7 @@
 
     </div>
 
-    {{!-- <input type="radio" checked name="active" id="tab-1">
-      <input type="radio" name="active" id="tab-2">
-      <input type="radio" name="active" id="tab-3">
-      <input type="radio" name="active" id="tab-4"> --}}
-  </div>
+  </div> --}}
   
   {{!-- <section label="promise-carousel">
     {{#each homePage as |hp|}}
@@ -203,7 +177,6 @@
       {{/if}}
     {{/each}}
   </section> --}}
-
 
   {{!-- <section class="spot">
 
@@ -242,246 +215,259 @@
   
   </section> --}}
   
-
-  <section label="specialties">
-    {{#each homePage as |hp|}}
-      {{#if hp.name2Switch}}
-        <div class="container-fluid specialties">
-          <center>      
-            <h1>{{hp.name2}}</h1>
-            <h5>{{hp.description2}}</h5>
-            <h6>{{i.style}}</h6>
-            {{!-- <br><br> --}}
-            {{!-- <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="3"></button>
-              </div>
-              <div class="carousel-inner specialty">
-                <div class="carousel-item active">
-                  <img src="/images/specialties-pizza-togo.jpg" alt="s1" class="d-block" id="buonos">
-                  <div class="carousel-caption">
-                    <p>Neopolotian thin crust</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="/images/specialties-sicillian-pizza.jpg" alt="s2" class="d-block" id="buonos">
-                  <div class="carousel-caption">
-                    <p>Sicillian deep dish</p>
-                  </div> 
-                </div>
-                <div class="carousel-item">
-                  <img src="/images/specialties-calzone-2.jpg" alt="s1" class="d-block" id="buonos">
-                  <div class="carousel-caption">
-                    <p>Calzone</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="/images/specialties-stromboli-1.jpg" alt="s2" class="d-block" id="buonos">
-                  <div class="carousel-caption">
-                    <p>Stromboli</p>
-                  </div> 
-                </div>
-              </div>
-
-            </div> --}}
-            
-  
-
-            {{!-- <div class="flex-box">
-              <center>
-                <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
-              </center>
-            </div> --}}
-          </center>
-        </div>
-      {{/if}}
-    {{/each}}
-  </section>
-
-  <div class="gallery-container">
-    <div class="box">
-      <div style="--v: 1;">
-        <img src="/images/calzone-2.jpg">
-        <h3>Calzone</h3>
-      </div>
-      <div style="--v: 2;">
-        <img src="/images/pizza-specialty-margherita-pizza-2.jpg">
-        <h3>Pizza</h3>
-      </div>
-      <div style="--v: 3;">
-        <img src="/images/salad-antipasto-2.jpg">
-        <h3>Salad</h3>
-      </div>
-      <div style="--v: 4;">
-        <img src="images/dessert-lemoncello-2.jpg">
-        <h3>Dessert</h3>
-      </div>
-      <div style="--v: 5;">
-        <img src="images/stromboli-2.jpg">
-        <h3>Stromboli</h3>
-      </div>
-      <div style="--v: 6;">
-        <img src="images/app-wings-2.jpg">
-        <h3>Wings</h3>
-      </div>
-      <div style="--v: 7;">
-        <img src="images/hot-sub-philly-steak-2.jpg">
-        <h3>Subs</h3>
-      </div>
-      <div style="--v: 8;">
-        <img src="images/pizza-regular-sicilian-2.jpg">
-        <h3>Sicilian</h3>
-      </div>
-    </div>
-  </div>
-
-  
-  
-
-  <section label="loyalty">
-    {{#each homePage as |hp|}}
-      {{#if hp.name3_1Switch}}
-        <div class="container-fluid loyalty">
-          <center>
-            <h1>{{hp.name3_1}}</h1>
-            <h5>{{hp.description3_1}}</h5>
-            {{#if hp.name3_2Switch}}
-              <h6>*Avaliable only through Dine in or in person Take out orders.*</h6>
-            {{/if}}
-          </center>
-        </div>
-      {{/if}}
-      {{#if hp.name3_2Switch}}
-        {{!-- <center>
-          <div id="home-page-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner loyalty">
+<section label="specialties">
+  {{#each homePage as |hp|}}
+    {{#if hp.name2Switch}}
+      <div class="container-fluid specialties">
+        <center>      
+          <h1>{{hp.name2}}</h1>
+          <h5>{{hp.description2}}</h5>
+          {{!-- <h6>{{i.style}}</h6> --}}
+          {{!-- <div id="home-page-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#home-page-carousel" data-bs-slide-to="3"></button>
+            </div>
+            <div class="carousel-inner specialty">
               <div class="carousel-item active">
-                <img src="/images/magnet-1.jpg" alt="" class="d-block" id="">
+                <img src="/images/specialties-pizza-togo.jpg" alt="s1" class="d-block" id="buonos">
+                <div class="carousel-caption">
+                  <p>Neopolotian thin crust</p>
+                </div>
               </div>
-              <div class="carousel-item active">
-                <img src="/images/magnet-full-2.jpg" alt="" class="d-block" id="">
+              <div class="carousel-item">
+                <img src="/images/specialties-sicillian-pizza.jpg" alt="s2" class="d-block" id="buonos">
+                <div class="carousel-caption">
+                  <p>Sicillian deep dish</p>
+                </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="/images/specialties-calzone-2.jpg" alt="s1" class="d-block" id="buonos">
+                <div class="carousel-caption">
+                  <p>Calzone</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/specialties-stromboli-1.jpg" alt="s2" class="d-block" id="buonos">
+                <div class="carousel-caption">
+                  <p>Stromboli</p>
+                </div> 
               </div>
             </div>
+
+          </div> --}}
+          
+          {{!-- <div class="flex-box">
+            <center>
+              <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
+            </center>
+          </div> --}}
+        </center>
+      </div>
+    {{/if}}
+  {{/each}}
+</section>
+
+<div class="gallery-container">
+  <div class="box">
+    <div style="--v: 1;">
+      <img src="/images/calzone-2.jpg">
+      <h3>Calzone</h3>
+    </div>
+    <div style="--v: 2;">
+      <img src="/images/pizza-specialty-margherita-pizza-2.jpg">
+      <h3>Pizza</h3>
+    </div>
+    <div style="--v: 3;">
+      <img src="/images/salad-antipasto-2.jpg">
+      <h3>Salad</h3>
+    </div>
+    <div style="--v: 4;">
+      <img src="images/dessert-lemoncello-2.jpg">
+      <h3>Dessert</h3>
+    </div>
+    <div style="--v: 5;">
+      <img src="images/stromboli-2.jpg">
+      <h3>Stromboli</h3>
+    </div>
+    <div style="--v: 6;">
+      <img src="images/app-wings-2.jpg">
+      <h3>Wings</h3>
+    </div>
+    <div style="--v: 7;">
+      <img src="images/hot-sub-philly-steak-2.jpg">
+      <h3>Subs</h3>
+    </div>
+    <div style="--v: 8;">
+      <img src="images/pizza-regular-sicilian-2.jpg">
+      <h3>Sicilian</h3>
+    </div>
+  </div>
+</div>
+
+<section label="loyalty">
+  {{#each homePage as |hp|}}
+    {{#if hp.name3_1Switch}}
+      <div class="container-fluid loyalty">
+        <center>
+          <h1>{{hp.name3_1}}</h1>
+          <h5>{{hp.description3_1}}</h5>
+          {{#if hp.name3_2Switch}}
+            <h6>*Avaliable only through Dine in or in person Take out orders.*</h6>
+          {{/if}}
+        </center>
+      </div>
+    {{/if}}
+
+    {{!-- {{#if hp.name3_2Switch}}
+      <center>
+        <div id="home-page-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner loyalty">
+            <div class="carousel-item active">
+              <img src="/images/magnet-1.jpg" alt="" class="d-block" id="">
+            </div>
+            <div class="carousel-item active">
+              <img src="/images/magnet-full-2.jpg" alt="" class="d-block" id="">
+            </div>
           </div>
-        </center> --}}
-        <div class="body">
+        </div>
+      </center>
+    {{/if}} --}}
+
+    {{!-- {{#if hp.name3_2Switch}}
+      <div class="flex-box">
+        <center>
+          <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
+        </center>
+      </div>
+    {{/if}} --}}
+  {{/each}}
+</section>
+
+  {{!-- <div class="container-fluid">
+    <div class="body">
+      <div class="magic-card-container">
+        <div class="magic-card-1">
+          <div class="magic-card-item">
+            <h2>01</h2>
+            <h3>Magic Card</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates modi hic dolorum iure ducimus adipisci ullam labore iste, minus suscipit delectus libero eaque quis?</p>
+            <a href="#">Read More</a>
+          </div>
+        </div> 
+
+        <div class="magic-card-2">
+          <div class="magic-card-item">
+            <h2>01</h2>
+            <h3>Magic Card</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates modi hic dolorum iure ducimus adipisci ullam labore iste, minus suscipit delectus libero eaque quis?</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> --}}
+    
+<section label="Loyalty Card">
+  <div class="body">
     <div class="magic-card-container">
       <div class="magic-card-1">
         <div class="magic-card-item">
-          {{!-- <h2>01</h2>
-          <h3>Magic Card</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates modi hic dolorum iure ducimus adipisci ullam labore iste, minus suscipit delectus libero eaque quis?</p>
-          <a href="#">Read More</a> --}}
+          
         </div>
-      </div>
+      </div> 
 
       <div class="magic-card-2">
         <div class="magic-card-item">
-          {{!-- <h2>01</h2>
-          <h3>Magic Card</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates modi hic dolorum iure ducimus adipisci ullam labore iste, minus suscipit delectus libero eaque quis?</p>
-          <a href="#">Read More</a> --}}
+          
         </div>
       </div>
 
     </div>
   </div>
-      {{/if}}
-      {{#if hp.name3_2Switch}}
-        <div class="flex-box">
-          <center>
-            <a href="/menu" type="button" class="btn btn-success view-menu-button">View the menu</a>
-          </center>
-        </div>
-      {{/if}}
-    {{/each}}
-  </section>
-
-  <section label="takeout-dinein">
-    <div class="container-fluid takeout-dinein">
-      <center>
-        {{#each homePage as |hp|}}
-          {{#if hp.name4Switch}}
-            <h1>{{hp.name4}}</h1>
-            <h5>{{hp.description4}}</h5>
-          {{/if}}
-        {{/each}}
-      </center>
-    </div>
-  </section>
-
-  <section label="delivery">
-    <div class="container-fluid delivery">
-      <center>
-        {{#each homePage as |hp|}}
-          {{#if hp.name5_1Switch}}
-            <h1>{{hp.name5_1}}</h1>
-            <h4>{{hp.description5_1}}</h4>
-            <center>
-              {{#if hp.slice_switch}}
-                <a href="https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com">
-                  <img src="/images/slice-logo-600x200.jpg" class="btn-delivery-main"></img>
-                </a>
-              {{/if}}
-              <ul class="nav flex-row delivery">
-                {{#if hp.doordash_switch}}
-                  <a href="https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/">
-                    <img src="/images/delivery-doordash-icon.jpg" class="btn-delivery"></img>
-                  </a>
-                {{/if}}
-                {{#if hp.ubereats_switch}}
-                  <a href="https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg">
-                    <img src="/images/delivery-uber-eats.jpg" class="btn-delivery"></img>
-                  </a>
-                {{/if}}
-                {{#if hp.grubhub_switch}}
-                  <a href="https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436">
-                    <img src="/images/delivery-grubhub.jpg" class="btn-delivery"></img>
-                  </a>
-                {{/if}}
-              </ul>
-            </center>
-          {{/if}}
-          {{#if name5_2Switch}}
-            <p>{{description5_2}}</p>
-          {{/if}}
-          {{#if name5_3Switch}}
-            <h4>{{description5_3}}</h4>
-          {{/if}}
-          {{#if hp.name5_4Switch}}
-            <p>{{hp.description5_4}}</p> 
-          {{/if}}
-          {{#if hp.name5_5Switch}}
-            <p>{{hp.description5_5}}</p>
-          {{/if}}
-        {{/each}}
-      </center>
-    </div>
-  </section>
-
-  <section label="footer">
-    <div class="container main-footer">
-      <center>
-        <ul class="nav flex-row social">
-          <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
-          <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert" class="btn"><i class="icon fa fa-yelp"></i></a>
-        </ul>
-        <h3 class="copy-right">	COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED.</h3>
-        <h3 class="copy-right">SORRY NO CHECKS.</h3>
-        <h3 class="copy-right">GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED.</h3>
-        <h3 class="copy-right">ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.</h3>
-      </center>
-    </div>
-  </section>
-  
 </section>
 
-{{!-- <script src="rotating.js">
-</script> --}}
+<section label="takeout-dinein">
+  <div class="container-fluid takeout-dinein">
+    <center>
+      {{#each homePage as |hp|}}
+        {{#if hp.name4Switch}}
+          <h1>{{hp.name4}}</h1>
+          <h5>{{hp.description4}}</h5>
+        {{/if}}
+      {{/each}}
+    </center>
+  </div>
+</section>
+
+<section label="delivery">
+  <div class="container-fluid delivery">
+    <center>
+      {{#each homePage as |hp|}}
+        {{#if hp.name5_1Switch}}
+          <h1>{{hp.name5_1}}</h1>
+          <h4>{{hp.description5_1}}</h4>
+          <center>
+            {{#if hp.slice_switch}}
+              <a href="https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com">
+                <img src="/images/slice-logo-600x200.jpg" class="btn-delivery-main"></img>
+              </a>
+            {{/if}}
+            <ul class="nav flex-row delivery">
+              {{#if hp.doordash_switch}}
+                <a href="https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/">
+                  <img src="/images/delivery-doordash-icon.jpg" class="btn-delivery"></img>
+                </a>
+              {{/if}}
+              {{#if hp.ubereats_switch}}
+                <a href="https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg">
+                  <img src="/images/delivery-uber-eats.jpg" class="btn-delivery"></img>
+                </a>
+              {{/if}}
+              {{#if hp.grubhub_switch}}
+                <a href="https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436">
+                  <img src="/images/delivery-grubhub.jpg" class="btn-delivery"></img>
+                </a>
+              {{/if}}
+            </ul>
+          </center>
+        {{/if}}
+        {{#if name5_2Switch}}
+          <p>{{description5_2}}</p>
+        {{/if}}
+        {{#if name5_3Switch}}
+          <h4>{{description5_3}}</h4>
+        {{/if}}
+        {{#if hp.name5_4Switch}}
+          <p>{{hp.description5_4}}</p> 
+        {{/if}}
+        {{#if hp.name5_5Switch}}
+          <p>{{hp.description5_5}}</p>
+        {{/if}}
+      {{/each}}
+    </center>
+  </div>
+</section>
+
+<section label="footer">
+  <div class="container main-footer">
+    <center>
+      <ul class="nav flex-row social">
+        <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
+        <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert" class="btn"><i class="icon fa fa-yelp"></i></a>
+      </ul>
+      <h3 class="copy-right">	COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED.</h3>
+      <h3 class="copy-right">SORRY NO CHECKS.</h3>
+      <h3 class="copy-right">GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED.</h3>
+      <h3 class="copy-right">ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.</h3>
+    </center>
+  </div>
+</section>
+  
 <script>
   $(document).ready(function() {
     $('.box div').click(function() {
@@ -497,6 +483,7 @@
 </script>
 
 <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+
 <script type="text/javascript">
 	VanillaTilt.init(document.querySelector(".magic-card-1"), {
 		max: 20,
