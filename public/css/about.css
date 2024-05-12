@@ -4,11 +4,11 @@
 
 .container-about {
   margin-right: 20%;
-  margin-left: 20%;
+  margin-left: 20%; 
 }
 
 .about-background {
-  padding-top: 55px;
+  /* padding-top: 55px; */
 }
 
 li {
@@ -18,8 +18,8 @@ li {
 }
 
 .container-about-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 25px; */
 }
 
 .container-about-header h1 {

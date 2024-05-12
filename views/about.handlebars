@@ -3,6 +3,7 @@
   <link rel="stylesheet" href="/css/social.css">
   <link rel="stylesheet" href="/css/video-player.css">
   <link rel="stylesheet" href="/css/promise.css">
+  <link rel="stylesheet" href="/css/gallery-flip-animation.css">
 </head>
 
 <div class="about-background">
@@ -18,35 +19,56 @@
       </div> 
     </center>
   </div>
-  <br><br><br>
-  <div class="container-image">
-    <center>
-      <img src="/images/buonos-old.jpg" alt="buonos-old">
-    </center>
-  </div>
-  <br>
-  <div class="container-about">
-    <center>
-      <h5>Jimmy and family from the ORIGINAL BUONO'S are BACK.  At  BUONO'S we believe we stay true to NYC style pizza, by using fresh local ingredients. BUONO'S has been bringing New York-style pizza to Arizona since 1989!  Just like a local NYC neighborhood pizzeria.  We are an independently owned and operated pizzeria restaurant. Joining Jimmy is his fiance Shelly who is a Military Veteran and a ICU Nurse</h5>
-    </center> 
-    <br>
-  </div>
+
   <div class="container-about-header">
     <center>
       <h1>Meet The Team</h1>
     </center>
   </div>
-  <div class="container-image">
-    <center>
-      <img src="/images/team-1.jpg" alt="">
-    </center>
+
+  <div class="gallery-flip-container">
+    <div class="center">
+      <input type="radio" checked name="active" id="tab-1">
+      <input type="radio" name="active" id="tab-2">
+      <input type="radio" name="active" id="tab-3">
+      <input type="radio" name="active" id="tab-4">
+      <input type="radio" name="slide" id="one">
+      
+      <div class="sliders">
+        <label for="tab-1">
+          <img src="/images/team-1.jpg" alt="">
+        </label>
+        <label for="tab-2">
+          <img src="/images/team-2.jpg" alt="">
+        </label>
+        <label for="tab-3">
+          <img src="/images/team-1.jpg" alt="">
+        </label>
+        <label for="tab-4">
+          <img src="/images/team-2.jpg" alt="">
+        </label>
+      </div>
+      
+      <div class="img-card">
+        <img src="/images/team-1.jpg" alt="">
+        <img src="/images/team-2.jpg" alt="">
+        <img src="/images/team-1.jpg" alt="">
+        <img src="/images/team-2.jpg" alt="">
+      </div>
+    </div>
   </div>
-  <br>
   <div class="container-about">
+    <center>
+      <h5>Jimmy and family from the ORIGINAL BUONO'S are BACK.  At  BUONO'S we believe we stay true to NYC style pizza, by using fresh local ingredients. BUONO'S has been bringing New York-style pizza to Arizona since 1989!  Just like a local NYC neighborhood pizzeria.  We are an independently owned and operated pizzeria restaurant. Joining Jimmy is his fiance Shelly who is a Military Veteran and a ICU Nurse</h5>
+    </center> 
+  </div>
+  
+  {{!-- <div class="container-about">
     <center>
       <h5>We love to build personal relationships with our staff and our customers. Come find out how to become part of our culture. Be apart of decades of quality wrapped around more than a hundred years of collabrive experience. For a small kitchen and restaurant we push the limits of exellence.</h5>
     </center> 
-  </div>
+  </div> --}}
+
   <div class="container-about-header">
     <center>
       <h1>Dine in or take out</h1>
@@ -57,21 +79,25 @@
       <h5>We have worked to package our meals in a way that lets you bring the quality of our meals into your home. We always love to see you in person, but even when we can't we ensure that your dining experience is top notch!</h5>
     </center>
   </div>
+
   <div class="container-about-header">
     <center>
       <h1>Made in store</h1>
     </center>
   </div>
+
   <div class="container-about">
     <center>
       <h5>We refuse to compromise.  We use the freshest and finest ingredients.  Our Pizza Dough is made fresh daily in house and we make our sauce in house as well.</h5>
     </center>  
   </div>
-  <div class="container-about-header">
+
+  {{!-- <div class="container-about-header">
     <center>
       <h1>Information</h1>
     </center>
-  </div>
+  </div> --}}
+
   <div class="container-about">
     <center>
       {{#each information as |i|}}
@@ -93,11 +119,13 @@
       {{/each}}
     </center>
   </div>
-  <div class="container-about-header">
+
+  {{!-- <div class="container-about-header">
     <center>
       <h1>Hours of operation</h1>
     </center>
-  </div>
+  </div> --}}
+
   <div class="container-about">
     <center>
       <ul>
@@ -107,13 +135,15 @@
       </ul>
     </center>  
   </div>
-  <div class="container-about-header">
+
+  {{!-- <div class="container-about-header">
     <center>
       {{#each information as |i|}}
         <h1>{{i.name}}</h1>
       {{/each}}
     </center>
-  </div>
+  </div> --}}
+
   <div class="container-about">
     <center>
       {{#each information as |i|}}
