@@ -1,95 +1,99 @@
 <head>
   <link rel="stylesheet" href="/css/contact.css">
+
+
+  <link rel="stylesheet" href="/css/style-page.css">
   <link rel="stylesheet" href="/css/social.css">
 </head>
 
-<div class="contact-background">
-  <div class="container-contact-header">
-    <center>
-      <h1>Contact Us</h1>
-    </center>
-  </div>
-  <div class="container-contact">
-    <div class="row mb-3">
-      <label for="name" class="col-sm-2 col-form-label">Name</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="name_id" placeholder="sample name">
-      </div>
-    </div>
-    <div class="row mb-3">
-      <label for="email" class="col-sm-2 col-form-label">Email</label>
-      <div class="col-sm-10">
-        <input type="email" class="form-control" id="email_id" placeholder="sample@email.com">
-      </div>
-    </div>
-    <div class="row mb-3">
-      <label for="phone" class="col-sm-2 col-form-label">Phone</label>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" id="phone_id" placeholder="(###)-###-####">
-      </div>
-    </div>
-    <div class="row mb-3">
-      <label for="message" class="col-sm-2 col-form-label">Message</label>
-      <div class="col-sm-10">
-        <textarea type="text" class="form-control" rows="5" id="message_id" placeholder="sample message">
-        </textarea>
-      </div>
-    </div>
-    <center>
-      <button onclick="sendEmail()" class="btn btn-primary">Send Message</button>
-    </center>
-  </div>
-  <div class="container-contact-header">
-    <center>
-      <h1>Information</h1>
-    </center>
-  </div>
-  <div>
-    <center>
-      <h5>🍕Buono's Pizza LLC</h5>
-      <a href="tel:+14808991200" style="text-decoration:none;"><h4>📞480-899-1200</h4></a>
-        <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;"><h5>👉1464 East Williams Field Road, Gilbert, Arizona 85295</h5></a>
-      <h5>✉️buonosgilbert@yahoo.com</h5> 
-    </center>
-  </div>
-  <div class="container-contact-header">
-    <center>
-      <h1>Hours of operation</h1>
-    </center>
-  </div>
-  <div>
-    <center>
-      <ul>
-        {{#each hours as |h|}}
-        <li>{{h.date}}</li>
-        {{/each}}
-      </ul>
-    </center>  
-  </div>
-  <div class="container-contact-header">
-    <center>
-      <h1>Thank you!</h1>
-    </center>
-  </div>
-  <div>
-    <center>
-      <h3>We thank you for supporting our locally owned and operated pizzeria</h3>
-    </center>
-  </div>
+<div class="heading buonos-font">
   <center>
-    <ul class="nav flex-row social">
-      <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
-      <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
-      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="btn"><i class=" icon fa fa-yelp"></i></a>
-    </ul>
-    <h3 class="copy-right">	&copy; 2023 buonos pizza</h3>
+    <h1>Contact Us</h1>
   </center>
 </div>
 
+<div class="container-contact">
+  <div class="row mb-3">
+    <label for="name" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="name_id" placeholder="sample name">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="email" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="email_id" placeholder="sample@email.com">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="phone_id" placeholder="(###)-###-####">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="message" class="col-sm-2 col-form-label">Message</label>
+    <div class="col-sm-10">
+      <textarea type="text" class="form-control" rows="5" id="message_id" placeholder="sample message">
+      </textarea>
+    </div>
+  </div>
+  <center>
+    <button onclick="sendEmail()" class="btn btn-primary">Send Message</button>
+  </center>
+</div>
+
+<div class="sub-section">
+  <p><b>* Message response time is on average between 24 and 48 hours. For immediate inquiries please call us at: <a href="tel:+14808991200">📞 480-899-1200.</a> *</b></p>
+</div>
+
+<div class="social-footer">
+  {{#each information as |i|}}
+    <h5>{{i.description}}</h5>
+  {{/each}}
+
+  {{#each information as |i|}}
+    <h4>{{i.company}}</h4>
+  {{/each}}
+
+  <a href="tel:+14808991200">
+    {{#each information as |i|}}
+      <h4>{{i.phoneNumber}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu">
+    {{#each information as |i|}}
+      <h5>{{i.address}}</h5>
+    {{/each}}
+  </a>
+
+  <a href="mailto: buonosgilbert@yahoo.com">
+    {{#each information as |i|}}
+      <h5>{{i.email}}</h5> 
+    {{/each}}
+  </a>
+
+  <ul class="social">
+    <a href="https://www.facebook.com/buonosgilbert/" class="btn"><i class="icon fa fa-facebook"></i></a>
+
+    <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="btn"><i class=" icon fa fa-instagram"></i></a>
+
+    <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="btn"><i class=" icon fa fa-yelp"></i></a>
+  </ul> 
+  <p>
+    COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+  </p> 
+
+  <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+</div>
+
 <script src="/js/contact.js"></script>
+
 <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
+
 <script type="text/javascript">
   (function(){
     emailjs.init("L7u_gwzunO_hCkE1K");//public key

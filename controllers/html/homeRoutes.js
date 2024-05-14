@@ -374,11 +374,13 @@ const isAdmin = require('../../utils/admin');
 		try {
 			const x = await Hours.findAll();
 			const serializedHours = x.map((hour) => hour.get({plain: true}));
-			console.log(serializedHours);
+			const info = await Information.findAll();
+			const serializedInfo = info.map((info) => info.get({plain: true}));
 			res.status(200).render('contact', {
 				loggedIn: req.session.loggedIn, 
 				name: req.session.name,
-				hours: serializedHours
+				hours: serializedHours,
+				information: serializedInfo
 			});
 		}
 		catch (error) {

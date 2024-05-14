@@ -27,24 +27,8 @@ li {
 }
 
 @media (min-width: 768px) {
-  .contact-background {
-    padding-top: 55px;
-  }
-
   .container-contact {
     margin-right: 25%;
     margin-left: 25%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container-contact {
-
-  }
-}
-
-@media (min-width: 1440px) {
-  .container-contact {
-
   }
 }

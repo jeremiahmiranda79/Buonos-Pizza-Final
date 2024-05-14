@@ -10,8 +10,12 @@ body, html {
   --buonos-white: rgb(242, 242, 242);
   --buonos-green: rgb(0, 146, 70);
   --background-1: rgb(169, 169, 169); 
-  --background-2: rgb(65, 51, 51);
+  --background-2: rgb(150, 146, 146);
   --shadow: rgb(63, 61, 61);
+
+  --shadow-effect: 2px 2px 4px var(--shadow);
+
+  --stroke-1: -1px 0 #000000, 0 1px black, 1px 0 black, 0 -1px black;
   
   --buonos-font: 'Permanent Marker', cursive;
 }
@@ -29,20 +33,16 @@ main {
   }
 }
 
-.btn {
-  box-shadow: 2px 2px 4px var(--shadow);
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 
 #buonos {
   filter: grayscale(20%) blur(2px) brightness(60%);
 }
 
-.copy-right {
+/* .copy-right {
   padding-bottom: 10px;
   color: var(--buonos-white)
-}
+} */
 
 .container-menu h1 {
   font-family: var(--buonos-font);

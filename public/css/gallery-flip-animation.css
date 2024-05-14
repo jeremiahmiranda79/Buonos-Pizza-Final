@@ -1,109 +1,170 @@
 .gallery-flip-container{
-  display: flex;
-  height: 100vh;
-  text-align: center;
-  align-items: center;
+  display: flex;  
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin: 5px;
+  height: 800px;
+  background: var(--buonos-white);
+  box-shadow: 5px 2px 20px 2px black inset;
 }
+
 .center{
   position: relative;
-  width: 770px;
-  left: -70px;
+  width: 1155px;
+  height: 1155px;
   perspective: 1200px;
+  left: 350px; 
+  top: 130px;
 }
+
 .center .img-card{
   position: relative;
-  height: 350px;
-  width: 400px;
+  height: 525px;
+  width: 600px;
   transform-style: preserve-3d;
   transition: transform .5s ease-in;
+  pointer-events: none;
 }
+
 .img-card img{
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 .img-card img:nth-child(1){
-  transform: rotateX(-270deg) translateY(-175px);
+  transform: rotateX(-270deg) translateY(-262.5px);
   transform-origin: top left;
 }
+
 .img-card img:nth-child(2){
-  transform: translateZ(175px);
+  transform: translateZ(262.5px);
 }
+
 .img-card img:nth-child(3){
-  transform: rotateX(-90deg) translateY(175px);
+  transform: rotateX(-90deg) translateY(262.5px);
   transform-origin: bottom center;
 }
+
 .img-card img:nth-child(4){
-  transform: rotateX(-180deg) translateY(350px) translateZ(175px);
+  transform: rotateX(-180deg) translateY(525px) translateZ(262.5px);
   transform-origin: bottom right;
 }
+
 #tab-1:checked ~ .img-card{
   transform: rotateX(-90deg);
 }
+
 #tab-2:checked ~ .img-card{
   transform: rotateX(0deg);
 }
+
 #tab-3:checked ~ .img-card{
   transform: rotateX(90deg);
 }
+
 #tab-4:checked ~ .img-card{
   transform: rotateX(180deg);
 }
-.sliders{
-  position: absolute;
-  /* display: flex; */
-  /* display: inline-block; */
-  right: 0;
-  top: -30px;
+
+#tab-1:checked ~ .sliders label.one {
+  box-shadow: 10px 10px 5px rgba(0,0,0,0);
+  left: 7px;
+  top: 7px;
 }
+
+#tab-2:checked ~ .sliders label.two {
+  box-shadow: 10px 10px 5px rgba(0,0,0,0);
+  left: 7px;
+  top: 7px;
+}
+
+#tab-3:checked ~ .sliders label.three {
+  box-shadow: 10px 10px 5px rgba(0,0,0,0);
+  left: 7px;
+  top: 7px;
+}
+
+#tab-4:checked ~ .sliders label.four {
+  box-shadow: 10px 10px 5px rgba(0,0,0,0);
+  left: 7px;
+  top: 7px;
+}
+
+.sliders {
+  position: relative;
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  right: 350px;
+  bottom: -45px;
+}
+
 .sliders label{
-  height: 98px;
-  width: 110px;
+  height: 75px;
+  width: 75px;
   display: flex;
-  /* display: inline-block; */
   overflow: hidden;
   cursor: pointer;
-  margin: 6px 0;
-  border: 2px solid #2d4052;
+  margin-right: 20px;
+  position: relative;
+  z-index: 999;
+  box-shadow: 10px 10px 5px rgba(0,0,0,0.8);
 }
+
 .sliders label:nth-child(1){
-  margin-top: 0;
+  /* margin-top: 0; */
 }
+
 label img{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  filter: grayscale(1);
-  opacity: .9;
+  filter: grayscale(0);
+  opacity: 1;
 }
+
 label img:hover,
 #tab-1:checked ~ .sliders label:nth-child(1) img,
 #tab-2:checked ~ .sliders label:nth-child(2) img,
 #tab-3:checked ~ .sliders label:nth-child(3) img,
 #tab-4:checked ~ .sliders label:nth-child(4) img{
-  filter: grayscale(0);
-  opacity: 1;
+  filter: grayscale(1);
+  opacity: .9;
 }
+
 input{
   display: none;
+  position: absolute;
 }
 
-@media (max-width: 2560px) {
-  .center{
-    width: 1,155px;
-    left: -350px;
-    perspective: 1200px;
+/* @media (max-width: 2560px) {
+  .gallery-flip-container{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    height: 800px;
+    background: var(--buonos-white);
+    box-shadow: 5px 2px 20px 2px black inset;
   }
 
-  .gallery-flip-container{
-    height: 75vh;
+  .center{
+    position: relative;
+    width: 1155px;
+    height: 1155px;
+    perspective: 1200px;
+    left: 350px; 
+    top: 130px;
   }
 
   .center .img-card{
     height: 525px;
     width: 600px;
+    pointer-events: none;
   }
 
   .img-card img:nth-child(1){
@@ -125,17 +186,74 @@ input{
     transform-origin: bottom right;
   }
 
-  .sliders{
-    right: -455px;
-    top: -20px;
+  #tab-1:checked ~ .sliders label.one {
+    box-shadow: 10px 10px 5px rgba(0,0,0,0);
+    left: 7px;
+    top: 7px;
+    z-index: 100;
+  }
+  
+  #tab-2:checked ~ .sliders label.two {
+    box-shadow: 10px 10px 5px rgba(0,0,0,0);
+    left: 7px;
+    top: 7px;
+  }
+  
+  #tab-3:checked ~ .sliders label.three {
+    box-shadow: 10px 10px 5px rgba(0,0,0,0);
+    left: 7px;
+    top: 7px;
+  }
+  
+  #tab-4:checked ~ .sliders label.four {
+    box-shadow: 10px 10px 5px rgba(0,0,0,0);
+    left: 7px;
+    top: 7px;
+    z-index: 100;
+  }
+
+  .sliders {
+    position: relative;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    right: 350px;
+    bottom: -30px;
   }
 
   .sliders label{
-    height: 120px;
-    width: 120px;
-    margin: 30px 0;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+    z-index: 999;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.8);
   }
+  label img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(0);
+    opacity: 1;
+  }
+
+  label img:hover,
+    #tab-1:checked ~ .sliders label:nth-child(1) img,
+    #tab-2:checked ~ .sliders label:nth-child(2) img,
+    #tab-3:checked ~ .sliders label:nth-child(3) img,
+    #tab-4:checked ~ .sliders label:nth-child(4) img{
+  filter: grayscale(1);
+  opacity: .9;
 }
+
+  input{
+    display: none;
+    position: absolute;
+  }
+} */
 
 @media (max-width: 768px) {
   .center{
@@ -218,12 +336,12 @@ input{
 
   .sliders{
     right: -135px;
-    top: -7px;
+    top: 5px;
   }
 
   .sliders label{
-    height: 64px;
-    width: 64px;
+    height: 60px;
+    width: 60px;
     margin: 6px 0;
   }
 }
@@ -279,7 +397,7 @@ input{
   }
 
   .gallery-flip-container{
-    height: 25vh;
+    height: 215px;
   }
 
   .center .img-card{
