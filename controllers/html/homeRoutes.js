@@ -127,12 +127,15 @@ const isAdmin = require('../../utils/admin');
 	// Route to find menu
 	router.get('/menu', async (req, res) => {
 		try {
-			const i = await Categories.findAll({ include: [{ model: MenuItems }] });	
-			const serializedItems = i.map((x) => x.get({ plain: true }));
+			const c = await Categories.findAll({ include: [{ model: MenuItems }] });	
+			const serializedItems = c.map((x) => x.get({ plain: true }));
+			const i = await Information.findAll();
+			const serializedInfo = i.map((x) => x.get({ plain: true }));
 			res.status(200).render('menu', {
 				loggedIn: req.session.loggedIn, 
 				name: req.session.name,
-				items: serializedItems
+				items: serializedItems,
+				information: serializedInfo
 			});
 		}
 		catch (error) {
@@ -356,11 +359,13 @@ const isAdmin = require('../../utils/admin');
 		try {
 			const x = await Hours.findAll();
 			const serializedHours = x.map((hour) => hour.get({plain: true}));
-			console.log(serializedHours);
+			const i = await Information.findAll();
+			const serializedInfo = i.map((x) => x.get({ plain: true }));
 			res.status(200).render('hours', {
 				loggedIn: req.session.loggedIn, 
 				name: req.session.name,
-				hours: serializedHours
+				hours: serializedHours,
+				information: serializedInfo
 			});
 		}
 		catch (error) {
@@ -416,10 +421,20 @@ const isAdmin = require('../../utils/admin');
 		if (req.session.loggedIn) {
 			return res.redirect('../');
 		}
-		res.status(200).render('login', {
-			loggedIn: req.session.loggedIn, 
-			name: req.session.name
-		});
+
+		try {
+			const i = await Information.findAll();
+			const serializedInfo = i.map((x) => x.get({ plain: true }));
+			res.status(200).render('login', {
+				loggedIn: req.session.loggedIn, 
+				name: req.session.name,
+				information: serializedInfo
+			});
+		}
+		catch (error) {
+			console.log(error);
+			res.status(500).json(error);// 500 - internal server error
+		}
 	});
 //#endregion
 //#region /***** INFORMATION ******/

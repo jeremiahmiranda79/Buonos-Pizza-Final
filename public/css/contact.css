@@ -1,34 +1,9 @@
 .container-contact {
   background: var(--buonos-white);
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 25%;
+  margin-left: 25%;
   margin-bottom: 15px;
   padding: 15px;
   box-shadow: 2px 2px 4px var(--shadow);
   border-radius: 4px;
-}
-
-li {
-  list-style-type: none;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.container-contact-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.container-contact-header h1 {
-  font-family: var(--buonos-font);
-  color: var(--buonos-red);
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 40px;
-}
-
-@media (min-width: 768px) {
-  .container-contact {
-    margin-right: 25%;
-    margin-left: 25%;
-  }
 }

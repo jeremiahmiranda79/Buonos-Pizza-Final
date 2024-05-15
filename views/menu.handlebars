@@ -3,11 +3,12 @@
   <link rel="stylesheet" href="/css/scrollableTabs2.css">
   <link rel="stylesheet" href="/css/menu.css">
   <link rel="stylesheet" href="/css/updateInformation.css">
+  <link rel="stylesheet" href="/css/social.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 
 <!--#region scollable tabs 2 -->
-  <section class="main-container">
+  <div class="main-container" >
     <div class="tab-nav-bar">
       <div class="tab-navigation">
         <i class="uil uil-angle-left left-btn"></i> 
@@ -22,7 +23,7 @@
         </ul>
       </div>
     </div>
-  </section>
+  </div>
 <!--#endregion -->
 
 <!--#region if logged in  -->
@@ -106,6 +107,26 @@
 
 <!--#region if NOT logged in  -->
     {{else}}
+
+      <!--#region scollable tabs 2 -->
+  {{!-- <div class="main-container" >
+    <div class="tab-nav-bar">
+      <div class="tab-navigation">
+        <i class="uil uil-angle-left left-btn"></i> 
+        <i class="uil uil-angle-right right-btn"></i>
+        <ul class="tab-menu">
+          <li class="tab-btn"><a href="#" class="active">All</a></li>
+          {{#each items as |c|}}
+            {{#if c.switchy}}
+              <li class="tab-btn"><a href="#{{c.id}}">{{c.name}}</a></li>
+            {{/if}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div> --}}
+<!--#endregion -->
+
       <div class="container-menu">
         <div class="grid-container-2">
           {{#each items as |c|}}
@@ -156,6 +177,66 @@
       </div>
   {{/if}}
 <!--#endregion -->
+
+<div class="social-footer">
+  {{#each information as |i|}}
+    <h5>{{i.description}}</h5>
+  {{/each}}
+
+  {{#each information as |i|}}
+    <h4>{{i.company}}</h4>
+  {{/each}}
+
+  <a href="tel:+14808991200">
+    {{#each information as |i|}}
+      <h4>{{i.phoneNumber}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu">
+    {{#each information as |i|}}
+      <h5>{{i.address}}</h5>
+    {{/each}}
+  </a>
+
+  <a href="mailto: buonosgilbert@yahoo.com">
+    {{#each information as |i|}}
+      <h5>{{i.email}}</h5> 
+    {{/each}}
+  </a>
+
+  <div class="row">
+    <div class="column">
+      <a href="https://www.facebook.com/buonosgilbert/" class="button-social">
+        <img src="/images/social-facebook.png" alt="facebook icon"> 
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="button-social">
+        <img src="/images/social-instagram.png" alt="instagram icon">
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
+        <img src="/images/social-yelp.png" alt="">
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
+        <img src="/images/social-google-maps.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <p>
+    COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+  </p> 
+
+  <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+</div>
 
 {{!-- <script src="/js/menuScrollbar.js"></script> --}}
 <script src="/js/menu.js"></script>
