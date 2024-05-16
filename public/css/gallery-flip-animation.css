@@ -4,10 +4,10 @@
   justify-content: center;
   align-items: center;
   height: 800px;
-  background: var(--buonos-white);
+  /* background: var(--buonos-white); */
   /* box-shadow: 5px 2px 20px 2px black inset; */
   /* box-shadow: 1px 2px 10px 0px black inset; */
-  box-shadow: 0px 0px 10px 0px black inset;
+  /* box-shadow: 0px 0px 10px 0px black inset; */
   margin: 25px 0px 5px 0px;
 }
 

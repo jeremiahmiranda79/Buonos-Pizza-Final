@@ -1,20 +1,23 @@
-.container-item img {
-  width: 100%;
+.item-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
-.item-background {
+/* .item-background {
+  margin-top: 80px;
+} */
 
-}
-
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container-item {
 
   }
   
   .container-item img {
-    /* width: 30%;  */
+    width: 30%;
     width: 90%;
-    /* height: 200px; */
+    height: 200px;
   }
 
   .item-background {
@@ -24,4 +27,4 @@
     height: 100%;
     padding-bottom: 20%;
   }
-}
+} */

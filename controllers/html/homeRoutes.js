@@ -148,7 +148,11 @@ const isAdmin = require('../../utils/admin');
 		try {
 			const i = await MenuItems.findByPk(req.params.menuitemsId, {
 				include: [{ model: Categories }]});
+
 			const serializedItem = i.get({ plain: true });
+			const t = await Information.findAll();
+			const serializedInfo = t.map((x) => x.get({ plain: true }));
+
 			const d = await Dressings.findAll();
 			const serializedDressings = d.map((x) => x.get({ plain: true }));
 			const p = await Pastas.findAll();
@@ -172,6 +176,7 @@ const isAdmin = require('../../utils/admin');
 			res.status(200).render('item-details', {
 				loggedIn: req.session.loggedIn, 
 				name: req.session.name,
+				information: serializedInfo,
 				item: serializedItem,
 				dressing: serializedDressings,
 				pasta: serializedPastas,

@@ -3,7 +3,6 @@
   text-align: center;
   background: var(--background-2);
   padding: 15px 5px 5px 5px;
-  /* box-shadow: 1px 2px 10px 0px black inset; */
   box-shadow: 0px 0px 10px 0px black inset;
   margin: 25px 0px 0px 0px;
 }
@@ -31,8 +30,6 @@
 .social-footer img:hover {
   opacity: 0.5;
 }
-
-
 
 @media (max-width: 768px) {
   .row {

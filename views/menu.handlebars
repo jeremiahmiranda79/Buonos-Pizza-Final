@@ -1,5 +1,4 @@
 <head>
-  {{!-- <link rel="stylesheet" href="/css/scrollableTabs.css"> --}}
   <link rel="stylesheet" href="/css/scrollableTabs2.css">
   <link rel="stylesheet" href="/css/menu.css">
   <link rel="stylesheet" href="/css/updateInformation.css">
@@ -15,11 +14,11 @@
         <i class="uil uil-angle-right right-btn"></i>
         <ul class="tab-menu">
           <li class="tab-btn"><a href="#" class="active">All</a></li>
-          {{#each items as |c|}}
-            {{#if c.switchy}}
-              <li class="tab-btn"><a href="#{{c.id}}">{{c.name}}</a></li>
-            {{/if}}
-          {{/each}}
+            {{#each items as |c|}}
+              {{#if c.switchy}}
+                <li class="tab-btn"><a href="#{{c.id}}">{{c.name}}</a></li>
+              {{/if}}
+            {{/each}}
         </ul>
       </div>
     </div>
@@ -107,26 +106,6 @@
 
 <!--#region if NOT logged in  -->
     {{else}}
-
-      <!--#region scollable tabs 2 -->
-  {{!-- <div class="main-container" >
-    <div class="tab-nav-bar">
-      <div class="tab-navigation">
-        <i class="uil uil-angle-left left-btn"></i> 
-        <i class="uil uil-angle-right right-btn"></i>
-        <ul class="tab-menu">
-          <li class="tab-btn"><a href="#" class="active">All</a></li>
-          {{#each items as |c|}}
-            {{#if c.switchy}}
-              <li class="tab-btn"><a href="#{{c.id}}">{{c.name}}</a></li>
-            {{/if}}
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-  </div> --}}
-<!--#endregion -->
-
       <div class="container-menu">
         <div class="grid-container-2">
           {{#each items as |c|}}
@@ -146,12 +125,9 @@
                         </div>
 
                         <div class="subitem">
-                          {{!-- <p class="mb-1">{{i.description}}</p> --}}
-                          {{!-- <p class="mb-1">Starting price is <b>{{i.price1}}</b></p> --}}
                           <p class="mb-1">{{i.description}}</p>
                           <p class="mb-1"><b>Click for price options</b></p>
                           <br>
-                          {{!-- <p class="mb-1">>>>></p> --}}
                           <img src={{i.image}} alt="food-image" class="category-image">  
                         </div> 
                       </a>
@@ -238,6 +214,5 @@
   <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
 </div>
 
-{{!-- <script src="/js/menuScrollbar.js"></script> --}}
 <script src="/js/menu.js"></script>
 <script src="/js/menuScrollbar2.js"></script>

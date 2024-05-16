@@ -505,7 +505,7 @@
   {
     "categoryId": 5,
     "name": "Garlic Bread",
-    "description": "An Italian baguette brushed with garlic herb butter & lightly toasted",
+    "description": "An Italian baguette brushed with garlic herb butter & lightly toasted. Served with marinara",
     "switchy": true,
 
     "image": "/images/app-garlic-bread-3.jpg",
@@ -530,7 +530,7 @@
     "toppingHotSub": false,
     "toppingColdSub": false,
     "toppingDesert": false,
-    "saladDressing": true,
+    "saladDressing": false,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": true,
@@ -540,7 +540,7 @@
   {
     "categoryId": 5,
     "name": "Sicilian Garlic Bread",
-    "description": "An Italian baguette brushed with garlic herb butter, topped with mozzarella, & lightly toasted",
+    "description": "An Italian baguette brushed with garlic herb butter, topped with mozzarella, & lightly toasted. Served with marinara",
     "switchy": true,
 
     "image": "/images/app-sicilian-garlic-bread-3.jpg",
@@ -565,7 +565,7 @@
     "toppingHotSub": false,
     "toppingColdSub": false,
     "toppingDesert": false,
-    "saladDressing": true,
+    "saladDressing": false,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": true,
@@ -600,7 +600,7 @@
     "toppingHotSub": false,
     "toppingColdSub": false,
     "toppingDesert": false,
-    "saladDressing": true,
+    "saladDressing": false,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": true,
@@ -635,7 +635,7 @@
     "toppingHotSub": false,
     "toppingColdSub": false,
     "toppingDesert": false,
-    "saladDressing": true,
+    "saladDressing": false,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": true,
@@ -671,7 +671,7 @@
     "toppingColdSub": false,
     "toppingDesert": false,
     "saladDressing": true,
-    "wingSauce": false,
+    "wingSauce": true,
     "pastaType": false,
     "marinaraSauce": true,
     "desertSauce": false,
@@ -705,7 +705,7 @@
     "toppingHotSub": false,
     "toppingColdSub": false,
     "toppingDesert": false,
-    "saladDressing": true,
+    "saladDressing": false,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": true,
@@ -740,7 +740,7 @@
     "toppingHotSub": false,
     "toppingColdSub": false,
     "toppingDesert": false,
-    "saladDressing": true,
+    "saladDressing": false,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": false,
@@ -963,7 +963,7 @@
   {
     "categoryId": 6,
     "name": "Calzone",
-    "description": "Neapolitan-style; an Italian turnover made with leavened dough & folded. Stuffed with mozzarella, ricotta, & stone deck oven baked",
+    "description": "Neapolitan-style; an Italian turnover made with leavened dough & folded. Stuffed with mozzarella, ricotta, & stone deck oven baked. Served with marinara",
     "switchy": true,
 
     "image": "/images/calzone-3.jpg",
@@ -1002,7 +1002,7 @@
   {
     "categoryId": 7,
     "name": "Salami, Capocollo, Soppressata, & Provolone",
-    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with salami, capocollo, soppressata, provolone. & stone deck oven baked",
+    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with salami, capocollo, soppressata, provolone. & stone deck oven baked. Served with marinara",
     "switchy": true,
 
     "image": "/images/stromboli-3.jpg",
@@ -1037,7 +1037,7 @@
   {
     "categoryId": 7,
     "name": "Sausage, Onion, & Pepper",
-    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with sausage, onions, green bell peppers, mozzarella, & stone deck oven baked",
+    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with sausage, onions, green bell peppers, mozzarella, & stone deck oven baked. Served with marinara",
     "switchy": true,
 
     "image": "/images/stromboli-3.jpg",
@@ -1072,7 +1072,7 @@
   {
     "categoryId": 7,
     "name": "Meatball & Mozzarella",
-    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, marinara, mozzarella, & stone deck oven baked",
+    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, marinara, mozzarella, & stone deck oven baked. Served with marinara",
     "switchy": true,
 
     "image": "/images/stromboli-3.jpg",
@@ -1107,7 +1107,7 @@
   {
     "categoryId": 7,
     "name": "Eggplant & Mozzarella",
-    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded eggplant cutlets, marinara, mozzarella, & stone deck oven baked.",
+    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded eggplant cutlets, marinara, mozzarella, & stone deck oven baked. Served with marinara",
     "switchy": true,
 
     "image": "/images/stromboli-3.jpg",
@@ -1142,7 +1142,7 @@
   {
     "categoryId": 7,
     "name": "Chicken & Mozzarella",
-    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded chicken cutlets, marinara, mozzarella, & stone deck oven baked",
+    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with breaded chicken cutlets, marinara, mozzarella, & stone deck oven baked. Served with marinara",
     "switchy": true,
 
     "image": "/images/stromboli-3.jpg",
@@ -1177,7 +1177,7 @@
   {
     "categoryId": 7,
     "name": "Meatballs, Sausage, Pepperoni, & Mozzarella",
-    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, sausage, pepperoni, marinara, mozzarella, & stone deck oven baked",
+    "description": "An Italian turnover made with leavened dough & rolled. Stuffed with meatballs, sausage, pepperoni, marinara, mozzarella, & stone deck oven baked. Served with marinara",
     "switchy": true,
 
     "image": "/images/stromboli-3.jpg",
@@ -1215,7 +1215,7 @@
   {
     "categoryId": 8,
     "name": "Sausage Roll",
-    "description": "NYC-style; a blend of sausage, onions, green bell peppers, & mozzarella. Rolled in a light pizza dough. Brushed with garlic herb butter & stone deck oven baked",
+    "description": "NYC-style; a blend of sausage, onions, green bell peppers, & mozzarella. Rolled in a light pizza dough. Brushed with garlic herb butter & stone deck oven baked. Served with marinara",
     "switchy": true,
 
     "image": "/images/sausage-roll-3.jpg",
@@ -1454,7 +1454,7 @@
     "toppingHotSub": false,
     "toppingColdSub": false,
     "toppingDesert": false,
-    "saladDressing": false,
+    "saladDressing": true,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": false,
@@ -2058,7 +2058,7 @@
     "toppingHotSub": false,
     "toppingColdSub": true,
     "toppingDesert": false,
-    "saladDressing": false,
+    "saladDressing": true,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": false,
@@ -2093,7 +2093,7 @@
     "toppingHotSub": false,
     "toppingColdSub": true,
     "toppingDesert": false,
-    "saladDressing": false,
+    "saladDressing": true,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": false,
@@ -2128,7 +2128,7 @@
     "toppingHotSub": false,
     "toppingColdSub": true,
     "toppingDesert": false,
-    "saladDressing": false,
+    "saladDressing": true,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": false,
@@ -2163,7 +2163,7 @@
     "toppingHotSub": false,
     "toppingColdSub": true,
     "toppingDesert": false,
-    "saladDressing": false,
+    "saladDressing": true,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": false,
@@ -2198,7 +2198,7 @@
     "toppingHotSub": false,
     "toppingColdSub": true,
     "toppingDesert": false,
-    "saladDressing": false,
+    "saladDressing": true,
     "wingSauce": false,
     "pastaType": false,
     "marinaraSauce": false,
@@ -2238,7 +2238,7 @@
     "toppingDesert": false,
     "saladDressing": false,
     "wingSauce": false,
-    "pastaType": false,
+    "pastaType": true,
     "marinaraSauce": true,
     "desertSauce": false,
     "desertType": false
@@ -2273,7 +2273,7 @@
     "toppingDesert": false,
     "saladDressing": false,
     "wingSauce": false,
-    "pastaType": false,
+    "pastaType": true,
     "marinaraSauce": true,
     "desertSauce": false,
     "desertType": false
@@ -2308,7 +2308,7 @@
     "toppingDesert": false,
     "saladDressing": false,
     "wingSauce": false,
-    "pastaType": false,
+    "pastaType": true,
     "marinaraSauce": true,
     "desertSauce": false,
     "desertType": false
@@ -2386,7 +2386,7 @@
   {
     "categoryId": 13,
     "name": "Garlic Bread",
-    "description": "An Italian baguette brushed with garlic herb butter & lightly toasted",
+    "description": "An Italian baguette brushed with garlic herb butter & lightly toasted. Served with marinara",
     "switchy": true,
 
     "image": "/images/app-garlic-bread-3.jpg",
@@ -2456,41 +2456,7 @@
 
 
 
-  {
-    "categoryId": 14,
-    "name": "Italian Ice",
-    "description": "Refreshing icy textured treat that is dairy-free, gluten-free, cholesterol-free, and fat-free",
-    "switchy": true,
-
-    "image": "/images/dessert-italian-ice-3.jpg",
-
-    "size1": "5 Ounce",
-    "price1": "$1.50",
-    "size2": "9 Ounce",
-    "price2": "$3.50",
-    "size3": "16 Ounce",
-    "price3": "$4.50",
-
-    "addonsDescription1": null,
-    "addonsPrice1": null,
-    "addonsDescription2": null,
-    "addonsPrice2": null,
-    "addonsDescription3": null,
-    "addonsPrice3": null,
-
-    "toppingPizzaFull": false,
-    "toppingPizzaSlice": false,
-    "toppingPizzaGlutenFree": false,
-    "toppingHotSub": false,
-    "toppingColdSub": false,
-    "toppingDesert": false,
-    "saladDressing": false,
-    "wingSauce": false,
-    "pastaType": false,
-    "marinaraSauce": false,
-    "desertSauce": false,
-    "desertType": false
-  },
+  
   {
     "categoryId": 14,
     "name": "Black & White Cookie",
@@ -2812,91 +2778,304 @@
   {
     "categoryId": 15,
     "name": "Fountain Drink",
-    "description": "",
+    "description": "20 oz drink",
+    "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/beverage-fountain.jpg",
 
-    "switchy": true
-  },
-  {
-    "categoryId": 15,
-    "name": "San Pellegrino",
-    "description": "",
-
-    "image": "/images/buonos-logo-3.jpg",
-
-    "switchy": true
-  },
-  {
-    "categoryId": 15,
-    "name": "Dr Browns Soda",
-    "description": "",
-
-    "image": "/images/buonos-logo-3.jpg",
-
-    "switchy": true
+    "size1": "20 oz drink",
+    "price1": "$2.75",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
   },
   {
     "categoryId": 15,
     "name": "Bottled Soda",
-    "description": "",
+    "description": "2 liter bottled soda. Available for take out only",
+    "switchy": true,
+
+    "image": "/images/beverage-bottled-soda.jpg",
+
+    "size1": "2 liter bottle",
+    "price1": "$3.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 15,
+    "name": "Bottled Water",
+    "description": "16 oz bottled water",
+    "switchy": true,
 
     "image": "/images/buonos-logo-3.jpg",
 
-    "switchy": true
+    "size1": "16 oz bottle",
+    "price1": "$1.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 15,
+    "name": "Bottled Tea",
+    "description": "Bottled Tea",
+    "switchy": true,
+
+    "image": "/images/buonos-logo-3.jpg",
+
+    "size1": "16 oz bottle",
+    "price1": "$2.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 15,
+    "name": "Arizona Lemonade Stand",
+    "description": "Made with real lemons, fruits,and other natural flavors",
+    "switchy": true,
+
+    "image": "/images/beverage-az-lemonade.jpg",
+
+    "size1": "32 oz bottle",
+    "price1": "$6.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+
+  {
+    "categoryId": 15,
+    "name": "Dr Browns Soda",
+    "description": "A New York Classic. Black Cherry or Cream",
+    "switchy": true,
+
+    "image": "/images/buonos-logo-3.jpg",
+
+    "size1": "12 oz can",
+    "price1": "$2.50",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 15,
+    "name": "Yoohoo",
+    "description": "A New York Classic. Chocolate drink",
+    "switchy": true,
+
+    "image": "/images/beverage-yoohoo.jpg",
+
+    "size1": "12 oz bottle",
+    "price1": "$2.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
   },
   {
     "categoryId": 15,
     "name": "Domestic Beer",
-    "description": "",
+    "description": "Must be consumed in the restaurant",
+    "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/beverage-imported-beer.jpg",
 
-    "switchy": true
+    "size1": "12 oz bottle",
+    "price1": "3.75",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null 
   },
   {
     "categoryId": 15,
     "name": "Imported Beer",
-    "description": "",
+    "description": "Must be consumed in the restaurant",
+    "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/beverage-domestic-beer.jpg",
 
-    "switchy": true
+    "size1": "12 oz bottle",
+    "price1": "4.50",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null 
   },
   {
     "categoryId": 15,
     "name": "House Red Wine",
-    "description": "",
+    "description": "Must be consumed in the restaurant",
+    "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/beverage-red-wine.jpg",
 
-    "switchy": true
-  },
-  {
-    "categoryId": 15,
-    "name": "Premium Red Wine",
-
-    "image": "/images/buonos-logo-3.jpg",
-
-    "description": "",
-    "switchy": true
+    "size1": "By the glass",
+    "price1": "9.00",
+    "size2": "By the bottle",
+    "price2": "26.00",
+    "size3": null,
+    "price3": null 
   },
   {
     "categoryId": 15,
     "name": "House White Wine",
-    "description": "",
+    "description": "Must be consumed in the restaurant",
+    "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/beverage-white-wine.jpg",
 
-    "switchy": true
+    "size1": "By the glass",
+    "price1": "9.00",
+    "size2": "By the bottle",
+    "price2": "26.00",
+    "size3": null,
+    "price3": null 
+  },
+  
+
+  {
+    "categoryId": 16,
+    "name": "Italian Ice",
+    "description": "Refreshing icy textured treat that is dairy-free, gluten-free, cholesterol-free, and fat-free",
+    "switchy": true,
+
+    "image": "/images/dessert-italian-ice-3.jpg",
+
+    "size1": "5 oz",
+    "price1": "$1.50",
+    "size2": "9 oz",
+    "price2": "$3.50",
+    "size3": "16 oz",
+    "price3": "$4.50"
   },
   {
-    "categoryId": 15,
-    "name": "Premium White Wine",
+    "categoryId": 16,
+    "name": "Drakes Devil Dogs",
+    "description": "Creme filled devils food cakes",
+    "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/drakes-devil-dog.jpg",
 
-    "description": "",
-    "switchy": true
+    "size1": "8 count individually wrapped",
+    "price1": "$6.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 16,
+    "name": "Drakes Coffe Cakes",
+    "description": "Cakes with cinnamon streusel topping",
+    "switchy": true,
+
+    "image": "/images/drakes-coffee-cake.jpg",
+
+    "size1": "8 count individually wrapped",
+    "price1": "$6.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 16,
+    "name": "Drakes Ring Dings",
+    "description": "Frosted creme filled devils food cakes",
+    "switchy": true,
+
+    "image": "/images/drakes-ring-ding.jpg",
+
+    "size1": "8 count individually wrapped",
+    "price1": "$6.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 16,
+    "name": "Drakes Funny Bones",
+    "description": "Frosted peanut butter creme filled devils food cakes",
+    "switchy": true,
+
+    "image": "/images/drakes-funny-bone.jpg",
+
+    "size1": "10 count twin wrapped",
+    "price1": "$6.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 16,
+    "name": "Drakes Yodels",
+    "description": "Frosted creme filled devils food cakes",
+    "switchy": true,
+
+    "image": "/images/drakes-yodel.jpg",
+
+    "size1": "10 count twin wrapped",
+    "price1": "$6.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 16,
+    "name": "Drakes Yankee doodles",
+    "description": "Creme filled devils food cakes",
+    "switchy": true,
+
+    "image": "/images/drakes-yankee-doodle.jpg",
+
+    "size1": "8 count individually wrapped",
+    "price1": "$6.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 16,
+    "name": "Polly-O Ricotta Cheese",
+    "description": "Premium Italian natural ricotta cheese. A New York favorite",
+    "switchy": true,
+
+    "image": "/images/polly-o-ricotta.jpg",
+
+    "size1": "5 lb",
+    "price1": "Market Price",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 16,
+    "name": "Mikes Hot Honey",
+    "description": "Infused with chilies",
+    "switchy": true,
+
+    "image": "/images/mikes-hot-honey-3.jpg",
+
+    "size1": "12 oz",
+    "price1": "$10.00",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
   }
 ]

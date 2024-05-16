@@ -1,3 +1,15 @@
 .container-hours {
-  margin-bottom: 275px;
+  /* margin-bottom: 275px; */
+}
+
+.hours-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hours-image img {
+  width: 600px;
+  /* height: 400px; */
 }

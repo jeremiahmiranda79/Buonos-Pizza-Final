@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
-  background: red;
-  background: linear-gradient(136deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%);
+  min-height: 70vh;
+  /* background: red; */
+  /* background: linear-gradient(136deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%); */
 }
 
 .wrapper {
