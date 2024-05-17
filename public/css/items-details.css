@@ -5,26 +5,20 @@
   width: 40%;
 }
 
-/* .item-background {
-  margin-top: 80px;
-} */
-
-/* @media (min-width: 768px) {
-  .container-item {
-
+@media (max-width: 768px) {
+  .page-container {
+    margin-top: 100px;
   }
   
-  .container-item img {
-    width: 30%;
+  .item-image img {
     width: 90%;
-    height: 200px;
   }
 
   .item-background {
     padding-top: 55px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
     height: 100%;
     padding-bottom: 20%;
-  }
-} */
+  } 
+}

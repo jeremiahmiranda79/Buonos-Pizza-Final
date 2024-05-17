@@ -78,10 +78,10 @@
   box-shadow: 0 4px 8px 0 rgba(255, 30, 0, 0.2), 0 6px 20px 0 rgba(255, 30, 0, 0.19);
 }
 
-/* @media (min-width: 768px) {
+@media (max-width: 768px) {
   .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     background-color: var(--buonos-white);
     padding: 10px;
   }
@@ -94,7 +94,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .grid-container-2 {
     display: inline-grid;
     grid-template-columns: auto;
