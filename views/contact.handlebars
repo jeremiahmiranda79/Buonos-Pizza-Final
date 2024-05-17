@@ -11,7 +11,99 @@
     </center>
   </div>
 
-  <div class="container-contact">
+  <div class="container">
+    <span class="big-circle"></span>
+    {{!-- <img src="/images/buonos-logo.jpg" alt="" class="square"> --}}
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">Let's get in touch</h3>
+
+        <p class="text">
+          Message response times may vary. Please allow up to 24-48 hours. For immediate inquiries please call during our normal business hours. Or if your in the neighborhood feel free to visit us in person. See our contact information below.   
+        </p>
+
+        <div class="info">
+          <div class="information">
+            {{!-- <img src="/images/social-yelp-2.png" alt="" class="icon"> --}}
+            {{!-- <i class="fa-solid fa-map-location-dot fa-2x" class="icon"></i>
+           --}}
+            <a class="fa-solid fa-map-location-dot fa-2x" class="icon" href="https://www.google.com/maps/place/Buonos+pizza/@33.30722,-111.7585,21z/data=!4m6!3m5!1s0x872bad61fabaadd5:0x4083f070c0afbace!8m2!3d33.3071963!4d-111.7585637!16s%2Fg%2F11rg9nypqz?hl=en-US&entry=ttu"></a>
+            <p><b>1464 East Williams Field Road, Gilbert, AZ 85295</b></p>
+          </div>
+
+          <div class="information">
+            {{!-- <img src="/images/social-yelp-2.png" alt="" class="icon"> --}}
+            {{!-- <i class="fa-solid fa-envelope fa-2x" class="icon"></i> --}}
+            <a class="fa-solid fa-envelope fa-2x" class="icon" href="mailto:buonosgilbert@yahoo.com"></a>
+            <p><b>buonosgilbert@yahoo.com</b></p>
+          </div>
+
+          <div class="information">
+            {{!-- <img src="/images/social-yelp-2.png" alt="" class="icon"> --}}
+            {{!-- <i class="fa-solid fa-phone fa-2x" class="icon"></i> --}}
+            <a class="fa-solid fa-phone fa-2x" class="icon" href="tel:+14808991200"></a>
+            <p><b>1-480-899-1200</b></p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-yelp"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-google"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+        {{!-- <form action="index.html"> --}}
+        <form>
+          <h3 class="title">Contact Us</h3>
+
+          <div class="input-container">
+            <input type="text" name="name" id="" class="input">
+            <label for="">Username</label>
+            <span>Username</span>
+          </div>
+
+          <div class="input-container">
+            <input type="email" name="email" id="" class="input">
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+
+          <div class="input-container">
+            <input type="tel" name="phone" id="" class="input">
+            <label for="">Phone</label>
+            <span>Phone</span>
+          </div>
+
+          <div class="input-container textarea">
+            <textarea name="message" id="" class="input"></textarea>
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+
+          <input type="submit" value="Send" class="btn-2">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  {{!-- <div class="container-contact">
     <div class="row mb-3">
       <label for="name" class="col-sm-2 col-form-label">Name</label>
       <div class="col-sm-10">
@@ -44,11 +136,11 @@
     <center>
       <button onclick="sendEmail()" class="btn btn-primary">Send Message</button>
     </center>
-  </div>
+  </div> --}}
 
-  <div class="sub-section">
+  {{!-- <div class="sub-section">
     <p><b>* Message response time is on average between 24 and 48 hours. For immediate inquiries please call us at: <a href="tel:+14808991200">📞 480-899-1200.</a> *</b></p>
-  </div>
+  </div> --}}
 
   <div class="social-footer">
     {{#each information as |i|}}
@@ -112,6 +204,8 @@
 
 </div>
 
+<script></script>
+
 <script src="/js/contact.js"></script>
 
 <script type="text/javascript"
@@ -120,6 +214,10 @@
 
 <script type="text/javascript">
   (function(){
-    emailjs.init("L7u_gwzunO_hCkE1K");//public key
+    emailjs.init("SMRxXJQGDG2ivjiAh");//public key
   })();
 </script>
+
+<script src="/js/contactEffects.js"></script>
+
+<script src="https://kit.fontawesome.com/c249425591.js" crossorigin="anonymous"></script>

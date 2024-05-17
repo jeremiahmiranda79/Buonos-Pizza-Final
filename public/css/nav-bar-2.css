@@ -84,14 +84,13 @@ nav svg{
   display: none;
 }
 
-
 .open-sidebar-button, .close-sidebar-button{
   display: none;
 }
+
 @media(max-width: 450px){
   .header img {
     display: none;
-    /* height: 100px; */
   }
 
   .sticky + .page {
