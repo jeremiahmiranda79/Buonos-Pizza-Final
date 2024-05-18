@@ -82,7 +82,8 @@ form {
 .title {
   color: #333;
   font-weight: 500;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: x-large;
   line-height: 1;
   margin-bottom: 0.7rem;
 }
@@ -121,7 +122,8 @@ textarea.input {
   transform: translateY(-50%);
   padding: 0 0.4rem;
   color: #555;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
+  font-size: larger;
   font-weight: 400;
   pointer-events: none;
   z-index: 1000;
@@ -245,20 +247,28 @@ textarea.input {
 
 .social-icons {
   display: flex;
-  margin-top: 0.5rem;
+  margin: 0.5rem;
+  /* padding: 15px; */
+  height: 75px;
+  width: 75%;
 }
 
 .social-icons a {
-  width: 35px;
-  height: 35px;
+  /* width: 35px; */
+   /* width: 70px; */
+  /* height: 35px; */
+  /* height: 70px; */
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, #149279);
+  /* background: linear-gradient(45deg, #1abc9c, #149279); */
   color: #333;
+
+  margin-left: 25px;
+
   text-align: center;
-  line-height: 35px;
-  margin-right: 0.5rem;
+  /* line-height: 35px; */
+  /* margin-right: 0.5rem; */
   transition: .3s;
-  font-size: 25px;
+  font-size: 50px;
 }
 
 .social-icons a:hover {
@@ -369,21 +379,26 @@ textarea.input {
   .text,
   .information,
   .social-media p {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
+    font-size: larger;
   }
 
   .title {
-    font-size: 1.15rem;
+    font-size: x-large;
+  }
+
+  .social-icons {
+    width: 70px;
+    height: 70px;
   }
 
   .social-icons a {
-    width: 30px;
-    height: 30px;
     line-height: 30px;
   }
 
   .icon {
     width: 23px;
+    height: 23px;
   }
 
   .input {
