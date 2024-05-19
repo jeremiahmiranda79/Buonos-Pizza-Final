@@ -3,20 +3,21 @@
   align-items: center;
   justify-content: center;
   min-height: 70vh;
-  /* background: red; */
-  /* background: linear-gradient(136deg, rgb(224,195,252) 0%, rgb(142,197,252) 100%); */
 }
 
 .wrapper {
   position: relative;
   height: 600px;
   width: 1200px;
+
+  margin-bottom: 20px;
 }
 
 .wrapper .img {
   position: absolute;
   height: 100%;
   width: 100%; 
+
 }
 
 .wrapper .img img {
@@ -25,6 +26,8 @@
   object-fit: cover;
   clip-path: circle(0% at 0% 100%);
   transition: all 1.0s;
+  border-radius: 10px;
+  box-shadow: 8px 4px 8px 5px rgba(0, 0, 0, 0.6);
 }
 
 .wrapper .img h1 {

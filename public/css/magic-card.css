@@ -34,6 +34,9 @@
   align-items: center;
   min-height: 100vh;
   flex-wrap: wrap;
+  box-shadow: 8px 4px 8px 5px rgba(0, 0, 0, 0.6);
+  /* border-radius: 10px; */
+  margin-bottom: 20px ;
 }
 
 /* .magic-card-container .magic-card {
