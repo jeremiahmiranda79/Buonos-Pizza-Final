@@ -108,7 +108,6 @@
   },
 
 
-
   {
     "categoryId": 2,
     "name": "Grandma Pie",
@@ -319,8 +318,6 @@
     "desertSauce": false,
     "desertType": false
   },
-
-
 
  
   {
@@ -959,7 +956,6 @@
   },
 
 
-
   {
     "categoryId": 6,
     "name": "Calzone",
@@ -996,7 +992,6 @@
     "desertType": false,
     "stuffingCalzone": true
   },
-
 
 
   {
@@ -1211,7 +1206,6 @@
   },
 
 
-
   {
     "categoryId": 8,
     "name": "Sausage Roll",
@@ -1247,7 +1241,6 @@
     "desertSauce": false,
     "desertType": false
   },
-
 
 
   {
@@ -1461,7 +1454,6 @@
     "desertSauce": false,
     "desertType": false
   },
-
 
 
   {
@@ -1746,7 +1738,6 @@
   },
 
 
-
   {
     "categoryId": 11,
     "name": "Meatball Parmesan",
@@ -1960,7 +1951,7 @@
   {
     "categoryId": 11,
     "name": "Philly Steak",
-    "description": "Foot long Italian baguette stuffed with sauteed shaved steak, onions, & white wine. Topped with choice of melted cheese, & lightly toasted",
+    "description": "Foot long Italian baguette stuffed with sauteed shaved steak, & onions. Topped with choice of melted cheese or cheese wiz, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-philly-steak-3.jpg",
@@ -1995,7 +1986,7 @@
   {
     "categoryId": 11,
     "name": "Philly Chicken",
-    "description": "Foot long Italian baguette stuffed with sauteed shaved chicken breast, onions, & white wine. Topped with choice of melted cheese, & lightly toasted",
+    "description": "Foot long Italian baguette stuffed with sauteed shaved chicken breast, & onions. Topped with choice of melted cheese or cheese wiz, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-philly-chicken-3.jpg",
@@ -2028,7 +2019,6 @@
     "desertType": false
   },
   
-
 
   {
     "categoryId": 12,
@@ -2205,7 +2195,6 @@
     "desertSauce": false,
     "desertType": false
   },
-
 
 
   {
@@ -2455,8 +2444,6 @@
   },
 
 
-
-  
   {
     "categoryId": 14,
     "name": "Black & White Cookie",
@@ -2774,7 +2761,6 @@
   },
 
 
-
   {
     "categoryId": 15,
     "name": "Fountain Drink",
@@ -2811,7 +2797,7 @@
     "description": "16 oz bottled water",
     "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/beverage-bottled-water.jpg",
 
     "size1": "16 oz bottle",
     "price1": "$1.99",
@@ -2826,7 +2812,7 @@
     "description": "Bottled Tea",
     "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/beverage-ice-tea.jpg",
 
     "size1": "16 oz bottle",
     "price1": "$2.99",
@@ -2850,14 +2836,13 @@
     "size3": null,
     "price3": null
   },
-
   {
     "categoryId": 15,
     "name": "Dr Browns Soda",
     "description": "A New York Classic. Black Cherry or Cream",
     "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/beverage-dr-brown.jpg",
 
     "size1": "12 oz can",
     "price1": "$2.50",
@@ -2887,7 +2872,7 @@
     "description": "Must be consumed in the restaurant",
     "switchy": true,
 
-    "image": "/images/beverage-imported-beer.jpg",
+    "image": "/images/beverage-domestic-beer.jpg",
 
     "size1": "12 oz bottle",
     "price1": "3.75",
@@ -2902,7 +2887,7 @@
     "description": "Must be consumed in the restaurant",
     "switchy": true,
 
-    "image": "/images/beverage-domestic-beer.jpg",
+    "image": "/images/beverage-imported-beer.jpg",
 
     "size1": "12 oz bottle",
     "price1": "4.50",
@@ -2949,7 +2934,7 @@
     "description": "Refreshing icy textured treat that is dairy-free, gluten-free, cholesterol-free, and fat-free",
     "switchy": true,
 
-    "image": "/images/dessert-italian-ice-3.jpg",
+    "image": "/images/italian-ice.jpg",
 
     "size1": "5 oz",
     "price1": "$1.50",

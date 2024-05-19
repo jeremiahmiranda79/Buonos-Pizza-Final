@@ -6,10 +6,10 @@ body, html {
 
 :root {
   --navbar: #212529;
-  --buonos-red: rgb(206, 43 ,55);
+  --buonos-red: #ce2b37;
   --buonos-white: rgb(242, 242, 242);
   --buonos-green: rgb(0, 146, 70);
-  --background-red: rgb(241, 103, 112);
+  --background-red: #f16770;
   --background-green: rgb(125, 245, 183);
   --background-1: rgb(169, 169, 169); 
   --background-2: rgb(150, 146, 146);

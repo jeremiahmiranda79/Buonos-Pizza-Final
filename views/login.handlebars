@@ -11,91 +11,162 @@
     </center>
   </div>
 
-  <div class="container-login">
-    <div class="container-fluid contact">
-      <form id="employeelogin">
-        <form action="#" method="post">
-          <div>
-            <label for="email" class="form-label">Email address</label>
-            <div class="mb-3">
-              <input id="email" name="email" type="email" autocomplete="email" required class="form-control">
-            </div>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form action="#" class="sign-in-form">
+          <h3 class="title"><b>Sign in</b></h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
           </div>
-          <div>
-            <label for="password" class="form-label">Password</label>
-            <div class="mb-3">
-              <input id="password" name="password" type="password" autocomplete="current-password" required class="form-control">
-            </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" />
           </div>
-          <div>
-            <center>
-              <button type="submit" class="btn btn-primary" id="#userlogin">Sign in</button>
-            </center>       
+          <input type="submit" value="Login" class="btn solid" />
+          <p class="social-text">Or Sign in with social platforms</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </div>
         </form>
-      </form>
+        <form action="#" class="sign-up-form">
+          <h3 class="title"><b>Sign up</b></h3>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <input type="submit" class="btn" value="Sign up" />
+          <p class="social-text">Or Sign up with social platforms</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content2">
+          <h3>New here ?</h3>
+          <p>
+            Login is for Buono's team members only. If you are a new team member please create your account.  
+          </p>
+          <button class="btn transparent" id="sign-up-btn">
+            Sign up
+          </button>
+        </div>
+        {{!-- <img src="img/log.svg" class="image" alt="" /> --}}
+        {{!-- <img src="/images/buonos-logo.jpg" alt=""> --}}
+      </div>
+      <div class="panel right-panel">
+        <div class="content2">
+          <h3>One of us ?</h3>
+          <p>
+            Login is for Buono's team members only. If you have already created your account, use the sign in button.
+          </p>
+          <button class="btn transparent" id="sign-in-btn">
+            Sign in
+          </button>
+        </div>
+        {{!-- <img src="img/register.svg" class="image" alt="" /> --}}
+      </div>
     </div>
   </div>
 
   <div class="social-footer">
-  {{#each information as |i|}}
-    <h5>{{i.description}}</h5>
-  {{/each}}
-
-  {{#each information as |i|}}
-    <h4>{{i.company}}</h4>
-  {{/each}}
-
-  <a href="tel:+14808991200">
     {{#each information as |i|}}
-      <h4>{{i.phoneNumber}}</h4>
+      <h5>{{i.description}}</h5>
     {{/each}}
-  </a>
 
-  <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu">
     {{#each information as |i|}}
-      <h5>{{i.address}}</h5>
+      <h4>{{i.company}}</h4>
     {{/each}}
-  </a>
 
-  <a href="mailto: buonosgilbert@yahoo.com">
-    {{#each information as |i|}}
-      <h5>{{i.email}}</h5> 
-    {{/each}}
-  </a>
+    <a href="tel:+14808991200">
+      {{#each information as |i|}}
+        <h4>{{i.phoneNumber}}</h4>
+      {{/each}}
+    </a>
 
-  <div class="row">
-    <div class="column">
-      <a href="https://www.facebook.com/buonosgilbert/" class="button-social">
-        <img src="/images/social-facebook.png" alt="facebook icon"> 
-      </a>
+    <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu">
+      {{#each information as |i|}}
+        <h5>{{i.address}}</h5>
+      {{/each}}
+    </a>
+
+    <a href="mailto: buonosgilbert@yahoo.com">
+      {{#each information as |i|}}
+        <h5>{{i.email}}</h5> 
+      {{/each}}
+    </a>
+
+    <div class="row">
+      <div class="column">
+        <a href="https://www.facebook.com/buonosgilbert/" class="button-social">
+          <img src="/images/social-facebook.png" alt="facebook icon"> 
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="button-social">
+          <img src="/images/social-instagram.png" alt="instagram icon">
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
+          <img src="/images/social-yelp.png" alt="">
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
+          <img src="/images/social-google-maps.png" alt="">
+        </a>
+      </div>
     </div>
 
-    <div class="column">
-      <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="button-social">
-        <img src="/images/social-instagram.png" alt="instagram icon">
-      </a>
-    </div>
+    <p>
+      COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+    </p> 
 
-    <div class="column">
-      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
-        <img src="/images/social-yelp.png" alt="">
-      </a>
-    </div>
-
-    <div class="column">
-      <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
-        <img src="/images/social-google-maps.png" alt="">
-      </a>
-    </div>
-  </div>
-
-  <p>
-    COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
-  </p> 
-
-  <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+    <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
   </div>
 </div>
+
+
+
+<script src="/js/loginPage.js"></script>
 
 <script src="/js/login.js"></script>
