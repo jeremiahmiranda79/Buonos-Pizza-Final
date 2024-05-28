@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 body,
 input {
   font-family: "Poppins", sans-serif;
-}
+} */
 
 .container {
   position: relative;
@@ -146,6 +146,7 @@ form.sign-in-form {
 .btn:hover {
   background-color: #4d84e2;
 }
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -180,7 +181,6 @@ form.sign-in-form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* justify-content: space-around; */
   text-align: center;
   z-index: 6;
 }
@@ -271,6 +271,7 @@ form.sign-in-form {
     min-height: 800px;
     height: 100vh;
   }
+
   .signin-signup {
     width: 100%;
     top: 95%;
@@ -377,9 +378,11 @@ form.sign-in-form {
   .image {
     display: none;
   }
+
   .panel .content2 {
     padding: 0.5rem 1rem;
   }
+  
   .container {
     padding: 1.5rem;
   }
