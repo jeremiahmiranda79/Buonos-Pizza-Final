@@ -125,7 +125,7 @@ const isAdmin = require('../../utils/admin');
 //#endregion
 //#region /***** MENU ******/
 	// Route to find menu
-	router.get('/menu', async (req, res) => {
+	router.get('/menu-1', async (req, res) => {
 		try {
 			const c = await Categories.findAll({ include: [{ model: MenuItems }] });	
 			const serializedItems = c.map((x) => x.get({ plain: true }));
@@ -380,7 +380,7 @@ const isAdmin = require('../../utils/admin');
 	});
 //#endregion
 //#region /***** CONTACT ******/
-	router.get('/contact', async (req, res) => {
+	router.get('/contact-us', async (req, res) => {
 		try {
 			const x = await Hours.findAll();
 			const serializedHours = x.map((hour) => hour.get({plain: true}));
