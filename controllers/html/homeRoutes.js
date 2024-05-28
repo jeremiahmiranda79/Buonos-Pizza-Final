@@ -237,7 +237,7 @@ const isAdmin = require('../../utils/admin');
 //#endregion
 //#region /***** CATERING MENU ******/
 	// Route to find menu
-	router.get('/cateringmenu', async (req, res) => {
+	router.get('/specials', async (req, res) => {
 		try {
 			// const i = await Categories.findAll({ include: [{ model: MenuItems }] });	
 			// const serializedItems = i.map((x) => x.get({ plain: true }));
