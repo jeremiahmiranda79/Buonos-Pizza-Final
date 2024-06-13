@@ -17,9 +17,13 @@ const {
 	ToppingsHotSub,  
 	ToppingsPizza,
 	StuffingsCalzone,
+
+	TriviaQuestions
 } = require('../../models');
+
 const withAuth = require('../../utils/auth');
 const isAdmin = require('../../utils/admin');
+
 //#region /***** CATEGORY ******/
 	//Route to create a category
 	router.get('/categories/create', withAuth, async (req, res) => {
@@ -110,6 +114,7 @@ const isAdmin = require('../../utils/admin');
 			const serializedHomePage = h.map((x) => x.get({ plain: true }));
 			const i = await Information.findAll();
 			const serializedInfo = i.map((x) => x.get({ plain: true }));
+
 			res.status(200).render('home', {
 				loggedIn: req.session.loggedIn, 
 				name: req.session.name,
@@ -241,10 +246,14 @@ const isAdmin = require('../../utils/admin');
 		try {
 			// const i = await Categories.findAll({ include: [{ model: MenuItems }] });	
 			// const serializedItems = i.map((x) => x.get({ plain: true }));
+			const i = await Information.findAll();
+			const serializedInfo = i.map((x) => x.get({ plain: true }));
+
 			res.status(200).render('catering-menu', {
 				loggedIn: req.session.loggedIn, 
 				// name: req.session.name,
 				// items: serializedItems
+				information: serializedInfo
 			});
 		}
 		catch (error) {
@@ -252,6 +261,7 @@ const isAdmin = require('../../utils/admin');
 			res.status(500).json(error);// 500 - internal server error
 		}
 	});
+
 	// Route to find a single menu item
 	// router.get('/menu/:menuitemsId', async (req, res) => {
 	// 	try {
@@ -420,6 +430,38 @@ const isAdmin = require('../../utils/admin');
 		}
 	});
 //#endregion
+
+//#region /***** TRIVIA ******/
+	// Route to find trivia
+	router.get('/trivia-home-page', async (req, res) => {
+		try {
+
+			res.status(200).render('trivia-home-page', {
+
+			});
+		}
+		catch (error) {
+			console.log(error);
+			res.status(500).json(error);
+		}
+	});
+
+	router.get('/trivia-high-scores-page', async (req, res) => {
+		try {
+			// const q = await TriviaQuestions.findAll();
+			// const serializedTriviaQuestions = q.map((x) => x.get({ plain: true }));
+
+			res.status(200).render('trivia-high-scores-page', {
+				// question: serializedTriviaQuestions
+			});
+		}
+		catch (error) {
+			console.log(error);
+			res.status(500).json(error);
+		}
+	});
+//#endregion
+
 //#region /***** EMPLOYEE ******/
 	//Route to employee login
 	router.get('/employee/login', async (req, res) => {
@@ -790,4 +832,5 @@ const isAdmin = require('../../utils/admin');
 		}
 	});
 //#endregion
+
 module.exports = router;

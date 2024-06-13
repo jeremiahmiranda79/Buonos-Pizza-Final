@@ -3,6 +3,7 @@ const employeeloginFormHandler = async(event) => {
   //Collect values from the login form
   const email = document.querySelector('#email').value.trim();
   const password = document.querySelector('#password').value.trim();
+  
   if (email && password) {
     //Send a POST request to the API endpoints
     const response = await fetch('../api/employee/login', {
@@ -10,6 +11,7 @@ const employeeloginFormHandler = async(event) => {
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' },
     });
+
     if (response.ok) {
       alert(email + ' Logged In');
       // If successful, redirect the browser to the admin page
@@ -21,4 +23,5 @@ const employeeloginFormHandler = async(event) => {
     };
   };
 };
-document.querySelector('#employeelogin').addEventListener('submit', employeeloginFormHandler);
+
+// document.querySelector('#employeelogin').addEventListener('submit', employeeloginFormHandler);

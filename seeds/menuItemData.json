@@ -1779,7 +1779,7 @@
     "description": "Foot long Italian baguette stuffed with suasage links, marinara sauce, mozzarella, oregano, & lightly toasted",
     "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/hot-sub-sausage-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$9.99",
@@ -2096,7 +2096,7 @@
     "description": "Foot long Italian baguette layered with salami, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
     "switchy": true,
 
-    "image": "/images/buonos-logo-3.jpg",
+    "image": "/images/cold-sub-salami-provalone-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
     "price1": "$8.99",
@@ -2661,41 +2661,6 @@
     "switchy": true,
 
     "image": "/images/dessert-pistachio-ricotta-3.jpg",
-
-    "size1": "Single slice",
-    "price1": "$6.99",
-    "size2": null,
-    "price2": null,
-    "size3": null,
-    "price3": null,
-
-    "addonsDescription1": null,
-    "addonsPrice1": null,
-    "addonsDescription2": null,
-    "addonsPrice2": null,
-    "addonsDescription3": null,
-    "addonsPrice3": null,
-
-    "toppingPizzaFull": false,
-    "toppingPizzaSlice": false,
-    "toppingPizzaGlutenFree": false,
-    "toppingHotSub": false,
-    "toppingColdSub": false,
-    "toppingDesert": false,
-    "saladDressing": false,
-    "wingSauce": false,
-    "pastaType": false,
-    "marinaraSauce": false,
-    "desertSauce": true,
-    "desertType": true
-  },
-  {
-    "categoryId": 14,
-    "name": "Chocolate Mousse Cake",
-    "description": "Rich layers of dark, milk and white chocolate come together perfectly in this no-bake cake. A chocolate cookie-crumb crust adds a satisfying crunch to the silky, smooth mousse",
-    "switchy": false,
-
-    "image": "/images/buonos-logo-3.jpg",
 
     "size1": "Single slice",
     "price1": "$6.99",

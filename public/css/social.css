@@ -3,7 +3,7 @@
   text-align: center;
   background: var(--background-2);
   padding: 15px 5px 5px 5px;
-  box-shadow: 0px 0px 10px 0px black inset;
+  /* box-shadow: 0px 0px 10px 0px black inset; */
   margin: 25px 0px 0px 0px;
 }
 
@@ -17,6 +17,7 @@
 /* Create 4 equal columns that sits next to each other */
 .column {
   flex: 25%;
+  /* flex: 5px; */
   padding: 5px 5px 10px 5px;
 }
 

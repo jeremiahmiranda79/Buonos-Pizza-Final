@@ -26,8 +26,8 @@
   object-fit: cover;
   clip-path: circle(0% at 0% 100%);
   transition: all 1.0s;
-  border-radius: 10px;
-  box-shadow: 8px 4px 8px 5px rgba(0, 0, 0, 0.6);
+  /* border-radius: 10px; */
+  /* box-shadow: 8px 4px 8px 5px rgba(0, 0, 0, 0.6); */
 }
 
 .wrapper .img h1 {

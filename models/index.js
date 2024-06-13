@@ -16,13 +16,18 @@ const HomePage = require('./HomePage');
 const Hours = require('./Hours');
 const Location = require('./Location');
 const StuffingsCalzone = require('./StuffingsCalzone');
+
+const TriviaQuestions = require('./TriviaQuestions');
+
 // MenuItems to Categories
 Categories.hasMany(MenuItems, {
   foreignKey: 'categoryId'
 });
+
 MenuItems.belongsTo(Categories, {
   foreignKey: 'categoryId'
 });
+
 module.exports = { 
   Categories, 
   MenuItems, 
@@ -41,5 +46,6 @@ module.exports = {
   HomePage,
   Hours,
   Location,
-  StuffingsCalzone
+  StuffingsCalzone,
+  TriviaQuestions
 };

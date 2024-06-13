@@ -3,6 +3,7 @@ const employeelogout = async() => {
     method: 'POST',
     headers: { 'Content-Type': 'application/json'}
   });
+
   if (response.ok) {
     alert('User Logged Out');
     document.location.replace('/');
@@ -11,4 +12,5 @@ const employeelogout = async() => {
     alert(response.statusText);
   };
 };
-document.querySelector('#employeelogout').addEventListener('click', employeelogout);
+
+// document.querySelector('#employeelogout').addEventListener('click', employeelogout);

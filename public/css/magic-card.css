@@ -21,7 +21,7 @@
 }
 
 .body {
-  background-image: url('../images/place.jpg');
+  background-image: url('../images/place-2.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,8 +34,7 @@
   align-items: center;
   min-height: 100vh;
   flex-wrap: wrap;
-  box-shadow: 8px 4px 8px 5px rgba(0, 0, 0, 0.6);
-  /* border-radius: 10px; */
+  /* box-shadow: 8px 4px 8px 5px rgba(0, 0, 0, 0.6); */
   margin-bottom: 20px ;
 }
 
