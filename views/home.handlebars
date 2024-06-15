@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="/css/magic-card.css">
   <link rel="stylesheet" href="/css/video-player.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 </head>
 
 {{!-- <section label="admin buttons">
@@ -29,6 +31,9 @@
 </section> --}}
 
 <br>
+
+{{!-- <div id="myElement"></div> --}}
+
 
 <div class="heading buonos-font">
   <center>
@@ -85,7 +90,8 @@
 <br>
 
 {{!-- <div class="animation-container" ontouchmove="myFunction(event)"> --}}
-<div class="animation-container">
+{{!-- <div class="animation-container" ontouchstart="handleTouchMove(event)" ontouchmove="handleTouchMove(event)"> --}}
+  <div class="animation-container" id="myElement">
   <div class="wrapper">
     <input type="radio" name="slide" id="one" checked>
     <input type="radio" name="slide" id="two">
@@ -114,7 +120,7 @@
     </div>
 
     <div class="img img-5">
-      <img src="/images/buonos-old.jpg" alt="">
+      <img src="/images/buonos-old-3.jpg" alt="">
       <div class="centered"><h1>Quality Since 1989</h1></div>
     </div>
 
@@ -224,12 +230,12 @@
     <div class="magic-card-container">
       <div class="magic-card-1">
         <div class="magic-card-item"></div>
-        <h4>Click me!</h4>
+        <h4>See our loyalty program!</h4>
       </div> 
 
       <div class="magic-card-2">
         <div class="magic-card-item"></div>
-        <h4>Click me!</h4>
+        <h4>See our loyalty program!</h4>
       </div>
     </div>
   </div>
@@ -411,18 +417,14 @@
 </script>
 
 {{!-- <script src="/js/swiper.js"></script> --}}
-
 <script>
-
   const radioButton1 = document.getElementById('one');
   const radioButton2 = document.getElementById('two');
   const radioButton3 = document.getElementById('three');
   const radioButton4 = document.getElementById('four');
   const radioButton5 = document.getElementById('five');
-
   const buttons = [radioButton1, radioButton2, radioButton3, radioButton4, radioButton5];
-
-  const index = 2;
+  let index = 2;
 
   buttons.forEach(setFalse);
   setFirst();
@@ -436,16 +438,67 @@
     buttons[index].click();
   }
 
-  function myFunction(event) {
-    var x = event.touches[0].clientX;
-    var y = event.touches[0].clientY;
-    document.getElementById("demo").innerHTML = x + ", " + y;
-
-    if (x <= 0) {
-      index--;
-      setFalse();
-      buttons[index].checked  = true;
-      buttons[index].click();
-    }
+  function setIndex(index) {
+    buttons[index].checked  = true;
+    buttons[index].click();
   }
+
+  var myElement = document.getElementById('myElement');
+  var mc = new Hammer(myElement);
+  var isSwipe = false;
+
+  checkSwipe();
+
+  function checkSwipe() {
+    mc.on("panleft tap press", function(ev) {
+      if (!isSwipe) {
+        isSwipe = true;
+
+        if (index != 0) {
+          index--;
+          setIndex(index);
+          console.log(index);
+          setTimeout(function() {
+            timer();
+          }, 1000);
+        }
+        else {
+          index = 4;
+          setIndex(index);
+          console.log(index);
+          setTimeout(function() {
+            timer();
+          }, 1000);
+        }
+      }
+    });
+
+    mc.on("panright tap press", function(ev) {
+      if (!isSwipe) {
+        isSwipe = true;
+
+        if (index != 4) {
+          index++;
+          setIndex(index);
+          console.log(index);
+          setTimeout(function() {
+            timer();
+          }, 1000);
+        }
+        else {
+          index = 0;
+          setIndex(index);
+          console.log(index);
+          setTimeout(function() {
+            timer();
+          }, 1000);
+        }
+      }   
+    });
+  }
+
+  function timer() {
+    isSwipe = false;
+  }
+
 </script>

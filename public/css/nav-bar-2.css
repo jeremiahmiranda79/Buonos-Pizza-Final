@@ -16,12 +16,16 @@ nav {
   width: 100%;
   height: 80px;
   background-color: var(--background-2);
-  box-shadow: 0px 0px 10px 0px black inset;
+  /* box-shadow: 0px 0px 10px 0px black inset; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   align-items: center;
   z-index: 100;
   position: fixed;
   top: 0;
+
+  padding-right: 15px;
+  
 }
 
 .links-container {
@@ -80,7 +84,17 @@ nav .home-link {
   display: flex;
   justify-content: flex-start;
   margin-right: auto;
-  margin-left: 10px;
+  /* margin-left: 10px; */
+}
+
+nav .home-link img {
+  /* background: rgba(0, 0, 0, 0.555); */
+  background: rgb(46, 43, 43);
+  border-radius: 10px;
+}
+
+nav .login-link img {
+  background: rgba(95, 14, 14, 0.555);
 }
 
 nav .home-link-1 {
@@ -91,7 +105,8 @@ nav .login-link {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  
 }
 
 nav svg {
@@ -149,6 +164,8 @@ nav svg {
     display: flex;
     justify-content: flex-start;
     margin-right: auto;
+
+    
   }
 
   nav .login-link {
