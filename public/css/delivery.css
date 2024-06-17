@@ -20,6 +20,8 @@
   width: 197px;
   height: 65px;
   border-radius: 4px;
+
+  
 }
 
 .btn-delivery{
@@ -30,6 +32,8 @@
   width: 65px;
   height: 65px;
   border-radius: 4px;
+
+  background-color: aliceblue;
 }
 
 @media (min-width: 768px) {
