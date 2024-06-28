@@ -18,7 +18,9 @@ const {
 	ToppingsPizza,
 	StuffingsCalzone,
 
-	TriviaQuestions
+	TriviaQuestions,
+
+	TriviaScores
 } = require('../../models');
 
 const withAuth = require('../../utils/auth');
@@ -435,9 +437,7 @@ const isAdmin = require('../../utils/admin');
 	// Route to find trivia
 	router.get('/trivia-home-page', async (req, res) => {
 		try {
-
 			res.status(200).render('trivia-home-page', {
-
 			});
 		}
 		catch (error) {
@@ -448,11 +448,16 @@ const isAdmin = require('../../utils/admin');
 
 	router.get('/trivia-high-scores-page', async (req, res) => {
 		try {
-			// const q = await TriviaQuestions.findAll();
-			// const serializedTriviaQuestions = q.map((x) => x.get({ plain: true }));
+			const s = await TriviaScores.findAll({
+				order: [
+					['score', 'DESC']
+				]
+			});
+
+			const serializedTriviaScores = s.map((x) => x.get({ plain: true }));
 
 			res.status(200).render('trivia-high-scores-page', {
-				// question: serializedTriviaQuestions
+				score: serializedTriviaScores,
 			});
 		}
 		catch (error) {

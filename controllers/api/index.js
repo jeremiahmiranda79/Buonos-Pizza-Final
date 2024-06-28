@@ -64,6 +64,10 @@ router.use('/toppingPizza', toppingPizzaRoutes);
 
 //Trivia Questions Routes
 const triviaQuestionsRoutes = require('./triviaQuestions');
-router.use('/trivia-questions', triviaQuestionsRoutes);
+router.use('/triviaQuestions', triviaQuestionsRoutes);
+
+//Trivia Scores Routes
+const triviaScores = require('./triviaScores');
+router.use('/triviaScores', triviaScores);
 
 module.exports = router;

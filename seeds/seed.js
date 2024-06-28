@@ -20,6 +20,7 @@ const {
   StuffingsCalzone,
 
   // TriviaQuestions
+  TriviaScores
 } = require('../models');
 
 const categoryData = require('./categoryData.json');
@@ -41,7 +42,8 @@ const hoursData = require('./hoursData.json');
 const locationData = require('./locationData.json');
 const stuffingsCalzone = require('./stuffingsCalzoneData.json');
 
-const triviaQuestions = require('./triviaQuestion.json');
+// const triviaQuestions = require('./triviaQuestion.json');
+const triviaScores = require('./triviaScoresData.json');
 
 const seedData = async () => {
   await sequelize.sync({ force: true });
@@ -65,6 +67,7 @@ const seedData = async () => {
   await StuffingsCalzone.bulkCreate(stuffingsCalzone);
 
   // await TriviaQuestions.bulkCreate(triviaQuestions);
+  await TriviaScores.bulkCreate(triviaScores);
 
   console.log('All seeded!')
   process.exit(0);

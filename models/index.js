@@ -19,6 +19,8 @@ const StuffingsCalzone = require('./StuffingsCalzone');
 
 const TriviaQuestions = require('./TriviaQuestions');
 
+const TriviaScores = require('./TriviaScores');
+
 // MenuItems to Categories
 Categories.hasMany(MenuItems, {
   foreignKey: 'categoryId'
@@ -47,5 +49,7 @@ module.exports = {
   Hours,
   Location,
   StuffingsCalzone,
-  TriviaQuestions
+  TriviaQuestions,
+
+  TriviaScores
 };

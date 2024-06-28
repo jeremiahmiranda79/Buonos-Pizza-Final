@@ -8,7 +8,7 @@ var mainElement = document.getElementsByName("main");
 
 var timeElement = document.querySelector(".time");
 
-var timeLeft = 10;//200
+var timeLeft = 200;
 var questionIndex = 0;
 var buttons = [];
 var guesses = [];
@@ -166,46 +166,93 @@ function submitScore(arr) {
 
 
 	var header = document.createElement("h2");
+
 	header.textContent = "Trivia Complete!";
+
 	document.body.appendChild(header);
 	document.getElementById("highscore-input").appendChild(header);
+
 	var finalScore = document.createElement("p");
+
 	score = timeLeft;
+
 	finalScore.textContent = "Your final score is: " + score;
+
 	document.getElementById("highscore-input").appendChild(finalScore);
 
   var line = document.createElement("hr");
 
   var correct = document.createElement("p");
+
   correct.textContent = "Correct!";
 
   document.getElementById("highscore-input").appendChild(line);
 
 	var enterNameElement = document.createElement("p");
+
 	enterNameElement.textContent = "Please enter your name or initials";
+
 	document.getElementById("highscore-input").appendChild(enterNameElement);
-	var input = document.createElement("input");    
+
+	var input = document.createElement("input");  
+	
+	input.setAttribute("id", "name");
+
 	document.getElementById("highscore-input").appendChild(input);
 
   var br = document.createElement("br");
+
   document.getElementById("highscore-input").appendChild(br);
 	
   var submitButton = document.createElement("button");
 
 	submitButton.textContent = "Submit";
+
 	document.getElementById("highscore-input").appendChild(submitButton);
 
 	submitButton.addEventListener("click", function() {
-		var playerHighScore = {
-			name: input.value,
-			highScore: score
-		};
-
-		arr.push(playerHighScore);
-		localStorage.setItem("highScoresList", JSON.stringify(highScoresList));
-		window.location.href = "trivia-high-scores-page";
+		createScore();
+		alert("yes");
+		// window.location.href = "trivia-high-scores-page";
 	});
 }
+
+//Create score
+const createScore = async(event) => {
+  // event.preventDefault();
+
+  const name = document.querySelector('#name').value.trim();
+	// const name = document.querySelector("input").value.trim();
+
+	alert(name);
+
+	// const score = document.querySelector("button").value.trim();
+
+	const _score = score;
+
+	alert(_score);
+	const email = "hello";
+
+  const response = await fetch('/api/triviaScores/createTriviaScores', {
+    method: 'POST',
+    body: JSON.stringify({ 
+      name,
+			score, 
+			email
+    }),
+    
+    headers: { 'Content-Type': 'application/json' },
+  });
+
+  if (response.ok) {
+    alert('Score Created');
+    // history.back()
+    document.location.replace('/trivia-high-scores-page');
+  } 
+  else {
+    alert(response.statusText);
+  };
+};
 
 function saveQuestions() {
 	var question1 = {
@@ -213,134 +260,137 @@ function saveQuestions() {
 		guess: ["1989", "2002", "2021", "1998"],
 		answer: "1989"
 	};
+
 	var question2 = {
 		question: "The Margherita pizza is most likely named after what former queen of Italy?",
 		guess: ["Elana of Padua", "Maria Luisa of Parma", "Margherita of Savoy", "Mary of Modena"],
 		answer: "Margherita of Savoy"
-	}
-	var question3 = {
-		question: "What type of milk is used in Pecorino Romano cheese?",
-		guess: ["Cow", "Sheep", "Goat", "Coconut"],
-		answer: "Sheep"
-	}
+	};
+
+	// var question3 = {
+	// 	question: "What type of milk is used in Pecorino Romano cheese?",
+	// 	guess: ["Cow", "Sheep", "Goat", "Coconut"],
+	// 	answer: "Sheep"
+	// };
+
 	var question4 = {
 		question: "Neapolitan pizza, or pizza Napoletana refers to what part of Italy that this pizza found its roots?",
 		guess: ["Genoa", "Bologna", "Venice", "Naples"],
 		answer: "Naples"
-	}
+	};
 
 	var question5 = {
 		question: "Stromboli is a pizza style shape noted that it is?",
 		guess: ["Folded", "Open face", "Rolled", "Balled"],
 		answer: "Rolled"
-	}
+	};
 
 	var question6 = {
 		question: "Where did the Chicken Parmesan dish find its roots?",
 		guess: ["United States of America", "Northern Italy", "Southern Italy", "England"],
 		answer: "United States of America"
-	}
+	};
 
 	var question7 = {
 		question: "Where was the original Bounos Pizza location?",
 		guess: ["2023 W Guadalue Rd Mesa AZ 85202", "3500 E Power Rd Gilbert AZ 85142", "2400 S Fast Cat Ln Poenix AZ 84674", "4555 N Bright Ave Queen Creek AZ 85146"],
 		answer: "2023 W Guadalue Rd Mesa AZ 85202"
-	}
+	};
 
 	var question8 = {
 		question: "What is NOT an Italian cuisine mother sauce?",
 		guess: ["Veloute", "Tomato", "Bechamel", "Basil Puree"],
 		answer: "Basil Puree"
-	}
+	};
 
 	var question9 = {
 		question: "Where did the Cannoli originate from?",
 		guess: ["Calabria", "Sicily", "Campania", "Basilicata"],
 		answer: "Sicily"
-	}
+	};
 
-	var question10 = {
-		question: 'What day is known as "Prince" spaghetti day?',
-		guess: ["Wednesday", "Thursday", "Monday", "Friday"],
-		answer: "Wednesday"
-	}
+	// var question10 = {
+	// 	question: 'What day is known as "Prince" spaghetti day?',
+	// 	guess: ["Wednesday", "Thursday", "Monday", "Friday"],
+	// 	answer: "Wednesday"
+	// };
 
 	var question11 = {
 		question: 'Boars Head Deli is from what US state?',
 		guess: ["Kansas", "Alaska", "New York", "Montana"],
 		answer: "New York"
-	}
+	};
 
 	var question12 = {
 		question: 'The name pasta "Puttanesca" comes from what Italian slang?',
 		guess: ["Sweat and Sour", "Lady of the night", "Mini golf hole in one", "Tip of the ole Boot"],
 		answer: "Lady of the night"
-	}
+	};
 
 	var question13 = {
 		question: 'What does the word Buono means in Italian?',
 		guess: ["Bad", "Hungry", "Good", "Stuffed"],
 		answer: "Good"
-	}
+	};
 
-	var question14 = {
-		question: 'What year did the Pante family take full owner ship of Buonos Pizza?',
-		guess: ["2001", "2016", "1994", "1990"],
-		answer: "1994"
-	}
+	// var question14 = {
+	// 	question: 'What year did the Pante family take full owner ship of Buonos Pizza?',
+	// 	guess: ["2001", "2016", "1994", "1990"],
+	// 	answer: "1994"
+	// };
 
 	var question15 = {
 		question: 'The word "Gravy" at Buonos Pizza refers to  what type of sauce?',
 		guess: ["Soy Sauce", "Marinara", "Balsamic Glaze", "Alfredo"],
 		answer: "Marinara"
-	}
+	};
 
 	var question16 = {
 		question: 'What does Antipasto mean in Italian Cuisine?',
 		guess: ["Coffee drink", "Last course", "Dessert", "First course"],
 		answer: "First course"
-	}
+	};
 
 	var question17 = {
 		question: 'A Zeppole is?',
 		guess: ["Fried dough and powdered sugar", "Caramel Apple", "Lemon Cake", "Creme Brulee"],
 		answer: "Fried dough and powdered sugar"
-	}
+	};
 
 	var question18 = {
 		question: 'Drakes Cakes originated in what New York City Burough?',
 		guess: ["Bronx", "Brooklyn", "Manhattan", "Queens"],
 		answer: "Brooklyn"
-	}
+	};
 
 	var question19 = {
 		question: 'Buonos Pizza serves what size pizza?',
 		guess: ['XL-Large-18"', 'Large-16"', 'Small-14"', 'All of the above'],
 		answer: "All of the above"
-	}
+	};
 
 	var question20 = {
 		question: 'Pasta is believed to have found its roots in what area?',
 		guess: ["China", "Italy", "United States of America", "France"],
 		answer: "China"
-	}
+	};
 
 	// Save related form data as an object
 	// Use .setItem() to store object in storage and JSON.stringify to convert it as a string
 	localStorage.setItem("question1", JSON.stringify(question1));
 	localStorage.setItem("question2", JSON.stringify(question2));
-	localStorage.setItem("question3", JSON.stringify(question3));
+	// localStorage.setItem("question3", JSON.stringify(question3));
 	localStorage.setItem("question4", JSON.stringify(question4));
 	localStorage.setItem("question5", JSON.stringify(question5));
 	localStorage.setItem("question6", JSON.stringify(question6));
 	localStorage.setItem("question7", JSON.stringify(question7));
 	localStorage.setItem("question8", JSON.stringify(question8));
 	localStorage.setItem("question9", JSON.stringify(question9));
-	localStorage.setItem("question10", JSON.stringify(question10));
+	// localStorage.setItem("question10", JSON.stringify(question10));
 	localStorage.setItem("question11", JSON.stringify(question11));
 	localStorage.setItem("question12", JSON.stringify(question12));
 	localStorage.setItem("question13", JSON.stringify(question13));
-	localStorage.setItem("question14", JSON.stringify(question14));
+	// localStorage.setItem("question14", JSON.stringify(question14));
 	localStorage.setItem("question15", JSON.stringify(question15));
 	localStorage.setItem("question16", JSON.stringify(question16));
 	localStorage.setItem("question17", JSON.stringify(question17));
@@ -360,10 +410,10 @@ var myFuncs = [
 		return myQuestion;
 	},
 
-	function getQuestion3() {
-		var myQuestion = JSON.parse(localStorage.getItem("question3"));
-		return myQuestion;
-	},
+	// function getQuestion3() {
+	// 	var myQuestion = JSON.parse(localStorage.getItem("question3"));
+	// 	return myQuestion;
+	// },
 
 	function getQuestion4() {
 		var myQuestion = JSON.parse(localStorage.getItem("question4"));
@@ -395,10 +445,10 @@ var myFuncs = [
 		return myQuestion;
 	},
 
-	function getQuestion10() {
-		var myQuestion = JSON.parse(localStorage.getItem("question10"));
-		return myQuestion;
-	},
+	// function getQuestion10() {
+	// 	var myQuestion = JSON.parse(localStorage.getItem("question10"));
+	// 	return myQuestion;
+	// },
 
 	function getQuestion11() {
 		var myQuestion = JSON.parse(localStorage.getItem("question11"));
@@ -415,10 +465,10 @@ var myFuncs = [
 		return myQuestion;
 	},
 
-	function getQuestion14() {
-		var myQuestion = JSON.parse(localStorage.getItem("question14"));
-		return myQuestion;
-	},
+	// function getQuestion14() {
+	// 	var myQuestion = JSON.parse(localStorage.getItem("question14"));
+	// 	return myQuestion;
+	// },
 
 	function getQuestion15() {
 		var myQuestion = JSON.parse(localStorage.getItem("question15"));
