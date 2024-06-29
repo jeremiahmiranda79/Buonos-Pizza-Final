@@ -1,11 +1,7 @@
 var startButtonElement = document.querySelector(".start-button");
-
 var hero1Element = document.querySelector(".hero1");
-
 var hero2Element = document.querySelector(".hero2");
-
 var mainElement = document.getElementsByName("main");
-
 var timeElement = document.querySelector(".time");
 
 var timeLeft = 200;
@@ -47,14 +43,12 @@ function startTime() {
 		if (timeLeft === 0) {
 			// Stops execution of action at set interval
 			clearInterval(timerInterval); 
-
       submitScore(highScoresList);
 		}
 
     if (timeLeft < 0) {
       timeLeft = 0;
       clearInterval(timerInterval);
-
       submitScore(highScoresList);
     }
 
@@ -78,11 +72,7 @@ function setQuestions(_questionIndex) {
 
 	for (var i = 0; i < myFuncs[_questionIndex]().guess.length; i++) {
 		buttons[i] = document.createElement("button");
-
-		// buttons[i].textContent = i+1 + ": " + myFuncs[_questionIndex]().guess[i];
-
     buttons[i].textContent = myFuncs[_questionIndex]().guess[i];
-
 		guesses[i] = myFuncs[_questionIndex]().guess[i]; 
 		document.getElementById("buttons").appendChild(buttons[i]);
 	}
@@ -94,77 +84,90 @@ function setQuestions(_questionIndex) {
 
 	function buttonInfo(_buttonIndex) {
 		buttons[_buttonIndex].addEventListener("click", function() {
-			if (guesses[_buttonIndex] === myFuncs[_questionIndex]().answer) {
-				var line = document.createElement("hr");
+			foo();
 
-				var correct = document.createElement("p");
-				correct.textContent = "Correct!";
-
-				document.getElementById("feed-back").appendChild(line);
-
-				document.getElementById("feed-back").appendChild(correct);
-
-				var count = 1;
-				var timerInterval = setInterval(function() {
-					count--;
-
-					if (count === 0) {
-						// Stops execution of action at set interval
-						clearInterval(timerInterval);
-						count = 1;
-						question.remove();
-						line.remove();
-						correct.remove();
-						
-						for (var i = 0; i < buttons.length; i++) {
-								buttons[i].remove();
-						}
-						
-						questionIndex++;
-
-						if (questionIndex < myFuncs.length) {
-								setQuestions(questionIndex);
-						}
-						else {
-								isStopTime = true;
-								submitScore(highScoresList);
-						}
-					}
-				}, 1000);       
-			} 
-			else {
-				var line = document.createElement("hr");
-				var wrong = document.createElement("p");
-				var count = 1;
-				wrong.textContent = "Incorrect: -5 seconds!";
-				document.getElementById("feed-back").appendChild(line);
-				document.getElementById("feed-back").appendChild(wrong);
-				var timerInterval = setInterval(function() {
-					count--;
-
-					if (count === 0) {
-						// Stops execution of action at set interval
-						clearInterval(timerInterval);
-						count = 1;
-						line.remove();
-						wrong.remove();
-						buttons[_buttonIndex].remove();
-						timeLeft = timeLeft - 5; 
-					}
-				}, 1000); 
+			async function foo() {
+				document.getElementById("buttons").style.pointerEvents = "none";
+				await bar();
 			}
-		});
+
+			function bar() {
+				return new Promise(function (resolve, reject) {
+					if (guesses[_buttonIndex] === myFuncs[_questionIndex]().answer) {
+						var line = document.createElement("hr");
+						var correct = document.createElement("p");
+						correct.textContent = "Correct!";
+
+						document.getElementById("feed-back").appendChild(line);
+						document.getElementById("feed-back").appendChild(correct);
+		
+						var count = 1;
+						var timerInterval = setInterval(function() {
+							count--;
+		
+							if (count === 0) {
+								// Stops execution of action at set interval
+								clearInterval(timerInterval);
+								count = 1;
+								question.remove();
+								line.remove();
+								correct.remove();
+								
+								for (var i = 0; i < buttons.length; i++) {
+										buttons[i].remove();
+								}
+								
+								questionIndex++;
+		
+								if (questionIndex < myFuncs.length) {
+										setQuestions(questionIndex);
+								}
+								else {
+										isStopTime = true;
+										submitScore(highScoresList);
+								}
+							}
+
+							document.getElementById("buttons").style.pointerEvents = "auto";
+
+						}, 1000);       
+					} 
+					else {
+						var line = document.createElement("hr");
+						var wrong = document.createElement("p");
+						var count = 1;
+
+						wrong.textContent = "Incorrect: -5 seconds!";
+						document.getElementById("feed-back").appendChild(line);
+						document.getElementById("feed-back").appendChild(wrong);
+
+						var timerInterval = setInterval(function() {
+							count--;
+		
+							if (count === 0) {
+								// Stops execution of action at set interval
+								clearInterval(timerInterval);
+								count = 1;
+								line.remove();
+								wrong.remove();
+								buttons[_buttonIndex].remove();
+								timeLeft = timeLeft - 5; 
+							}
+
+							document.getElementById("buttons").style.pointerEvents = "auto";
+						}, 1000); 
+					}
+
+					resolve();
+				})
+			}
+		})
 	}
 } 
 
 function submitScore(arr) {
-  // var line = document.createElement("hr");
-  // document.getElementById("highscore-input").appendChild(line);
-
   var questions = document.getElementById("question-container");
   questions.remove();
-
-
 	var header = document.createElement("h2");
 
 	header.textContent = "Trivia Complete!";
@@ -212,25 +215,14 @@ function submitScore(arr) {
 
 	submitButton.addEventListener("click", function() {
 		createScore();
-		alert("yes");
-		// window.location.href = "trivia-high-scores-page";
 	});
 }
 
 //Create score
 const createScore = async(event) => {
-  // event.preventDefault();
-
   const name = document.querySelector('#name').value.trim();
-	// const name = document.querySelector("input").value.trim();
-
-	alert(name);
-
-	// const score = document.querySelector("button").value.trim();
 
 	const _score = score;
-
-	alert(_score);
 	const email = "hello";
 
   const response = await fetch('/api/triviaScores/createTriviaScores', {
@@ -245,8 +237,6 @@ const createScore = async(event) => {
   });
 
   if (response.ok) {
-    alert('Score Created');
-    // history.back()
     document.location.replace('/trivia-high-scores-page');
   } 
   else {

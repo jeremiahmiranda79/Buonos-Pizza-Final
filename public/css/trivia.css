@@ -35,7 +35,7 @@ main {
   height: 100%;
   margin: 2rem auto;
   width: 85%;
-  border: solid;
+  /* border: solid; */
   padding: 10px;
   align-content: start;
 }
