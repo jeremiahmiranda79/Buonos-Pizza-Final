@@ -348,6 +348,29 @@ const isAdmin = require('../../utils/admin');
 	// 	};
 	// });
 //#endregion
+
+//#region /***** Oder-Online******/
+	router.get('/order-online', async (req, res) => {
+		try {
+			const h = await HomePage.findAll();
+			const serializedHomePage = h.map((x) => x.get({ plain: true }));
+
+			const i = await Information.findAll();
+			const serializedInfo = i.map((x) => x.get({ plain: true }));
+
+			res.status(200).render('order-online', {
+				homePage: serializedHomePage,
+
+				information: serializedInfo
+			});
+		}
+		catch (error) {
+			console.log(error);
+			res.status(500).json(error);
+		}
+	})
+//#endregion
+
 //#region /***** LOCATION ******/
 	router.get('/location', async (req, res) => {
 		try {

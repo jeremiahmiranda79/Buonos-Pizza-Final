@@ -3000,6 +3000,21 @@
   },
   {
     "categoryId": 16,
+    "name": "Drakes Yodels Boston Creme",
+    "description": "Frosted creme filled golden cakes",
+    "switchy": true,
+
+    "image": "/images/drakes-yodel-boston-creme.jpg",
+
+    "size1": "10 count twin wrapped",
+    "price1": "$6.99",
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+  {
+    "categoryId": 16,
     "name": "Polly-O Ricotta Cheese",
     "description": "Premium Italian natural ricotta cheese. A New York favorite",
     "switchy": true,
