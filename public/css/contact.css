@@ -12,12 +12,12 @@ textarea {
   font-family: "Poppins", sans-serif;
 } */
 
-.container2 {
+.container {
   position: relative;
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #fafafa;
+  background-color: #fafafa46;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -226,11 +226,14 @@ textarea.input {
 .information a {
   margin-bottom: 15px;
   margin-right: 10px;
+  
+  color: inherit;
 }
 
 .icon {
   width: 28px;
   margin-right: 0.7rem;
+  
 }
 
 .social-media {
@@ -244,6 +247,8 @@ textarea.input {
 .social-icons {
   display: flex;
   margin-top: 0.5rem;
+
+  /* color: #111; */
 }
 
 .social-icons a {
@@ -251,7 +256,8 @@ textarea.input {
   height: 35px;
   border-radius: 5px;
   background: linear-gradient(45deg, #1abc9c, #149279);
-  color: #fff;
+  /* color: #fff; */
+  color: #333;
   text-align: center;
   line-height: 35px;
   margin-right: 0.5rem;
