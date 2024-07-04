@@ -7,6 +7,9 @@ var checkOpenStatus = function () {
 
   var day = d.getDay();
 
+  var month = d.getMonth();
+  var date = d.getDate();
+
   var hourTxt = 0;
 
   //#region (make function)
@@ -56,6 +59,10 @@ var checkOpenStatus = function () {
     document.getElementById('time').textContent = hourTxt + ":" + minute + ":" + second + " PM";
   }
   //#endregion
+
+  if (month == 6 && date == 4) {
+    document.getElementById('open-close').src="/images/4th-of-july.jpg";
+  }
 };
 
 setInterval(checkOpenStatus, 1000);
