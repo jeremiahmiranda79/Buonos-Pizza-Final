@@ -8,11 +8,11 @@
     "image": "/images/pizza-regular-neopolitan-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$15.49",
+    "price1": "$15.99",
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$17.49",
+    "price2": "$17.99",
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$19.49",
+    "price3": "$19.99",
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -44,11 +44,11 @@
 
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$16.99",
+    "price1": "$17.99",
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$18.99",
+    "price2": "$19.99",
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$20.99",
+    "price3": "$21.99",
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -70,6 +70,9 @@
     "desertSauce": false,
     "desertType": false
   }, 
+
+
+
   {
     "categoryId": 1,
     "name": "Siciliana",
@@ -80,9 +83,9 @@
 
 
     "size1": "Small, 8 cut",
-    "price1": "$16.99",
+    "price1": "$18.99",
     "size2": "Large, 12 cut",
-    "price2": "$20.99",
+    "price2": "$21.99",
     "size3": null,
     "price3": null,
 
@@ -152,11 +155,11 @@
     "image": "/images/pizza-specialty-margherita-pizza-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$16.49",
+    "price1": "$17.99",
     "size2": null,
     "price2": null,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$19.99",
+    "price3": "$21.99",
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -187,11 +190,11 @@
     "image": "/images/pizza-specialty-meat-lover-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$23.99",
+    "price1": "$24.99",
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$25.99",
+    "price2": "$26.99",
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$27.99",
+    "price3": "$28.99",
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -222,11 +225,11 @@
     "image": "/images/pizza-specialty-veggi-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$23.99",
+    "price1": "$24.99",
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$25.99",
+    "price2": "$26.99",
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$27.99",
+    "price3": "$28.99",
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -257,11 +260,11 @@
     "image": "/images/pizza-specialty-works-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$26.99",
+    "price1": "$27.99",
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$28.99",
+    "price2": "$29.99",
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$30.99",
+    "price3": "$31.99",
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -292,7 +295,7 @@
     "image": "/images/pizza-specialty-ziti-3.jpg",
 
     "size1": "Large 16 inch, 8 cut",
-    "price1": "$25.99",
+    "price1": "$27.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -508,7 +511,7 @@
     "image": "/images/app-garlic-bread-3.jpg",
 
     "size1": null,
-    "price1": "$3.99",
+    "price1": "$4.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -543,7 +546,7 @@
     "image": "/images/app-sicilian-garlic-bread-3.jpg",
 
     "size1": null,
-    "price1": "$4.99",
+    "price1": "$5.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -613,7 +616,7 @@
     "image": "/images/app-meatball-sliders-3.jpg",
 
     "size1": "Five piece",
-    "price1": "$6.99",
+    "price1": "$8.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -893,9 +896,9 @@
     "image": "/images/app-wings-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$7.75",
+    "price1": "$8.75",
     "size2": "Ten piece",
-    "price2": "$13.99",
+    "price2": "$14.99",
     "size3": null,
     "price3": null,
 
@@ -928,9 +931,9 @@
     "image": "/images/app-wings-bonless-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$7.25",
+    "price1": "$8.25",
     "size2": "Ten piece",
-    "price2": "$10.25",
+    "price2": "$11.25",
     "size3": null,
     "price3": null,
 
@@ -965,9 +968,9 @@
     "image": "/images/calzone-3.jpg",
 
     "size1": "Small, serves one",
-    "price1": "$9.99",
+    "price1": "$10.99",
     "size2": "Large, serves two-three",
-    "price2": "$13.99",
+    "price2": "$14.99",
     "size3": null,
     "price3": null,
 
@@ -1215,7 +1218,7 @@
     "image": "/images/sausage-roll-3.jpg",
 
     "size1": "Small, serves one",
-    "price1": "$8.99",
+    "price1": "$9.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1465,7 +1468,7 @@
     "image": "/images/entree-chicken-parm-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$18.99",
+    "price1": "$20.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1500,7 +1503,7 @@
     "image": "/images/entree-eggplant-parm-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$18.99",
+    "price1": "$20.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1535,7 +1538,7 @@
     "image": "/images/entree-lasagna-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$16.99",
+    "price1": "$19.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1570,7 +1573,7 @@
     "image": "/images/entree-ravioli-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$16.99",
+    "price1": "$17.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1707,7 +1710,7 @@
     "description": "Choice of pasta topped with marinara sauce, two sausage links,parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
     "switchy": true,
 
-    "image": "/images/entree-pasta-sausage-3.jpg",
+    "image": "/images/entree-pasta-sausage-5.jpg",
 
     "size1": "Dinner portion for one",
     "price1": "$14.99",
@@ -1747,7 +1750,7 @@
     "image": "/images/hot-sub-meatball-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$9.99",
+    "price1": "$10.50",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1782,7 +1785,7 @@
     "image": "/images/hot-sub-sausage-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$9.99",
+    "price1": "$10.50",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1817,7 +1820,7 @@
     "image": "/images/hot-sub-chicken-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.99",
+    "price1": "$11.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1852,7 +1855,7 @@
     "image": "/images/hot-sub-eggplant-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.99",
+    "price1": "$11.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1887,7 +1890,7 @@
     "image": "/images/hot-sub-pepperoni-melt-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$9.99",
+    "price1": "$10.50",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1922,7 +1925,7 @@
     "image": "/images/hot-sub-sausage-onion-pepper-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$9.99",
+    "price1": "$10.50",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1957,7 +1960,7 @@
     "image": "/images/hot-sub-philly-steak-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.99",
+    "price1": "$11.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1992,7 +1995,7 @@
     "image": "/images/hot-sub-philly-chicken-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.99",
+    "price1": "$11.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2381,7 +2384,7 @@
     "image": "/images/app-garlic-bread-3.jpg",
 
     "size1": "12 inch baguette",
-    "price1": "$3.99",
+    "price1": "$4.99",
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2663,7 +2666,7 @@
     "image": "/images/dessert-pistachio-ricotta-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$6.99",
+    "price1": "$6.49",
     "size2": null,
     "price2": null,
     "size3": null,
