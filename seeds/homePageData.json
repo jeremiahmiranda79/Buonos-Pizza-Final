@@ -22,10 +22,10 @@
     "name4Switch": true,
 
     "name5_1": "Delivery Service thru 3rd party",
-    "description5_1": "We use 3rd party online ordering & delivery services.",
+    "description5_1": "We use 3rd party delivery services.",
     "name5_1Switch": true,
 
-
+    "name5_2": "Please click your favorite delivery app. Our favorite is Slice!",
 
     "description5_2": "PLEASE NOTE: Buono's cannot guarantee the warmth or quality of food delivered by any of the 3rd party delivery services. We make ALL our food to order and have no control over time of pick up or delivery quality. We make every effort to ensure we provide the best quality food.",
     "name5_2Switch": true,
@@ -40,8 +40,19 @@
     "name5_5Switch": true,
 
     "slice_switch": true,
+    "slice_link": "https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com",
+    "slice_img": "/images/slice-logo-600x200.jpg",
+
     "doordash_switch": true,
+    "doordash_link": "https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/",
+    "doordash_img": "/images/delivery-doordash-3.jpg",
+
     "ubereats_switch": true,
-    "grubhub_switch": true
+    "ubereats_link": "https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg",
+    "ubereats_img": "/images/delivery-uber-eats.jpg",
+    
+    "grubhub_switch": true,
+    "grubhub_link": "https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436",
+    "grubhub_img": "/images/delivery-grubhub.jpg"
   }
 ]
