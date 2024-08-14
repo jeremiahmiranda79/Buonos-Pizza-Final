@@ -39,7 +39,7 @@ MenuItems.init(
       allowNull: true
     },
     price1: {
-      type: DataTypes.STRING,
+      type: DataTypes.DECIMAL(10,2),
       allowNull: true
     },
     size2: {

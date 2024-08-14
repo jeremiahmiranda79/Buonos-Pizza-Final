@@ -16,7 +16,10 @@ const {
 router.get('/', async (req, res) => {
   try {
     const menu = await Categories.findAll({
-      include: [{ model: MenuItems }]
+      include: [
+        { 
+          model: MenuItems 
+        }],
     });
 
     res.status(200).json(menu);
@@ -37,7 +40,7 @@ router.get('/:menuitemsId', async (req, res) => {
         { model: ToppingsColdSub },
         { model: ToppingsDesert },  
         { model: ToppingsHotSub },
-      ]
+      ],
     });
     res.status(200).json(menuItem);
   } 

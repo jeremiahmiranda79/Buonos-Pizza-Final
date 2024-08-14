@@ -25,6 +25,11 @@
     "switchy": true
   },
   {
+    "name": "Sausage Roll",
+    "image": "/images/menu-sausage-roll-2.jpg",
+    "switchy": true
+  },
+  {
     "name": "Calzone",
     "image": "/images/menu-calzone-10.jpg",
     "switchy": true
@@ -32,11 +37,6 @@
   {
     "name": "Stromboli",
     "image": "/images/menu-stromboli-4.jpg",
-    "switchy": true
-  },
-  {
-    "name": "Sausage Roll",
-    "image": "/images/menu-sausage-roll-2.jpg",
     "switchy": true
   },
   {
@@ -56,7 +56,7 @@
   },
   {
     "name": "Cold Sub",
-    "image": "/images/menu-boars-head-logo-2.jpg",
+    "image": "/images/menu-cold-sub-2.jpg",
     "switchy": true
   },
   {

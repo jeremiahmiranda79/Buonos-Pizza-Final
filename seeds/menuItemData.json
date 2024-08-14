@@ -8,11 +8,11 @@
     "image": "/images/pizza-regular-neopolitan-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$15.99",
+    "price1": 15.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$17.99",
+    "price2": 17.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$19.99",
+    "price3": 19.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -44,11 +44,11 @@
 
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$17.99",
+    "price1": 17.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$19.99",
+    "price2": 19.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$21.99",
+    "price3": 21.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -70,9 +70,6 @@
     "desertSauce": false,
     "desertType": false
   }, 
-
-
-
   {
     "categoryId": 1,
     "name": "Siciliana",
@@ -80,12 +77,10 @@
     "switchy": true,
 
     "image": "/images/pizza-regular-sicilian-3.jpg",
-
-
     "size1": "Small, 8 cut",
-    "price1": "$18.99",
+    "price1": 18.99,
     "size2": "Large, 12 cut",
-    "price2": "$21.99",
+    "price2": 21.99,
     "size3": null,
     "price3": null,
 
@@ -110,7 +105,6 @@
     "desertType": false
   },
 
-
   {
     "categoryId": 2,
     "name": "Grandma Pie",
@@ -120,7 +114,7 @@
     "image": "/images/pizza-specialty-grandma-pie-3.jpg",
 
     "size1": "Small, 8 cut",
-    "price1": "$18.99",
+    "price1": 18.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -155,11 +149,11 @@
     "image": "/images/pizza-specialty-margherita-pizza-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$17.99",
+    "price1": 17.99,
     "size2": null,
     "price2": null,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$21.99",
+    "price3": 21.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -190,11 +184,11 @@
     "image": "/images/pizza-specialty-meat-lover-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$24.99",
+    "price1": 24.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$26.99",
+    "price2": 26.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$28.99",
+    "price3": 28.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -225,11 +219,11 @@
     "image": "/images/pizza-specialty-veggi-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$24.99",
+    "price1": 24.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$26.99",
+    "price2": 26.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$28.99",
+    "price3": 28.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -260,11 +254,11 @@
     "image": "/images/pizza-specialty-works-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$27.99",
+    "price1": 27.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$29.99",
+    "price2": 29.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$31.99",
+    "price3": 31.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -295,7 +289,7 @@
     "image": "/images/pizza-specialty-ziti-3.jpg",
 
     "size1": "Large 16 inch, 8 cut",
-    "price1": "$27.99",
+    "price1": 27.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -332,7 +326,7 @@
     "image": "/images/pizza-gluten-free-cauliflower-3.jpg",
 
     "size1": "Small 10 inch, 4 cut",
-    "price1": "$13.49",
+    "price1": 13.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -367,7 +361,7 @@
     "image": "/images/pizza-gluten-free-gluten-free-3.jpg",
 
     "size1": "Small 12 inch, 6 cut",
-    "price1": "$13.49",
+    "price1": 13.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -404,7 +398,7 @@
     "image": "/images/pizza-slice-neopolitan-3.jpg",
 
     "size1": "1/8th slice of a 20 inch pie",
-    "price1": "$2.99",
+    "price1": 2.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -439,7 +433,7 @@
     "image": "/images/pizza-slice-white-3.jpg",
 
     "size1": "1/8th slice of a 20 inch pie",
-    "price1": "$3.49",
+    "price1": 3.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -474,7 +468,7 @@
     "image": "/images/pizza-slice-sicilian-3.jpg",
 
     "size1": "1/8th slice of a 20 inch pie",
-    "price1": "$3.49",
+    "price1": 3.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -511,7 +505,7 @@
     "image": "/images/app-garlic-bread-3.jpg",
 
     "size1": null,
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -546,7 +540,7 @@
     "image": "/images/app-sicilian-garlic-bread-3.jpg",
 
     "size1": null,
-    "price1": "$5.99",
+    "price1": 5.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -581,7 +575,7 @@
     "image": "/images/app-meatballs-ricotta-3.jpg",
 
     "size1": "Two piece",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -616,7 +610,7 @@
     "image": "/images/app-meatball-sliders-3.jpg",
 
     "size1": "Five piece",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -651,7 +645,7 @@
     "image": "/images/app-fries-3.jpg",
 
     "size1": null,
-    "price1": "$3.99",
+    "price1": 3.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -686,7 +680,7 @@
     "image": "/images/app-pepperoni-pizza-fries-3.jpg",
 
     "size": null,
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -721,7 +715,7 @@
     "image": "/images/app-disco-fries-3.jpg",
 
     "size1": null,
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -756,7 +750,7 @@
     "image": "/images/app-fried-mushrooms-3.jpg",
 
     "size1": null,
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -791,7 +785,7 @@
     "image": "/images/app-zucchini-sticks-3.jpg",
     
     "size1": null,
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -826,7 +820,7 @@
     "image": "/images/app-mozzarella-sticks-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -861,7 +855,7 @@
     "image": "/images/app-fried-ravioli-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -896,9 +890,9 @@
     "image": "/images/app-wings-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$8.75",
+    "price1": 8.75,
     "size2": "Ten piece",
-    "price2": "$14.99",
+    "price2": 14.99,
     "size3": null,
     "price3": null,
 
@@ -931,9 +925,9 @@
     "image": "/images/app-wings-bonless-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$8.25",
+    "price1": 8.25,
     "size2": "Ten piece",
-    "price2": "$11.25",
+    "price2": 11.25,
     "size3": null,
     "price3": null,
 
@@ -968,9 +962,9 @@
     "image": "/images/calzone-3.jpg",
 
     "size1": "Small, serves one",
-    "price1": "$10.99",
+    "price1": 10.99,
     "size2": "Large, serves two-three",
-    "price2": "$14.99",
+    "price2": 14.99,
     "size3": null,
     "price3": null,
 
@@ -1006,7 +1000,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1041,7 +1035,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1076,7 +1070,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$13.99",
+    "price1": 13.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1111,7 +1105,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1146,7 +1140,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1181,7 +1175,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1218,7 +1212,7 @@
     "image": "/images/sausage-roll-3.jpg",
 
     "size1": "Small, serves one",
-    "price1": "$9.99",
+    "price1": 9.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1255,9 +1249,9 @@
     "image": "/images/salad-caesar-3.jpg",
 
     "size1": "Small, serves one-two",
-    "price1": "$5.25",
+    "price1": 5.25,
     "size2": "Large, serves two-three",
-    "price2": "$7.99",
+    "price2": 7.99,
     "size3": null,
     "price3": null,
 
@@ -1290,9 +1284,9 @@
     "image": "/images/salad-toss-3.jpg",
 
     "size1": "Small, serves one-two",
-    "price1": "$5.25",
+    "price1": 5.25,
     "size2": "Large, serves two-three",
-    "price2": "$7.99",
+    "price2": 7.99,
     "size3": null,
     "price3": null,
 
@@ -1325,7 +1319,7 @@
     "image": "/images/salad-chef-3.jpg",
 
     "size1": "Large, serves two-three",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1361,7 +1355,7 @@
 
 
     "size1": "Large, serves two-three",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1396,7 +1390,7 @@
     "image": "/images/salad-antipasto-3.jpg",
 
     "size1": "Large, serves two-three",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1431,7 +1425,7 @@
     "image": "/images/salad-caprese-3.jpg",
 
     "size1": "Large, serves two-three",
-    "price1": "$8.49",
+    "price1": 8.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1468,7 +1462,7 @@
     "image": "/images/entree-chicken-parm-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$20.99",
+    "price1": 20.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1503,7 +1497,7 @@
     "image": "/images/entree-eggplant-parm-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$20.99",
+    "price1": 20.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1538,7 +1532,7 @@
     "image": "/images/entree-lasagna-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$19.99",
+    "price1": 19.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1573,7 +1567,7 @@
     "image": "/images/entree-ravioli-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$17.99",
+    "price1": 17.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1608,7 +1602,7 @@
     "image": "/images/entree-pasta-tomato-sauce-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$9.49",
+    "price1": 9.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1643,7 +1637,7 @@
     "image": "/images/entree-pasta-meat-sauce-4.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1678,7 +1672,7 @@
     "image": "/images/entree-pasta-meatballs-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1713,7 +1707,7 @@
     "image": "/images/entree-pasta-sausage-5.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1750,7 +1744,7 @@
     "image": "/images/hot-sub-meatball-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.50",
+    "price1": 10.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1785,7 +1779,7 @@
     "image": "/images/hot-sub-sausage-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.50",
+    "price1": 10.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1820,7 +1814,7 @@
     "image": "/images/hot-sub-chicken-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1855,7 +1849,7 @@
     "image": "/images/hot-sub-eggplant-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1890,7 +1884,7 @@
     "image": "/images/hot-sub-pepperoni-melt-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.50",
+    "price1": 10.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1925,7 +1919,7 @@
     "image": "/images/hot-sub-sausage-onion-pepper-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.50",
+    "price1": 10.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1960,7 +1954,7 @@
     "image": "/images/hot-sub-philly-steak-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1995,7 +1989,7 @@
     "image": "/images/hot-sub-philly-chicken-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2032,7 +2026,7 @@
     "image": "/images/cold-sub-italian-mix-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$9.99",
+    "price1": 9.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2067,7 +2061,7 @@
     "image": "/images/cold-sub-ham-provalone-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2102,7 +2096,7 @@
     "image": "/images/cold-sub-salami-provalone-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2137,7 +2131,7 @@
     "image": "/images/cold-sub-cappi-provalone-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2172,7 +2166,7 @@
     "image": "/images/cold-sub-pepperoni-provalone-2.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2209,7 +2203,7 @@
     "image": "/images/side-pasta-3.jpg",
 
     "size1": "Side portion",
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2244,7 +2238,7 @@
     "image": "/images/side-meatball-pasta-3.jpg",
 
     "size1": "Side portion",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2279,7 +2273,7 @@
     "image": "/images/side-sausage-pasta-3.jpg",
 
     "size1": "Side portion",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2314,7 +2308,7 @@
     "image": "/images/side-meatballs-3.jpg",
 
     "size1": "Two jumbo meatballs",
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2349,7 +2343,7 @@
     "image": "/images/side-sausage-3.jpg",
 
     "size1": "Two links",
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2384,7 +2378,7 @@
     "image": "/images/app-garlic-bread-3.jpg",
 
     "size1": "12 inch baguette",
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2419,7 +2413,7 @@
     "image": "/images/app-fries-3.jpg",
 
     "size1": "Side of fries",
-    "price1": "$3.99",
+    "price1": 3.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2456,7 +2450,7 @@
     "image": "/images/dessert-black-white-cookie-3.jpg",
 
     "size1": "Single jumbo cookie",
-    "price1": "$3.75",
+    "price1": 3.75,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2491,7 +2485,7 @@
     "image": "/images/dessert-crumb-cake-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$4.50",
+    "price1": 4.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2526,7 +2520,7 @@
     "image": "/images/dessert-cannoli-3.jpg",
 
     "size1": "Single jumbo tube",
-    "price1": "$5.49",
+    "price1": 5.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2561,7 +2555,7 @@
     "image": "/images/dessert-tiramisu-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2596,7 +2590,7 @@
     "image": "/images/dessert-cheese-cake-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2631,7 +2625,7 @@
     "image": "/images/dessert-lemoncello-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2666,7 +2660,7 @@
     "image": "/images/dessert-pistachio-ricotta-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2701,7 +2695,7 @@
     "image": "/images/dessert-zeppolis-3.jpg",
 
     "size1": "A baker's dozen",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2738,7 +2732,7 @@
     "image": "/images/beverage-fountain.jpg",
 
     "size1": "20 oz drink",
-    "price1": "$2.75",
+    "price1": 2.75,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2753,7 +2747,7 @@
     "image": "/images/beverage-bottled-soda.jpg",
 
     "size1": "2 liter bottle",
-    "price1": "$3.99",
+    "price1": 3.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2768,7 +2762,7 @@
     "image": "/images/beverage-bottled-water.jpg",
 
     "size1": "16 oz bottle",
-    "price1": "$1.99",
+    "price1": 1.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2783,7 +2777,7 @@
     "image": "/images/beverage-ice-tea.jpg",
 
     "size1": "16 oz bottle",
-    "price1": "$2.99",
+    "price1": 2.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2798,7 +2792,7 @@
     "image": "/images/beverage-az-lemonade.jpg",
 
     "size1": "32 oz bottle",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2813,7 +2807,7 @@
     "image": "/images/beverage-dr-brown.jpg",
 
     "size1": "12 oz can",
-    "price1": "$2.50",
+    "price1": 2.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2828,7 +2822,7 @@
     "image": "/images/beverage-yoohoo.jpg",
 
     "size1": "12 oz bottle",
-    "price1": "$2.99",
+    "price1": 2.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2843,7 +2837,7 @@
     "image": "/images/beverage-domestic-beer.jpg",
 
     "size1": "12 oz bottle",
-    "price1": "$3.75",
+    "price1": 3.75,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2858,7 +2852,7 @@
     "image": "/images/beverage-imported-beer.jpg",
 
     "size1": "12 oz bottle",
-    "price1": "$4.50",
+    "price1": 4.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2873,9 +2867,9 @@
     "image": "/images/beverage-red-wine.jpg",
 
     "size1": "By the glass",
-    "price1": "$9.00",
+    "price1": 9.00,
     "size2": "By the bottle",
-    "price2": "$26.00",
+    "price2": 26.00,
     "size3": null,
     "price3": null 
   },
@@ -2888,29 +2882,15 @@
     "image": "/images/beverage-white-wine.jpg",
 
     "size1": "By the glass",
-    "price1": "$9.00",
+    "price1": 9.00,
     "size2": "By the bottle",
-    "price2": "$26.00",
+    "price2": 26.00,
     "size3": null,
     "price3": null 
   },
   
 
-  {
-    "categoryId": 16,
-    "name": "Italian Ice",
-    "description": "Refreshing icy textured treat that is dairy-free, gluten-free, cholesterol-free, and fat-free",
-    "switchy": true,
-
-    "image": "/images/italian-ice.jpg",
-
-    "size1": "5 oz",
-    "price1": "$1.50",
-    "size2": "9 oz",
-    "price2": "$3.50",
-    "size3": "16 oz",
-    "price3": "$4.50"
-  },
+  
   {
     "categoryId": 16,
     "name": "Drakes Devil Dogs",
@@ -2920,7 +2900,7 @@
     "image": "/images/drakes-devil-dog.jpg",
 
     "size1": "8 count individually wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2935,7 +2915,7 @@
     "image": "/images/drakes-coffee-cake.jpg",
 
     "size1": "8 count individually wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2950,7 +2930,7 @@
     "image": "/images/drakes-ring-ding.jpg",
 
     "size1": "8 count individually wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2965,7 +2945,7 @@
     "image": "/images/drakes-funny-bone.jpg",
 
     "size1": "10 count twin wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2980,7 +2960,7 @@
     "image": "/images/drakes-yodel.jpg",
 
     "size1": "10 count twin wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2995,7 +2975,7 @@
     "image": "/images/drakes-yankee-doodle.jpg",
 
     "size1": "8 count individually wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -3010,7 +2990,7 @@
     "image": "/images/drakes-yodel-boston-creme.jpg",
 
     "size1": "10 count twin wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -3025,7 +3005,7 @@
     "image": "/images/polly-o-ricotta.jpg",
 
     "size1": "5 lb",
-    "price1": "Market Price",
+    "price1": null,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -3040,7 +3020,7 @@
     "image": "/images/mikes-hot-honey-3.jpg",
 
     "size1": "12 oz",
-    "price1": "$10.00",
+    "price1": 10.00,
     "size2": null,
     "price2": null,
     "size3": null,
