@@ -126,7 +126,11 @@
 
                         <div class="subitem">
                           <p class="mb-1">{{i.description}}</p>
+                          {{#if i.price1}}
                           <p class="mb-1">Starting price: ${{i.price1}}</p>
+                          {{else}}
+                          <p class="mb-1">Starting price: Market Value</p>
+                          {{/if}}
                           <p class="mb-1"><b>Click for more information and options</b></p>
                           <br>
                           <img src={{i.image}} alt="food-image" class="category-image">  
