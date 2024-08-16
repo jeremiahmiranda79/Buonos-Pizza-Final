@@ -5,6 +5,11 @@
   },
 
   {
+    "name": "",
+    "score": 157
+  },
+
+  {
     "name": "JAM",
     "score": 150
   },
@@ -12,6 +17,11 @@
   {
     "name": "Chef Mike",
     "score": 150
+  },
+
+  {
+    "name": "",
+    "score": 141
   },
 
   {
@@ -35,8 +45,18 @@
   },
 
   {
+    "name": "OG",
+    "score": 66
+  },
+
+  {
     "name": "JR",
     "score": 65
+  },
+
+  {
+    "name": "MVH",
+    "score": 59
   },
 
   {
@@ -70,12 +90,22 @@
   }, 
 
   {
+    "name": "Jeanie",
+    "score": 7
+  },
+
+  {
+    "name": "hbg",
+    "score": 0
+  },
+
+  {
     "name": "JE",
     "score": 0
   },
 
   {
-    "name": "hbg",
+    "name": "",
     "score": 0
   }
 ]
