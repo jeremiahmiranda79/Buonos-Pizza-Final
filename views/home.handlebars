@@ -101,12 +101,12 @@
 
     <div class="img img-1">
       <img src="/images/home-buonos-place-2.jpg" alt="">
-      <div class="centered"><h1>Buonos Pizza</h1></div>
+      <div class="centered"><h1>Buonos Pizza Gilbert</h1></div>
     </div>
 
     <div class="img img-2">
       <img src="/images/home-pizza-dough.jpg" alt="">
-      <div class="centered"><h1>Made in House</h1></div>
+      <div class="centered"><h1>Fresh doug made in house daily</h1></div>
     </div>
 
     <div class="img img-3">
@@ -218,7 +218,7 @@
         <h2>{{hp.name3_1}}</h2>
         <h5>{{hp.description3_1}}</h5>
         {{#if hp.name3_2Switch}}
-          <h6>*Avaliable only through Dine in or in person Take out orders.*</h6>
+          <h6>{{hp.description3_2}}</h6>
         {{/if}}
       {{/if}}
     {{/each}}
@@ -233,14 +233,14 @@
       <div class="magic-card-1">
         <div class="magic-card-item"></div>
         <center>
-          <h4>See our loyalty program!</h4>
+          {{!-- <h4>See our loyalty program!</h4> --}}
         </center>
       </div> 
 
       <div class="magic-card-2">
         <div class="magic-card-item"></div>
         <center>
-          <h4>See our loyalty program!</h4>
+          {{!-- <h4>See our loyalty program!</h4> --}}
         </center>
       </div>
     </div>
@@ -302,11 +302,11 @@
       {{/if}}
 
       {{#if name5_2Switch}}
-        <p>{{description5_2}}</p>
+        <h4>{{description5_2}}</h4>
       {{/if}}
 
       {{#if name5_3Switch}}
-        <h4>{{description5_3}}</h4>
+        <h5>{{description5_3}}</h5>
       {{/if}}
 
       {{#if hp.name5_4Switch}}
@@ -406,7 +406,7 @@
 	});
 
 	//It also supports NodeList
-	//VanillaTilt.init(document.querySelectorAll(".your-element"));
+	VanillaTilt.init(document.querySelectorAll(".your-element"));
   VanillaTilt.init(document.querySelector(".magic-card-2"), {
 		max: 20,
 		speed: 1000,
@@ -423,7 +423,7 @@
   const radioButton4 = document.getElementById('four');
   const radioButton5 = document.getElementById('five');
   const buttons = [radioButton1, radioButton2, radioButton3, radioButton4, radioButton5];
-  let index = 2;
+  let index = 0;
 
   buttons.forEach(setFalse);
   setFirst();
