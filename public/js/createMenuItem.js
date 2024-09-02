@@ -19,7 +19,7 @@ const createMenuItem = async(event) => {
   });
   if (response.ok) {
     alert('Menu Item Created');
-    document.location.replace('/menu');
+    document.location.replace('/menu-1');
   } 
   else {
     alert(response.statusText);

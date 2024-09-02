@@ -38,4 +38,4 @@ function checkbox(x) {
   return box;
 };
 // checkbox(pizza);
-document.querySelector('#updateCategory').addEventListener('submit', updateCategory);
+// document.querySelector('#updateCategory').addEventListener('submit', updateCategory);

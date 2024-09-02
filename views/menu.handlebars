@@ -39,7 +39,7 @@
     </center>
     
     <div class="container-menu">
-      <br>
+      {{!-- <br> --}}
       <div class="grid-container-2">
         {{#each items as |c|}}
           {{#if c.switchy}}
@@ -47,13 +47,13 @@
               <a class="anchor" id="{{c.id}}"></a>
               <h1><strong>{{c.name}}</strong></h1>
               <img src="{{c.image}}" alt="food-image" class="category-image">
-              <br><br>
+              {{!-- <br><br> --}}
               <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Update catagory ({{c.name}})</a>
               <h1>---------------------------------------------------------</h1>
-              <br>
+              {{!-- <br> --}}
               <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a>
             </center>
-            <br>
+            {{!-- <br> --}}
             <div class="grid-container">
                 {{#each c.menuitems as |i|}}
                   {{#if i.switchy}}
@@ -62,7 +62,19 @@
                         <div class="d-flex w-100 justify-content-between">
                           <h5 class="mb-1">{{i.name}}</h5>
                         </div>
-                        <p class="mb-1">{{i.description}}</p>
+
+<div class="subitem">
+                          <p class="mb-1">{{i.description}}</p>
+                          {{#if i.price1}}
+                          <p class="mb-1">Starting price: ${{i.price1}}</p>
+                          {{else}}
+                          <p class="mb-1">Starting price: Market Value</p>
+                          {{/if}}
+                          <p class="mb-1"><b>Click for more information and options</b></p>
+                          <br>
+                          <img src={{i.image}} alt="food-image" class="category-image">  
+                        </div> 
+                        {{!-- <p class="mb-1">{{i.description}}</p> --}}
                         <center>
                           <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
                         </center>
@@ -115,6 +127,7 @@
                 <h1 class="yyy"><strong>{{c.name}}</strong></h1>
                 <img src="{{c.image}}" alt="food-image" class="category-image">
               </center>
+
               <div class="grid-container">
                 {{#each c.menuitems as |i|}}
                   {{#if i.switchy}}    

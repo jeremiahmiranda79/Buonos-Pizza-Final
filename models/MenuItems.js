@@ -135,6 +135,7 @@ MenuItems.init(
       allowNull: true
     }
   },
+
   {
     sequelize: connection,
     timestamps: true,
@@ -142,4 +143,5 @@ MenuItems.init(
     modelName: 'menuitems'
   }
 );
+
 module.exports = MenuItems;

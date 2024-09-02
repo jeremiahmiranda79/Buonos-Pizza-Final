@@ -15,7 +15,7 @@ const employeeloginFormHandler = async(event) => {
     if (response.ok) {
       alert(email + ' Logged In');
       // If successful, redirect the browser to the admin page
-      document.location.replace('/menu');
+      document.location.replace('/menu-1');
     } 
     else {
       console.log(response);
@@ -24,4 +24,4 @@ const employeeloginFormHandler = async(event) => {
   };
 };
 
-// document.querySelector('#employeelogin').addEventListener('submit', employeeloginFormHandler);
+document.querySelector('#employeelogin').addEventListener('submit', employeeloginFormHandler);

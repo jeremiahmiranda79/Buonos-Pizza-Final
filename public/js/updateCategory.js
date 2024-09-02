@@ -13,7 +13,7 @@ const updateCategory = async(event) => {
     headers: { 'Content-Type': 'application/json' },
   });
   if (response.ok) {
-    document.location.replace('/menu');
+    document.location.replace('/menu-1');
   } 
   else {
     alert(response.statusText);
@@ -28,7 +28,7 @@ const deleteCategory = async(event) => {
         method: 'DELETE',
       });
       if (response.ok) {
-        document.location.replace('/menu');
+        document.location.replace('/menu-1');
       } 
       else {
         alert(response.statusText);
@@ -36,7 +36,7 @@ const deleteCategory = async(event) => {
     };
   } 
   else {
-    document.location.replace('/menu');
+    document.location.replace('/menu-1');
   }
 };
 function checkbox(x) {

@@ -23,6 +23,7 @@ const updateMenuItem = async(event) => {
   const marinaraSauce = document.querySelector('#marinaraSauce').value.trim().toLowerCase();
   const desertSauce = document.querySelector('#desertSauce').value.trim().toLowerCase();
   const categoryId = document.querySelector('#categories').value;
+
   const response = await fetch(`../../api/menu/updateMenuItem/${itemId}`, {
     method: 'PUT',
     body: JSON.stringify({ 
@@ -48,15 +49,18 @@ const updateMenuItem = async(event) => {
       desertSauce,
       categoryId,
     }),
+
     headers: { 'Content-Type': 'application/json' }
   });
+
   if (response.ok) {
-    document.location.replace('/menu');
+    document.location.replace('/menu-1');
   } 
   else {
     alert(response.statusText);
   };
 };
+
 // Functionality for Delete button as well
 const deleteMenuItem = async(event) => {
   if (confirm("Are you sure you want to delete this MENU ITEM and all things related to it? This action cannot be undone!!") == true) {
@@ -65,8 +69,9 @@ const deleteMenuItem = async(event) => {
       const response = await fetch(`/api/menu/deleteMenuItem/${id}`, {
         method: 'DELETE',
       });
+
       if (response.ok) {
-        document.location.replace('/menu');
+        document.location.replace('/menu-1');
       } 
       else {
         alert(response.statusText);
@@ -75,29 +80,34 @@ const deleteMenuItem = async(event) => {
   }
   else 
   {
-    document.location.replace('/menu');
+    document.location.replace('/menu-1');
   }
 };
+
 function checkbox(x) {
   var box = x;
-  if(box.value == "false"){
-     x.value = "false"; 
+
+  if(box.value == false){
+     x.value = false; 
      x.checked = false;
   }
-  else if(box.value == "true"){
-    x.value = "true";
+  else if(box.value == true){
+    x.value = true;
     x.checked = true;
   }
+
   x.addEventListener('change', function(){
     if(this.checked){
-      x.value = "true";
+      x.value = true;
     } 
     else if(this.checked == false){
-      x.value = "false";
+      x.value = false;
     }
   });
+
   return box;
 };
+
 checkbox(switchy);
 checkbox(toppingPizzaFull);
 checkbox(toppingPizzaSlice);
@@ -110,5 +120,6 @@ checkbox(wingSauce);
 checkbox(pastaType);
 checkbox(marinaraSauce);
 checkbox(desertSauce);
+
 document.querySelector('#updateMenuItem').addEventListener('submit', updateMenuItem);
 document.querySelector('#deleteButton').addEventListener('click', deleteMenuItem);
