@@ -27,8 +27,27 @@
               </ul>
             </div>
           </div>
+
           <br><br>
+
 					<div class="forms">
+						<label 
+							for="menu-item-switchy" 
+							class="form-label">
+							<b>Switchy</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+
+						<input
+							id="switchy" 
+							type="checkbox"
+							value="{{item.switchy}}" 
+							checked="{{item.swtchy}}"
+							required
+						>
+						
+						<br>
+
 						<label 
 							for="menu-item-name" 
 							class="form-label"
@@ -36,6 +55,7 @@
 							<b>Menu item name</b>
 							<b style="color:#FF0000";>*required</b>
 						</label>
+
 						<input 
 							id="name" 
 							type="text" 
@@ -49,6 +69,10 @@
 							name="cat-id" 
 							value="{{i.id}}"
 						/>
+
+
+
+
 						<label 
 							for="menu-item-description" 
 							class="form-label"
@@ -56,13 +80,116 @@
 							<b>Menu item description</b>
 							<b style="color:#FF0000";>*required</b>
 						</label>
+
 						<input 
 							id="description" 
 							type="text" 
-							value="{{cat.description}}" class="form-control" 
+							value="{{cat.description}}" 
+							class="form-control" 
 							placeholder="Some description"
 							required
 						>
+
+
+						{{!-- <label 
+							for="menu-item-switchy" 
+							class="form-label">
+							<b>Switchy</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+
+						<input
+							id="" 
+							type="text"
+							value="" 
+							class="form-control"
+							placeholder=""
+							required
+						> --}}
+
+						<label 
+							for="menu-item-size1" 
+							class="form-label">
+							<b>Size1</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+
+						<input 
+							id="size1" 
+							type="text"
+							value="" 
+							class="form-control"
+							placeholder=""
+							required
+						>
+
+						<label 
+							for="menu-item-price1" 
+							class="form-label">
+							<b>Price1</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+
+						<input 
+							id="price1" 
+							type="text"
+							value="" 
+							class="form-control"
+							placeholder=""
+							required
+						>
+
+						{{!-- <br> --}}
+
+						<label 
+							for="menu-item-toppingPizzaFull" 
+							class="form-label">
+							<b>Topping Pizza Full</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+
+						<input
+							id="toppingPizzaFull" 
+							type="checkbox"
+							value="{{item.toppingPizzaFull}}" 
+							checked="{{item.toppingPizzaFull}}"
+							required
+						>
+						
+						<br>
+
+						<label 
+							for="menu-item-toppingPizzaFull" 
+							class="form-label">
+							<b>Topping Pizza Full</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+
+						<input
+							id="toppingPizzaFull" 
+							type="checkbox"
+							value="{{item.toppingPizzaFull}}" 
+							checked="{{item.toppingPizzaFull}}"
+							required
+						>
+
+						{{!-- <label 
+							for="menu-item-toppingPizzaSlice" 
+							class="form-label">
+							<b>Topping Pizza Slice</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+
+						<input
+							id="toppingPizzaSlice" 
+							type="checkbox"
+							value="{{item.toppingPizzaSlice}}" 
+							checked="{{item.toppingPizzaSlice}}"
+							required
+						> --}}
+						
+						<br>
+
 						<label 
               for="image" 
               class="form-label"
@@ -70,11 +197,13 @@
               <b>Choose a category:</b>
               <b style="color:#FF0000";>*required</b>
             </label>
+
 						<select 
               id="categories" 
               name="categories" 
               class="form-select"
             >
+
 						{{!-- <option value="{{i.categoryId}}" selected>
                   Current ({{i.categoryId}})
                 </option> --}}
@@ -86,6 +215,9 @@
 							require
             </select>
 					</div>
+
+					<br>
+					{{!-- <br> --}}
 
 					<div class="d-flex justify-content-evenly">
 						<button

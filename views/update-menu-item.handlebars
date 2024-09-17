@@ -20,12 +20,14 @@
               <label>
               <b style="color:#FF0000";>Please select or de-select to switch on or off!</b>
             </label>
+            
             <br>
 
             <input 
               type="checkbox"
               id="switchy" 
               value="{{item.switchy}}"
+              checked="{{item.switchy}}"
             >
             <label>
               <span class="slider"></span>
@@ -47,6 +49,7 @@
                 value="{{item.id}}" 
                 placeholder="{{item.id}}"
               >
+
               <label 
                 for="name" 
                 class="form-label"
@@ -59,10 +62,12 @@
                 type="text" 
                 class="form-control" 
                 value="{{item.name}}" 
-                placeholder="{{item.name}}" 
+                placeholder="" 
                 required
               >
+
               <br><br>
+
               <label 
                 for="description" 
                 class="form-label"
@@ -75,38 +80,48 @@
                 type="text" 
                 class="form-control"
                 value="{{item.description}}" 
-                placeholder="{{item.description}}" 
+                placeholder="" 
                 required
               >
+
               <br><br>
+
               <label 
                 for="size1" 
                 class="form-label"
               >
                 <b>Size 1</b>
+                <b style="color:#FF0000";>*required</b>
               </label>
               <input 
                 id="size1" 
                 type="text" 
                 class="form-control"
                 value="{{item.size1}}" 
-                placeholder="{{item.size1}}" 
+                placeholder=""
+                required
               >
+
               <br>
+
               <label 
                 for="price1" 
                 class="form-label"
               >
                 <b>Price 1</b>
+                <b style="color:#FF0000";>*required</b>
               </label>
               <input 
                 id="price1" 
                 type="text" 
                 class="form-control"
                 value="{{item.price1}}" 
-                placeholder="{{item.price1}}" 
+                placeholder="" 
+                required
               >
+
               <br><br>
+
               <label 
                 for="size2" 
                 class="form-label"
@@ -118,7 +133,7 @@
                 type="text" 
                 class="form-control"
                 value="{{item.size2}}" 
-                placeholder="{{item.size2}}" 
+                placeholder="" 
               >
               <br>
               <label 
@@ -132,7 +147,7 @@
                 type="text" 
                 class="form-control"
                 value="{{item.price2}}" 
-                placeholder="{{item.price2}}" 
+                placeholder="" 
               >
               <br><br>
               <label 
@@ -146,7 +161,7 @@
                 type="text" 
                 class="form-control"
                 value="{{item.size3}}" 
-                placeholder="{{item.size3}}" 
+                placeholder="" 
               >
               <br>
               <label 
@@ -160,7 +175,7 @@
                 type="text" 
                 class="form-control"
                 value="{{item.price3}}" 
-                placeholder="{{item.price3}}" 
+                placeholder="" 
               >
               <br>
             <!--#endregion -->
