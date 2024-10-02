@@ -6,7 +6,9 @@
 </head>
 
 <div class="page-container">
+
   <br>
+
   <center>
     <button 
       class="btn btn-success view-menu-button" 
@@ -14,12 +16,16 @@
     >
       Go Back
     </button>
+
     <br><br>
+
   </center>
 
   <div class="item-image">
     <img src="{{item.image}}" alt="buonos-logo" class="d-block">
   </div>
+
+  <br>
 
   <section>
     {{#if loggedIn}}
@@ -31,7 +37,9 @@
           Update Image for Item {{item.name}} {{category.name}}
         </a>
       </center>
+
       <br>
+
     {{/if}}
   </section>
 
@@ -50,6 +58,8 @@
     {{#if item.size3}}
       <h4>{{item.size3}} ${{item.price3}}</h4>
     {{/if}}
+
+    <br>
 
     {{#if loggedIn}}
       <a 
@@ -70,7 +80,9 @@
 
         <div class="content">
           <table>
+
             <br>
+
             <tr>
               <th><h4>Additional pizza toppings are sold by the each</h4></th>
             </tr>
@@ -94,24 +106,30 @@
               </tr>
             {{/each}}
           </table>
-          <br>
-        </div>
-      </section>
 
-      {{#if loggedIn}}
-        <section>
-          <center>
-            <a 
-              href="/pizzaTopping/create" 
-              class="active btn btn-primary"
-            >
-              Create Pizza Topping
-            </a>
-          </center>
-        </section>
-      {{/if}}
+          <br>
+
+          {{#if loggedIn}}
+            <section>
+              <center>
+                <a 
+                  href="/pizzaTopping/create" 
+                  class="active btn btn-primary"
+                >
+                  Create Pizza Topping
+                </a>
+              </center>
+            </section>
+
+            <br>
+
+          {{/if}}
+        </div>
+      </section>  
     </section>
   {{/if}}
+
+  <br>
 
   {{#if item.toppingPizzaSlice}}
     <section class="collapsible-container">
@@ -122,16 +140,20 @@
 
         <div class="content">
           <table>
+
             <br>
+
             <tr>
-              <th><h4>Additional pizza toppings are sold by the each</h4></th>
+              <th><h4>Additional pizza slice toppings are sold by the each</h4></th>
             </tr>
+
             {{#each toppingsPizza as |tp|}}
               <tr>
                 <td>
                   <h5>
                     {{tp.name}} - <b>${{tp.priceSlice}}</b>
                   </h5>
+
                   {{#if loggedIn}}
                     <a 
                       href="/pizzaTopping/UpdatePizzaTopping/{{tp.id}}"
@@ -140,27 +162,38 @@
                       Update {{tp.name}}
                     </a>
                   {{/if}}
+
                 </td>
               </tr>
             {{/each}}
+
           </table>
+
           <br>
+
+          {{#if loggedIn}}
+            <section>
+              <center>
+                <a 
+                  href="/pizzaTopping/create" 
+                  class="active btn btn-primary"
+                >
+                  Create Pizza Topping Slice
+                </a>
+              </center>
+            </section>
+
+            <br>
+
+          {{/if}}
+
         </div>
       </section>
-      {{#if loggedIn}}
-        <section>
-          <center>
-            <a 
-              href="/pizzaTopping/create" 
-              class="active btn btn-primary"
-            >
-              Create Pizza Topping Slice
-            </a>
-          </center>
-        </section>
-      {{/if}}
+      
     </section>
   {{/if}}
+
+  <br>
 
   {{#if item.toppingPizzaGlutenFree}}
     <section class="collapsible-container">
@@ -171,16 +204,20 @@
 
         <div class="content">
           <table>
+
             <br>
+
             <tr>
-              <th><h4>Additional pizza toppings are sold by the each</h4></th>
+              <th><h4>Additional gluten free pizza toppings are sold by the each</h4></th>
             </tr>
+
             {{#each toppingsPizza as |tp|}}
               <tr>
                 <td>
                   <h5>
                     {{tp.name}} - <b>${{tp.priceGlutenFree}}</b>
                   </h5>
+
                   {{#if loggedIn}}
                     <a 
                       href="/pizzaTopping/UpdatePizzaTopping/{{tp.id}}"
@@ -189,25 +226,33 @@
                       Update {{tp.name}}
                     </a>
                   {{/if}}
+
                 </td>
               </tr>
             {{/each}}
+
           </table>
+
           <br>
+
+          {{#if loggedIn}}
+            <section>
+              <center>
+                <a 
+                  href="/pizzaTopping/create" 
+                  class="active btn btn-primary"
+                >
+                  Create Gluten Free Pizza Toppings
+                </a>
+              </center>
+            </section>
+
+            <br>
+
+          {{/if}}
         </div>
       </section>
-      {{#if loggedIn}}
-        <section>
-          <center>
-            <a 
-              href="/pizzaTopping/create" 
-              class="active btn btn-primary"
-            >
-              Create Gluten Free Pizza Toppings
-            </a>
-          </center>
-        </section>
-      {{/if}}
+
     </section>
   {{/if}}
 

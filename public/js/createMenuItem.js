@@ -8,10 +8,10 @@ const createMenuItem = async(event) => {
 
   const size1 = document.querySelector('#size1').value.trim();
   const price1 = document.querySelector('#price1').value.trim();
-  // const size2 = document.querySelector('#size2').value.trim();
-  // const price2 = document.querySelector('#price2').value.trim();
-  // const size3 = document.querySelector('#size3').value.trim();
-  // const price3 = document.querySelector('#price3').value.trim();
+  const size2 = document.querySelector('#size2').value.trim();
+  const price2 = document.querySelector('#price2').value.trim();
+  const size3 = document.querySelector('#size3').value.trim();
+  const price3 = document.querySelector('#price3').value.trim();
 
   const toppingPizzaFull = document.querySelector('#toppingPizzaFull').value.trim().toLowerCase();
   const toppingPizzaSlice = document.querySelector('#toppingPizzaSlice').value.trim().toLowerCase();
@@ -26,6 +26,20 @@ const createMenuItem = async(event) => {
   const desertSauce = document.querySelector('#desertSauce').value.trim().toLowerCase();
 
   const categoryId = document.querySelector('#categories').value.trim();
+
+  // switchy = "true";
+
+  toppingPizzaFull.checked = "false";
+  toppingPizzaSlice.checked = "false";
+  toppingPizzaGlutenFree.checked = "false";
+  toppingHotSub.checked = "false";
+  toppingColdSub.checked = "false";
+  toppingDesert.checked = "false";
+  saladDressing.checked = "false";
+  wingSauce.checked = "false";
+  pastaType.checked = "false";
+  marinaraSauce.checked = "false";
+  desertSauce.checked = "false";
 
   // // const switchy = true;
   // if (switchy.checked == true) {
@@ -47,10 +61,10 @@ const createMenuItem = async(event) => {
 
       size1,
       price1,
-      // size2,
-      // price2,
-      // size3,
-      // price3,
+      size2,
+      price2,
+      size3,
+      price3,
 
       toppingPizzaFull,
       toppingPizzaSlice,
@@ -102,16 +116,30 @@ function onPageLoad(switchything) {
 
   if (switchything.value == null) {
     switchy.checked = false;
-  switchy.value = false;
+    switchy.value = false;
   }
   else if (switchything.value == true) {
     console.log("checked 12: " + switchything.checked)
     switchything.checked = true;
+    switchy.value = true;
   } 
   else if (switchything.value == false) {
     console.log("checked 22: " + switchything.checked)
     switchything.checked = false;
+    switchy.value = false;
   }
+
+  else if (switchything.switch == true) {
+    console.log("checked 12: " + switchything.checked)
+    switchything.checked = true;
+    switchy.value = true;
+  } 
+  else if (switchything.switch == false) {
+    console.log("checked 22: " + switchything.checked)
+    switchything.checked = false;
+    switchy.value = false;
+  }
+
   else {
     console.log("Fail")
   }

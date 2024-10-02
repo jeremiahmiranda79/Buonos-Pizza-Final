@@ -79,6 +79,11 @@
     "score": 123
   },
 
+  { 
+    "name": "DBB",
+    "score": 102
+  },
+
   {
     "name": "Kirsten P",
     "score": 90
@@ -125,6 +130,11 @@
   },
 
   {
+    "name": "Marv",
+    "score": 37
+  },
+
+  {
     "name": "LP",
     "score": 36
   },
@@ -145,12 +155,22 @@
   },
 
   {
+    "name": "CGK",
+    "score": 22
+  },
+
+  {
     "name": "Eric",
     "score": 19
   },
 
   {
     "name": "Vincent Farrell",
+    "score": 18
+  },
+
+  {
+    "name": "K",
     "score": 18
   },
 
@@ -196,6 +216,26 @@
 
   {
     "name": "hbg",
+    "score": 0
+  },
+
+  {
+    "name": "",
+    "score": 0
+  },
+
+  {
+    "name": "MLB",
+    "score": 0
+  },
+
+  {
+    "name": "DBB",
+    "score": 0
+  },
+
+  {
+    "name": "Lesli",
     "score": 0
   }
 ]

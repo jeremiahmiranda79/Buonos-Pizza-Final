@@ -37,7 +37,6 @@
 							<b>Switchy</b>
 							<b style="color:#FF0000";>*required</b>
 						</label>
-
 						<input
 							id="switchy" 
 							type="checkbox"
@@ -55,7 +54,6 @@
 							<b>Menu item name</b>
 							<b style="color:#FF0000";>*required</b>
 						</label>
-
 						<input 
 							id="name" 
 							type="text" 
@@ -70,9 +68,6 @@
 							value="{{i.id}}"
 						/>
 
-
-
-
 						<label 
 							for="menu-item-description" 
 							class="form-label"
@@ -80,7 +75,6 @@
 							<b>Menu item description</b>
 							<b style="color:#FF0000";>*required</b>
 						</label>
-
 						<input 
 							id="description" 
 							type="text" 
@@ -90,30 +84,12 @@
 							required
 						>
 
-
-						{{!-- <label 
-							for="menu-item-switchy" 
-							class="form-label">
-							<b>Switchy</b>
-							<b style="color:#FF0000";>*required</b>
-						</label>
-
-						<input
-							id="" 
-							type="text"
-							value="" 
-							class="form-control"
-							placeholder=""
-							required
-						> --}}
-
 						<label 
 							for="menu-item-size1" 
 							class="form-label">
 							<b>Size1</b>
 							<b style="color:#FF0000";>*required</b>
 						</label>
-
 						<input 
 							id="size1" 
 							type="text"
@@ -129,7 +105,6 @@
 							<b>Price1</b>
 							<b style="color:#FF0000";>*required</b>
 						</label>
-
 						<input 
 							id="price1" 
 							type="text"
@@ -139,7 +114,68 @@
 							required
 						>
 
-						{{!-- <br> --}}
+						<br>
+
+						<label 
+							for="menu-item-size2" 
+							class="form-label">
+							<b>Size2</b>
+							{{!-- <b style="color:#FF0000";>*required</b> --}}
+						</label>
+						<input 
+							id="size2" 
+							type="text"
+							value="" 
+							class="form-control"
+							placeholder=""
+							{{!-- require --}}
+						>
+
+						<label 
+							for="menu-item-price2" 
+							class="form-label">
+							<b>Price2</b>
+							{{!-- <b style="color:#FF0000";>*required</b> --}}
+						</label>
+						<input 
+							id="price2" 
+							type="text"
+							value="" 
+							class="form-control"
+							placeholder=""
+						>
+
+						<br>
+
+						<label 
+							for="menu-item-size3" 
+							class="form-label">
+							<b>Size3</b>
+							{{!-- <b style="color:#FF0000";>*required</b> --}}
+						</label>
+						<input 
+							id="size3" 
+							type="text"
+							value="" 
+							class="form-control"
+							placeholder=""
+						>
+
+						<label 
+							for="menu-item-price3" 
+							class="form-label">
+							<b>Price3</b>
+							{{!-- <b style="color:#FF0000";>*required</b> --}}
+						</label>
+						<input 
+							id="price3" 
+							type="text"
+							value="" 
+							class="form-control"
+							placeholder=""
+						>
+
+						<br>
 
 						<label 
 							for="menu-item-toppingPizzaFull" 
@@ -147,7 +183,6 @@
 							<b>Topping Pizza Full</b>
 							<b style="color:#FF0000";>*required</b>
 						</label>
-
 						<input
 							id="toppingPizzaFull" 
 							type="checkbox"
@@ -161,34 +196,162 @@
 						<label 
 							for="menu-item-toppingPizzaFull" 
 							class="form-label">
-							<b>Topping Pizza Full</b>
-							<b style="color:#FF0000";>*required</b>
-						</label>
-
-						<input
-							id="toppingPizzaFull" 
-							type="checkbox"
-							value="{{item.toppingPizzaFull}}" 
-							checked="{{item.toppingPizzaFull}}"
-							required
-						>
-
-						{{!-- <label 
-							for="menu-item-toppingPizzaSlice" 
-							class="form-label">
 							<b>Topping Pizza Slice</b>
 							<b style="color:#FF0000";>*required</b>
 						</label>
-
 						<input
 							id="toppingPizzaSlice" 
 							type="checkbox"
 							value="{{item.toppingPizzaSlice}}" 
 							checked="{{item.toppingPizzaSlice}}"
 							required
-						> --}}
-						
+						>
+
 						<br>
+
+						<label 
+							for="menu-item-toppingPizzaGlutenFree" 
+							class="form-label">
+							<b>Topping Pizza Gluten Free</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input
+							id="toppingPizzaGlutenFree" 
+							type="checkbox"
+							value="{{item.toppingPizzaGlutenFree}}" 
+							checked="{{item.toppingPizzaGlutenFree}}"
+							required
+						>
+
+						<br>
+
+						<label 
+							for="menu-item-toppingHotSub" 
+							class="form-label">
+							<b>Topping Hot Sub</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input
+							id="toppingHotSub" 
+							type="checkbox"
+							value="{{item.toppingHotSub}}" 
+							checked="{{item.toppingHotSub}}"
+							required
+						>
+
+						<br>
+
+						<label 
+							for="menu-item-toppingColdSub" 
+							class="form-label">
+							<b>Topping Cold Sub</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input
+							id="toppingColdSub" 
+							type="checkbox"
+							value="{{item.toppingColdSub}}" 
+							checked="{{item.toppingColdSub}}"
+							required
+						>
+
+						<br>
+
+						<label 
+							for="menu-item-toppingDesert" 
+							class="form-label">
+							<b>Topping Dessert</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input
+							id="toppingDesert" 
+							type="checkbox"
+							value="{{item.toppingDesert}}" 
+							checked="{{item.toppingDesert}}"
+							required
+						>
+
+						<br>
+
+						<label 
+							for="menu-item-saladDressing" 
+							class="form-label">
+							<b>Salad Dressing</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input
+							id="saladDressing" 
+							type="checkbox"
+							value="{{item.saladDressing}}" 
+							checked="{{item.saladDressing}}"
+							required
+						>
+
+						<br>
+
+						<label 
+							for="menu-item-wingSauce" 
+							class="form-label">
+							<b>Wing Sauce</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input
+							id="wingSauce" 
+							type="checkbox"
+							value="{{item.wingSauce}}" 
+							checked="{{item.wingSauce}}"
+							required
+						>
+
+						<br>
+
+						<label 
+							for="menu-item-pastaType" 
+							class="form-label">
+							<b>Pasta Type</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input
+							id="pastaType" 
+							type="checkbox"
+							value="{{item.pastaType}}" 
+							checked="{{item.pastaType}}"
+							required
+						>
+
+						<br>
+
+						<label 
+							for="menu-item-marinaraSauce" 
+							class="form-label">
+							<b>Marinara Sauce</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input
+							id="marinaraSauce" 
+							type="checkbox"
+							value="{{item.marinaraSauce}}" 
+							checked="{{item.marinaraSauce}}"
+							required
+						>
+
+						<br>
+
+						<label 
+							for="menu-item-desertSauce" 
+							class="form-label">
+							<b>Dessert Sauce</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input
+							id="desertSauce" 
+							type="checkbox"
+							value="{{item.desertSauce}}" 
+							checked="{{item.desertSauce}}"
+							required
+						>
+						
+						<br><br>
 
 						<label 
               for="image" 

@@ -63,7 +63,7 @@
                           <h5 class="mb-1">{{i.name}}</h5>
                         </div>
 
-<div class="subitem">
+                        <div class="subitem">
                           <p class="mb-1">{{i.description}}</p>
                           {{#if i.price1}}
                           <p class="mb-1">Starting price: ${{i.price1}}</p>
@@ -72,14 +72,20 @@
                           {{/if}}
                           <p class="mb-1"><b>Click for more information and options</b></p>
                           <br>
-                          <img src={{i.image}} alt="food-image" class="category-image">  
+                          <img src={{i.image}} alt="food-image" class="category-image">
+
+                          </center>
+                          <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
+                        </center>  
                         </div> 
                         {{!-- <p class="mb-1">{{i.description}}</p> --}}
-                        <center>
-                          <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
-                        </center>
+                        
                       </a>
+
+                      
                     </div>
+
+                    
                   {{else}}
                     <div class="grid-item">
                       <center>
