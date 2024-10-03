@@ -26,30 +26,6 @@ const createMenuItem = async(event) => {
   const desertSauce = document.querySelector('#desertSauce').value.trim().toLowerCase();
 
   const categoryId = document.querySelector('#categories').value.trim();
-
-  // switchy = "true";
-
-  toppingPizzaFull.checked = "false";
-  toppingPizzaSlice.checked = "false";
-  toppingPizzaGlutenFree.checked = "false";
-  toppingHotSub.checked = "false";
-  toppingColdSub.checked = "false";
-  toppingDesert.checked = "false";
-  saladDressing.checked = "false";
-  wingSauce.checked = "false";
-  pastaType.checked = "false";
-  marinaraSauce.checked = "false";
-  desertSauce.checked = "false";
-
-  // // const switchy = true;
-  // if (switchy.checked == true) {
-  //   console.log('true')
-  //   switchy.value = true;
-  // }
-  // else {
-  //   console.log('false')
-  //   switchy.value = false;
-  // }
   
   const response = await fetch('/api/menu/newitem', {
     method: 'POST',
@@ -108,68 +84,12 @@ onPageLoad(marinaraSauce);
 onPageLoad(desertSauce);
 
 function onPageLoad(switchything) {
-  console.log("start")
-  console.log("check switchy value " + switchything.value)
-
-  // switchything.checked = 'false'
-  
-
-  if (switchything.value == null) {
-    switchy.checked = false;
-    switchy.value = false;
-  }
-  else if (switchything.value == true) {
-    console.log("checked 12: " + switchything.checked)
-    switchything.checked = true;
-    switchy.value = true;
-  } 
-  else if (switchything.value == false) {
-    console.log("checked 22: " + switchything.checked)
-    switchything.checked = false;
-    switchy.value = false;
-  }
-
-  else if (switchything.switch == true) {
-    console.log("checked 12: " + switchything.checked)
-    switchything.checked = true;
-    switchy.value = true;
-  } 
-  else if (switchything.switch == false) {
-    console.log("checked 22: " + switchything.checked)
-    switchything.checked = false;
-    switchy.value = false;
-  }
-
-  else {
-    console.log("Fail")
-  }
-
-  console.log("check switchy checked " + switchything.checked)
-  console.log('check switchy value ' + switchything.value)
+  switchything.checked = false;
+  switchything.value = false;
 };
 
 function mycheckbox(x) {
   var box = x;
-
-  // x.value = false;
-
-  console.log("test0")
-  console.log("box " +  box.value)
-
-  // if(box.value == false){
-  //   //  box.value = false; 
-  //    box.checked = false;
-  //    console.log("test1")
-
-  //   //  return box;
-  // }
-  // else if(box.value == true){
-  //   // box.value = true;
-  //   box.checked = true;
-  //   console.log("test2")
-
-  //   // return box;
-  // }
 
   box.addEventListener('change', function(){
     if (this.checked) {
