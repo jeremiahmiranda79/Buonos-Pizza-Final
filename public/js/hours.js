@@ -19,7 +19,7 @@
   // Perks:
   // Adding a new holiday is easy
   // 1. Add {m,d} pair to holiday array
-  // 2. Add closed-holiday-(M)-(D).jpg to images/ folder (maybe a sub directory such as images/holiday/ or images/closed/)
+  // 2. Add closed-holiday-(M)-(D).webp to images/ folder (maybe a sub directory such as images/holiday/ or images/closed/)
 //#endregion
 
 // https://www.freepik.com/free-photos-vectors/4th-of-july-closed
@@ -83,48 +83,48 @@ var checkOpenStatus = function () {
   //#endregion
 
   //#region Open/Close Sign
-    const openSign = '/images/sign-open-2.jpg';
-    const closedSign = '/images/sign-closed-2.jpg';
+    const openSign = '/images/sign-open-2.webp';
+    const closedSign = '/images/sign-closed-2.webp';
   //#endregion
 
   //#region Static Holidays
-    // const newYearsSign = '/images/holiday-new-years.jpg';
-    const newYearsSign = '/images/holiday-new-years-2.jpg';
+    // const newYearsSign = '/images/holiday-new-years.webp';
+    const newYearsSign = '/images/holiday-new-years-2.webp';
 
-    // const fourthOfJulySign = '/images/holiday-fourth-of-july.jpg';
-    const fourthOfJulySign = '/images/holiday-fourth-of-july-2.jpg';
+    // const fourthOfJulySign = '/images/holiday-fourth-of-july.webp';
+    const fourthOfJulySign = '/images/holiday-fourth-of-july-2.webp';
 
-    // const christmasSign = '/images/holiday-christmas.jpg';
-    const christmasSign = '/images/holiday-christmas-2.jpg';
+    // const christmasSign = '/images/holiday-christmas.webp';
+    const christmasSign = '/images/holiday-christmas-2.webp';
 
-    const veteransDaySign = '/images/holiday-veterans-day.jpg';
-    const halloweenSign = '/images/holiday-halloween.jpg';
-    const valentinesSign = '/images/holiday-valentines-day.jpg';
-    const stPatricksDaySign = '/images/holiday-st-patricks-day.jpg';
-    const cincoDeMayoSign = '/images/holiday-cinco-de-mayo.jpg';
-    const juneteenthSign = '/images/holiday-juneteenth.jpg';
+    const veteransDaySign = '/images/holiday-veterans-day.webp';
+    const halloweenSign = '/images/holiday-halloween.webp';
+    const valentinesSign = '/images/holiday-valentines-day.webp';
+    const stPatricksDaySign = '/images/holiday-st-patricks-day.webp';
+    const cincoDeMayoSign = '/images/holiday-cinco-de-mayo.webp';
+    const juneteenthSign = '/images/holiday-juneteenth.webp';
   //#endregion
 
   //#region Non Static Holidays
-    // const thanksgivingImg = '/images/holiday-thanksgiving.jpg';
-    const thanksgivingImg = '/images/holiday-thanksgiving-2.jpg';
+    // const thanksgivingImg = '/images/holiday-thanksgiving.webp';
+    const thanksgivingImg = '/images/holiday-thanksgiving-2.webp';
 
 
-    const mothersDayImg = '/images/holiday-mothers-day.jpg';
-    const fathersDayImg = '/images/holiday-fathers-day.jpg';
+    const mothersDayImg = '/images/holiday-mothers-day.webp';
+    const fathersDayImg = '/images/holiday-fathers-day.webp';
 
-    // const memorialDayImg = '/images/holiday-memorial-day.jpg';
-    const memorialDayImg = '/images/holiday-memorial-day-2.jpg';
+    // const memorialDayImg = '/images/holiday-memorial-day.webp';
+    const memorialDayImg = '/images/holiday-memorial-day-2.webp';
 
-    const laborDayImg = '/images/holiday-labor-day.jpg';
-    const presidentDay ='/images/holiday-presidents-day.jpg';
-    const martinLuterDay = '/images/holiday-martin-luther-day.jpg'; 
-    const superBowl = '/images/holiday-super-bowl.jpg';
-    const columbusDay = '/images/holiday-columbus-day.jpg';
+    const laborDayImg = '/images/holiday-labor-day.webp';
+    const presidentDay ='/images/holiday-presidents-day.webp';
+    const martinLuterDay = '/images/holiday-martin-luther-day.webp'; 
+    const superBowl = '/images/holiday-super-bowl.webp';
+    const columbusDay = '/images/holiday-columbus-day.webp';
   //#endregion
 
   //#region Complex Holidays
-    const easterDay = '/images/holiday-easter-day.jpg';
+    const easterDay = '/images/holiday-easter-day.webp';
   //#endregion
 
   //#region Open Status
