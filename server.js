@@ -24,6 +24,16 @@ const sess = {
   })
 };
 
+// Redirect to https unless in a development (localhost) environment.
+if (process.argv[2] == 'dev') {
+  console.log("Development environment, ignoring https redirect.\n");
+}
+else {
+  app.get('*', (req, res) => {
+    res.redirect('https://' + req.headers.host + req.url);
+  });
+}
+
 // ** Set us up with custom middleware!! **
 // Create a session
 app.use(session(sess));

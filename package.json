@@ -8,6 +8,7 @@
     "start": "node server.js",
     "seed": "node seeds/seed.js",
     "dev": "tailwindcss -i ./src/input.css -o ./public/css/style.css --watch",
+    "dev2": "node server.js dev",
     "watch": "nodemon server.js"
   },
   "keywords": [],
