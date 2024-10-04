@@ -6,6 +6,7 @@ const routes = require('./controllers/');
 // const helpers = require('./utils/helpers');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const sequelize = require('./config/connection');
+const { emitWarning } = require('process');
 const app = express();
 const PORT = process.env.PORT || 3001;
 const sess = {
@@ -24,10 +25,13 @@ const sess = {
   })
 };
 
-//test redirect for https
-// app.get('*', (req, res) => {
-//   res.redirect('https://' + req.headers.host + req.url);
-// });
+// Redirect all http connections to https connections
+app.get('*', (req, res) => {
+  if (req.protocol == 'http') {
+    res.redirect('https://' + req.headers.host + req.url);
+  }
+});
+
 
 // ** Set us up with custom middleware!! **
 // Create a session
