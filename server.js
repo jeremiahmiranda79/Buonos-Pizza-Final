@@ -24,9 +24,10 @@ const sess = {
   })
 };
 
-app.get('*', (req, res) => {
-  res.redirect('https://' + req.headers.host + req.url);
-});
+//test redirect for https
+// app.get('*', (req, res) => {
+//   res.redirect('https://' + req.headers.host + req.url);
+// });
 
 // ** Set us up with custom middleware!! **
 // Create a session
