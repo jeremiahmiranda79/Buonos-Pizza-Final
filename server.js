@@ -25,21 +25,29 @@ const sess = {
   })
 };
 
+app.enable('trust proxy');
+
 // Redirect all http connections to https connections
-
-const isRedirect = false;
-
-if (!isRedirect) {
-  app.get('*', (req, res, next) => {
-    // console.log(req.protocol);
-    if (req.protocol == 'http') {
-      res.redirect('https://' + req.headers.host + req.url);
-    }
+app.get('*', (req, res, next) => {
+  if (req.protocol == 'http') {
+    res.redirect('https://' + req.headers.host + req.url);
+  }
     next();
+});
 
-    isRedirect = true;
-  });
-}
+// const isRedirect = false;
+
+// if (!isRedirect) {
+//   app.get('*', (req, res, next) => {
+//     // console.log(req.protocol);
+//     if (req.protocol == 'http') {
+//       res.redirect('https://' + req.headers.host + req.url);
+//     }
+//     next();
+
+//     isRedirect = true;
+//   });
+// }
 
 
 
