@@ -26,13 +26,21 @@ const sess = {
 };
 
 // Redirect all http connections to https connections
-app.get('*', (req, res, next) => {
-  console.log(req.protocol);
-  // if (req.protocol == 'http') {
-  //   res.redirect('https://' + req.headers.host + req.url);
-  // }
-  next();
-});
+
+const isRedirect = false;
+
+if (!isRedirect) {
+  app.get('*', (req, res, next) => {
+    // console.log(req.protocol);
+    if (req.protocol == 'http') {
+      res.redirect('https://' + req.headers.host + req.url);
+    }
+    next();
+
+    isRedirect = true;
+  });
+}
+
 
 
 // ** Set us up with custom middleware!! **
