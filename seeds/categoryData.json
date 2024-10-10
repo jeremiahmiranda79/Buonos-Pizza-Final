@@ -1,82 +1,97 @@
 [
   {
     "name": "Pizza",
-    "image": "/images/menu-pizza-regular-neopolitan-2.webp",
+    "image": "/images/menu-categories/pizza-cheese.webp",
     "switchy": true
   },
+
   {
     "name": "Specialty Pizza",
-    "image": "/images/menu-specialty-2.webp",
+    "image": "/images/menu-categories/pizza-special.webp",
     "switchy": true
   },
+
   {
     "name": "Gluten Free",
-    "image": "/images/menu-gluten-free-10.webp",
+    "image": "/images/menu-categories/pizza-gluten-free.webp",
     "switchy": true
   },
+
   {
     "name": "Pizza Slice",
-    "image": "/images/menu-pizza-slice-3.webp",
+    "image": "/images/menu-categories/pizza-slice.webp",
     "switchy": true
   },
+
   {
     "name": "Appetizer",
-    "image": "/images/menu-app-wings-6.webp",
+    "image": "/images/menu-categories/app-wings.webp",
     "switchy": true
   },
+
   {
     "name": "Sausage Roll",
-    "image": "/images/menu-sausage-roll-2.webp",
+    "image": "/images/menu-categories/sausage-roll.webp",
     "switchy": true
   },
+
   {
     "name": "Calzone",
-    "image": "/images/menu-calzone-10.webp",
+    "image": "/images/menu-categories/calzone.webp",
     "switchy": true
   },
+
   {
     "name": "Stromboli",
-    "image": "/images/menu-stromboli-4.webp",
+    "image": "/images/menu-categories/stromboli.webp",
     "switchy": true
   },
+
   {
     "name": "Salad",
-    "image": "/images/menu-salad.webp",
+    "image": "/images/menu-categories/salad.webp",
     "switchy": true
   },
+
   {
     "name": "Entree",
-    "image": "/images/menu-entree.webp",
+    "image": "/images/menu-categories/entree.webp",
     "switchy": true
   },
+
   {
     "name": "Hot Sub",
-    "image": "/images/menu-hot-sub-2.webp",
+    "image": "/images/menu-categories/hot-sub-sop.webp",
     "switchy": true
   },
+
   {
     "name": "Cold Sub",
-    "image": "/images/menu-cold-sub-2.webp",
+    "image": "/images/menu-categories/cold-sub-boars-head.webp",
     "switchy": true
   },
+
   {
     "name": "Side Order",
-    "image": "/images/menu-side-meatballs-2.webp",
+    "image": "/images/menu-categories/side-meatballs.webp",
     "switchy": true
   },
+
   {
     "name": "Dessert",
-    "image": "/images/menu-dessert.webp",
+    "image": "/images/menu-categories/dessert-tiramisu.webp",
     "switchy": true
   },
+
   {
     "name": "Beverage",
-    "image": "/images/menu-soda-fountain-2.webp",
+    "image": "/images/menu-categories/beverage-soda-fountain.webp",
     "switchy": true
   },
+
   {
     "name": "NY Specialty",
-    "image": "/images/menu-new-york.webp",
+    "image": "/images/menu-categories/new-york.webp",
     "switchy": true
   }
 ]

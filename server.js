@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 const sess = {
   secret: process.env.DB_SECRET,
   cookie: {
-    maxAge: 3000000, // 5 minutes = 300000
+    maxAge: 300000, // 5 minutes = 300000
     httpOnly: true,
     secure: false,
     sameSite: 'strict',
@@ -25,31 +25,16 @@ const sess = {
   })
 };
 
-app.enable('trust proxy');
-
 // Redirect all http connections to https connections
-app.get('*', (req, res, next) => {
-  if (req.protocol == 'http') {
-    res.redirect('https://' + req.headers.host + req.url);
-  }
-    next();
-});
 
-// const isRedirect = false;
+// app.enable('trust proxy');// fill in doc
 
-// if (!isRedirect) {
-//   app.get('*', (req, res, next) => {
-//     // console.log(req.protocol);
-//     if (req.protocol == 'http') {
-//       res.redirect('https://' + req.headers.host + req.url);
-//     }
+// app.get('*', (req, res, next) => {
+//   if (req.protocol == 'http') {
+//     res.redirect('https://' + req.headers.host + req.url);
+//   }
 //     next();
-
-//     isRedirect = true;
-//   });
-// }
-
-
+// });
 
 // ** Set us up with custom middleware!! **
 // Create a session

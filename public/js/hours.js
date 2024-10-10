@@ -83,48 +83,36 @@ var checkOpenStatus = function () {
   //#endregion
 
   //#region Open/Close Sign
-    const openSign = '/images/sign-open-2.webp';
-    const closedSign = '/images/sign-closed-2.webp';
+    const openSign = '/images/signs/open.webp';
+    const closedSign = '/images/signs/closed.webp';
   //#endregion
 
   //#region Static Holidays
-    // const newYearsSign = '/images/holiday-new-years.webp';
-    const newYearsSign = '/images/holiday-new-years-2.webp';
-
-    // const fourthOfJulySign = '/images/holiday-fourth-of-july.webp';
-    const fourthOfJulySign = '/images/holiday-fourth-of-july-2.webp';
-
-    // const christmasSign = '/images/holiday-christmas.webp';
-    const christmasSign = '/images/holiday-christmas-2.webp';
-
-    const veteransDaySign = '/images/holiday-veterans-day.webp';
-    const halloweenSign = '/images/holiday-halloween.webp';
-    const valentinesSign = '/images/holiday-valentines-day.webp';
-    const stPatricksDaySign = '/images/holiday-st-patricks-day.webp';
-    const cincoDeMayoSign = '/images/holiday-cinco-de-mayo.webp';
-    const juneteenthSign = '/images/holiday-juneteenth.webp';
+    const newYearsSign = '/images/signs/new-years.webp';
+    const fourthOfJulySign = '/images/signs/fourth-of-july.webp';
+    const christmasSign = '/images/signs/christmas.webp';
+    const veteransDaySign = '/images/signs/veterans-day.webp';
+    const halloweenSign = '/images/signs/halloween.webp';
+    const valentinesSign = '/images/signs/valentines-day.webp';
+    const stPatricksDaySign = '/images/signs/st-patricks-day.webp';
+    const cincoDeMayoSign = '/images/signs/cinco-de-mayo.webp';
+    const juneteenthSign = '/images/signs/juneteenth.webp';
   //#endregion
 
   //#region Non Static Holidays
-    // const thanksgivingImg = '/images/holiday-thanksgiving.webp';
-    const thanksgivingImg = '/images/holiday-thanksgiving-2.webp';
-
-
-    const mothersDayImg = '/images/holiday-mothers-day.webp';
-    const fathersDayImg = '/images/holiday-fathers-day.webp';
-
-    // const memorialDayImg = '/images/holiday-memorial-day.webp';
-    const memorialDayImg = '/images/holiday-memorial-day-2.webp';
-
-    const laborDayImg = '/images/holiday-labor-day.webp';
-    const presidentDay ='/images/holiday-presidents-day.webp';
-    const martinLuterDay = '/images/holiday-martin-luther-day.webp'; 
-    const superBowl = '/images/holiday-super-bowl.webp';
-    const columbusDay = '/images/holiday-columbus-day.webp';
+    const thanksgivingImg = '/images/signs/thanksgiving.webp';
+    const mothersDayImg = '/images/signs/mothers-day.webp';
+    const fathersDayImg = '/images/signs/fathers-day.webp';
+    const memorialDayImg = '/images/signs/memorial-day.webp';
+    const laborDayImg = '/images/signs/labor-day.webp';
+    const presidentDay ='/images/signs/presidents-day.webp';
+    const martinLuterDay = '/images/signs/martin-luther-day.webp'; 
+    const superBowl = '/images/signs/super-bowl.webp';
+    const columbusDay = '/images/signs/columbus-day.webp';
   //#endregion
 
   //#region Complex Holidays
-    const easterDay = '/images/holiday-easter-day.webp';
+    const easterDay = '/images/signs/easter-day.webp';
   //#endregion
 
   //#region Open Status

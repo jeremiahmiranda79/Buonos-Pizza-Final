@@ -41,18 +41,18 @@
 
     "slice_switch": true,
     "slice_link": "https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com",
-    "slice_img": "/images/slice-logo-600x200.webp",
+    "slice_img": "/images/icons-logos/slice-logo-600x200.webp",
 
     "doordash_switch": true,
     "doordash_link": "https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/",
-    "doordash_img": "/images/delivery-doordash-3.webp",
+    "doordash_img": "/images/icons-logos/delivery-doordash-3.webp",
 
     "ubereats_switch": true,
     "ubereats_link": "https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg",
-    "ubereats_img": "/images/delivery-uber-eats.webp",
+    "ubereats_img": "/images/icons-logos/delivery-uber-eats.webp",
     
     "grubhub_switch": true,
     "grubhub_link": "https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436",
-    "grubhub_img": "/images/delivery-grubhub.webp"
+    "grubhub_img": "/images/icons-logos/delivery-grubhub.webp"
   }
 ]
