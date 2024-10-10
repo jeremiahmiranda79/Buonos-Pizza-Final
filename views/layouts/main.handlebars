@@ -15,10 +15,19 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">  
-      <link rel="stylesheet" href="/css/nav-bar-2.css">  
+      <link rel="stylesheet" href="/css/nav-bar-2.css"> 
+      <script src="/js/modal.js" defer></script>
     </head>
 
     <body>
+      {{!--* Modal (covers entire screen, disappears after first use.) --}}
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          {{!--^ Change hyperlinks to buonos websites (https) --}}
+          <a href="http://localhost:3001/?mredirect=true">Buonos Gilbert</a>
+          <a href="https://www.spinningrat.online">Buonos Higley</a>
+        </div>
+      </div>
       {{!-- <header>
         <div class="navbar-top hidden-top">
           <center>
