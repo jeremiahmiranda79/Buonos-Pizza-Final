@@ -27,14 +27,16 @@ const sess = {
 
 // Redirect all http connections to https connections
 
-app.enable('trust proxy');// fill in doc
-
-app.get('*', (req, res, next) => {
-  if (req.protocol == 'http') {
-    res.redirect('https://' + req.headers.host + req.url);
-  }
-    next();
-});
+// app.enable('trust proxy');// fill in doc
+if (process.argv[2] != "dev")
+{
+  app.get('*', (req, res, next) => {
+    if (req.protocol == 'http') {
+      res.redirect('https://' + req.headers.host + req.url);
+    }
+      next();
+  });
+}
 
 // ** Set us up with custom middleware!! **
 // Create a session
