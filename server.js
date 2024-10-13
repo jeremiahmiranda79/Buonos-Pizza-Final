@@ -26,8 +26,8 @@ const sess = {
 };
 
 // Redirect all http connections to https connections
+app.enable('trust proxy');// fill in doc
 
-// app.enable('trust proxy');// fill in doc
 if (process.argv[2] != "dev")
 {
   app.get('*', (req, res, next) => {
