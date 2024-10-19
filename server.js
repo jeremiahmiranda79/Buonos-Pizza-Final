@@ -25,6 +25,24 @@ const sess = {
   })
 };
 
+
+// https://imagekit.io/blog/nodejs-image-upload/
+const multer = require('multer');
+// const upload = multer({ dest: 'uploads/'});
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public/images/photo-bucket/')
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + path.extname(file.originalname)) //Appending extension
+  }
+})
+var upload = multer({ storage: storage });
+// const upload = multer(
+//   { 
+//     dest: 'public/images/photo-bucket/',
+//   });
+
 // Redirect all http connections to https connections
 app.enable('trust proxy');// fill in doc
 
@@ -76,6 +94,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Sets up a path to use the images from the (public folder) / (images file).
 app.use("/images", express.static(path.join(__dirname, "/public/images")));
+
+
+// ADDED BY ME
+app.post('/upload-file', upload.single('file'), (req, res) => {
+  res.send('File uploaded successfully')
+})
+
 
 // Create the routes controller
 app.use(routes);

@@ -130,6 +130,19 @@ const isAdmin = require('../../utils/admin');
 		}
 	});
 //#endregion
+
+//#region /***** Image Loader******/
+router.get('/image-loader', async (req, res) => {
+	try {
+		res.status(200).render('image-loader');
+	}
+	catch (error) {
+		console.log(error);
+		res.status(500).json(error);// 500 - internal server error
+	}
+})
+//#endregion
+
 //#region /***** MENU ******/
 	// Route to find menu
 	router.get('/menu-1', async (req, res) => {
