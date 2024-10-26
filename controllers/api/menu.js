@@ -73,6 +73,36 @@ router.post('/newcategory', async (req, res) => {
   };
 });
 
+
+//* Initialization for router.post('upload-category')
+//! Move these to somewhere better
+// Import necessary libraries
+const fs = require('fs-extra');
+const path = require('path');
+const multer = require('multer');
+
+// Define storage utility structure
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public/images/photo-bucket/');
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + path.extname(file.originalname));
+  }
+});
+
+// Define upload function
+const upload = multer({ storage: storage });
+
+//* Route to upload new Category image
+//* Post method with endpoint '/api/menu/upload-category'
+router.post('/upload-category', upload.single('file'), (req, res) => {
+  // Move file to correct folder
+  fs.move('public/images/photo-bucket/' + req.file.filename, 'public/images/menu-categories/' + req.file.filename);
+
+  res.status(200).json({filename: req.file.filename});
+});
+
 // Route to update a Category
 // PUT method with endpoint '/api/menu/updateCategory/:categoryId'
 router.put('/updateCategory/:categoryId', async (req, res) => {
