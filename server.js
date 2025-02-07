@@ -82,5 +82,5 @@ app.use(routes);
 
 // Create the server to run the application
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening to: http://localhost:3001/'));
+  app.listen(PORT, () => console.log('Now listening to: http://localhost:3001/?mredirect=true'));
 });

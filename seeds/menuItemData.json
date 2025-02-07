@@ -2828,7 +2828,7 @@
     "image": "/images/menu-items/beverage/domestic-beer.webp",
 
     "size1": "12 oz bottle",
-    "price1": 3.75,
+    "price1": 4.25,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2843,7 +2843,7 @@
     "image": "/images/menu-items/beverage/imported-beer.webp",
 
     "size1": "12 oz bottle",
-    "price1": 4.50,
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -3014,6 +3014,22 @@
 
     "size1": "12 oz",
     "price1": 10.00,
+    "size2": null,
+    "price2": null,
+    "size3": null,
+    "price3": null
+  },
+
+  {
+    "categoryId": 16,
+    "name": "Fox's u-bet Syrup",
+    "description": "This extra-thick U-Bet Chocolate Syrup is the perfect companion for egg creams, ice cream sundaes, milkshakes, chocolate milk, and pancakes! This fat-free chocolate syrup has a rich chocolate flavor and smooth, velvety texture",
+    "switchy": true,
+
+    "image": "/images/icons-logos/buonos-logo.webp",
+
+    "size1": "22 oz",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
