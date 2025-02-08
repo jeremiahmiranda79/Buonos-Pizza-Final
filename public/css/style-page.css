@@ -18,15 +18,22 @@
   text-align: center;
 };
 
+img {
+  width: 50%
+}
+
 /* @media (max-width: 425px) {
   .page-container {
     margin-top: 250px;
   }
 } */
 
-/* @media (max-width: 768px) {
-  .sub-section {
+@media (max-width: 450px) {
+  /* .sub-section {
     margin-right: 5%;
     margin-left: 5%;
-  }
-} */
+  } */
+   img{
+    width: 90%;
+   }
+}
